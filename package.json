@@ -1,0 +1,23 @@
+{
+  "name": "cooltipz.css",
+  "version": "0.1.0",
+  "description": "Cool tooltipz made with love from simple, pure CSS",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JDomleo/Cooltipz.css.git"
+  },
+  "keywords": [
+    "tooltip",
+    "cooltipz",
+    "hint"
+  ],
+  "author": "Jack Domleo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JDomleo/Cooltipz.css/issues"
+  },
+  "homepage": "https://github.com/JDomleo/Cooltipz.css#readme"
+}
