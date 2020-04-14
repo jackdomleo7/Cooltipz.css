@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "description": "Cool tooltipz made with love from simple, pure CSS",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "node-sass src/cooltipz.scss docs/cooltipz.min.css --output-style compressed"
   },
   "repository": {
     "type": "git",
@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/JDomleo/Cooltipz.css/issues"
   },
-  "homepage": "https://github.com/JDomleo/Cooltipz.css#readme"
+  "homepage": "https://github.com/JDomleo/Cooltipz.css#readme",
+  "devDependencies": {
+    "node-sass": "^4.13.1"
+  }
 }
