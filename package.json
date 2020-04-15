@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "description": "Cool tooltipz made with love from simple, pure CSS",
   "scripts": {
-    "build": "node-sass src/cooltipz.scss docs/cooltipz.min.css --output-style compressed"
+    "build": "node-sass src/cooltipz/cooltipz.scss docs/cooltipz.min.css --output-style compressed && node-sass src/docs/docs.scss docs/docs.min.css --output-style compressed"
   },
   "repository": {
     "type": "git",
