@@ -1,3 +1,9 @@
+::selection {
+  background-color: orange;
+  color: #fff;
+  text-shadow: none;
+}
+
 html {
   box-sizing: border-box;
   font-family: sans-serif;
@@ -15,10 +21,11 @@ html {
 }
 
 body {
-  background-color: rgb(105, 105, 105);
-  color: #eee;
+  background-color: rgb(220, 220, 220);
+  color: #333;
   font-family: Verdana, Arial, sans-serif;
   font-size: 0.875rem;
+  margin: 0;
 
   @media (min-width: 45.625em) {
     font-size: 1rem;
@@ -39,4 +46,11 @@ img {
   height: auto;
   max-width: 100%;
   user-select: none;
+}
+
+hr {
+  border-top: 1px solid #ddd;
+  width: 100%;
+  border-radius: 50%;
+  margin: 1.8rem 0;
 }
