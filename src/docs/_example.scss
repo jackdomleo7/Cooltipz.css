@@ -1,8 +1,8 @@
 .example {
   align-items: center;
   display: flex;
-  margin: 2rem 0;
   flex-direction: column-reverse;
+  margin: 2rem 0;
 
   @media (min-width: 800px) {
     flex-direction: row;
