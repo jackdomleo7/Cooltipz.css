@@ -1,0 +1,81 @@
+@import "./variables";
+@import "./animations";
+@import "./arrow";
+
+/*
+::before = arrow
+::after = tooltip box and content
+*/
+
+@mixin standard-text {
+  text-indent: 0;
+  font-family: sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  text-shadow: none;
+  font-size: var(--cooltipz-font-size);
+}
+
+[aria-label] {
+  &[data-cooltipz-dir] { // Applies to all tooltips
+    position: relative;
+    cursor: pointer;
+
+    &:after {
+      @include standard-text;
+
+      background-color: var(--cooltipz-bg-color);
+      border-radius: 2px;
+      color: var(--cooltipz-text-color);
+      content: attr(aria-label);
+      padding: 0.5em 1em;
+      white-space: nowrap;
+    }
+
+    &:before {
+      @include arrow-down;
+
+      content: "";
+    }
+
+    &:after,
+    &:before {
+      @include base-animations;
+
+      position: absolute;
+      z-index: 10;
+    }
+
+    &:hover,
+    &:focus {
+      &::before,
+      &::after {
+        opacity: 1;
+      }
+    }
+
+    &[data-cooltipz-dir="up"] {
+      &:after {
+        margin-bottom: $cooltipz-arrow-size + 5px;
+      }
+
+      &:after,
+      &::before {
+        bottom: 100%;
+        left: 50%;
+        transform: translate(-50%, var(--cooltipz-slide));
+        transform-origin: top;
+      }
+
+      &:hover {
+        &:after {
+          transform: translate(-50%, 0);
+        }
+
+        &:before {
+          transform: translate(-50%, 0);
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,27 @@
+$cooltipz-arrow-size: 5px !default;
+
+@mixin base-arrow {
+  width: 0;
+  height: 0;
+  border: $cooltipz-arrow-size solid transparent;
+}
+
+@mixin arrow-down {
+  @include base-arrow;
+  border-top-color: var(--cooltipz-bg-color);
+}
+
+@mixin arrow-up {
+  @include base-arrow;
+  border-bottom-color: var(--cooltipz-bg-color);
+}
+
+@mixin arrow-left {
+  @include base-arrow;
+  border-right-color: var(--cooltipz-bg-color);
+}
+
+@mixin arrow-right {
+  @include base-arrow;
+  border-left-color: var(--cooltipz-bg-color);
+}

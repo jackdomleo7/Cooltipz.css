@@ -1,0 +1,13 @@
+@mixin base-animations {
+  opacity: 0;
+  pointer-events: none;
+  transition: all 160ms ease-out 160ms;
+
+  @media (prefers-reduced-motion: reduce) {
+    @include no-animations;
+  }
+}
+
+@mixin no-animations {
+  transition: none;
+}
