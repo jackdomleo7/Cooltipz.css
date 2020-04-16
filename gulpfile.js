@@ -37,4 +37,19 @@ function docsCompressed() {
       .pipe(dest('./docs'))
 }
 
-exports.default = parallel(cooltipzCompressed, docsCompressed);
+function prismCompressed() {
+  return src('./src/docs/prism.scss')
+      .pipe(sourcemaps.init())
+      .pipe(gulpSass().on('error', gulpSass.logError))
+      .pipe(purge({
+        trim: true,
+        shorten: true,
+        format: true
+      }))
+      .pipe(autoVendorPrefix())
+      .pipe(rename('prism.min.css'))
+      .pipe(sourcemaps.write())
+      .pipe(dest('./docs'))
+}
+
+exports.default = parallel(cooltipzCompressed, docsCompressed, prismCompressed);
