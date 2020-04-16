@@ -1,20 +1,20 @@
 .page {
-  margin: 0 auto;
-  max-width: 68rem;
-  padding: 0 2rem;
   display: flex;
   flex-direction: column;
+  margin: 0 auto;
+  max-width: 68rem;
   min-height: 100vh;
+  padding: 0 2rem;
 
   @media (min-width: 450px) {
     padding: 0 3.25rem;
   }
 
   &__header {
-    display: flex;
     align-items: center;
-    justify-content: center;
+    display: flex;
     flex-direction: column;
+    justify-content: center;
     margin-top: 1rem;
     text-align: center;
 
@@ -28,8 +28,8 @@
     }
 
     h2 {
-      margin-top: 1rem;
       font-size: 1.4rem;
+      margin-top: 1rem;
     }
 
     p {
@@ -42,12 +42,12 @@
   }
 
   &__footer {
-    display: flex;
     align-items: center;
+    background-color: #f80;
+    display: flex;
+    font-weight: 700;
     justify-content: center;
     padding: 1.8rem 0;
-    background-color: #ff8800;
-    font-weight: 700;
 
     a {
       color: inherit;

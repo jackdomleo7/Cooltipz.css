@@ -1,9 +1,9 @@
 $cooltipz-arrow-size: 5px !default;
 
 @mixin base-arrow {
-  width: 0;
-  height: 0;
   border: $cooltipz-arrow-size solid transparent;
+  height: 0;
+  width: 0;
 }
 
 @mixin arrow-down {
