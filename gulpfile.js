@@ -22,4 +22,19 @@ function cooltipzCompressed() {
       .pipe(dest('./docs'))
 }
 
-exports.default = parallel(cooltipzCompressed);
+function docsCompressed() {
+  return src('./src/docs/docs.scss')
+      .pipe(sourcemaps.init())
+      .pipe(gulpSass().on('error', gulpSass.logError))
+      .pipe(purge({
+        trim: true,
+        shorten: true,
+        format: true
+      }))
+      .pipe(autoVendorPrefix())
+      .pipe(rename('docs.min.css'))
+      .pipe(sourcemaps.write())
+      .pipe(dest('./docs'))
+}
+
+exports.default = parallel(cooltipzCompressed, docsCompressed);
