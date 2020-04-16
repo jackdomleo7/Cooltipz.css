@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "description": "Cool tooltipz made with love from simple, pure CSS",
   "scripts": {
-    "dev": "npm i -g gulp-cli",
+    "setup": "npm i && npm i -g gulp-cli",
     "build": "gulp",
     "stylelint": "stylelint \"**/*.scss\"",
     "stylelint:fix": "stylelint \"**/*.scss\" --fix"
