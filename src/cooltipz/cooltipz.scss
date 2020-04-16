@@ -8,22 +8,21 @@
 */
 
 @mixin standard-text {
-  text-indent: 0;
   font-family: sans-serif;
-  font-weight: normal;
-  font-style: normal;
-  text-shadow: none;
   font-size: var(--cooltipz-font-size);
+  font-style: normal;
+  font-weight: normal;
+  text-indent: 0;
+  text-shadow: none;
 }
 
 [aria-label] {
   &[data-cooltipz-dir] { // Applies to all tooltips
-    position: relative;
     cursor: pointer;
+    position: relative;
 
-    &:after {
+    &::after {
       @include standard-text;
-
       background-color: var(--cooltipz-bg-color);
       border-radius: 2px;
       color: var(--cooltipz-text-color);
@@ -32,16 +31,14 @@
       white-space: nowrap;
     }
 
-    &:before {
+    &::before {
       @include arrow-down;
-
       content: "";
     }
 
-    &:after,
-    &:before {
+    &::after,
+    &::before {
       @include base-animations;
-
       position: absolute;
       z-index: 10;
     }
@@ -54,12 +51,12 @@
       }
     }
 
-    &[data-cooltipz-dir="up"] {
-      &:after {
+    &[data-cooltipz-dir = "up"] {
+      &::after {
         margin-bottom: $cooltipz-arrow-size + 5px;
       }
 
-      &:after,
+      &::after,
       &::before {
         bottom: 100%;
         left: 50%;
@@ -68,11 +65,11 @@
       }
 
       &:hover {
-        &:after {
+        &::after {
           transform: translate(-50%, 0);
         }
 
-        &:before {
+        &::before {
           transform: translate(-50%, 0);
         }
       }

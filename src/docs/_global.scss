@@ -48,21 +48,21 @@ img {
 }
 
 hr {
-  border-top: 1px solid #ddd;
-  width: 100%;
   border-radius: 50%;
+  border-top: 1px solid #ddd;
   margin: 1.8rem 0;
+  width: 100%;
 }
 
 button {
-  padding: 0.8rem 1.5rem;
   background-color: #1e80ff;
-  color: #ccc;
   border: none;
   box-shadow: 1px 1px 6px #222;
-  transition: 160ms box-shadow ease-in-out;
-  font-weight: 700;
+  color: #ccc;
   font-size: 0.8rem;
+  font-weight: 700;
+  padding: 0.8rem 1.5rem;
+  transition: 160ms box-shadow ease-in-out;
 
   &:hover,
   &:focus {
