@@ -33,8 +33,9 @@
     <meta name="theme-color" content="#ffffff">
 
     <title>Cooltipz.css</title>
-    <link rel="stylesheet" href="cooltipz.min.css"/>
-    <link rel="stylesheet" href="docs.min.css"/>
+    <link rel="stylesheet" href="./cooltipz.min.css" />
+    <link rel="stylesheet" href="./docs.min.css" />
+    <link rel="stylesheet" href="./prism.min.css" />
   </head>
   <body>
     <aside>
@@ -50,7 +51,8 @@
       <main class="page__main">
         <h3>Tooltip Direction</h3>
         <div class="example">
-          <button aria-label="Hello there!" data-cooltipz-dir="up">Hover, focus or tap me</button>
+          <button data-cooltipz-dir="up" aria-label="Hello there!">Interact</button>
+          <pre><code class="language-markup"> &lt;button data-cooltipz-dir="up" aria-label="Hello there!"&gt;...&lt;/button&gt; </code></pre>
         </div>
       </main>
       <hr/>
@@ -58,5 +60,6 @@
         Made by <a href="https://jackdomleo.dev" target="_blank" rel="noreferrer nofollow">Jack Domleo</a>.
       </footer>
     </div>
+    <script src="./prism.js"></script>
   </body>
 </html>
