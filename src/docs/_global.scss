@@ -39,7 +39,6 @@ h4,
 h5,
 h6 {
   font-weight: 700;
-  margin: 0;
 }
 
 img {
@@ -53,4 +52,20 @@ hr {
   width: 100%;
   border-radius: 50%;
   margin: 1.8rem 0;
+}
+
+button {
+  padding: 0.8rem 1.5rem;
+  background-color: #1e80ff;
+  color: #ccc;
+  border: none;
+  box-shadow: 1px 1px 6px #222;
+  transition: 160ms box-shadow ease-in-out;
+  font-weight: 700;
+  font-size: 0.8rem;
+
+  &:hover,
+  &:focus {
+    box-shadow: 1px 1px 8px #222;
+  }
 }
