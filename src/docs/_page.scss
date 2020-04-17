@@ -39,6 +39,12 @@
 
   &__main {
     flex: 1;
+
+    h3 {
+      .required {
+        color: #ff5e00;
+      }
+    }
   }
 
   &__footer {
