@@ -22,11 +22,6 @@ Installs project npm packages and globally installs [gulp-cli](https://www.npmjs
 npm run setup
 ```
 
-Compiles SCSS to CSS
-```
-npm run build
-```
-
 Highlights SCSS linting errors
 ```
 npm run stylelint
@@ -35,6 +30,11 @@ npm run stylelint
 Fixes and highlights SCSS linting errors
 ```
 npm run stylelint:fix
+```
+
+Lints SCSS and compiles SCSS to CSS
+```
+npm run build
 ```
 
 NOTE: [gulp-cli](https://www.npmjs.com/package/gulp-cli) allows us to run `gulp` via `npm run build`, however, you may have to reconfigure your machine's execution policies to run this task runner. [Read the docs for Widnows](https://docs.microsoft.com/en-gb/powershell/module/microsoft.powershell.core/about/about_execution_policies?view=powershell-7)
