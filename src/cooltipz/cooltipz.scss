@@ -68,10 +68,7 @@
       }
 
       &:hover {
-        &::after {
-          transform: translate(-50%, 0);
-        }
-
+        &::after,
         &::before {
           transform: translate(-50%, 0);
         }
@@ -96,10 +93,7 @@
       }
 
       &:hover {
-        &::after {
-          transform: translate(-50%, 0);
-        }
-
+        &::after,
         &::before {
           transform: translate(-50%, 0);
         }
