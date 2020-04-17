@@ -3,10 +3,9 @@
   "version": "0.1.0",
   "description": "Cool tooltipz made with love from simple, pure CSS",
   "scripts": {
-    "setup": "npm i && npm i -g gulp-cli",
     "stylelint": "stylelint \"**/*.scss\"",
     "stylelint:fix": "stylelint \"**/*.scss\" --fix",
-    "build": "npm run stylelint:fix && gulp"
+    "build": "npm run stylelint:fix && node-sass src/cooltipz.scss ./cooltipz.min.css --output-style compressed"
   },
   "repository": {
     "type": "git",
@@ -23,14 +22,17 @@
     "url": "https://github.com/JDomleo/Cooltipz.css/issues"
   },
   "homepage": "https://github.com/JDomleo/Cooltipz.css#readme",
+  "files": [
+    "src/_animations.scss",
+    "src/_arrow.scss",
+    "src/_variables.scss",
+    "src/cooltipz.scss",
+    "cooltipz.min.css"
+  ],
+  "main": "cooltipz.min.css",
+  "style": "cooltipz.min.css",
   "devDependencies": {
-    "gulp": "^4.0.2",
-    "gulp-autoprefixer": "^7.0.1",
-    "gulp-cli": "^2.2.0",
-    "gulp-css-purge": "^3.0.9",
-    "gulp-rename": "^2.0.0",
-    "gulp-sass": "^4.0.2",
-    "gulp-sourcemaps": "^2.6.5",
+    "node-sass": "^4.13.1",
     "stylelint": "^13.3.2",
     "stylelint-order": "^4.0.0",
     "stylelint-scss": "^3.17.0"
