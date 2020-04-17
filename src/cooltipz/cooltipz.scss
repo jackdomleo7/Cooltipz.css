@@ -17,14 +17,14 @@
 }
 
 [aria-label] {
-  &[data-cooltipz-dir] { // Applies to all tooltips
+  &[data-cooltipz-dir] { // Required - applies to all tooltips
     cursor: pointer;
     position: relative;
 
     &::after {
       @include standard-text;
       background-color: var(--cooltipz-bg-color);
-      border-radius: 2px;
+      border-radius: 0.125rem;
       color: var(--cooltipz-text-color);
       content: attr(aria-label);
       padding: 0.5em 1em;
@@ -47,6 +47,13 @@
       &::before,
       &::after {
         opacity: 1;
+      }
+    }
+
+    &[data-cooltipz-static] {
+      &::after,
+      &::before {
+        @include no-animations;
       }
     }
 
@@ -86,8 +93,8 @@
 
       &::after,
       &::before {
-        top: 100%;
         left: 50%;
+        top: 100%;
         transform: translate(-50%, calc(var(--cooltipz-slide) * -1));
         transform-origin: bottom;
       }
