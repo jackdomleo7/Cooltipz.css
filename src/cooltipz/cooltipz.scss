@@ -17,7 +17,8 @@
 }
 
 [aria-label] {
-  &[data-cooltipz-dir] { // Required - applies to all tooltips
+  &[data-cooltipz-dir],
+  &[class ^= "cooltipz"] { // Required - applies to all tooltips
     cursor: pointer;
     position: relative;
 
@@ -50,14 +51,16 @@
       }
     }
 
-    &[data-cooltipz-static] {
+    &[data-cooltipz-static],
+    &.cooltipz--static {
       &::after,
       &::before {
         @include no-animations;
       }
     }
 
-    &[data-cooltipz-dir = "top"] {
+    &[data-cooltipz-dir = "top"],
+    &.cooltipz--top {
       &::after {
         margin-bottom: $cooltipz-arrow-size + 5px;
       }
@@ -82,7 +85,8 @@
       }
     }
 
-    &[data-cooltipz-dir = "bottom"] {
+    &[data-cooltipz-dir = "bottom"],
+    &.cooltipz--bottom {
       &::after {
         margin-top: $cooltipz-arrow-size + 5px;
       }
