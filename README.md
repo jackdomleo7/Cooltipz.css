@@ -53,3 +53,27 @@ NOTE: [gulp-cli](https://www.npmjs.com/package/gulp-cli) allows us to run `gulp`
 ### Manual
 
 Simply download the `cooltipz.min.css` and add it to your project.
+
+---
+
+## Releases
+
+_Major_._Minor_._Patch_ - E.g. 0.1.0
+
+#### Major
+- Breaking changes
+
+#### Minor
+- Feature updates
+- New features
+
+#### Patch
+- Bug fixes
+
+---
+
+## Contributors
+
+<a href="https://github.com/JDomleo/Cooltipz.css/graphs/contributors">
+  <img src="https://contributors-img.web.app/image?repo=JDomleo/Cooltipz.css" />
+</a>
