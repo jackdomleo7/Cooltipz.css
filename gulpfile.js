@@ -19,7 +19,7 @@ function cooltipzCompressed() {
       .pipe(autoVendorPrefix())
       .pipe(rename('cooltipz.min.css'))
       .pipe(sourcemaps.write())
-      .pipe(dest('./docs'))
+      .pipe(dest('./docs/css'))
 }
 
 function docsCompressed() {
@@ -34,7 +34,7 @@ function docsCompressed() {
       .pipe(autoVendorPrefix())
       .pipe(rename('docs.min.css'))
       .pipe(sourcemaps.write())
-      .pipe(dest('./docs'))
+      .pipe(dest('./docs/css'))
 }
 
 function prismCompressed() {
@@ -49,7 +49,7 @@ function prismCompressed() {
       .pipe(autoVendorPrefix())
       .pipe(rename('prism.min.css'))
       .pipe(sourcemaps.write())
-      .pipe(dest('./docs'))
+      .pipe(dest('./docs/css'))
 }
 
 function normalizeCompressed() {
@@ -64,7 +64,7 @@ function normalizeCompressed() {
       .pipe(autoVendorPrefix())
       .pipe(rename('normalize.min.css'))
       .pipe(sourcemaps.write())
-      .pipe(dest('./docs'))
+      .pipe(dest('./docs/css'))
 }
 
 exports.default = parallel(cooltipzCompressed, docsCompressed, prismCompressed, normalizeCompressed);
