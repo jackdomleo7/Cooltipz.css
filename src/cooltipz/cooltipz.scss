@@ -32,7 +32,6 @@
     }
 
     &::before {
-      @include arrow-down;
       content: "";
     }
 
@@ -51,9 +50,13 @@
       }
     }
 
-    &[data-cooltipz-dir = "up"] {
+    &[data-cooltipz-dir = "top"] {
       &::after {
         margin-bottom: $cooltipz-arrow-size + 5px;
+      }
+
+      &::before {
+        @include arrow-down;
       }
 
       &::after,
@@ -62,6 +65,34 @@
         left: 50%;
         transform: translate(-50%, var(--cooltipz-slide));
         transform-origin: top;
+      }
+
+      &:hover {
+        &::after {
+          transform: translate(-50%, 0);
+        }
+
+        &::before {
+          transform: translate(-50%, 0);
+        }
+      }
+    }
+
+    &[data-cooltipz-dir = "bottom"] {
+      &::after {
+        margin-top: $cooltipz-arrow-size + 5px;
+      }
+
+      &::before {
+        @include arrow-up;
+      }
+
+      &::after,
+      &::before {
+        top: 100%;
+        left: 50%;
+        transform: translate(-50%, calc(var(--cooltipz-slide) * -1));
+        transform-origin: bottom;
       }
 
       &:hover {
