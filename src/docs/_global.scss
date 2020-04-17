@@ -48,7 +48,8 @@ img {
 
 hr {
   border-radius: 50%;
-  border-top: 1px solid #ddd;
+  border: 1px solid transparent;
+  border-top-color: #222;
   margin: 1.8rem 0;
   width: 100%;
 }
