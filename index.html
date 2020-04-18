@@ -143,6 +143,15 @@
             <pre><code class="lang-css">@import '~cooltipz-css/src/cooltipz';</code></pre>
           </div>
         </section>
+        <hr/>
+        <section id="beware">
+          <h3>Beware</h3>
+          <p><strong>Important</strong>: Cooltipz.css uses the <code>::before</code> and <code>::after</code> psuedo elements to display the tooltips, therefore you must beware of the following:</p>
+          <ul>
+            <li>Cooltipz.css will not work on self-closing HTML elements.</li>
+            <li>If the HTML element already has existing <code>::before</code> or <code>::after</code> styling, these could conflict with the Cooltipz.css styles and cause unexpected outputs.</li>
+          </ul>
+        </section>
       </main>
       <hr/>
       <footer class="page__footer">
