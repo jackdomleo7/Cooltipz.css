@@ -136,6 +136,13 @@ p code{
   flex-direction:column-reverse;
   margin:2rem 0
 }
+.example--stack {
+  flex-direction: column!important;
+  align-items: flex-start;
+}
+.example--stack p {
+  margin: 0;
+}
 @media (min-width:800px){
   .example{
       flex-direction:row;
@@ -146,8 +153,8 @@ p code{
   width:100%
 }
 @media (min-width:800px){
-  .example pre{
-      margin-left:2rem!important
+  .example button{
+      margin-right:2rem!important
   }
 }
 .github-corner svg{
