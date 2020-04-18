@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="author" content="Jack Domleo">
+
+    <title>Cooltipz.css - Test development file</title>
+    <link rel="stylesheet" href="./cooltipz.min.css" />
+
+    <style>
+      body {
+        font-family: sans-serif;
+      }
+
+      label {
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <header>
+        <h1>Cooltipz.css Test File</h1>
+        <h2>Cool tooltips made from pure CSS</h2>
+        <h3>Checklist</h3>
+        <ul>
+          <li><label><input type="checkbox" /> Pure CSS</label></li>
+          <li><label><input type="checkbox" /> No JavaScript required</label></li>
+          <li><label><input type="checkbox" /> Accessible with <code>aria-label</code> attributes</label></li>
+          <li><label><input type="checkbox" /> Tooltips appear on <em>hover</em> and <em>focus</em></label></li>
+          <li><label><input type="checkbox" /> Options to use classes or <code>data-</code> attributes</label></li>
+          <li><label><input type="checkbox" /> No animations when <code>prefers-reduced-motion</code> is set</label></li>
+        </ul>
+      </header>
+      <hr/>
+      <main>
+        <section>
+          <h3>Tooltip Direction<sup>*</sup><small> - (exactly <u>one</u> direction is required for the tooltip to display)</small></h3>
+          <button data-cooltipz-dir="top" aria-label="Hello there!">top</button>
+          <button data-cooltipz-dir="bottom" aria-label="Hello there!">bottom</button>
+        </section>
+        <hr/>
+        <section>
+          <h3>No Animation</h3>
+          <p>Animations can be disabled by apply the <code>data-cooltipz-static</code> attribute. Cooltipz.css also use the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion" rel="norefferer nofollow" target="_blank">prefers-reduced-motion</a> media query, so when the user's preferences indicate reduced motion, Cooltipz.css automatically disables animation.</p>
+          <button data-cooltipz-dir="top" data-cooltipz-static aria-label="Hello there!">Interact</button>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
