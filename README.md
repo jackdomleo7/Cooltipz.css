@@ -1,4 +1,4 @@
-![Cooltipz.css](./logo.png)
+![Cooltipz.css](./logo.png "Cooltipz.css logo")
 
 ---
 
@@ -10,63 +10,49 @@
 
 ---
 
-## Setup
-
-- `git clone https://github.com/JDomleo/Cooltipz.css.git`
-- `npm run i`
-
-### Scripts
-
-Highlights SCSS linting errors
-```
-npm run stylelint
-```
-
-Fixes and highlights SCSS linting errors
-```
-npm run stylelint:fix
-```
-
-Lints SCSS and compiles SCSS to CSS
-```
-npm run build
-```
-
-## Branches
-
-Contains source code and npm package
-```
-master
-```
-
-Contains assets for the [docs website](https://cooltipz.jackdomleo.dev)
-```
-gh-pages
-```
-
----
-
 ## Installation
 
-### CDN
+### Stylesheet
 
+Link to CDN stylesheet in your `<head>`
 ```html
 <!-- This will always get the latest stylesheet -->
-<link rel="stylesheet" href="https://raw.githack.com/JDomleo/Cooltipz.css/master/cooltipz.min.css" />>
+<link rel="stylesheet" href="https://raw.githack.com/JDomleo/Cooltipz.css/master/cooltipz.min.css" />
 ```
 
-### Manual
+Link to CDN stylesheet in you CSS
+```css
+@import url(https://raw.githack.com/JDomleo/Cooltipz.css/master/cooltipz.min.css);
+```
 
-Simply download the `cooltipz.min.css` from GitHub and load it to your project.
+Download it from GitHub and link to it locally
 ```html
-<link rel="stylesheet" href="path/to/cooltipz.min.css" />>
+<!-- This will never be updated, unless manually changed -->
+<link rel="stylesheet" href="path/to/cooltipz.min.css" />
+```
+
+### npm
+
+Install via npm
+```
+npm install cooltipz-css --save
+```
+
+Import into your JavaScript
+```js
+import 'cooltipz-css';
+```
+
+Or import into your Sass/SCSS
+```scss
+@import '~cooltipz-css/src/cooltipz';
 ```
 
 ---
 
-## Releases
+## Release Process
 
-_Major_._Minor_._Patch_ - E.g. 0.1.0
+_Major_._Minor_._Patch_ - E.g. _0.1.0_
 
 #### Major
 - Breaking changes
@@ -83,5 +69,9 @@ _Major_._Minor_._Patch_ - E.g. 0.1.0
 ## Contributors
 
 <a href="https://github.com/JDomleo/Cooltipz.css/graphs/contributors">
-  <img src="https://contributors-img.web.app/image?repo=JDomleo/Cooltipz.css" />
+  <img src="https://contributors-img.web.app/image?repo=JDomleo/Cooltipz.css" alt="Jack Domleo" title="Jack Domleo" />
 </a>
+
+---
+
+[npm](https://www.npmjs.com/package/cooltipz-css) &bull; [GitHub](https://github.com/JDomleo/Cooltipz.css) &bull; [docs](https://cooltipz.jackdomleo.dev)
