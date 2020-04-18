@@ -3,9 +3,7 @@
   "version": "0.5.0",
   "description": "Cool tooltipz made with love from simple, pure CSS",
   "scripts": {
-    "stylelint": "stylelint \"**/*.scss\"",
-    "stylelint:fix": "stylelint \"**/*.scss\" --fix",
-    "build": "npm run stylelint:fix && node-sass src/cooltipz.scss ./cooltipz.min.css --output-style compressed"
+    "build": "stylelint \"**/*.scss\" --fix && node-sass src/cooltipz.scss ./cooltipz.min.css --output-style compressed"
   },
   "repository": {
     "type": "git",
@@ -17,7 +15,11 @@
     "hint",
     "tooltips",
     "cooltips",
-    "cooltip"
+    "cooltip",
+    "hints",
+    "jdomleo",
+    "jack domleo",
+    "domleo"
   ],
   "author": "Jack Domleo",
   "license": "MIT",
@@ -32,7 +34,8 @@
     "src/cooltipz.scss",
     "cooltipz.min.css",
     "postcss.config.js",
-    "README.md"
+    "README.md",
+    "LICENSE"
   ],
   "main": "cooltipz.min.css",
   "style": "cooltipz.min.css",
