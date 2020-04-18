@@ -8,20 +8,20 @@ $cooltipz-arrow-size: 5px !default;
 
 @mixin arrow-down {
   @include base-arrow;
-  border-top-color: var(--cooltipz-bg-color);
+  border-top-color: var(--cooltipz-bg-color, #1f1f1f);
 }
 
 @mixin arrow-up {
   @include base-arrow;
-  border-bottom-color: var(--cooltipz-bg-color);
+  border-bottom-color: var(--cooltipz-bg-color, #1f1f1f);
 }
 
 @mixin arrow-left {
   @include base-arrow;
-  border-right-color: var(--cooltipz-bg-color);
+  border-right-color: var(--cooltipz-bg-color, #1f1f1f);
 }
 
 @mixin arrow-right {
   @include base-arrow;
-  border-left-color: var(--cooltipz-bg-color);
+  border-left-color: var(--cooltipz-bg-color, #1f1f1f);
 }

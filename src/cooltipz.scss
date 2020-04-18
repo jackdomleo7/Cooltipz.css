@@ -9,7 +9,7 @@
 
 @mixin standard-text {
   font-family: sans-serif;
-  font-size: var(--cooltipz-font-size);
+  font-size: var(--cooltipz-font-size, 0.75rem);
   font-style: normal;
   font-weight: 400;
   text-indent: 0;
@@ -24,9 +24,9 @@
 
     &::after {
       @include standard-text;
-      background-color: var(--cooltipz-bg-color);
+      background-color: var(--cooltipz-bg-color, #1f1f1f);
       border-radius: 0.125rem;
-      color: var(--cooltipz-text-color);
+      color: var(--cooltipz-text-color, #fff);
       content: attr(aria-label);
       padding: 0.5em 1em;
       white-space: nowrap;
@@ -73,7 +73,7 @@
       &::before {
         bottom: 100%;
         left: 50%;
-        transform: translate(-50%, var(--cooltipz-slide));
+        transform: translate(-50%, var(--cooltipz-slide, 2px));
         transform-origin: top;
       }
 
@@ -99,7 +99,7 @@
       &::before {
         left: 50%;
         top: 100%;
-        transform: translate(-50%, calc(var(--cooltipz-slide) * -1));
+        transform: translate(-50%, calc(var(--cooltipz-slide, 2px) * -1));
         transform-origin: bottom;
       }
 
