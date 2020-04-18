@@ -30,7 +30,9 @@
     "src/_arrow.scss",
     "src/_variables.scss",
     "src/cooltipz.scss",
-    "cooltipz.min.css"
+    "cooltipz.min.css",
+    "postcss.config.js",
+    "README.md"
   ],
   "main": "cooltipz.min.css",
   "style": "cooltipz.min.css",
