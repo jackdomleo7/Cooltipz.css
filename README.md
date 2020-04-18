@@ -32,6 +32,18 @@ Lints SCSS and compiles SCSS to CSS
 npm run build
 ```
 
+## Branches
+
+Contains source code and npm package
+```
+master
+```
+
+Contains assets for the [docs website](https://cooltipz.jackdomleo.dev)
+```
+gh-pages
+```
+
 ---
 
 ## Installation
@@ -40,12 +52,15 @@ npm run build
 
 ```html
 <!-- This will always get the latest stylesheet -->
-<link rel="stylesheet" href="https://cooltipz.jackdomleo.dev/cooltipz.min.css" />>
+<link rel="stylesheet" href="https://raw.githack.com/JDomleo/Cooltipz.css/master/cooltipz.min.css" />>
 ```
 
 ### Manual
 
-Simply download the `cooltipz.min.css` and add it to your project.
+Simply download the `cooltipz.min.css` from GitHub and load it to your project.
+```html
+<link rel="stylesheet" href="path/to/cooltipz.min.css" />>
+```
 
 ---
 
