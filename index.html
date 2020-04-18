@@ -87,9 +87,34 @@
           </div>
         </section>
         <hr/>
-        <section>
-          <h3 id="installation">Installation</h3>
-          <h4 id="installation-link">Link to stylesheet</h4>
+        <section id="customisation">
+          <h3>Customisation</h3>
+          <p>Cooltipz.css exposes 4 CSS variables that can be overriden using your own styles: <code>--cooltipz-bg-color</code>, <code>--cooltipz-text-color</code>, <code>--cooltipz-font-size</code> and <code>--cooltipz-slide</code>.</p>
+          <div class="example--stack">
+            <p>To override every tooltip in your project, place your CSS variables in the <code>:root</code> selector</p>
+            <pre><code class="language-css">:root {
+  --cooltipz-bg-color: #f00;
+  --cooltipz-text-color: #00f;
+  --cooltipz-font-size: 1.5rem;
+  --cooltipz-slide: 20px;
+}</code></pre>
+          </div>
+          <p>Or override specific tooltips</p>
+          <div class="example">
+            <style>.custom-cooltip {--cooltipz-bg-color: #fff;--cooltipz-text-color: #000;--cooltipz-font-size: 1.5rem;--cooltipz-slide: 50px;}</style>
+            <button class="custom-cooltip" data-cooltipz-dir="top" aria-label="I've been customised!">Interact</button>
+            <pre><code class="language-css">.custom-cooltip {
+  --cooltipz-bg-color: #fff;
+  --cooltipz-text-color: #000;
+  --cooltipz-font-size: 1.5rem;
+  --cooltipz-slide: 50px;
+}</code></pre>
+          </div>
+        </section>
+        <hr/>
+        <section id="installation">
+          <h3>Installation</h3>
+          <h4>Link to stylesheet</h4>
           <div class="example example--stack">
             <p>Link to CDN stylesheet in your <code>&lt;head&gt;</code></p>
             <pre><code class="language-markup">&lt;!-- This will get the latest stylesheet --&gt;
@@ -104,7 +129,7 @@
             <pre><code class="language-markup">&lt;!-- This will never be updated, unless manually changed --&gt;
 &lt;link rel="stylesheet" href="path/to/cooltipz.min.css" /&gt;</code></pre>
           </div>
-          <h4 id="installation-npm">Via npm</h4>
+          <h4>Via npm</h4>
           <div class="example example--stack">
             <p>Install it via <abbr data-cooltipz-dir="top" aria-label="Node Package Manager">npm</abbr></p>
             <pre><code class="language-js">npm install cooltipz-css --save</code></pre>
