@@ -1,8 +1,5 @@
-::-moz-selection{
-  background-color:#ffa500;
-  color:#fff;
-  text-shadow:none
-}
+/* Global */
+
 ::selection{
   background-color:#ffa500;
   color:#fff;
@@ -37,9 +34,6 @@ h1,h2,h3,h4,h5,h6{
 img{
   height:auto;
   max-width:100%;
-  -webkit-user-select:none;
-  -moz-user-select:none;
-  -ms-user-select:none;
   user-select:none
 }
 hr{
@@ -65,13 +59,13 @@ button:hover,button:focus{
 p{
   line-height:1.8
 }
-p code{
-  background-color:#fff;
-  border:none;
-  box-shadow:1px 1px 1px rgba(34,34,34,0.9);
-  color:#07a;
-  padding:0.25rem
+li {
+  margin: 0.4rem 0
 }
+
+
+/* Page */
+
 .page{
   display:flex;
   flex-direction:column;
@@ -130,6 +124,10 @@ p code{
 .page__footer a:hover,.page__footer a:focus{
   text-decoration:underline
 }
+
+
+/* Code / example */
+
 .example{
   align-items:center;
   display:flex;
@@ -157,6 +155,18 @@ p code{
       margin-right:2rem!important
   }
 }
+
+.code-snippet {
+  background-color:#fff;
+  border:none;
+  box-shadow:1px 1px 1px rgba(34,34,34,0.9);
+  color:#07a;
+  padding:0.25rem
+}
+
+
+/* GitHub corner */
+
 .github-corner svg{
   border:0;
   color:#fff;
@@ -169,7 +179,6 @@ p code{
   width:5rem
 }
 .github-corner:hover .octo-arm{
-  -webkit-animation:octocat-wave 560ms ease-in-out;
   animation:octocat-wave 560ms ease-in-out
 }
 .github-corner .octo-arm{
@@ -199,11 +208,9 @@ p code{
 }
 @media (max-width:31.25em){
   .github-corner:hover .octo-arm{
-      -webkit-animation:none;
       animation:none
   }
   .github-corner .octo-arm{
-      -webkit-animation:octocat-wave 560ms ease-in-out;
       animation:octocat-wave 560ms ease-in-out
   }
 }

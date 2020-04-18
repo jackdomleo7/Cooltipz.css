@@ -55,10 +55,10 @@
         <ul>
           <li>Pure CSS</li>
           <li>No JavaScript required</li>
-          <li>Accessible with <code>aria-label</code> attributes</li>
+          <li>Accessible with <code class="code-snippet">aria-label</code> attributes</li>
           <li>Easy and simple</li>
           <li>Tooltips appear on <em>hover</em> and <em>focus</em></li>
-          <li>Options to use classes or <code>data-</code> attributes</li>
+          <li>Options to use classes or <code class="code-snippet">data-</code> attributes</li>
         </ul>
       </header>
       <hr/>
@@ -79,7 +79,7 @@
         <hr/>
         <section id="no-animation">
           <h3>No Animation</h3>
-          <p>Animations can be disabled by apply the <code>data-cooltipz-static</code> attribute. Cooltipz.css also use the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion" rel="norefferer nofollow" target="_blank">prefers-reduced-motion</a> media query, so when the user's preferences indicate reduced motion, Cooltipz.css automatically disables animation.</p>
+          <p>Animations can be disabled by apply the <code class="code-snippet">data-cooltipz-static</code> attribute. Cooltipz.css also use the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion" rel="norefferer nofollow" target="_blank">prefers-reduced-motion</a> media query, so when the user's preferences indicate reduced motion, Cooltipz.css automatically disables animation.</p>
           <div class="example">
             <button data-cooltipz-dir="top" data-cooltipz-static aria-label="Hello there!">Interact</button>
             <pre><code class="lang-markup">&lt;button data-cooltipz-dir="top" data-cooltipz-static aria-label="Hello there!"&gt;...&lt;/button&gt;
@@ -89,9 +89,9 @@
         <hr/>
         <section id="customisation">
           <h3>Customisation</h3>
-          <p>Cooltipz.css exposes 4 CSS variables that can be overriden using your own styles: <code>--cooltipz-bg-color</code>, <code>--cooltipz-text-color</code>, <code>--cooltipz-font-size</code> and <code>--cooltipz-slide</code>.</p>
+          <p>Cooltipz.css exposes 4 CSS variables that can be overriden using your own styles: <code class="code-snippet">--cooltipz-bg-color</code>, <code class="code-snippet">--cooltipz-text-color</code>, <code class="code-snippet">--cooltipz-font-size</code> and <code class="code-snippet">--cooltipz-slide</code>.</p>
           <div class="example--stack">
-            <p>To override every tooltip in your project, place your CSS variables in the <code>:root</code> selector</p>
+            <p>To override every tooltip in your project, place your CSS variables in the <code class="code-snippet">:root</code> selector</p>
             <pre><code class="lang-css">:root {
   --cooltipz-bg-color: #f00;
   --cooltipz-text-color: #00f;
@@ -116,7 +116,7 @@
           <h3>Installation</h3>
           <h4>Link to stylesheet</h4>
           <div class="example example--stack">
-            <p>Link to CDN stylesheet in your <code>&lt;head&gt;</code></p>
+            <p>Link to CDN stylesheet in your <code class="code-snippet">&lt;head&gt;</code></p>
             <pre><code class="lang-markup">&lt;!-- This will get the latest stylesheet --&gt;
 &lt;link rel="stylesheet" href="https://raw.githack.com/JDomleo/Cooltipz.css/master/cooltipz.min.css" /&gt;</code></pre>
           </div>
@@ -146,10 +146,10 @@
         <hr/>
         <section id="beware">
           <h3>Beware</h3>
-          <p><strong>Important</strong>: Cooltipz.css uses the <code>::before</code> and <code>::after</code> psuedo elements to display the tooltips, therefore you must beware of the following:</p>
+          <p><strong>Important</strong>: Cooltipz.css uses the <code class="code-snippet">::before</code> and <code class="code-snippet">::after</code> psuedo elements to display the tooltips, therefore you must beware of the following:</p>
           <ul>
             <li>Cooltipz.css will not work on self-closing HTML elements.</li>
-            <li>If the HTML element already has existing <code>::before</code> or <code>::after</code> styling, these could conflict with the Cooltipz.css styles and cause unexpected outputs.</li>
+            <li>If the HTML element already has existing <code class="code-snippet">::before</code> or <code class="code-snippet">::after</code> styling, these could conflict with the Cooltipz.css styles and cause unexpected outputs.</li>
           </ul>
         </section>
       </main>
