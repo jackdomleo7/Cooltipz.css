@@ -88,16 +88,34 @@
         </section>
         <hr/>
         <section>
-          <h3>Usage</h3>
+          <h3 id="installation">Installation</h3>
+          <h4 id="installation-link">Link to stylesheet</h4>
           <div class="example example--stack">
-            <p>Use the CDN to import the CSS</p>
+            <p>Link to CDN stylesheet in your <code>&lt;head&gt;</code></p>
             <pre><code class="language-markup">&lt;!-- This will get the latest stylesheet --&gt;
 &lt;link rel="stylesheet" href="https://raw.githack.com/JDomleo/Cooltipz.css/master/cooltipz.min.css" /&gt;</code></pre>
           </div>
           <div class="example example--stack">
-            <p>Download it from GitHub and load it locally</p>
+            <p>Link to CDN stylesheet in your CSS</p>
+            <pre><code class="language-css">@import url(https://raw.githack.com/JDomleo/Cooltipz.css/master/cooltipz.min.css);</code></pre>
+          </div>
+          <div class="example example--stack">
+            <p>Download it from GitHub and link to it locally</p>
             <pre><code class="language-markup">&lt;!-- This will never be updated, unless manually changed --&gt;
 &lt;link rel="stylesheet" href="path/to/cooltipz.min.css" /&gt;</code></pre>
+          </div>
+          <h4 id="installation-npm">Via npm</h4>
+          <div class="example example--stack">
+            <p>Install it via <abbr data-cooltipz-dir="top" aria-label="Node Package Manager">npm</abbr></p>
+            <pre><code class="language-js">npm install cooltipz-css --save</code></pre>
+          </div>
+          <div class="example example--stack">
+            <p>Import it into your JavaScript</p>
+            <pre><code class="language-js">import 'cooltipz-css';</code></pre>
+          </div>
+          <div class="example example--stack">
+            <p>Or import it into your Sass/SCSS</p>
+            <pre><code class="language-css">@import '~cooltipz-css/src/cooltipz';</code></pre>
           </div>
         </section>
       </main>
