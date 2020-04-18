@@ -8,6 +8,15 @@
 
 [Read the docs here](https://cooltipz.jackdomleo.dev)
 
+**Features**
+- Pure CSS
+- No JavaScript required
+- Accessible with `aria-label` attributes
+- Easy and simple
+- Tooltips appear on `hover` and `focus`
+- Options to use classes or `data-` attributes
+
+
 ---
 
 ## Installation
