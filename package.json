@@ -24,7 +24,7 @@
   "bugs": {
     "url": "https://github.com/JDomleo/Cooltipz.css/issues"
   },
-  "homepage": "https://github.com/JDomleo/Cooltipz.css#readme",
+  "homepage": "https://cooltipz.jackdomleo.dev",
   "files": [
     "src/_animations.scss",
     "src/_arrow.scss",
