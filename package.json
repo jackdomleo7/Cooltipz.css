@@ -14,7 +14,10 @@
   "keywords": [
     "tooltip",
     "cooltipz",
-    "hint"
+    "hint",
+    "tooltips",
+    "cooltips",
+    "cooltip"
   ],
   "author": "Jack Domleo",
   "license": "MIT",
