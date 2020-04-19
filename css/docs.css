@@ -113,16 +113,38 @@ li {
   align-items:center;
   background-color:#f80;
   display:flex;
+  flex-direction:column;
   font-weight:700;
   justify-content:center;
-  padding:1.8rem 0
+  padding:1.5rem 0;
+  text-align:center
 }
 .page__footer a{
   color:inherit;
   text-decoration:none
 }
+.page__footer p {
+  margin:0
+}
+.page__footer p:last-of-type {
+  margin-top:0.5rem
+}
 .page__footer a:hover,.page__footer a:focus{
   text-decoration:underline
+}
+.page__footer .break {
+  display: flex;
+}
+.page__footer .bullet {
+  display: none;
+}
+@media (min-width:23.75em){
+  .page__footer .break {
+    display: none;
+  }
+  .page__footer .bullet {
+    display: inline;
+  } 
 }
 
 
