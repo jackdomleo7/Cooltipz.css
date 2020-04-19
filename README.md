@@ -6,6 +6,8 @@
 
 **Cool tooltipz made with love from simple, pure CSS**
 
+**Current version** - [v1.0.1](https://github.com/JDomleo/Cooltipz.css/releases/tag/v1.0.1)
+
 [Read the docs here](https://cooltipz.jackdomleo.dev)
 
 **Features**
@@ -61,7 +63,7 @@ Or import into your Sass/SCSS
 
 ## Release Process
 
-_Major_._Minor_._Patch_ - E.g. _0.1.0_
+_Major_._Minor_._Patch_ - E.g. _0.5.0_
 
 #### Major
 - Breaking changes
@@ -83,4 +85,4 @@ _Major_._Minor_._Patch_ - E.g. _0.1.0_
 
 ---
 
-[npm](https://www.npmjs.com/package/cooltipz-css) &bull; [GitHub](https://github.com/JDomleo/Cooltipz.css) &bull; [docs](https://cooltipz.jackdomleo.dev)
+[npm](https://www.npmjs.com/package/cooltipz-css) &bull; [GitHub](https://github.com/JDomleo/Cooltipz.css) &bull; [docs](https://cooltipz.jackdomleo.dev) &bull; [CHANGELOG](https://github.com/JDomleo/Cooltipz.css/releases)
