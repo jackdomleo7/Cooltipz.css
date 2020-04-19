@@ -6,7 +6,7 @@
 
 **Cool tooltipz made with love from simple, pure CSS**
 
-**Current version** - [v1.0.1](https://github.com/JDomleo/Cooltipz.css/releases/tag/v1.0.1)
+**Current version** - [v1.1.0](https://github.com/JDomleo/Cooltipz.css/releases/tag/v1.1.0)
 
 [Read the docs here](https://cooltipz.jackdomleo.dev)
 
