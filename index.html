@@ -88,6 +88,17 @@
           </div>
         </section>
         <hr/>
+        <section id="visible">
+          <h3>Always Visible</h3>
+          <p>Add the <code class="code-snippet">data-cooltipz-visible</code> attribute or the <code class="code-snippet">.cooltipz--visible</code> class to make the tooltip always show, even if the user isn't hovering or focusing it.</p>
+          <p>Tooltips can be shown programatically by using the <a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/setAttribute" rel="noreferrer nofollow" target="_blank"><code class="code-snippet">setAttribute()</code> JavaScript function</a>.</p>
+          <div class="example">
+            <button data-cooltipz-dir="top" data-cooltipz-visible aria-label="I'm always visible!">Interact</button>
+            <pre><code class="lang-markup">&lt;button data-cooltipz-dir="top" data-cooltipz-visible aria-label="I'm always visible!"&gt;...&lt;/button&gt;
+&lt;button class="cooltipz--top cooltipz--visible" aria-label="I'm always visible!"&gt;...&lt;/button&gt;</code></pre>
+          </div>
+        </section>
+        <hr/>
         <section id="customisation">
           <h3>Customisation</h3>
           <p>Cooltipz.css exposes 4 CSS variables that can be overriden using your own styles: <code class="code-snippet">--cooltipz-bg-color</code>, <code class="code-snippet">--cooltipz-text-color</code>, <code class="code-snippet">--cooltipz-font-size</code> and <code class="code-snippet">--cooltipz-slide</code>.</p>
