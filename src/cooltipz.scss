@@ -8,6 +8,8 @@
 ::after = tooltip box and content
 */
 
+$cooltipz-margin: $cooltipz-arrow-size + 5px;
+
 [aria-label] {
   &[data-cooltipz-dir],
   &[class ^= "cooltipz"] { // Required - applies to all tooltips
@@ -65,7 +67,7 @@
     &[data-cooltipz-dir = "top"],
     &.cooltipz--top {
       &::after {
-        margin-bottom: $cooltipz-arrow-size + 5px;
+        margin-bottom: $cooltipz-margin;
       }
 
       &::before {
@@ -86,7 +88,7 @@
       &.cooltipz--visible {
         &::after,
         &::before {
-          transform: translate(-50%, 0);
+          @extend %show-cooltip-y;
         }
       }
     }
@@ -94,7 +96,7 @@
     &[data-cooltipz-dir = "bottom"],
     &.cooltipz--bottom {
       &::after {
-        margin-top: $cooltipz-arrow-size + 5px;
+        margin-top: $cooltipz-margin;
       }
 
       &::before {
@@ -115,7 +117,7 @@
       &.cooltipz--visible {
         &::after,
         &::before {
-          transform: translate(-50%, 0);
+          @extend %show-cooltip-y;
         }
       }
     }
