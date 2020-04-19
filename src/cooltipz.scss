@@ -77,7 +77,8 @@
         transform-origin: top;
       }
 
-      &:hover {
+      &:hover,
+      &:focus {
         &::after,
         &::before {
           transform: translate(-50%, 0);
@@ -103,7 +104,8 @@
         transform-origin: bottom;
       }
 
-      &:hover {
+      &:hover,
+      &:focus {
         &::after,
         &::before {
           transform: translate(-50%, 0);
