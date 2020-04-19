@@ -26,21 +26,23 @@
       @include standard-text;
       background-color: var(--cooltipz-bg-color, #1f1f1f);
       border-radius: 0.125rem;
+      box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
       color: var(--cooltipz-text-color, #fff);
       content: attr(aria-label);
       padding: 0.5em 1em;
       white-space: nowrap;
+      z-index: 10;
     }
 
     &::before {
       content: "";
+      z-index: 11;
     }
 
     &::after,
     &::before {
       @include base-animations;
       position: absolute;
-      z-index: 10;
     }
 
     &:hover,
