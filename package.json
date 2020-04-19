@@ -1,6 +1,6 @@
 {
   "name": "cooltipz-css",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Cool tooltipz made with love from simple, pure CSS",
   "scripts": {
     "build": "stylelint \"**/*.scss\" --fix && node-sass src/cooltipz.scss ./cooltipz.min.css --output-style compressed"
@@ -28,14 +28,12 @@
   },
   "homepage": "https://cooltipz.jackdomleo.dev",
   "files": [
-    "src/_animations.scss",
-    "src/_arrow.scss",
-    "src/_variables.scss",
-    "src/cooltipz.scss",
+    "src/*",
     "cooltipz.min.css",
     "postcss.config.js",
     "README.md",
-    "LICENSE"
+    "LICENSE",
+    "CHANGELOG"
   ],
   "main": "cooltipz.min.css",
   "style": "cooltipz.min.css",
