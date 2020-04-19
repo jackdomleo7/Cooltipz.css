@@ -53,6 +53,13 @@
         </section>
         <hr/>
         <section>
+          <h3>Always Visible</h3>
+          <p>You can add the <code>data-cooltipz-visible</code> attribute or the <code>.cooltipz--visible</code> class to make the tooltip always show, even if the user isn't hovering or focusing it.</p>
+          <p>You can make the tooltips show programatically by using the <a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/setAttribute" rel="norefferer nofollow"><code>setAttribute()</code> JavaScript function</a>.</p>
+          <button data-cooltipz-dir="bottom" data-cooltipz-visible aria-label="Hello there!">Interact</button>
+        </section>
+        <hr/>
+        <section>
           <h3>Customisation</h3>
           <p>Expose 4 CSS variables: <code>--cooltipz-bg-color</code>, <code>--cooltipz-text-color</code>, <code>--cooltipz-font-size</code>, <code>--cooltipz-slide</code>.</p>
           <style>.custom-cooltip{--cooltipz-bg-color: #ddd; --cooltipz-text-color: #000; --cooltipz-font-size: 1.5rem; --cooltipz-slide: 50px;}</style>
