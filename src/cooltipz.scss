@@ -22,7 +22,7 @@ $cooltipz-margin: $cooltipz-arrow-size + 5px;
       box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
       color: var(--cooltipz-text-color, #fff);
       content: attr(aria-label);
-      font-family: sans-serif;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
       font-size: var(--cooltipz-font-size, 0.75rem);
       font-style: normal;
       font-weight: 400;
@@ -118,6 +118,64 @@ $cooltipz-margin: $cooltipz-arrow-size + 5px;
         &::after,
         &::before {
           @extend %show-cooltip-y;
+        }
+      }
+    }
+
+    &[data-cooltipz-dir = "right"],
+    &.cooltipz--right {
+      &::after {
+        margin-left: $cooltipz-margin;
+      }
+
+      &::before {
+        @include arrow-left;
+      }
+
+      &::after,
+      &::before {
+        left: 100%;
+        top: 50%;
+        transform: translate(calc(var(--cooltipz-slide, 2px) * -1), -50%);
+        transform-origin: right;
+      }
+
+      &:hover,
+      &:focus,
+      &[data-cooltipz-visible],
+      &.cooltipz--visible {
+        &::after,
+        &::before {
+          @extend %show-cooltip-x;
+        }
+      }
+    }
+
+    &[data-cooltipz-dir = "left"],
+    &.cooltipz--left {
+      &::after {
+        margin-right: $cooltipz-margin;
+      }
+
+      &::before {
+        @include arrow-right;
+      }
+
+      &::after,
+      &::before {
+        right: 100%;
+        top: 50%;
+        transform: translate(var(--cooltipz-slide, 2px), -50%);
+        transform-origin: left;
+      }
+
+      &:hover,
+      &:focus,
+      &[data-cooltipz-visible],
+      &.cooltipz--visible {
+        &::after,
+        &::before {
+          @extend %show-cooltip-x;
         }
       }
     }
