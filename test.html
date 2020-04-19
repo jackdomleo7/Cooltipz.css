@@ -42,21 +42,37 @@
       <main>
         <section>
           <h3>Tooltip Direction<sup>*</sup><small> - (exactly <u>one</u> direction is required for the tooltip to display)</small></h3>
-          <button data-cooltipz-dir="top" aria-label="Hello there!">top</button>
-          <button data-cooltipz-dir="bottom" aria-label="Hello there!">bottom</button>
+          <button data-cooltipz-dir="top" aria-label="Hello there!">data: top</button>
+          <button data-cooltipz-dir="bottom" aria-label="Hello there!">data: bottom</button>
+          <button data-cooltipz-dir="right" aria-label="Hello there!">data: right</button>
+          <button data-cooltipz-dir="left" aria-label="Hello there!">data: left</button>
+          <br/>
+          <button class="cooltipz--top" aria-label="Hello there!">class: top</button>
+          <button class="cooltipz--bottom" aria-label="Hello there!">class: bottom</button>
+          <button class="cooltipz--right" aria-label="Hello there!">class: right</button>
+          <button class="cooltipz--left" aria-label="Hello there!">class: left</button>
         </section>
         <hr/>
         <section>
           <h3>No Animation</h3>
           <p>Animations can be disabled by apply the <code>data-cooltipz-static</code> attribute. Cooltipz.css also use the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion" rel="norefferer nofollow" target="_blank">prefers-reduced-motion</a> media query, so when the user's preferences indicate reduced motion, Cooltipz.css automatically disables animation.</p>
-          <button data-cooltipz-dir="top" data-cooltipz-static aria-label="Hello there!">Interact</button>
+          <button data-cooltipz-dir="top" data-cooltipz-static aria-label="Hello there!">data: static</button>
+          <button class="cooltipz--top cooltipz--static" aria-label="Hello there!">class: static</button>
+        </section>
+        <hr/>
+        <section>
+          <h3>Always Visible</h3>
+          <p>You can add the <code>data-cooltipz-visible</code> attribute or the <code>.cooltipz--visible</code> class to make the tooltip always show, even if the user isn't hovering or focusing it.</p>
+          <p>You can make the tooltips show programatically by using the <a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/setAttribute" rel="norefferer nofollow"><code>setAttribute()</code> JavaScript function</a>.</p>
+          <button data-cooltipz-dir="bottom" data-cooltipz-visible aria-label="Hello there!">data: visible</button>
+          <button class="cooltipz--bottom cooltipz--visible" aria-label="Hello there!">class: visible</button>
         </section>
         <hr/>
         <section>
           <h3>Customisation</h3>
           <p>Expose 4 CSS variables: <code>--cooltipz-bg-color</code>, <code>--cooltipz-text-color</code>, <code>--cooltipz-font-size</code>, <code>--cooltipz-slide</code>.</p>
           <style>.custom-cooltip{--cooltipz-bg-color: #ddd; --cooltipz-text-color: #000; --cooltipz-font-size: 1.5rem; --cooltipz-slide: 50px;}</style>
-          <button class="custom-cooltip" data-cooltipz-dir="top" aria-label="I've been customised!">Interact</button>
+          <button class="custom-cooltip" data-cooltipz-dir="top" aria-label="I've been customised!">Custom</button>
         </section>
       </main>
     </div>
