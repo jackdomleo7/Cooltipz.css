@@ -61,6 +61,7 @@
           <li>Options to use classes or <code class="code-snippet">data-</code> attributes</li>
           <li>Disables animation if user's preference are set to reduced motion</li>
           <li>Uses <a href="https://github.com/postcss/autoprefixer" rel="noreferrer nofollow" target="_blank">Autoprefixer</a> when generating the distributed CSS</li>
+          <li>Import expanded CSS, minified CSS or the the raw Sass/SCSS</li>
         </ul>
       </header>
       <hr/>
@@ -140,16 +141,23 @@
           <h4>Link to stylesheet</h4>
           <div class="example example--stack">
             <p>Link to CDN stylesheet in your <code class="code-snippet">&lt;head&gt;</code></p>
-            <pre><code class="lang-markup">&lt;!-- This will get the latest stylesheet --&gt;
+            <pre><code class="lang-markup">&lt;!-- This will get the latest expanded stylesheet --&gt;
+&lt;link rel="stylesheet" href="https://raw.githack.com/JDomleo/Cooltipz.css/master/cooltipz.css" /&gt;
+
+&lt;!-- This will get the latest minified stylesheet --&gt;
 &lt;link rel="stylesheet" href="https://raw.githack.com/JDomleo/Cooltipz.css/master/cooltipz.min.css" /&gt;</code></pre>
           </div>
           <div class="example example--stack">
             <p>Link to CDN stylesheet in your CSS</p>
-            <pre><code class="lang-css">@import url(https://raw.githack.com/JDomleo/Cooltipz.css/master/cooltipz.min.css);</code></pre>
+            <pre><code class="lang-css">/* This will get the latest expanded stylesheet */
+@import url(https://raw.githack.com/JDomleo/Cooltipz.css/master/cooltipz.css);
+
+/* This will get the latest minified stylesheet */
+@import url(https://raw.githack.com/JDomleo/Cooltipz.css/master/cooltipz.min.css);</code></pre>
           </div>
           <div class="example example--stack">
             <p>Download it from GitHub and link to it locally</p>
-            <pre><code class="lang-markup">&lt;!-- This will never be updated, unless manually changed --&gt;
+            <pre><code class="lang-markup">&lt;!-- Be sure to manually update this regularly --&gt;
 &lt;link rel="stylesheet" href="path/to/cooltipz.min.css" /&gt;</code></pre>
           </div>
           <h4>Via npm</h4>
