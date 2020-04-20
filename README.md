@@ -13,13 +13,13 @@
 Have a play with Cooltipz.css in [CodePen](https://codepen.io/JackDomleo/pen/mderEeG).
 
 **Features**
-- Pure CSS
-- No JavaScript required
-- Accessible with `aria-label` attributes
 - Easy and simple
-- Tooltips appear on `hover` and `focus`
+- Pure CSS, no JavaScript
+- Accessible with aria-label attributes
 - Options to use classes or `data-` attributes
 - Disables animation if user's preference are set to reduced motion - [`prefers-reduced-motion`](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion)
+- Uses [Autoprefixer](https://github.com/postcss/autoprefixer) when generating the distributed CSS
+- Import expanded CSS, minified CSS or the the raw Sass/SCSS
 
 ---
 
@@ -35,12 +35,19 @@ Have a play with Cooltipz.css in [CodePen](https://codepen.io/JackDomleo/pen/mde
 
 Link to CDN stylesheet in your `<head>`
 ```html
-<!-- This will always get the latest stylesheet -->
+<!-- This will always get the latest expanded stylesheet -->
+<link rel="stylesheet" href="https://raw.githack.com/JDomleo/Cooltipz.css/master/cooltipz.css" />
+
+<!-- This will always get the latest minified stylesheet -->
 <link rel="stylesheet" href="https://raw.githack.com/JDomleo/Cooltipz.css/master/cooltipz.min.css" />
 ```
 
 Link to CDN stylesheet in you CSS
 ```css
+/* This will always get the latest expanded stylesheet */
+@import url(https://raw.githack.com/JDomleo/Cooltipz.css/master/cooltipz.css);
+
+/* This will always get the latest minified stylesheet */
 @import url(https://raw.githack.com/JDomleo/Cooltipz.css/master/cooltipz.min.css);
 ```
 
