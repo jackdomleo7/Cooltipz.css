@@ -29,6 +29,7 @@
   "homepage": "https://cooltipz.jackdomleo.dev",
   "files": [
     "src/*",
+    "cooltipz.css",
     "cooltipz.min.css",
     "postcss.config.js",
     "README.md",
