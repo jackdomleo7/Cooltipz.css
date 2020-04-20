@@ -3,7 +3,7 @@
   "version": "1.1.0",
   "description": "Cool tooltipz made with love from simple, pure CSS",
   "scripts": {
-    "build": "stylelint \"**/*.scss\" --fix && node-sass src/cooltipz.scss ./cooltipz.min.css --output-style compressed"
+    "build": "stylelint \"**/*.scss\" --fix && node-sass src/cooltipz.scss ./cooltipz.min.css --output-style compressed && npx postcss *.css --use autoprefixer --replace --no-map"
   },
   "repository": {
     "type": "git",
@@ -38,7 +38,9 @@
   "main": "cooltipz.min.css",
   "style": "cooltipz.min.css",
   "devDependencies": {
+    "autoprefixer": "^9.7.6",
     "node-sass": "^4.13.1",
+    "postcss-cli": "^7.1.0",
     "stylelint": "^13.3.2",
     "stylelint-order": "^4.0.0",
     "stylelint-scss": "^3.17.0"
