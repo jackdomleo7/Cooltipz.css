@@ -21,6 +21,11 @@ Have a play with Cooltipz.css in [CodePen](https://codepen.io/JackDomleo/pen/mde
 - Options to use classes or `data-` attributes
 - Disables animation if user's preference are set to reduced motion - [`prefers-reduced-motion`](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion)
 
+---
+
+## Examples
+
+![Cooltipz.css examples](./examples.gif)
 
 ---
 
