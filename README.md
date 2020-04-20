@@ -2,13 +2,15 @@
 
 ---
 
-# Cooltipz.css
+# Cooltipz.css - Cool tooltips
 
-**Cool tooltipz made with love from simple, pure CSS**
+**Cool tooltips made from simple, pure CSS**
 
 **Current version** - [v1.1.0](https://github.com/JDomleo/Cooltipz.css/releases/tag/v1.1.0)
 
 [Read the docs here](https://cooltipz.jackdomleo.dev)
+
+Have a play with Cooltipz.css in [CodePen](https://codepen.io/JackDomleo/pen/mderEeG).
 
 **Features**
 - Pure CSS
