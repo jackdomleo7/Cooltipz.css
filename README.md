@@ -71,7 +71,11 @@ import 'cooltipz-css';
 
 Or import into your Sass/SCSS
 ```scss
+/* Webpack */
 @import '~cooltipz-css/src/cooltipz';
+
+/* Non-webpack */
+@import 'path/to/node_modules/cooltipz-css/src/cooltipz';
 ```
 
 ---
