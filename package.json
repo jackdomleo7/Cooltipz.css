@@ -14,5 +14,17 @@
   "bugs": {
     "url": "https://github.com/JDomleo/Cooltipz.css/issues"
   },
-  "homepage": "https://cooltipz.jackdomleo.dev"
+  "homepage": "https://cooltipz.jackdomleo.dev",
+  "devDependencies": {
+    "autoprefixer": "^9.7.6",
+    "cssnano": "^4.1.10",
+    "node-sass": "^4.13.1",
+    "postcss-cli": "^7.1.0",
+    "stylelint": "^13.3.3",
+    "stylelint-order": "^4.0.0",
+    "stylelint-scss": "^3.17.1"
+  },
+  "dependencies": {
+    "cooltipz-css": "^1.2.1"
+  }
 }
