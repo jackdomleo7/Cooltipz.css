@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Documentation website for Cooltipz.css",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "docs": "stylelint \"**/*.scss\" --fix && node-sass scss/docs.scss css/docs.min.css && npx postcss css/docs.min.css --use autoprefixer cssnano --replace"
   },
   "repository": {
     "type": "git",
