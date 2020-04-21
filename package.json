@@ -1,0 +1,18 @@
+{
+  "name": "cooltipz-css-docs",
+  "version": "1.0.0",
+  "description": "Documentation website for Cooltipz.css",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JDomleo/Cooltipz.css.git"
+  },
+  "author": "Jack Domleo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JDomleo/Cooltipz.css/issues"
+  },
+  "homepage": "https://cooltipz.jackdomleo.dev"
+}
