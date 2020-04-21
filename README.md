@@ -76,22 +76,6 @@ Or import into your Sass/SCSS
 
 ---
 
-## Release Process
-
-_Major_._Minor_._Patch_ - E.g. _0.5.0_
-
-#### Major
-- Breaking changes
-
-#### Minor
-- Feature updates
-- New features
-
-#### Patch
-- Bug fixes
-
----
-
 ## Contributors
 
 <a href="https://github.com/JDomleo/Cooltipz.css/graphs/contributors">
