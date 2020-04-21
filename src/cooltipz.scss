@@ -10,7 +10,8 @@
 ::after = tooltip box and content
 */
 
-$cooltipz-margin: $cooltipz-arrow-size + 5px;
+$cooltipz-spacing: 5px;
+$cooltipz-margin: $cooltipz-arrow-size + $cooltipz-spacing;
 
 [aria-label] {
   &[data-cooltipz-dir],
@@ -95,6 +96,66 @@ $cooltipz-margin: $cooltipz-arrow-size + 5px;
       }
     }
 
+    &[data-cooltipz-dir = "top-left"],
+    &.cooltipz--top-left {
+      &::after {
+        left: 0;
+        margin-bottom: $cooltipz-margin;
+      }
+
+      &::before {
+        @include arrow-down;
+        left: $cooltipz-spacing;
+      }
+
+      &::after,
+      &::before {
+        bottom: 100%;
+        transform: translate(0, var(--cooltipz-slide, 2px));
+        transform-origin: top;
+      }
+
+      &:hover,
+      &:focus,
+      &[data-cooltipz-visible],
+      &.cooltipz--visible {
+        &::after,
+        &::before {
+          transform: translate(0);
+        }
+      }
+    }
+
+    &[data-cooltipz-dir = "top-right"],
+    &.cooltipz--top-right {
+      &::after {
+        margin-bottom: $cooltipz-margin;
+        right: 0;
+      }
+
+      &::before {
+        @include arrow-down;
+        right: $cooltipz-spacing;
+      }
+
+      &::after,
+      &::before {
+        bottom: 100%;
+        transform: translate(0, var(--cooltipz-slide, 2px));
+        transform-origin: top;
+      }
+
+      &:hover,
+      &:focus,
+      &[data-cooltipz-visible],
+      &.cooltipz--visible {
+        &::after,
+        &::before {
+          transform: translate(0);
+        }
+      }
+    }
+
     &[data-cooltipz-dir = "bottom"],
     &.cooltipz--bottom {
       &::after {
@@ -120,6 +181,66 @@ $cooltipz-margin: $cooltipz-arrow-size + 5px;
         &::after,
         &::before {
           @extend %show-cooltip-y;
+        }
+      }
+    }
+
+    &[data-cooltipz-dir = "bottom-left"],
+    &.cooltipz--bottom-left {
+      &::after {
+        left: 0;
+        margin-top: $cooltipz-margin;
+      }
+
+      &::before {
+        @include arrow-up;
+        left: $cooltipz-spacing;
+      }
+
+      &::after,
+      &::before {
+        top: 100%;
+        transform: translate(0, var(--cooltipz-slide, 2px));
+        transform-origin: bottom;
+      }
+
+      &:hover,
+      &:focus,
+      &[data-cooltipz-visible],
+      &.cooltipz--visible {
+        &::after,
+        &::before {
+          transform: translate(0);
+        }
+      }
+    }
+
+    &[data-cooltipz-dir = "bottom-right"],
+    &.cooltipz--bottom-right {
+      &::after {
+        margin-top: $cooltipz-margin;
+        right: 0;
+      }
+
+      &::before {
+        @include arrow-up;
+        right: $cooltipz-spacing;
+      }
+
+      &::after,
+      &::before {
+        top: 100%;
+        transform: translate(0, var(--cooltipz-slide, 2px));
+        transform-origin: bottom;
+      }
+
+      &:hover,
+      &:focus,
+      &[data-cooltipz-visible],
+      &.cooltipz--visible {
+        &::after,
+        &::before {
+          transform: translate(0);
         }
       }
     }
