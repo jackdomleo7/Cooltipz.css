@@ -133,7 +133,7 @@
         <hr/>
         <section id="customisation">
           <h3>Customisation</h3>
-          <p>Cooltipz.css exposes 4 CSS variables that can be overriden using your own styles: <code class="code">--cooltipz-bg-color</code>, <code class="code">--cooltipz-text-color</code>, <code class="code">--cooltipz-font-size</code> and <code class="code">--cooltipz-slide</code>.</p>
+          <p>Cooltipz.css exposes 5 CSS variables that can be overriden using your own styles: <code class="code">--cooltipz-bg-color</code>, <code class="code">--cooltipz-text-color</code>, <code class="code">--cooltipz-font-size</code>, <code class="code">--cooltipz-slide</code> and <code class="code">--cooltips-border-radius</code>.</p>
           <div class="example--stack">
             <p>To override every tooltip in your project, place your CSS variables in the <code class="code">:root</code> selector</p>
             <pre><code class="lang-css">:root {
@@ -141,17 +141,19 @@
   --cooltipz-text-color: #00f;
   --cooltipz-font-size: 1.5rem;
   --cooltipz-slide: 20px;
+  --cooltips-border-radius: 1rem;
 }</code></pre>
           </div>
           <p>Or override specific tooltips</p>
           <div class="example">
-            <style>.custom-cooltip {--cooltipz-bg-color: #fff;--cooltipz-text-color: #000;--cooltipz-font-size: 1.5rem;--cooltipz-slide: 50px;}</style>
+            <style>.custom-cooltip {--cooltipz-bg-color: #fff;--cooltipz-text-color: #000;--cooltipz-font-size: 1.5rem;--cooltipz-slide: 50px;--cooltips-border-radius: 1rem;}</style>
             <button class="custom-cooltip" data-cooltipz-dir="top" aria-label="I've been customised!">Interact</button>
             <pre><code class="lang-css">.custom-cooltip {
   --cooltipz-bg-color: #fff;
   --cooltipz-text-color: #000;
   --cooltipz-font-size: 1.5rem;
   --cooltipz-slide: 50px;
+  --cooltips-border-radius: 1rem;
 }</code></pre>
           </div>
         </section>
