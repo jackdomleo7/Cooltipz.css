@@ -21,7 +21,7 @@ $cooltipz-margin: $cooltipz-arrow-size + $cooltipz-spacing;
 
     &::after {
       background-color: var(--cooltipz-bg-color, #1f1f1f);
-      border-radius: 0.125rem;
+      border-radius: var(--cooltipz-border-radius, 0.125rem);
       box-shadow: 0 0 0.1875rem rgba(0, 0, 0, 0.3);
       color: var(--cooltipz-text-color, #fff);
       content: attr(aria-label);
