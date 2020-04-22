@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Documentation website for Cooltipz.css",
   "scripts": {
-    "docs": "stylelint \"**/*.scss\" --fix && node-sass scss/docs.scss css/docs.min.css && npx postcss css/docs.min.css --use autoprefixer cssnano --replace && node-sass scss/cooltipz.scss css/cooltipz.min.css && npx postcss css/cooltipz.min.css --use autoprefixer cssnano --replace && node-sass scss/normalize.scss css/normalize.min.css && npx postcss css/normalize.min.css --use autoprefixer cssnano --replace"
+    "docs": "stylelint \"**/*.scss\" --fix && node-sass scss/docs.scss css/docs.min.css && node-sass scss/cooltipz.scss css/cooltipz.min.css && node-sass scss/normalize.scss css/normalize.min.css && node-sass scss/prism.scss css/prism.min.css && npx postcss css --use autoprefixer cssnano --replace"
   },
   "repository": {
     "type": "git",
