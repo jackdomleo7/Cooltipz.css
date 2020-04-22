@@ -58,7 +58,7 @@
 [aria-label][data-cooltipz-dir]::after, [aria-label][class^="cooltipz"]::after {
   background-color: var(--cooltipz-bg-color, #1f1f1f);
   border-radius: 0.125rem;
-  box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 0.1875rem rgba(0, 0, 0, 0.3);
   color: var(--cooltipz-text-color, #fff);
   content: attr(aria-label);
   font-family: Verdana, Geneva, Tahoma, sans-serif;
