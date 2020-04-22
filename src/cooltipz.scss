@@ -81,7 +81,7 @@ $cooltipz-margin: $cooltipz-arrow-size + $cooltipz-spacing;
       &::before {
         bottom: 100%;
         left: 50%;
-        transform: translate(-50%, var(--cooltipz-slide, 2px));
+        transform: translate(-50%, var(--cooltipz-slide, 6px));
         transform-origin: top;
       }
 
@@ -111,7 +111,7 @@ $cooltipz-margin: $cooltipz-arrow-size + $cooltipz-spacing;
       &::after,
       &::before {
         bottom: 100%;
-        transform: translate(0, var(--cooltipz-slide, 2px));
+        transform: translate(0, var(--cooltipz-slide, 6px));
         transform-origin: top;
       }
 
@@ -141,7 +141,7 @@ $cooltipz-margin: $cooltipz-arrow-size + $cooltipz-spacing;
       &::after,
       &::before {
         bottom: 100%;
-        transform: translate(0, var(--cooltipz-slide, 2px));
+        transform: translate(0, var(--cooltipz-slide, 6px));
         transform-origin: top;
       }
 
@@ -170,7 +170,7 @@ $cooltipz-margin: $cooltipz-arrow-size + $cooltipz-spacing;
       &::before {
         left: 50%;
         top: 100%;
-        transform: translate(-50%, calc(var(--cooltipz-slide, 2px) * -1));
+        transform: translate(-50%, calc(var(--cooltipz-slide, 6px) * -1));
         transform-origin: bottom;
       }
 
@@ -200,7 +200,7 @@ $cooltipz-margin: $cooltipz-arrow-size + $cooltipz-spacing;
       &::after,
       &::before {
         top: 100%;
-        transform: translate(0, var(--cooltipz-slide, 2px));
+        transform: translate(0, calc(var(--cooltipz-slide, 6px) * -1));
         transform-origin: bottom;
       }
 
@@ -230,7 +230,7 @@ $cooltipz-margin: $cooltipz-arrow-size + $cooltipz-spacing;
       &::after,
       &::before {
         top: 100%;
-        transform: translate(0, var(--cooltipz-slide, 2px));
+        transform: translate(0, var(--cooltipz-slide, 6px));
         transform-origin: bottom;
       }
 
@@ -259,7 +259,7 @@ $cooltipz-margin: $cooltipz-arrow-size + $cooltipz-spacing;
       &::before {
         left: 100%;
         top: 50%;
-        transform: translate(calc(var(--cooltipz-slide, 2px) * -1), -50%);
+        transform: translate(var(--cooltipz-slide, 6px), -50%);
         transform-origin: right;
       }
 
@@ -288,7 +288,7 @@ $cooltipz-margin: $cooltipz-arrow-size + $cooltipz-spacing;
       &::before {
         right: 100%;
         top: 50%;
-        transform: translate(var(--cooltipz-slide, 2px), -50%);
+        transform: translate(var(--cooltipz-slide, 6px), -50%);
         transform-origin: left;
       }
 
