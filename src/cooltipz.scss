@@ -311,5 +311,29 @@ $cooltipz-margin: $cooltipz-arrow-size + $cooltipz-spacing;
         width: 100%;
       }
     }
+
+    &[data-cooltipz-size = "small"],
+    &.cooltipz--small {
+      &::after {
+        white-space: normal;
+        width: 6.25rem;
+      }
+    }
+
+    &[data-cooltipz-size = "medium"],
+    &.cooltipz--medium {
+      &::after {
+        white-space: normal;
+        width: 12.5rem;
+      }
+    }
+
+    &[data-cooltipz-size = "large"],
+    &.cooltipz--large {
+      &::after {
+        white-space: normal;
+        width: 18.75rem;
+      }
+    }
   }
 }
