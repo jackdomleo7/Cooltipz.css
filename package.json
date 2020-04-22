@@ -1,9 +1,10 @@
 {
   "name": "cooltipz-css-docs",
   "version": "1.0.0",
+  "private": true,
   "description": "Documentation website for Cooltipz.css",
   "scripts": {
-    "docs": "stylelint \"**/*.scss\" --fix && node-sass scss/docs.scss css/docs.min.css && node-sass scss/cooltipz.scss css/cooltipz.min.css && node-sass scss/normalize.scss css/normalize.min.css && node-sass scss/prism.scss css/prism.min.css && npx postcss css --use autoprefixer cssnano --replace"
+    "docs": "stylelint \"**/*.scss\" --fix && node-sass scss/docs.scss css/docs.min.css && node-sass scss/cooltipz.scss css/cooltipz.min.css && node-sass scss/normalize.scss css/normalize.min.css && node-sass scss/prism.scss css/prism.min.css && node-sass scss/404.scss css/404.min.css && npx postcss css --use autoprefixer cssnano --replace"
   },
   "repository": {
     "type": "git",
