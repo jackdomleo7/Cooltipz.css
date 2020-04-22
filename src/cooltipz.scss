@@ -91,7 +91,7 @@ $cooltipz-margin: $cooltipz-arrow-size + $cooltipz-spacing;
       &.cooltipz--visible {
         &::after,
         &::before {
-          @extend %show-cooltip-y;
+          transform: translate(-50%, 0);
         }
       }
     }
@@ -180,7 +180,7 @@ $cooltipz-margin: $cooltipz-arrow-size + $cooltipz-spacing;
       &.cooltipz--visible {
         &::after,
         &::before {
-          @extend %show-cooltip-y;
+          transform: translate(-50%, 0);
         }
       }
     }
@@ -269,7 +269,7 @@ $cooltipz-margin: $cooltipz-arrow-size + $cooltipz-spacing;
       &.cooltipz--visible {
         &::after,
         &::before {
-          @extend %show-cooltip-x;
+          transform: translate(0, -50%);
         }
       }
     }
@@ -298,7 +298,7 @@ $cooltipz-margin: $cooltipz-arrow-size + $cooltipz-spacing;
       &.cooltipz--visible {
         &::after,
         &::before {
-          @extend %show-cooltip-x;
+          transform: translate(0, -50%);
         }
       }
     }
