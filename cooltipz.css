@@ -4,6 +4,7 @@
   --cooltipz-text-color: #fff;
   --cooltipz-font-size: 0.75rem;
   --cooltipz-slide: 2px;
+  --cooltipz-border-radius: 0.125rem;
 }
 
 [aria-label][data-cooltipz-dir][data-cooltipz-dir="top"]::before, .cooltipz--top[aria-label][data-cooltipz-dir]::before, [aria-label][class^="cooltipz"][data-cooltipz-dir="top"]::before, .cooltipz--top[aria-label][class^="cooltipz"]::before, [aria-label][data-cooltipz-dir][data-cooltipz-dir="top-left"]::before, .cooltipz--top-left[aria-label][data-cooltipz-dir]::before, [aria-label][class^="cooltipz"][data-cooltipz-dir="top-left"]::before, .cooltipz--top-left[aria-label][class^="cooltipz"]::before, [aria-label][data-cooltipz-dir][data-cooltipz-dir="top-right"]::before, .cooltipz--top-right[aria-label][data-cooltipz-dir]::before, [aria-label][class^="cooltipz"][data-cooltipz-dir="top-right"]::before, .cooltipz--top-right[aria-label][class^="cooltipz"]::before, [aria-label][data-cooltipz-dir][data-cooltipz-dir="bottom"]::before, .cooltipz--bottom[aria-label][data-cooltipz-dir]::before, [aria-label][class^="cooltipz"][data-cooltipz-dir="bottom"]::before, .cooltipz--bottom[aria-label][class^="cooltipz"]::before, [aria-label][data-cooltipz-dir][data-cooltipz-dir="bottom-left"]::before, .cooltipz--bottom-left[aria-label][data-cooltipz-dir]::before, [aria-label][class^="cooltipz"][data-cooltipz-dir="bottom-left"]::before, .cooltipz--bottom-left[aria-label][class^="cooltipz"]::before, [aria-label][data-cooltipz-dir][data-cooltipz-dir="bottom-right"]::before, .cooltipz--bottom-right[aria-label][data-cooltipz-dir]::before, [aria-label][class^="cooltipz"][data-cooltipz-dir="bottom-right"]::before, .cooltipz--bottom-right[aria-label][class^="cooltipz"]::before, [aria-label][data-cooltipz-dir][data-cooltipz-dir="right"]::before, .cooltipz--right[aria-label][data-cooltipz-dir]::before, [aria-label][class^="cooltipz"][data-cooltipz-dir="right"]::before, .cooltipz--right[aria-label][class^="cooltipz"]::before, [aria-label][data-cooltipz-dir][data-cooltipz-dir="left"]::before, .cooltipz--left[aria-label][data-cooltipz-dir]::before, [aria-label][class^="cooltipz"][data-cooltipz-dir="left"]::before, .cooltipz--left[aria-label][class^="cooltipz"]::before {
@@ -49,7 +50,7 @@
 
 [aria-label][data-cooltipz-dir]::after, [aria-label][class^="cooltipz"]::after {
   background-color: var(--cooltipz-bg-color, #1f1f1f);
-  border-radius: 0.125rem;
+  border-radius: var(--cooltipz-border-radius, 0.125rem);
   box-shadow: 0 0 0.1875rem rgba(0, 0, 0, 0.3);
   color: var(--cooltipz-text-color, #fff);
   content: attr(aria-label);
