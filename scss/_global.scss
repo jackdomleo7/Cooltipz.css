@@ -1,0 +1,91 @@
+$blue: #1e80ff;
+$orange: #ff5100;
+
+::selection {
+  background-color: mix($blue, #fff, 80%);
+  color: #fff;
+  text-shadow: none;
+}
+
+html {
+  box-sizing: border-box;
+  font-family: sans-serif;
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: #fff;
+  color: #111;
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 0.875rem;
+}
+
+@media (min-width: 45.625em) {
+  body {
+    font-size: 1rem;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+  user-select: none;
+}
+
+hr {
+  border: 1px solid transparent;
+  border-radius: 50%;
+  border-top-color: #222;
+  margin: 1.8rem 0;
+  width: 100%;
+}
+
+button {
+  background-color: $blue;
+  border: none;
+  color: #fff;
+  font-weight: 700;
+  margin: 1rem 0;
+  min-width: 6rem;
+  padding: 1rem;
+  transition: 160ms box-shadow ease-in-out;
+
+  @media (min-width: 45.625em) {
+    min-width: 10rem;
+    padding: 1rem 3rem;
+  }
+
+  &:hover,
+  &:focus {
+    box-shadow: 1px 1px 0.25rem fade-out($blue, 0.5);
+  }
+}
+
+p {
+  line-height: 1.8;
+}
+
+li {
+  margin: 0.4rem 0;
+}
