@@ -6,7 +6,7 @@
 
 **Cool tooltips made from simple, pure CSS**
 
-**Current version** - [v1.2.1](https://github.com/JDomleo/Cooltipz.css/releases/tag/v1.2.1)
+**Current version** - [v1.3.0](https://github.com/JDomleo/Cooltipz.css/releases/tag/v1.3.0)
 
 [Read the docs here](https://cooltipz.jackdomleo.dev)
 
@@ -71,24 +71,12 @@ import 'cooltipz-css';
 
 Or import into your Sass/SCSS
 ```scss
+/* Webpack */
 @import '~cooltipz-css/src/cooltipz';
+
+/* Non-webpack */
+@import 'path/to/node_modules/cooltipz-css/src/cooltipz';
 ```
-
----
-
-## Release Process
-
-_Major_._Minor_._Patch_ - E.g. _0.5.0_
-
-#### Major
-- Breaking changes
-
-#### Minor
-- Feature updates
-- New features
-
-#### Patch
-- Bug fixes
 
 ---
 
