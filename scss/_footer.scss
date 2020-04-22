@@ -1,0 +1,40 @@
+.footer {
+  align-items: center;
+  background-color: #f80;
+  display: flex;
+  flex-direction: column;
+  font-weight: 700;
+  justify-content: center;
+  padding: 1.5rem 0;
+  text-align: center;
+
+  a {
+    color: inherit;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+    }
+  }
+
+  p {
+    margin: 0;
+  }
+
+  ul {
+    display: block;
+    list-style-type: none;
+    margin: 0.5rem 0 0;
+    padding-left: 0;
+
+    li {
+      display: inline-block;
+      margin: 0 0.7rem;
+    }
+
+    @media (min-width: 23.75em) {
+      display: flex;
+    }
+  }
+}

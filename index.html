@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <meta name="robots" content="index, follow">
     <meta name="author" content="Jack Domleo">
-    <meta name="description" content="Cool tooltipz made with love from simple, pure CSS">
+    <meta name="description" content="Simple and customisable tooltips made of pure CSS, no JavaScript. Easily apply to HTML elements. Install Cooltipz.css via npm, CDN or download.">
     <meta name="keywords" content="cooltipz, tooltips, cooltips, tooltipz, cool tooltips, cool tooltipz, css, pure css, jackdomleo, jack domleo, domleo">
 
     <meta property="og:url" content="https://cooltipz.jackdomleo.dev">
     <meta property="og:title" content="Cooltipz.css">
-    <meta property="og:description" content="Cool tooltipz made with love from simple, pure CSS">
+    <meta property="og:description" content="Simple and customisable tooltips made of pure CSS, no JavaScript. Easily apply to HTML elements. Install Cooltipz.css via npm, CDN or download.">
     <meta property="og:locale" content="en_GB">
     <meta property="og:image" content="https://cooltipz.jackdomleo.dev/img/open-graph.png">
     <meta property="og:image:url" content="https://cooltipz.jackdomleo.dev/img/open-graph.png">
@@ -34,9 +34,9 @@
 
     <title>Cooltipz.css - Cool tooltips made from pure CSS</title>
     <link rel="stylesheet" href="./css/normalize.min.css" />
-    <link rel="stylesheet" href="./css/docs.css" />
+    <link rel="stylesheet" href="./css/docs.min.css" />
     <link rel="stylesheet" href="./css/prism.min.css" />
-    <link rel="stylesheet" href="https://raw.githack.com/JDomleo/Cooltipz.css/master/cooltipz.min.css" />
+    <link rel="stylesheet" href="./css/cooltipz.min.css" />
   </head>
   <body>
     <a href="https://github.com/JDomleo/Cooltipz.css" rel="noreferrer" target="_blank" class="github-corner" aria-label="View source on GitHub">
@@ -47,20 +47,20 @@
       </svg>
     </a>
     <div class="page">
-      <header class="page__header">
+      <header class="header">
         <h1><img src="img/header-logo.png" alt="Cooltipz.css logo" /><span hidden>Cooltipz.css</span></h1>
         <h2>Cool tooltips made from pure CSS</h2>
         <p>Cooltipz.css makes adding tooltips to existing HTML elements <strong>easy and simple</strong>, <strong>without JavaScript</strong>.</p>
-        <p style="margin:0"><strong>Current version</strong>: <a href="https://github.com/JDomleo/Cooltipz.css/releases/tag/v1.2.1" rel="noreferrer">v1.2.1</a></p>
-        <p style="margin:0">Have a play with Cooltipz.css in <a href="https://codepen.io/JackDomleo/pen/mderEeG" rel="noreferrer" target="_blank">CodePen</a>.</p>
+        <p style="margin:0"><strong>Current version</strong>: <a href="https://github.com/JDomleo/Cooltipz.css/releases/tag/v1.3.0" rel="noreferrer" class="link">v1.3.0</a></p>
+        <p style="margin:0">Have a play with Cooltipz.css in <a href="https://codepen.io/JackDomleo/pen/mderEeG" rel="noreferrer" target="_blank" class="link">CodePen</a>.</p>
         <h3>Features</h3>
         <ul>
           <li>Easy and simple</li>
           <li>Pure CSS, no JavaScript</li>
-          <li>Accessible with <code class="code-snippet">aria-label</code> attributes</li>
-          <li>Options to use classes or <code class="code-snippet">data-</code> attributes</li>
+          <li>Accessible with <code class="code">aria-label</code> attributes</li>
+          <li>Options to use classes or <code class="code">data-</code> attributes</li>
           <li>Disables animation if user's preference are set to reduced motion</li>
-          <li>Uses <a href="https://github.com/postcss/autoprefixer" rel="noreferrer nofollow" target="_blank">Autoprefixer</a> when generating the distributed CSS</li>
+          <li>Uses <a href="https://github.com/postcss/autoprefixer" rel="noreferrer nofollow" target="_blank" class="link">Autoprefixer</a> when generating the distributed CSS</li>
           <li>Import expanded CSS, minified CSS or the the raw Sass/SCSS</li>
         </ul>
       </header>
@@ -88,11 +88,31 @@
             <pre><code class="lang-markup">&lt;button data-cooltipz-dir="left" aria-label="Hello there!"&gt;...&lt;/button&gt;
 &lt;button class="cooltipz--left" aria-label="Hello there!"&gt;...&lt;/button&gt;</code></pre>
           </div>
+          <div class="example">
+            <button data-cooltipz-dir="top-left" aria-label="Hello there!">Interact</button>
+            <pre><code class="lang-markup">&lt;button data-cooltipz-dir="top-left" aria-label="Hello there!"&gt;...&lt;/button&gt;
+&lt;button class="cooltipz--top-left" aria-label="Hello there!"&gt;...&lt;/button&gt;</code></pre>
+          </div>
+          <div class="example">
+            <button data-cooltipz-dir="top-right" aria-label="Hello there!">Interact</button>
+            <pre><code class="lang-markup">&lt;button data-cooltipz-dir="top-right" aria-label="Hello there!"&gt;...&lt;/button&gt;
+&lt;button class="cooltipz--top-right" aria-label="Hello there!"&gt;...&lt;/button&gt;</code></pre>
+          </div>
+          <div class="example">
+            <button data-cooltipz-dir="bottom-left" aria-label="Hello there!">Interact</button>
+            <pre><code class="lang-markup">&lt;button data-cooltipz-dir="bottom-left" aria-label="Hello there!"&gt;...&lt;/button&gt;
+&lt;button class="cooltipz--bottom-left" aria-label="Hello there!"&gt;...&lt;/button&gt;</code></pre>
+          </div>
+          <div class="example">
+            <button data-cooltipz-dir="bottom-right" aria-label="Hello there!">Interact</button>
+            <pre><code class="lang-markup">&lt;button data-cooltipz-dir="bottom-right" aria-label="Hello there!"&gt;...&lt;/button&gt;
+&lt;button class="cooltipz--bottom-right" aria-label="Hello there!"&gt;...&lt;/button&gt;</code></pre>
+          </div>
         </section>
         <hr/>
         <section id="no-animation">
           <h3>No Animation</h3>
-          <p>Animations can be disabled by apply the <code class="code-snippet">data-cooltipz-static</code> attribute. Cooltipz.css also use the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion" rel="noreferrer nofollow" target="_blank">prefers-reduced-motion</a> media query, so when the user's preferences indicate reduced motion, Cooltipz.css automatically disables animation.</p>
+          <p>Animations can be disabled by apply the <code class="code">data-cooltipz-static</code> attribute. Cooltipz.css also use the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion" rel="noreferrer nofollow" target="_blank" class="link">prefers-reduced-motion</a> media query, so when the user's preferences indicate reduced motion, Cooltipz.css automatically disables animation.</p>
           <div class="example">
             <button data-cooltipz-dir="top" data-cooltipz-static aria-label="Hello there!">Interact</button>
             <pre><code class="lang-markup">&lt;button data-cooltipz-dir="top" data-cooltipz-static aria-label="Hello there!"&gt;...&lt;/button&gt;
@@ -102,8 +122,8 @@
         <hr/>
         <section id="visible">
           <h3>Always Visible</h3>
-          <p>Add the <code class="code-snippet">data-cooltipz-visible</code> attribute or the <code class="code-snippet">.cooltipz--visible</code> class to make the tooltip always show, even if the user isn't hovering or focusing it.</p>
-          <p>Tooltips can be shown programatically by using the <a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/setAttribute" rel="noreferrer nofollow" target="_blank"><code class="code-snippet">setAttribute()</code> JavaScript function</a>.</p>
+          <p>Add the <code class="code">data-cooltipz-visible</code> attribute or the <code class="code">.cooltipz--visible</code> class to make the tooltip always show, even if the user isn't hovering or focusing it.</p>
+          <p>Tooltips can be shown programatically by using the <a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/setAttribute" rel="noreferrer nofollow" target="_blank" class="link"><code class="code">setAttribute()</code> JavaScript function</a>.</p>
           <div class="example">
             <button data-cooltipz-dir="top" data-cooltipz-visible aria-label="I'm always visible!">Interact</button>
             <pre><code class="lang-markup">&lt;button data-cooltipz-dir="top" data-cooltipz-visible aria-label="I'm always visible!"&gt;...&lt;/button&gt;
@@ -113,25 +133,27 @@
         <hr/>
         <section id="customisation">
           <h3>Customisation</h3>
-          <p>Cooltipz.css exposes 4 CSS variables that can be overriden using your own styles: <code class="code-snippet">--cooltipz-bg-color</code>, <code class="code-snippet">--cooltipz-text-color</code>, <code class="code-snippet">--cooltipz-font-size</code> and <code class="code-snippet">--cooltipz-slide</code>.</p>
+          <p>Cooltipz.css exposes 5 CSS variables that can be overriden using your own styles: <code class="code">--cooltipz-bg-color</code>, <code class="code">--cooltipz-text-color</code>, <code class="code">--cooltipz-font-size</code>, <code class="code">--cooltipz-slide</code> and <code class="code">--cooltips-border-radius</code>.</p>
           <div class="example--stack">
-            <p>To override every tooltip in your project, place your CSS variables in the <code class="code-snippet">:root</code> selector</p>
+            <p>To override every tooltip in your project, place your CSS variables in the <code class="code">:root</code> selector</p>
             <pre><code class="lang-css">:root {
   --cooltipz-bg-color: #f00;
   --cooltipz-text-color: #00f;
   --cooltipz-font-size: 1.5rem;
   --cooltipz-slide: 20px;
+  --cooltipz-border-radius: 1rem;
 }</code></pre>
           </div>
           <p>Or override specific tooltips</p>
           <div class="example">
-            <style>.custom-cooltip {--cooltipz-bg-color: #fff;--cooltipz-text-color: #000;--cooltipz-font-size: 1.5rem;--cooltipz-slide: 50px;}</style>
+            <style>.custom-cooltip {--cooltipz-bg-color: #fff;--cooltipz-text-color: #000;--cooltipz-font-size: 1.5rem;--cooltipz-slide: 50px;--cooltipz-border-radius: 1rem;}</style>
             <button class="custom-cooltip" data-cooltipz-dir="top" aria-label="I've been customised!">Interact</button>
             <pre><code class="lang-css">.custom-cooltip {
   --cooltipz-bg-color: #fff;
   --cooltipz-text-color: #000;
   --cooltipz-font-size: 1.5rem;
   --cooltipz-slide: 50px;
+  --cooltipz-border-radius: 1rem;
 }</code></pre>
           </div>
         </section>
@@ -140,7 +162,7 @@
           <h3>Installation</h3>
           <h4>Link to stylesheet</h4>
           <div class="example example--stack">
-            <p>Link to CDN stylesheet in your <code class="code-snippet">&lt;head&gt;</code></p>
+            <p>Link to CDN stylesheet in your <code class="code">&lt;head&gt;</code></p>
             <pre><code class="lang-markup">&lt;!-- This will get the latest expanded stylesheet --&gt;
 &lt;link rel="stylesheet" href="https://raw.githack.com/JDomleo/Cooltipz.css/master/cooltipz.css" /&gt;
 
@@ -163,7 +185,7 @@
           <h4>Via npm</h4>
           <div class="example example--stack">
             <p>Install it via <abbr data-cooltipz-dir="top" aria-label="Node Package Manager">npm</abbr></p>
-            <pre><code class="lang-js">npm install cooltipz-css --save</code></pre>
+            <pre><code class="language-">npm install cooltipz-css --save</code></pre>
           </div>
           <div class="example example--stack">
             <p>Import it into your JavaScript</p>
@@ -171,34 +193,34 @@
           </div>
           <div class="example example--stack">
             <p>Or import it into your Sass/SCSS</p>
-            <pre><code class="lang-css">@import '~cooltipz-css/src/cooltipz';</code></pre>
+            <pre><code class="lang-css">/* Webpack */
+@import '~cooltipz-css/src/cooltipz';
+
+/* Non webpack */
+@import 'path/to/node_modules/cooltipz-css/src/cooltipz';</code></pre>
           </div>
         </section>
         <hr/>
         <section id="beware">
           <h3>Beware</h3>
-          <p><strong>Important</strong>: Cooltipz.css uses the <code class="code-snippet">::before</code> and <code class="code-snippet">::after</code> psuedo elements to display the tooltips, therefore you must beware of the following:</p>
+          <p><strong>Important</strong>: Cooltipz.css uses the <code class="code">::before</code> and <code class="code">::after</code> psuedo elements to display the tooltips, therefore you must beware of the following:</p>
           <ul>
             <li>Cooltipz.css will not work on self-closing HTML elements.</li>
-            <li>If the HTML element already has existing <code class="code-snippet">::before</code> or <code class="code-snippet">::after</code> styling, these could conflict with the Cooltipz.css styles and cause unexpected outputs.</li>
+            <li>If the HTML element already has existing <code class="code">::before</code> or <code class="code">::after</code> styling, these could conflict with the Cooltipz.css styles and cause unexpected outputs.</li>
           </ul>
         </section>
       </main>
       <hr/>
-      <footer class="page__footer">
+      <footer class="footer">
         <p>Made by <a href="https://jackdomleo.dev" target="_blank" rel="noreferrer nofollow">Jack Domleo</a>.</p>
-        <p>
-          <a href="https://www.npmjs.com/package/cooltipz-css" rel="noreferrer">npm</a>
-          &bull;
-          <a href="https://github.com/JDomleo/Cooltipz.css" rel="noreferrer">GitHub</a>
-          <span class="break"><br/></span>
-          <span class="bullet">&bull;</span>
-          <a href="https://cooltipz.jackdomleo.dev/" rel="noreferrer">docs</a>
-          &bull;
-          <a href="https://github.com/JDomleo/Cooltipz.css/releases" rel="noreferrer">CHANGELOG</a>
-        </p>
+        <ul>
+          <li><a href="https://www.npmjs.com/package/cooltipz-css" rel="noreferrer">npm</a></li>
+          <li><a href="https://github.com/JDomleo/Cooltipz.css" rel="noreferrer">GitHub</a></li>
+          <li><a href="https://cooltipz.jackdomleo.dev/" rel="noreferrer">docs</a></li>
+          <li><a href="https://github.com/JDomleo/Cooltipz.css/releases" rel="noreferrer">CHANGELOG</a></li>
+        </ul>
       </footer>
     </div>
-    <script src="./prism.js"></script>
+    <script src="./js/prism.js"></script>
   </body>
 </html>

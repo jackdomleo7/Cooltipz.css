@@ -1,0 +1,10 @@
+.link {
+  color: $blue;
+  font-weight: 700;
+  transition: 160ms color ease;
+
+  &:hover,
+  &:focus {
+    color: mix($orange, #fff, 80%);
+  }
+}
