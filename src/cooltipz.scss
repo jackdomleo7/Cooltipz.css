@@ -230,7 +230,7 @@ $cooltipz-margin: $cooltipz-arrow-size + $cooltipz-spacing;
       &::after,
       &::before {
         top: 100%;
-        transform: translate(0, var(--cooltipz-slide, 6px));
+        transform: translate(0, calc(var(--cooltipz-slide, 6px) * -1));
         transform-origin: bottom;
       }
 
@@ -259,7 +259,7 @@ $cooltipz-margin: $cooltipz-arrow-size + $cooltipz-spacing;
       &::before {
         left: 100%;
         top: 50%;
-        transform: translate(var(--cooltipz-slide, 6px), -50%);
+        transform: translate(calc(var(--cooltipz-slide, 6px) * -1), -50%);
         transform-origin: right;
       }
 
