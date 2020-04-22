@@ -12,6 +12,22 @@
   width: 0;
 }
 
+[aria-label][data-cooltipz-dir][data-cooltipz-dir="top"]::before, .cooltipz--top[aria-label][data-cooltipz-dir]::before, [aria-label][class^="cooltipz"][data-cooltipz-dir="top"]::before, .cooltipz--top[aria-label][class^="cooltipz"]::before, [aria-label][data-cooltipz-dir][data-cooltipz-dir="top-left"]::before, .cooltipz--top-left[aria-label][data-cooltipz-dir]::before, [aria-label][class^="cooltipz"][data-cooltipz-dir="top-left"]::before, .cooltipz--top-left[aria-label][class^="cooltipz"]::before, [aria-label][data-cooltipz-dir][data-cooltipz-dir="top-right"]::before, .cooltipz--top-right[aria-label][data-cooltipz-dir]::before, [aria-label][class^="cooltipz"][data-cooltipz-dir="top-right"]::before, .cooltipz--top-right[aria-label][class^="cooltipz"]::before {
+  border-top-color: var(--cooltipz-bg-color, #1f1f1f);
+}
+
+[aria-label][data-cooltipz-dir][data-cooltipz-dir="bottom"]::before, .cooltipz--bottom[aria-label][data-cooltipz-dir]::before, [aria-label][class^="cooltipz"][data-cooltipz-dir="bottom"]::before, .cooltipz--bottom[aria-label][class^="cooltipz"]::before, [aria-label][data-cooltipz-dir][data-cooltipz-dir="bottom-left"]::before, .cooltipz--bottom-left[aria-label][data-cooltipz-dir]::before, [aria-label][class^="cooltipz"][data-cooltipz-dir="bottom-left"]::before, .cooltipz--bottom-left[aria-label][class^="cooltipz"]::before, [aria-label][data-cooltipz-dir][data-cooltipz-dir="bottom-right"]::before, .cooltipz--bottom-right[aria-label][data-cooltipz-dir]::before, [aria-label][class^="cooltipz"][data-cooltipz-dir="bottom-right"]::before, .cooltipz--bottom-right[aria-label][class^="cooltipz"]::before {
+  border-bottom-color: var(--cooltipz-bg-color, #1f1f1f);
+}
+
+[aria-label][data-cooltipz-dir][data-cooltipz-dir="right"]::before, .cooltipz--right[aria-label][data-cooltipz-dir]::before, [aria-label][class^="cooltipz"][data-cooltipz-dir="right"]::before, .cooltipz--right[aria-label][class^="cooltipz"]::before {
+  border-right-color: var(--cooltipz-bg-color, #1f1f1f);
+}
+
+[aria-label][data-cooltipz-dir][data-cooltipz-dir="left"]::before, .cooltipz--left[aria-label][data-cooltipz-dir]::before, [aria-label][class^="cooltipz"][data-cooltipz-dir="left"]::before, .cooltipz--left[aria-label][class^="cooltipz"]::before {
+  border-left-color: var(--cooltipz-bg-color, #1f1f1f);
+}
+
 [aria-label][data-cooltipz-dir]::after, [aria-label][data-cooltipz-dir]::before, [aria-label][class^="cooltipz"]::after, [aria-label][class^="cooltipz"]::before {
   opacity: 0;
   visibility: hidden;
@@ -81,10 +97,6 @@
   margin-bottom: 10px;
 }
 
-[aria-label][data-cooltipz-dir][data-cooltipz-dir="top"]::before, [aria-label][data-cooltipz-dir].cooltipz--top::before, [aria-label][class^="cooltipz"][data-cooltipz-dir="top"]::before, [aria-label][class^="cooltipz"].cooltipz--top::before {
-  border-top-color: var(--cooltipz-bg-color, #1f1f1f);
-}
-
 [aria-label][data-cooltipz-dir][data-cooltipz-dir="top"]::after, [aria-label][data-cooltipz-dir][data-cooltipz-dir="top"]::before, [aria-label][data-cooltipz-dir].cooltipz--top::after, [aria-label][data-cooltipz-dir].cooltipz--top::before, [aria-label][class^="cooltipz"][data-cooltipz-dir="top"]::after, [aria-label][class^="cooltipz"][data-cooltipz-dir="top"]::before, [aria-label][class^="cooltipz"].cooltipz--top::after, [aria-label][class^="cooltipz"].cooltipz--top::before {
   bottom: 100%;
   left: 50%;
@@ -98,7 +110,6 @@
 }
 
 [aria-label][data-cooltipz-dir][data-cooltipz-dir="top-left"]::before, [aria-label][data-cooltipz-dir].cooltipz--top-left::before, [aria-label][class^="cooltipz"][data-cooltipz-dir="top-left"]::before, [aria-label][class^="cooltipz"].cooltipz--top-left::before {
-  border-top-color: var(--cooltipz-bg-color, #1f1f1f);
   left: 5px;
 }
 
@@ -118,7 +129,6 @@
 }
 
 [aria-label][data-cooltipz-dir][data-cooltipz-dir="top-right"]::before, [aria-label][data-cooltipz-dir].cooltipz--top-right::before, [aria-label][class^="cooltipz"][data-cooltipz-dir="top-right"]::before, [aria-label][class^="cooltipz"].cooltipz--top-right::before {
-  border-top-color: var(--cooltipz-bg-color, #1f1f1f);
   right: 5px;
 }
 
@@ -136,10 +146,6 @@
   margin-top: 10px;
 }
 
-[aria-label][data-cooltipz-dir][data-cooltipz-dir="bottom"]::before, [aria-label][data-cooltipz-dir].cooltipz--bottom::before, [aria-label][class^="cooltipz"][data-cooltipz-dir="bottom"]::before, [aria-label][class^="cooltipz"].cooltipz--bottom::before {
-  border-bottom-color: var(--cooltipz-bg-color, #1f1f1f);
-}
-
 [aria-label][data-cooltipz-dir][data-cooltipz-dir="bottom"]::after, [aria-label][data-cooltipz-dir][data-cooltipz-dir="bottom"]::before, [aria-label][data-cooltipz-dir].cooltipz--bottom::after, [aria-label][data-cooltipz-dir].cooltipz--bottom::before, [aria-label][class^="cooltipz"][data-cooltipz-dir="bottom"]::after, [aria-label][class^="cooltipz"][data-cooltipz-dir="bottom"]::before, [aria-label][class^="cooltipz"].cooltipz--bottom::after, [aria-label][class^="cooltipz"].cooltipz--bottom::before {
   left: 50%;
   top: 100%;
@@ -153,7 +159,6 @@
 }
 
 [aria-label][data-cooltipz-dir][data-cooltipz-dir="bottom-left"]::before, [aria-label][data-cooltipz-dir].cooltipz--bottom-left::before, [aria-label][class^="cooltipz"][data-cooltipz-dir="bottom-left"]::before, [aria-label][class^="cooltipz"].cooltipz--bottom-left::before {
-  border-bottom-color: var(--cooltipz-bg-color, #1f1f1f);
   left: 5px;
 }
 
@@ -173,7 +178,6 @@
 }
 
 [aria-label][data-cooltipz-dir][data-cooltipz-dir="bottom-right"]::before, [aria-label][data-cooltipz-dir].cooltipz--bottom-right::before, [aria-label][class^="cooltipz"][data-cooltipz-dir="bottom-right"]::before, [aria-label][class^="cooltipz"].cooltipz--bottom-right::before {
-  border-bottom-color: var(--cooltipz-bg-color, #1f1f1f);
   right: 5px;
 }
 
@@ -191,10 +195,6 @@
   margin-left: 10px;
 }
 
-[aria-label][data-cooltipz-dir][data-cooltipz-dir="right"]::before, [aria-label][data-cooltipz-dir].cooltipz--right::before, [aria-label][class^="cooltipz"][data-cooltipz-dir="right"]::before, [aria-label][class^="cooltipz"].cooltipz--right::before {
-  border-right-color: var(--cooltipz-bg-color, #1f1f1f);
-}
-
 [aria-label][data-cooltipz-dir][data-cooltipz-dir="right"]::after, [aria-label][data-cooltipz-dir][data-cooltipz-dir="right"]::before, [aria-label][data-cooltipz-dir].cooltipz--right::after, [aria-label][data-cooltipz-dir].cooltipz--right::before, [aria-label][class^="cooltipz"][data-cooltipz-dir="right"]::after, [aria-label][class^="cooltipz"][data-cooltipz-dir="right"]::before, [aria-label][class^="cooltipz"].cooltipz--right::after, [aria-label][class^="cooltipz"].cooltipz--right::before {
   left: 100%;
   top: 50%;
@@ -204,10 +204,6 @@
 
 [aria-label][data-cooltipz-dir][data-cooltipz-dir="left"]::after, [aria-label][data-cooltipz-dir].cooltipz--left::after, [aria-label][class^="cooltipz"][data-cooltipz-dir="left"]::after, [aria-label][class^="cooltipz"].cooltipz--left::after {
   margin-right: 10px;
-}
-
-[aria-label][data-cooltipz-dir][data-cooltipz-dir="left"]::before, [aria-label][data-cooltipz-dir].cooltipz--left::before, [aria-label][class^="cooltipz"][data-cooltipz-dir="left"]::before, [aria-label][class^="cooltipz"].cooltipz--left::before {
-  border-left-color: var(--cooltipz-bg-color, #1f1f1f);
 }
 
 [aria-label][data-cooltipz-dir][data-cooltipz-dir="left"]::after, [aria-label][data-cooltipz-dir][data-cooltipz-dir="left"]::before, [aria-label][data-cooltipz-dir].cooltipz--left::after, [aria-label][data-cooltipz-dir].cooltipz--left::before, [aria-label][class^="cooltipz"][data-cooltipz-dir="left"]::after, [aria-label][class^="cooltipz"][data-cooltipz-dir="left"]::before, [aria-label][class^="cooltipz"].cooltipz--left::after, [aria-label][class^="cooltipz"].cooltipz--left::before {
