@@ -1,9 +1,9 @@
 /*! Cooltipz.css v1.3.0 | MIT License | github.com/JDomleo/Cooltipz.css */
 
 @import "./variables";
+@import "./tooltip";
 @import "./animations";
 @import "./arrow";
-@import "./visible";
 @import "./directions";
 @import "./sizes";
 
@@ -12,64 +12,13 @@
 ::after = tooltip box and content
 */
 
-$cooltipz-spacing: 5px;
-$cooltipz-margin: $cooltipz-arrow-size + $cooltipz-spacing;
+[aria-label] { // Required
+  &[data-cooltipz-dir], // Required
+  &[class ^= "cooltipz"] { // Required
+    // Default
+    @include tooltip;
 
-[aria-label] {
-  &[data-cooltipz-dir],
-  &[class ^= "cooltipz"] { // Required - applies to all tooltips
-    cursor: pointer;
-    position: relative;
-
-    &::after {
-      background-color: var(--cooltipz-bg-color, #1f1f1f);
-      border-radius: var(--cooltipz-border-radius, 0.125rem);
-      box-shadow: 0 0 0.1875rem rgba(0, 0, 0, 0.3);
-      color: var(--cooltipz-text-color, #fff);
-      content: attr(aria-label);
-      font-family: Verdana, Geneva, Tahoma, sans-serif;
-      font-size: var(--cooltipz-font-size, 0.75rem);
-      font-style: normal;
-      font-weight: 400;
-      padding: 0.5em 1em;
-      text-indent: 0;
-      text-shadow: none;
-      white-space: nowrap;
-      z-index: 10;
-    }
-
-    &::before {
-      content: "";
-      z-index: 11;
-    }
-
-    &::after,
-    &::before {
-      @include base-animations;
-      @extend %hide-cooltip;
-      box-sizing: border-box;
-      pointer-events: none;
-      position: absolute;
-    }
-
-    &:hover,
-    &:focus,
-    &[data-cooltipz-visible],
-    &.cooltipz--visible {
-      &::before,
-      &::after {
-        @extend %show-cooltip;
-      }
-    }
-
-    &[data-cooltipz-static],
-    &.cooltipz--static {
-      &::after,
-      &::before {
-        @include no-animations;
-      }
-    }
-
+    // Modifiers
     @include dir-top;
     @include dir-top-left;
     @include dir-top-right;
@@ -82,5 +31,13 @@ $cooltipz-margin: $cooltipz-arrow-size + $cooltipz-spacing;
     @include size-small;
     @include size-medium;
     @include size-large;
+
+    &[data-cooltipz-static],
+    &.cooltipz--static {
+      &::after,
+      &::before {
+        @include no-animations;
+      }
+    }
   }
 }

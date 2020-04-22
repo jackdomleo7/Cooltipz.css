@@ -1,3 +1,6 @@
+$cooltipz-spacing: 5px;
+$cooltipz-margin: $cooltipz-arrow-size + $cooltipz-spacing;
+
 @mixin dir-top {
   &[data-cooltipz-dir = "top"],
   &.cooltipz--top {
