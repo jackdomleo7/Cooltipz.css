@@ -45,6 +45,7 @@ $cooltipz-margin: $cooltipz-arrow-size + $cooltipz-spacing;
     &::before {
       @include base-animations;
       @extend %hide-cooltip;
+      box-sizing: border-box;
       pointer-events: none;
       position: absolute;
     }
@@ -300,6 +301,14 @@ $cooltipz-margin: $cooltipz-arrow-size + $cooltipz-spacing;
         &::before {
           transform: translate(0, -50%);
         }
+      }
+    }
+
+    &[data-cooltipz-size = "fit"],
+    &.cooltipz--fit {
+      &::after {
+        white-space: normal;
+        width: 100%;
       }
     }
   }
