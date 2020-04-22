@@ -74,7 +74,7 @@ $cooltipz-margin: $cooltipz-arrow-size + $cooltipz-spacing;
       }
 
       &::before {
-        @include arrow-down;
+        @extend %arrow-down;
       }
 
       &::after,
@@ -104,7 +104,7 @@ $cooltipz-margin: $cooltipz-arrow-size + $cooltipz-spacing;
       }
 
       &::before {
-        @include arrow-down;
+        @extend %arrow-down;
         left: $cooltipz-spacing;
       }
 
@@ -134,7 +134,7 @@ $cooltipz-margin: $cooltipz-arrow-size + $cooltipz-spacing;
       }
 
       &::before {
-        @include arrow-down;
+        @extend %arrow-down;
         right: $cooltipz-spacing;
       }
 
@@ -163,7 +163,7 @@ $cooltipz-margin: $cooltipz-arrow-size + $cooltipz-spacing;
       }
 
       &::before {
-        @include arrow-up;
+        @extend %arrow-up;
       }
 
       &::after,
@@ -193,7 +193,7 @@ $cooltipz-margin: $cooltipz-arrow-size + $cooltipz-spacing;
       }
 
       &::before {
-        @include arrow-up;
+        @extend %arrow-up;
         left: $cooltipz-spacing;
       }
 
@@ -223,7 +223,7 @@ $cooltipz-margin: $cooltipz-arrow-size + $cooltipz-spacing;
       }
 
       &::before {
-        @include arrow-up;
+        @extend %arrow-up;
         right: $cooltipz-spacing;
       }
 
@@ -252,7 +252,7 @@ $cooltipz-margin: $cooltipz-arrow-size + $cooltipz-spacing;
       }
 
       &::before {
-        @include arrow-left;
+        @extend %arrow-left;
       }
 
       &::after,
@@ -281,7 +281,7 @@ $cooltipz-margin: $cooltipz-arrow-size + $cooltipz-spacing;
       }
 
       &::before {
-        @include arrow-right;
+        @extend %arrow-right;
       }
 
       &::after,

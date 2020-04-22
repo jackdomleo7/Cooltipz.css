@@ -6,22 +6,22 @@ $cooltipz-arrow-size: 5px !default;
   width: 0;
 }
 
-@mixin arrow-down {
+%arrow-down {
   @extend %base-arrow;
   border-top-color: var(--cooltipz-bg-color, #1f1f1f);
 }
 
-@mixin arrow-up {
+%arrow-up {
   @extend %base-arrow;
   border-bottom-color: var(--cooltipz-bg-color, #1f1f1f);
 }
 
-@mixin arrow-left {
+%arrow-left {
   @extend %base-arrow;
   border-right-color: var(--cooltipz-bg-color, #1f1f1f);
 }
 
-@mixin arrow-right {
+%arrow-right {
   @extend %base-arrow;
   border-left-color: var(--cooltipz-bg-color, #1f1f1f);
 }
