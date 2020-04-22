@@ -1,4 +1,4 @@
-$transition-timing: 100ms;
+$transition-timing: 120ms;
 
 @mixin base-animations {
   transition: all $transition-timing ease-out $transition-timing;
