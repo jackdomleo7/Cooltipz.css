@@ -37,6 +37,10 @@
   opacity: 1;
 }
 
+[aria-label][data-cooltipz-dir][data-cooltipz-size="fit"]::after, .cooltipz--fit[aria-label][data-cooltipz-dir]::after, [aria-label][class^="cooltipz"][data-cooltipz-size="fit"]::after, .cooltipz--fit[aria-label][class^="cooltipz"]::after, [aria-label][data-cooltipz-dir][data-cooltipz-size="small"]::after, .cooltipz--small[aria-label][data-cooltipz-dir]::after, [aria-label][class^="cooltipz"][data-cooltipz-size="small"]::after, .cooltipz--small[aria-label][class^="cooltipz"]::after, [aria-label][data-cooltipz-dir][data-cooltipz-size="medium"]::after, .cooltipz--medium[aria-label][data-cooltipz-dir]::after, [aria-label][class^="cooltipz"][data-cooltipz-size="medium"]::after, .cooltipz--medium[aria-label][class^="cooltipz"]::after, [aria-label][data-cooltipz-dir][data-cooltipz-size="large"]::after, .cooltipz--large[aria-label][data-cooltipz-dir]::after, [aria-label][class^="cooltipz"][data-cooltipz-size="large"]::after, .cooltipz--large[aria-label][class^="cooltipz"]::after {
+  white-space: normal;
+}
+
 /*
 ::before = arrow
 ::after = tooltip box and content
@@ -222,21 +226,17 @@
 }
 
 [aria-label][data-cooltipz-dir][data-cooltipz-size="fit"]::after, [aria-label][data-cooltipz-dir].cooltipz--fit::after, [aria-label][class^="cooltipz"][data-cooltipz-size="fit"]::after, [aria-label][class^="cooltipz"].cooltipz--fit::after {
-  white-space: normal;
   width: 100%;
 }
 
 [aria-label][data-cooltipz-dir][data-cooltipz-size="small"]::after, [aria-label][data-cooltipz-dir].cooltipz--small::after, [aria-label][class^="cooltipz"][data-cooltipz-size="small"]::after, [aria-label][class^="cooltipz"].cooltipz--small::after {
-  white-space: normal;
   width: 6.25rem;
 }
 
 [aria-label][data-cooltipz-dir][data-cooltipz-size="medium"]::after, [aria-label][data-cooltipz-dir].cooltipz--medium::after, [aria-label][class^="cooltipz"][data-cooltipz-size="medium"]::after, [aria-label][class^="cooltipz"].cooltipz--medium::after {
-  white-space: normal;
   width: 12.5rem;
 }
 
 [aria-label][data-cooltipz-dir][data-cooltipz-size="large"]::after, [aria-label][data-cooltipz-dir].cooltipz--large::after, [aria-label][class^="cooltipz"][data-cooltipz-size="large"]::after, [aria-label][class^="cooltipz"].cooltipz--large::after {
-  white-space: normal;
   width: 18.75rem;
 }
