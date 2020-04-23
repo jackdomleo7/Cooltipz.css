@@ -1,6 +1,6 @@
 {
   "name": "cooltipz-css",
-  "version": "1.3.0",
+  "version": "1.4.0",
   "description": "Cool tooltips made from simple, pure CSS",
   "scripts": {
     "build": "stylelint \"**/*.scss\" --fix && node-sass src/cooltipz.scss ./cooltipz.min.css --output-style compressed && node-sass src/cooltipz.scss ./cooltipz.css --output-style expanded && npx postcss cooltipz.min.css --use autoprefixer cssnano --replace --no-map && npx postcss cooltipz.css --use autoprefixer --replace --no-map"
@@ -19,7 +19,9 @@
     "hints",
     "jdomleo",
     "jack domleo",
-    "domleo"
+    "domleo",
+    "purecss",
+    "pure-css"
   ],
   "author": "Jack Domleo",
   "license": "MIT",
@@ -43,8 +45,8 @@
     "cssnano": "^4.1.10",
     "node-sass": "^4.13.1",
     "postcss-cli": "^7.1.0",
-    "stylelint": "^13.3.2",
+    "stylelint": "^13.3.3",
     "stylelint-order": "^4.0.0",
-    "stylelint-scss": "^3.17.0"
+    "stylelint-scss": "^3.17.1"
   }
 }

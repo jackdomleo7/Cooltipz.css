@@ -1,0 +1,45 @@
+@mixin tooltip {
+  cursor: pointer;
+  position: relative;
+
+  &::after {
+    background-color: var(--cooltipz-bg-color, #1f1f1f);
+    border-radius: var(--cooltipz-border-radius, 0.125rem);
+    box-shadow: 0 0 0.1875rem rgba(0, 0, 0, 0.3);
+    color: var(--cooltipz-text-color, #fff);
+    content: attr(aria-label);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: var(--cooltipz-font-size, 0.75rem);
+    font-style: normal;
+    font-weight: 400;
+    padding: 0.5em 1em;
+    text-indent: 0;
+    text-shadow: none;
+    white-space: nowrap;
+    z-index: 10;
+  }
+
+  &::before {
+    content: "";
+    z-index: 11;
+  }
+
+  &::after,
+  &::before {
+    @include base-animations;
+    box-sizing: border-box;
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+  }
+
+  &:hover,
+  &:focus,
+  &[data-cooltipz-visible],
+  &.cooltipz--visible {
+    &::before,
+    &::after {
+      opacity: 1;
+    }
+  }
+}
