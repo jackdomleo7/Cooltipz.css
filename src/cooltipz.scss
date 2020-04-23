@@ -1,305 +1,42 @@
-/*! Cooltipz.css v1.3.0 | MIT License | github.com/JDomleo/Cooltipz.css */
+/*! Cooltipz.css v1.4.0 | MIT License | github.com/JDomleo/Cooltipz.css */
 
 @import "./variables";
+@import "./tooltip";
 @import "./animations";
 @import "./arrow";
-@import "./visible";
+@import "./directions";
+@import "./sizes";
 
 /*
 ::before = arrow
 ::after = tooltip box and content
 */
 
-$cooltipz-spacing: 5px;
-$cooltipz-margin: $cooltipz-arrow-size + $cooltipz-spacing;
+[aria-label] { // Required
+  &[data-cooltipz-dir], // Required
+  &[class ^= "cooltipz"] { // Required
+    // Default
+    @include tooltip;
 
-[aria-label] {
-  &[data-cooltipz-dir],
-  &[class ^= "cooltipz"] { // Required - applies to all tooltips
-    cursor: pointer;
-    position: relative;
-
-    &::after {
-      background-color: var(--cooltipz-bg-color, #1f1f1f);
-      border-radius: var(--cooltipz-border-radius, 0.125rem);
-      box-shadow: 0 0 0.1875rem rgba(0, 0, 0, 0.3);
-      color: var(--cooltipz-text-color, #fff);
-      content: attr(aria-label);
-      font-family: Verdana, Geneva, Tahoma, sans-serif;
-      font-size: var(--cooltipz-font-size, 0.75rem);
-      font-style: normal;
-      font-weight: 400;
-      padding: 0.5em 1em;
-      text-indent: 0;
-      text-shadow: none;
-      white-space: nowrap;
-      z-index: 10;
-    }
-
-    &::before {
-      content: "";
-      z-index: 11;
-    }
-
-    &::after,
-    &::before {
-      @include base-animations;
-      @extend %hide-cooltip;
-      pointer-events: none;
-      position: absolute;
-    }
-
-    &:hover,
-    &:focus,
-    &[data-cooltipz-visible],
-    &.cooltipz--visible {
-      &::before,
-      &::after {
-        @extend %show-cooltip;
-      }
-    }
+    // Modifiers
+    @include dir-top;
+    @include dir-top-left;
+    @include dir-top-right;
+    @include dir-bottom;
+    @include dir-bottom-left;
+    @include dir-bottom-right;
+    @include dir-left;
+    @include dir-right;
+    @include size-fit;
+    @include size-small;
+    @include size-medium;
+    @include size-large;
 
     &[data-cooltipz-static],
     &.cooltipz--static {
       &::after,
       &::before {
         @include no-animations;
-      }
-    }
-
-    &[data-cooltipz-dir = "top"],
-    &.cooltipz--top {
-      &::after {
-        margin-bottom: $cooltipz-margin;
-      }
-
-      &::before {
-        @extend %arrow-down;
-      }
-
-      &::after,
-      &::before {
-        bottom: 100%;
-        left: 50%;
-        transform: translate(-50%, var(--cooltipz-slide, 2px));
-        transform-origin: top;
-      }
-
-      &:hover,
-      &:focus,
-      &[data-cooltipz-visible],
-      &.cooltipz--visible {
-        &::after,
-        &::before {
-          transform: translate(-50%, 0);
-        }
-      }
-    }
-
-    &[data-cooltipz-dir = "top-left"],
-    &.cooltipz--top-left {
-      &::after {
-        left: 0;
-        margin-bottom: $cooltipz-margin;
-      }
-
-      &::before {
-        @extend %arrow-down;
-        left: $cooltipz-spacing;
-      }
-
-      &::after,
-      &::before {
-        bottom: 100%;
-        transform: translate(0, var(--cooltipz-slide, 2px));
-        transform-origin: top;
-      }
-
-      &:hover,
-      &:focus,
-      &[data-cooltipz-visible],
-      &.cooltipz--visible {
-        &::after,
-        &::before {
-          transform: translate(0);
-        }
-      }
-    }
-
-    &[data-cooltipz-dir = "top-right"],
-    &.cooltipz--top-right {
-      &::after {
-        margin-bottom: $cooltipz-margin;
-        right: 0;
-      }
-
-      &::before {
-        @extend %arrow-down;
-        right: $cooltipz-spacing;
-      }
-
-      &::after,
-      &::before {
-        bottom: 100%;
-        transform: translate(0, var(--cooltipz-slide, 2px));
-        transform-origin: top;
-      }
-
-      &:hover,
-      &:focus,
-      &[data-cooltipz-visible],
-      &.cooltipz--visible {
-        &::after,
-        &::before {
-          transform: translate(0);
-        }
-      }
-    }
-
-    &[data-cooltipz-dir = "bottom"],
-    &.cooltipz--bottom {
-      &::after {
-        margin-top: $cooltipz-margin;
-      }
-
-      &::before {
-        @extend %arrow-up;
-      }
-
-      &::after,
-      &::before {
-        left: 50%;
-        top: 100%;
-        transform: translate(-50%, calc(var(--cooltipz-slide, 2px) * -1));
-        transform-origin: bottom;
-      }
-
-      &:hover,
-      &:focus,
-      &[data-cooltipz-visible],
-      &.cooltipz--visible {
-        &::after,
-        &::before {
-          transform: translate(-50%, 0);
-        }
-      }
-    }
-
-    &[data-cooltipz-dir = "bottom-left"],
-    &.cooltipz--bottom-left {
-      &::after {
-        left: 0;
-        margin-top: $cooltipz-margin;
-      }
-
-      &::before {
-        @extend %arrow-up;
-        left: $cooltipz-spacing;
-      }
-
-      &::after,
-      &::before {
-        top: 100%;
-        transform: translate(0, var(--cooltipz-slide, 2px));
-        transform-origin: bottom;
-      }
-
-      &:hover,
-      &:focus,
-      &[data-cooltipz-visible],
-      &.cooltipz--visible {
-        &::after,
-        &::before {
-          transform: translate(0);
-        }
-      }
-    }
-
-    &[data-cooltipz-dir = "bottom-right"],
-    &.cooltipz--bottom-right {
-      &::after {
-        margin-top: $cooltipz-margin;
-        right: 0;
-      }
-
-      &::before {
-        @extend %arrow-up;
-        right: $cooltipz-spacing;
-      }
-
-      &::after,
-      &::before {
-        top: 100%;
-        transform: translate(0, var(--cooltipz-slide, 2px));
-        transform-origin: bottom;
-      }
-
-      &:hover,
-      &:focus,
-      &[data-cooltipz-visible],
-      &.cooltipz--visible {
-        &::after,
-        &::before {
-          transform: translate(0);
-        }
-      }
-    }
-
-    &[data-cooltipz-dir = "right"],
-    &.cooltipz--right {
-      &::after {
-        margin-left: $cooltipz-margin;
-      }
-
-      &::before {
-        @extend %arrow-left;
-      }
-
-      &::after,
-      &::before {
-        left: 100%;
-        top: 50%;
-        transform: translate(calc(var(--cooltipz-slide, 2px) * -1), -50%);
-        transform-origin: right;
-      }
-
-      &:hover,
-      &:focus,
-      &[data-cooltipz-visible],
-      &.cooltipz--visible {
-        &::after,
-        &::before {
-          transform: translate(0, -50%);
-        }
-      }
-    }
-
-    &[data-cooltipz-dir = "left"],
-    &.cooltipz--left {
-      &::after {
-        margin-right: $cooltipz-margin;
-      }
-
-      &::before {
-        @extend %arrow-right;
-      }
-
-      &::after,
-      &::before {
-        right: 100%;
-        top: 50%;
-        transform: translate(var(--cooltipz-slide, 2px), -50%);
-        transform-origin: left;
-      }
-
-      &:hover,
-      &:focus,
-      &[data-cooltipz-visible],
-      &.cooltipz--visible {
-        &::after,
-        &::before {
-          transform: translate(0, -50%);
-        }
       }
     }
   }
