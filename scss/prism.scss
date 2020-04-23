@@ -26,40 +26,9 @@ pre[class *= "language-"] {
 pre {
   &[class *= "language-"] {
     @extend %background-color;
-    margin: 0.5em 0;
-    overflow: auto;
+    margin: 0;
+    overflow-x: auto;
     padding: 1.5em 1em 1em;
-    position: relative;
-
-    &::before {
-      font-family: Verdana, Geneva, Tahoma, sans-serif;
-      font-size: 0.7rem;
-      position: absolute;
-      right: 0.5em;
-      top: 0.25em;
-    }
-  }
-
-  &.language-css {
-    &::before {
-      content: "CSS";
-    }
-  }
-
-  &.language-js {
-    &::before {
-      content: "JS";
-    }
-  }
-
-  &.language-markup {
-    &::before {
-      content: "HTML";
-    }
-  }
-
-  &.language-none {
-    padding: 1em;
   }
 }
 
@@ -148,5 +117,45 @@ pre {
   .token.string {
     background: rgba(255, 255, 255, 0.5);
     color: #9a6e3a;
+  }
+}
+
+div {
+  &[class *= "language-"] {
+    margin: 0.5em 0;
+    overflow-x: hidden;
+    position: relative;
+
+    &::before {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-size: 0.7rem;
+      position: absolute;
+      right: 0.5em;
+      top: 0.25em;
+    }
+  }
+
+  &.language-css {
+    &::before {
+      content: "CSS";
+    }
+  }
+
+  &.language-js {
+    &::before {
+      content: "JS";
+    }
+  }
+
+  &.language-markup {
+    &::before {
+      content: "HTML";
+    }
+  }
+
+  &.language-none {
+    pre {
+      padding: 1em;
+    }
   }
 }
