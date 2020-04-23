@@ -68,6 +68,7 @@
       <main class="page__main">
         <section id="direction">
           <h3>Tooltip Direction<sup class="required" aria-hidden="true">*</sup><small> - (exactly <u>one</u> direction is required for the tooltip to display)</small></h3>
+          <p>So the tooltip displays correctly, <strong>exactly one</strong> direction is required.</p>
           <div class="example">
             <button data-cooltipz-dir="top" aria-label="Hello there!">Interact</button>
             <div class="language-markup"><pre><code class="lang-markup">&lt;button data-cooltipz-dir="top" aria-label="Hello there!"&gt;...&lt;/button&gt;
@@ -107,6 +108,37 @@
             <button data-cooltipz-dir="bottom-right" aria-label="Hello there!">Interact</button>
             <div class="language-markup"><pre><code class="lang-markup">&lt;button data-cooltipz-dir="bottom-right" aria-label="Hello there!"&gt;...&lt;/button&gt;
 &lt;button class="cooltipz--bottom-right" aria-label="Hello there!"&gt;...&lt;/button&gt;</code></pre></div>
+          </div>
+        </section>
+        <hr/>
+        <section id="size">
+          <h3>Tooltip Size</h3>
+          <p>The default behaviour for a tooltip size is to remain on a single line, no matter the content within it. If you want the content to wrap, use one of the below sizes:</p>
+          <ul>
+            <li>Small - <code class="code">data-cooltipz-size="small"</code> / <code class="code">.cooltipz--small</code></li>
+            <li>Medium - <code class="code">data-cooltipz-size="medium"</code> / <code class="code">.cooltipz--medium</code></li>
+            <li>Large - <code class="code">data-cooltipz-size="large"</code> / <code class="code">.cooltipz--large</code></li>
+            <li>Fit - <code class="code">data-cooltipz-size="fit"</code> / <code class="code">.cooltipz--fit</code></li>
+          </ul>
+          <div class="example">
+            <button data-cooltipz-dir="top" data-cooltipz-size="small" aria-label="Hello there! I am a small tooltip and I will wrap the text within me.">Interact</button>
+            <div class="language-markup"><pre><code class="lang-markup">&lt;button data-cooltipz-dir="top" data-cooltipz-size="small" aria-label="Hello there! I am a small tooltip and I will wrap the text within me."&gt;...&lt;/button&gt;
+&lt;button class="cooltipz--top cooltipz--small" aria-label="Hello there! I am a small tooltip and I will wrap the text within me."&gt;...&lt;/button&gt;</code></pre></div>
+          </div>
+          <div class="example">
+            <button data-cooltipz-dir="top" data-cooltipz-size="medium" aria-label="Hello there! I am a medium tooltip and I will wrap the text within me. I'm wider thhan the small tooltip.">Interact</button>
+            <div class="language-markup"><pre><code class="lang-markup">&lt;button data-cooltipz-dir="top" data-cooltipz-size="medium" aria-label="Hello there! I am a medium tooltip and I will wrap the text within me. I'm wider thhan the small tooltip."&gt;...&lt;/button&gt;
+&lt;button class="cooltipz--top cooltipz--medium" aria-label="Hello there! I am a medium tooltip and I will wrap the text within me. I'm wider thhan the small tooltip."&gt;...&lt;/button&gt;</code></pre></div>
+          </div>
+          <div class="example">
+            <button data-cooltipz-dir="top" data-cooltipz-size="large" aria-label="Hello there! I am a large tooltip and I will wrap the text within me. I'm wider thhan the small and the medium tooltip.">Interact</button>
+            <div class="language-markup"><pre><code class="lang-markup">&lt;button data-cooltipz-dir="top" data-cooltipz-size="large" aria-label="Hello there! I am a large tooltip and I will wrap the text within me. I'm wider thhan the small and the medium tooltip."&gt;...&lt;/button&gt;
+&lt;button class="cooltipz--top cooltipz--large" aria-label="Hello there! I am a large tooltip and I will wrap the text within me. I'm wider thhan the small and the medium tooltip."&gt;...&lt;/button&gt;</code></pre></div>
+          </div>
+          <div class="example">
+            <button data-cooltipz-dir="top" data-cooltipz-size="fit" aria-label="Hello there! I am a 'fit' tooltip and I will wrap the text within me. My width will always be equal to the width of my parent element.">Interact</button>
+            <div class="language-markup"><pre><code class="lang-markup">&lt;button data-cooltipz-dir="top" data-cooltipz-size="fit" aria-label="Hello there! I am a 'fit' tooltip and I will wrap the text within me. My width will always be equal to the width of my parent element."&gt;...&lt;/button&gt;
+&lt;button class="cooltipz--top cooltipz--fit" aria-label="Hello there! I am a 'fit' tooltip and I will wrap the text within me. My width will always be equal to the width of my parent element."&gt;...&lt;/button&gt;</code></pre></div>
           </div>
         </section>
         <hr/>
