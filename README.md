@@ -42,7 +42,7 @@ Link to CDN stylesheet in your `<head>`
 <link rel="stylesheet" href="https://raw.githack.com/JDomleo/Cooltipz.css/master/cooltipz.min.css" />
 ```
 
-Link to CDN stylesheet in you CSS
+Or link to CDN stylesheet in you CSS
 ```css
 /* This will always get the latest expanded stylesheet */
 @import url(https://raw.githack.com/JDomleo/Cooltipz.css/master/cooltipz.css);
@@ -51,7 +51,7 @@ Link to CDN stylesheet in you CSS
 @import url(https://raw.githack.com/JDomleo/Cooltipz.css/master/cooltipz.min.css);
 ```
 
-Download it from GitHub and link to it locally
+Or download it from GitHub and link to it locally
 ```html
 <!-- This will never be updated, unless manually changed -->
 <link rel="stylesheet" href="path/to/cooltipz.min.css" />
@@ -64,12 +64,12 @@ Install via npm
 npm install cooltipz-css --save
 ```
 
-Import into your JavaScript
+Then import into your JavaScript
 ```js
 import 'cooltipz-css';
 ```
 
-Or import into your Sass/SCSS
+Or import the raw SCSS into your Sass/SCSS
 ```scss
 /* Webpack */
 @import '~cooltipz-css/src/cooltipz';
@@ -78,6 +78,14 @@ Or import into your Sass/SCSS
 @import 'path/to/node_modules/cooltipz-css/src/cooltipz';
 ```
 
+Or import the CSS stylesheets into your Sass/SCSS
+```scss
+/* Expanded stylesheet */
+@import '~cooltipz-css/cooltipz.css';
+
+/* Minified stylesheet */
+@import '~cooltipz-css/cooltipz.min.css';
+```
 ---
 
 ## Contributors
