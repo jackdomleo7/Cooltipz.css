@@ -80,11 +80,17 @@ Or import the raw SCSS into your Sass/SCSS
 
 Or import the CSS stylesheets into your Sass/SCSS
 ```scss
-/* Expanded stylesheet */
+/* Expanded stylesheet - webpack */
 @import '~cooltipz-css/cooltipz.css';
 
-/* Minified stylesheet */
+/* Minified stylesheet - webpack */
 @import '~cooltipz-css/cooltipz.min.css';
+
+/* Expanded stylesheet - non webpack */
+@import 'path/to/node_modules/cooltipz-css/cooltipz.css';
+
+/* Minified stylesheet - non webpack */
+@import 'path/to/node_modules/cooltipz-css/cooltipz.min.css';
 ```
 ---
 
