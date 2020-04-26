@@ -209,7 +209,7 @@
 &lt;link rel="stylesheet" href="https://raw.githack.com/JDomleo/Cooltipz.css/master/cooltipz.min.css" /&gt;</code></pre></div>
           </div>
           <div class="example example--stack">
-            <p>Link to CDN stylesheet in your CSS</p>
+            <p>Or link to CDN stylesheet in your CSS</p>
             <div class="language-css"><pre><code class="lang-css">/* This will get the latest expanded stylesheet */
 @import url(https://raw.githack.com/JDomleo/Cooltipz.css/master/cooltipz.css);
 
@@ -217,7 +217,7 @@
 @import url(https://raw.githack.com/JDomleo/Cooltipz.css/master/cooltipz.min.css);</code></pre></div>
           </div>
           <div class="example example--stack">
-            <p>Download it from GitHub and link to it locally</p>
+            <p>Or download it from GitHub and link to it locally</p>
             <div class="language-markup"><pre><code class="lang-markup">&lt;!-- Be sure to manually update this regularly --&gt;
 &lt;link rel="stylesheet" href="path/to/cooltipz.min.css" /&gt;</code></pre></div>
           </div>
@@ -227,16 +227,30 @@
             <div class="language-"><pre><code class="language-">npm install cooltipz-css --save</code></pre></div>
           </div>
           <div class="example example--stack">
-            <p>Import it into your JavaScript</p>
+            <p>Then import it into your JavaScript</p>
             <div class="language-js"><pre><code class="lang-js">import 'cooltipz-css';</code></pre></div>
           </div>
           <div class="example example--stack">
-            <p>Or import it into your Sass/SCSS</p>
+            <p>Or import the raw SCSS into your Sass/SCSS</p>
             <div class="language-css"><pre><code class="lang-css">/* Webpack */
 @import '~cooltipz-css/src/cooltipz';
 
 /* Non webpack */
 @import 'path/to/node_modules/cooltipz-css/src/cooltipz';</code></pre></div>
+          </div>
+          <div class="example example--stack">
+            <p>Or import the CSS stylesheet into your Sass/SCSS</p>
+            <div class="language-css"><pre><code class="lang-css">/* Expanded stylesheet - webpack */
+@import '~cooltipz-css/cooltipz.css';
+
+/* Minified stylesheet - webpack */
+@import '~cooltipz-css/cooltipz.min.css';
+
+/* Expanded stylesheet - Non webpack */
+@import 'path/to/node_modules/cooltipz-css/cooltipz.css';
+
+/* Minified stylesheet - Non webpack */
+@import 'path/to/node_modules/cooltipz-css/cooltipz.min.css';</code></pre></div>
           </div>
         </section>
         <hr/>
