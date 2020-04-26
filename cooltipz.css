@@ -50,6 +50,8 @@
   content: attr(aria-label);
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: var(--cooltipz-font-size, 0.75rem);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   font-style: normal;
   font-weight: 400;
   padding: 0.5em 1em;
