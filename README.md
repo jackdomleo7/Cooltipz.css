@@ -31,30 +31,22 @@ Have a play with Cooltipz.css in [CodePen](https://codepen.io/JackDomleo/pen/mde
 
 ## Installation
 
-### Stylesheet
+### CDN
 
-Link to CDN stylesheet in your `<head>`
+In the below CDN links:
+- Replace `version` after the `@` with a version [listed here](https://www.npmjs.com/package/cooltipz-css?activeTab=versions) (latest version is always recommended). If you always want to get the latest stylesheet, remove `@version` completely (Not recommended).
+- Replace `file` with one of the below:
+  - `cooltipz.css` (Expanded stylesheet)
+  - `cooltipz.min.css` (Minfied stylesheet)
+
 ```html
-<!-- This will always get the latest expanded stylesheet -->
-<link rel="stylesheet" href="https://raw.githack.com/JDomleo/Cooltipz.css/master/cooltipz.css" />
-
-<!-- This will always get the latest minified stylesheet -->
-<link rel="stylesheet" href="https://raw.githack.com/JDomleo/Cooltipz.css/master/cooltipz.min.css" />
+<!-- HTML -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cooltipz-css@version/file" />
 ```
 
-Or link to CDN stylesheet in you CSS
 ```css
-/* This will always get the latest expanded stylesheet */
-@import url(https://raw.githack.com/JDomleo/Cooltipz.css/master/cooltipz.css);
-
-/* This will always get the latest minified stylesheet */
-@import url(https://raw.githack.com/JDomleo/Cooltipz.css/master/cooltipz.min.css);
-```
-
-Or download it from GitHub and link to it locally
-```html
-<!-- This will never be updated, unless manually changed -->
-<link rel="stylesheet" href="path/to/cooltipz.min.css" />
+/* Or CSS */
+@import url('https://cdn.jsdelivr.net/npm/cooltipz-css@version/file');
 ```
 
 ### npm
