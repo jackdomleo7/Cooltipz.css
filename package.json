@@ -1,7 +1,7 @@
 {
   "name": "cooltipz-css",
-  "version": "1.4.1",
-  "description": "Cool tooltips made from simple, pure CSS",
+  "version": "1.4.2",
+  "description": "Cool tooltips made from simple, pure, customisable CSS",
   "scripts": {
     "build": "stylelint \"**/*.scss\" --fix && node-sass src/cooltipz.scss ./cooltipz.min.css --output-style compressed && node-sass src/cooltipz.scss ./cooltipz.css --output-style expanded && npx postcss cooltipz.min.css --use autoprefixer cssnano --replace --no-map && npx postcss cooltipz.css --use autoprefixer --replace --no-map"
   },
@@ -44,7 +44,7 @@
     "autoprefixer": "^9.7.6",
     "cssnano": "^4.1.10",
     "node-sass": "^4.14.0",
-    "postcss-cli": "^7.1.0",
+    "postcss-cli": "^7.1.1",
     "stylelint": "^13.3.3",
     "stylelint-order": "^4.0.0",
     "stylelint-scss": "^3.17.1"
