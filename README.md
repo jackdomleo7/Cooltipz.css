@@ -86,7 +86,7 @@ You have the right to use this library in any project free of charge. You **do n
 
 ---
 
-We appreciate any feedback (feel free to raise an [issue](https://github.com/JDomleo/Cooltipz.css/issues?ref=cooltipz.jackdomleo.dev) and we'll address it as soon as possible) and any **stars on [GitHub](https://github.com/JDomleo/Cooltipz.css?ref=cooltipz.min.css)** or **shares** (be sure to use the hashtags `#cooltipz #cooltipz-css`) of our library are always appreciated and gives us confidence in our library.
+We appreciate any feedback (feel free to raise an [issue](https://github.com/JDomleo/Cooltipz.css/issues?ref=cooltipz.jackdomleo.dev) and we'll address it as soon as possible) and any **stars on [GitHub](https://github.com/JDomleo/Cooltipz.css?ref=cooltipz.min.css)** or **shares** (be sure to use the hashtags `#cooltipz #cooltipzcss`) of our library are always appreciated and gives us confidence in our library.
 
 ---
 
