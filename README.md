@@ -4,22 +4,23 @@
 
 # Cooltipz.css - Cool tooltips
 
-**Cool tooltips made from simple, pure CSS**
+**Cool tooltips made from simple, pure, customisable CSS**
 
 **Current version** - [v1.4.1](https://github.com/JDomleo/Cooltipz.css/releases/tag/v1.4.1)
 
 [Read the docs here](https://cooltipz.jackdomleo.dev)
 
-Have a play with Cooltipz.css in [CodePen](https://codepen.io/JackDomleo/pen/mderEeG).
+Play with Cooltipz.css on [CodePen](https://codepen.io/JackDomleo/pen/mderEeG?ref=cooltipz.min.css).
 
 **Features**
-- Easy and simple
+- Easy, simple, customisable tooltips
 - Pure CSS, no JavaScript
 - Accessible with aria-label attributes
+- Automatically disables animation if the user [prefers reduced motion](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion?ref=cooltipz.min.css)
 - Options to use classes or `data-` attributes
-- Disables animation if user's preference are set to reduced motion - [`prefers-reduced-motion`](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion)
-- Uses [Autoprefixer](https://github.com/postcss/autoprefixer) when generating the distributed CSS
-- Import expanded CSS, minified CSS or the the raw Sass/SCSS
+- Options to import via CDN or npm
+- Options to import SCSS <sub><sup>(npm only)</sup></sub> or CSS stylesheets <sub><sup>(expanded or minified)</sup></sub>
+- Uses [Autoprefixer](https://github.com/postcss/autoprefixer?ref=cooltipz.min.css) when generating the  CSS stylesheets and [cssnano](https://github.com/cssnano/cssnano?ref=cooltipz.min.css) to minify the minfied stylesheet
 
 ---
 
@@ -83,4 +84,4 @@ In the below imports, replace `file` with one of the options below:
 
 ---
 
-[npm](https://www.npmjs.com/package/cooltipz-css) &bull; [GitHub](https://github.com/JDomleo/Cooltipz.css) &bull; [docs](https://cooltipz.jackdomleo.dev) &bull; [CHANGELOG](https://github.com/JDomleo/Cooltipz.css/releases)
+[npm](https://www.npmjs.com/package/cooltipz-css?ref=cooltipz.min.css) &bull; [GitHub](https://github.com/JDomleo/Cooltipz.css?ref=cooltipz.min.css) &bull; [docs](https://cooltipz.jackdomleo.dev) &bull; [CHANGELOG](https://github.com/JDomleo/Cooltipz.css/releases?ref=cooltipz.min.css)
