@@ -13,7 +13,7 @@
 Play with Cooltipz.css on [CodePen](https://codepen.io/JackDomleo/pen/mderEeG?ref=cooltipz.min.css).
 
 **Features**
-- Easy, simple, customisable tooltips
+- Easy, simple, customisable tooltips with **quick setup**
 - Pure CSS, no JavaScript
 - Accessible with aria-label attributes
 - Automatically disables animation if the user [prefers reduced motion](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion?ref=cooltipz.min.css)
