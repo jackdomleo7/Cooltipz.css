@@ -36,8 +36,8 @@ Have a play with Cooltipz.css in [CodePen](https://codepen.io/JackDomleo/pen/mde
 In the below CDN links:
 - Replace `version` after the `@` with a version [listed here](https://www.npmjs.com/package/cooltipz-css?activeTab=versions) (latest version is always recommended). If you always want to get the latest stylesheet, remove `@version` completely (Not recommended).
 - Replace `file` with one of the below:
-  - `cooltipz.css` (Expanded stylesheet)
-  - `cooltipz.min.css` (Minfied stylesheet)
+  - `cooltipz.css` <sub><sup>(Expanded stylesheet)</sup></sub>
+  - `cooltipz.min.css` <sub><sup>(Minfied stylesheet)</sup></sub>
 
 ```html
 <!-- HTML -->
@@ -51,7 +51,7 @@ In the below CDN links:
 
 ### npm
 
-Install via npm
+Install via npm <sub><sup>(It's best practice to install Cooltipz.css as a dependency rather than a devDependency)</sup></sub>
 ```
 npm install cooltipz-css --save
 ```
@@ -61,28 +61,17 @@ Then import into your JavaScript
 import 'cooltipz-css';
 ```
 
-Or import the raw SCSS into your Sass/SCSS
+Or import the SCSS or CSS into your Sass/SCSS
+In the below imports, replace `file` with one of the options below:
+- `src/cooltipz` <sub><sup>(.scss file)</sup></sub>
+- `cooltipz.css` <sub><sup>(Expanded .css)</sup></sub>
+- `cooltipz.min.css` <sub><sup>(Minified .css)</sup></sub>
 ```scss
 /* Webpack */
-@import '~cooltipz-css/src/cooltipz';
+@import '~cooltipz-css/file';
 
 /* Non-webpack */
-@import 'path/to/node_modules/cooltipz-css/src/cooltipz';
-```
-
-Or import the CSS stylesheets into your Sass/SCSS
-```scss
-/* Expanded stylesheet - webpack */
-@import '~cooltipz-css/cooltipz.css';
-
-/* Minified stylesheet - webpack */
-@import '~cooltipz-css/cooltipz.min.css';
-
-/* Expanded stylesheet - non webpack */
-@import 'path/to/node_modules/cooltipz-css/cooltipz.css';
-
-/* Minified stylesheet - non webpack */
-@import 'path/to/node_modules/cooltipz-css/cooltipz.min.css';
+@import 'path/to/node_modules/cooltipz-css/file';
 ```
 ---
 
