@@ -74,6 +74,20 @@ In the below imports, replace `file` with one of the options below:
 /* Non-webpack */
 @import 'path/to/node_modules/cooltipz-css/file';
 ```
+
+---
+
+## License
+
+Type - **MIT**
+[Read license](./LICENSE)
+
+You have the right to use this library in any project free of charge. You **do not** have the right to resell, sublicense or redistribute (even for free) this library. All use of the library must credit the author, this includes keeping `/*! Cooltipz.css version | MIT License | github.com/JDomleo/Cooltipz.css */` at the beginning of the SCSS and CSS stylesheets where `version` is replaced with the version of Cooltipz.css you are using.
+
+---
+
+We appreciate any feedback (feel free to raise an [issue](https://github.com/JDomleo/Cooltipz.css/issues?ref=cooltipz.jackdomleo.dev) and we'll address it as soon as possible) and any **stars on [GitHub](https://github.com/JDomleo/Cooltipz.css?ref=cooltipz.min.css)** or **shares** (be sure to use the hashtags `#cooltipz #cooltipz-css`) of our library are always appreciated and gives us confidence in our library.
+
 ---
 
 ## Contributors
