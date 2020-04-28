@@ -20,13 +20,13 @@
     "autoprefixer": "^9.7.6",
     "cssnano": "^4.1.10",
     "node-sass": "^4.14.0",
-    "postcss-cli": "^7.1.0",
+    "postcss-cli": "^7.1.1",
     "stylelint": "^13.3.3",
     "stylelint-order": "^4.0.0",
     "stylelint-scss": "^3.17.1"
   },
   "dependencies": {
-    "cooltipz-css": "^1.4.1",
+    "cooltipz-css": "^1.4.2",
     "normalize.css": "^8.0.1"
   }
 }
