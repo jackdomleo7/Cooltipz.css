@@ -20,7 +20,7 @@ Play with Cooltipz.css on [CodePen](https://codepen.io/JackDomleo/pen/mderEeG?re
 - Options to use classes or `data-` attributes
 - Options to import via CDN or npm
 - Options to import SCSS <sub><sup>(npm only)</sup></sub> or CSS stylesheets <sub><sup>(expanded or minified)</sup></sub>
-- Uses [Autoprefixer](https://github.com/postcss/autoprefixer?ref=cooltipz.min.css) when generating the  CSS stylesheets and [cssnano](https://github.com/cssnano/cssnano?ref=cooltipz.min.css) to minify the minfied stylesheet
+- Uses [Autoprefixer](https://github.com/postcss/autoprefixer?ref=cooltipz.min.css) when generating the CSS stylesheets and [cssnano](https://github.com/cssnano/cssnano?ref=cooltipz.min.css) to minify the minfied stylesheet
 
 ---
 
