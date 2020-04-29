@@ -174,13 +174,50 @@
         <section id="customisation">
           <h3>Customisation</h3>
           <p>Cooltipz.css exposes 5 CSS variables that can be overriden using your own styles:</p>
-          <ul>
-            <li><code class="code">--cooltipz-bg-color</code>: Accepts any valid value for <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/background-color?ref=cooltipz.jackdomleo.dev" rel="noreferrer nofollow" target="_blank" class="link">background-color</a></li>
-            <li><code class="code">--cooltipz-text-color</code>: Accepts any valid value for <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/color?ref=cooltipz.jackdomleo.dev" rel="noreferrer nofollow" target="_blank" class="link">color</a></li>
-            <li><code class="code">--cooltipz-font-size</code>: Accepts any valid value for <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-size?ref=cooltipz.jackdomleo.dev" rel="noreferrer nofollow" target="_blank" class="link">font-size</a></li>
-            <li><code class="code">--cooltipz-slide</code>: Accepts any valid value for <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/translate?ref=cooltipz.jackdomleo.dev" rel="noreferrer nofollow" target="_blank" class="link">translate</a></li>
-            <li><code class="code">--cooltipz-border-radius</code>: Accepts any valid value for <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/border-radius?ref=cooltipz.jackdomleo.dev" rel="noreferrer nofollow" target="_blank" class="link">border-radius</a></li>
-          </ul>
+          <div class="variables__wrapper">
+            <table class="variables">
+              <thead>
+                <tr>
+                  <td>CSS Variable</td>
+                  <td>Description</td>
+                  <td>Default</td>
+                  <td>Valid values</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><code class="code">--cooltips-bg-color</code></td>
+                  <td>Tooltip background colour</td>
+                  <td><span class="variables__sample variables__sample--bg"></span><code class="code">#1f1f1f</code></td>
+                  <td>Accepts any valid value for <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/background-color?ref=cooltipz.jackdomleo.dev" rel="noreferrer nofollow" target="_blank" class="link">background-color</a></td>
+                </tr>
+                <tr>
+                  <td><code class="code">--cooltips-text-color</code></td>
+                  <td>Tooltip text colour</td>
+                  <td><span class="variables__sample variables__sample--text"></span><code class="code">#fff</code></td>
+                  <td>Accepts any valid value for <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/color?ref=cooltipz.jackdomleo.dev" rel="noreferrer nofollow" target="_blank" class="link">color</a></td>
+                </tr>
+                <tr>
+                  <td><code class="code">--cooltips-font-size</code></td>
+                  <td>Tooltip font size</td>
+                  <td><code class="code">0.75rem</code></td>
+                  <td>Accepts any valid value for <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-size?ref=cooltipz.jackdomleo.dev" rel="noreferrer nofollow" target="_blank" class="link">font-size</a></td>
+                </tr>
+                <tr>
+                  <td><code class="code">--cooltips-slide</code></td>
+                  <td>Distance for tooltip to travel into view</td>
+                  <td><code class="code">6px</code></td>
+                  <td>Accepts any valid value for <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/translate?ref=cooltipz.jackdomleo.dev" rel="noreferrer nofollow" target="_blank" class="link">translate</a></td>
+                </tr>
+                <tr>
+                  <td><code class="code">--cooltips-border-radius</code></td>
+                  <td>Tooltip border radius</td>
+                  <td><code class="code">0.125rem</code></td>
+                  <td>Accepts any valid value for <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/border-radius?ref=cooltipz.jackdomleo.dev" rel="noreferrer nofollow" target="_blank" class="link">border-radius</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
           <div class="example--stack">
             <p>To override every tooltip in your project, place your CSS variables in the <code class="code">:root</code> selector</p>
             <div class="language-css"><pre><code class="lang-css">:root {

@@ -30,3 +30,52 @@
     margin-right: 2rem !important;
   }
 }
+
+.variables {
+  width: 100%;
+
+  &__wrapper {
+    margin: 2rem 0;
+    overflow-x: auto;
+  }
+
+  tr {
+    align-items: center;
+    display: flex;
+    font-weight: 700;
+    margin: 1rem 0;
+
+    td {
+      padding: 0.5rem;
+
+      &:nth-child( 1 ),
+      &:nth-child( 2 ) {
+        width: 13rem;
+      }
+
+      &:nth-child( 3 ) {
+        width: 7rem;
+      }
+
+      &:nth-child( 4 ) {
+        width: 15rem;
+      }
+    }
+  }
+
+  &__sample {
+    border: 1px solid #000;
+    display: inline-block;
+    height: 0.8rem;
+    margin-right: 0.5rem;
+    width: 0.8rem;
+
+    &--bg {
+      background-color: var(--cooltipz-bg-color);
+    }
+
+    &--text {
+      background-color: var(--cooltipz-text-color);
+    }
+  }
+}
