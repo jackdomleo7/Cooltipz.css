@@ -1,5 +1,5 @@
 @mixin tooltip {
-  cursor: pointer;
+  cursor: var(--cooltipz-cursor, pointer);
   position: relative;
 
   &::after {
