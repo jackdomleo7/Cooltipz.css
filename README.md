@@ -1,7 +1,7 @@
 ![Cooltipz.css](./logo.png "Cooltipz.css logo")
 
 [![GitHub release](https://badgen.net/github/release/JDomleo/Cooltipz.css?icon=github)](https://github.com/JDomleo/Cooltipz.css) [![npm version](https://badgen.net/npm/v/cooltipz-css?icon=npm)](https://www.npmjs.com/package/cooltipz-css) [![jsDelivr CDN hits](https://badgen.net/jsdelivr/hits/npm/cooltipz-css)](https://github.com/JDomleo/Cooltipz.css#cdn) [![MIT license](https://badgen.net/badge/license/MIT/blue?icon=awesome)](https://github.com/JDomleo/Cooltipz.css#license)
-[![GitHub stars](https://badgen.net/github/stars/JDomleo/Cooltipz.css?icon=github)](https://github.com/JDomleo/Cooltipz.css/stargazers) [![npm downloads](https://badgen.net/npm/dt/cooltipz-css?icon=npm)](https://www.npmjs.com/package/cooltipz-css?ref=cooltipz.min.css)
+[![GitHub stars](https://badgen.net/github/stars/JDomleo/Cooltipz.css?icon=github)](https://github.com/JDomleo/Cooltipz.css/stargazers) [![npm downloads](https://badgen.net/npm/dt/cooltipz-css?icon=npm)](https://www.npmjs.com/package/cooltipz-css?ref=cooltipz.jackdomleo.dev)
 
 ---
 
@@ -11,17 +11,17 @@
 
 [Read the docs here](https://cooltipz.jackdomleo.dev)
 
-Play with Cooltipz.css on [CodePen](https://codepen.io/JackDomleo/pen/mderEeG?ref=cooltipz.min.css).
+Play with Cooltipz.css on [CodePen](https://codepen.io/JackDomleo/pen/mderEeG?ref=cooltipz.jackdomleo.dev).
 
 **Features**
 - Easy, simple, customisable tooltips with **quick setup**
 - Pure CSS, no JavaScript
 - Accessible with aria-label attributes
-- Automatically disables animation if the user [prefers reduced motion](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion?ref=cooltipz.min.css)
+- Automatically disables animation if the user [prefers reduced motion](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion?ref=cooltipz.jackdomleo.dev)
 - Options to use classes or `data-` attributes
 - Options to import via CDN or npm
 - Options to import SCSS <sub><sup>(npm only)</sup></sub> or CSS stylesheets <sub><sup>(expanded or minified)</sup></sub>
-- Uses [Autoprefixer](https://github.com/postcss/autoprefixer?ref=cooltipz.min.css) when generating the CSS stylesheets and [cssnano](https://github.com/cssnano/cssnano?ref=cooltipz.min.css) to minify the minfied stylesheet
+- Uses [Autoprefixer](https://github.com/postcss/autoprefixer?ref=cooltipz.jackdomleo.dev) when generating the CSS stylesheets and [cssnano](https://github.com/cssnano/cssnano?ref=cooltipz.jackdomleo.dev) to minify the minfied stylesheet
 
 ---
 
@@ -87,7 +87,13 @@ You have the right to use this library in any project free of charge. You **do n
 
 ---
 
-We appreciate any feedback (feel free to raise an [issue](https://github.com/JDomleo/Cooltipz.css/issues?ref=cooltipz.jackdomleo.dev) and we'll address it as soon as possible) and any **stars on [GitHub](https://github.com/JDomleo/Cooltipz.css?ref=cooltipz.min.css)** or **shares** (be sure to use the hashtags `#cooltipz #cooltipzcss`) of our library are always appreciated and gives us confidence in our library.
+We appreciate any feedback (feel free to raise an [issue](https://github.com/JDomleo/Cooltipz.css/issues?ref=cooltipz.jackdomleo.dev) and we'll address it as soon as possible) and any **stars on [GitHub](https://github.com/JDomleo/Cooltipz.css?ref=cooltipz.jackdomleo.dev)** or **shares** (be sure to use the hashtags `#cooltipz #cooltipzcss`) of our library are always appreciated and gives us confidence in our library.
+
+---
+
+## Special thanks
+
+[Autoprefixer](https://github.com/postcss/autoprefixer?ref=cooltipz.jackdomleo.dev "Applying vendor prefixes to the distributed CSS") &bull; [cssnano](https://cssnano.co?ref=cooltipz.jackdomleo.dev "Minifies the minified stylesheet even further") &bull; [node-sass](https://github.com/sass/node-sas?ref=cooltipz.jackdomleo.dev "Compiling source SCSS to CSS") &bull; [postcss-cli](https://github.com/postcss/postcss-cli?ref=cooltipz.jackdomleo.dev "CLI for applying postcss plugins - Autoprefixer, cssnano") &bull; [Stylelint](https://stylelint.io?ref=cooltipz.jackdomleo.dev "Linter for styles") &bull; [stylelint-scss](https://github.com/kristerkari/stylelint-scss?ref=cooltipz.jackdomleo.dev "Plugin for Stylelint specificaly for SCSS") &bull; [stylelint-order](https://github.com/hudochenkov/stylelint-order?ref=cooltipz.jackdomleo.dev "Plugin for Stylelint for ordering CSS properties") &bull; [badgen](https://badgen.net?ref=cooltipz.jackdomleo.dev "Provides the ability to add badges to the markdown") &bull; [GitHub](https://github.com?ref=cooltipz.jackdomleo.dev "Ability for a remote repo") &bull; [npm](https://www.npmjs.com?ref=cooltipz.jackdomleo.dev "npm package") &bull; [jsDelivr](https://www.jsdelivr.com?ref=cooltipz.jackdomleo.dev "CDN for linking to an external stylesheet")
 
 ---
 
@@ -99,4 +105,4 @@ We appreciate any feedback (feel free to raise an [issue](https://github.com/JDo
 
 ---
 
-[npm](https://www.npmjs.com/package/cooltipz-css?ref=cooltipz.min.css) &bull; [GitHub](https://github.com/JDomleo/Cooltipz.css?ref=cooltipz.min.css) &bull; [docs](https://cooltipz.jackdomleo.dev) &bull; [CHANGELOG](https://github.com/JDomleo/Cooltipz.css/releases?ref=cooltipz.min.css)
+[npm](https://www.npmjs.com/package/cooltipz-css?ref=cooltipz.jackdomleo.dev) &bull; [GitHub](https://github.com/JDomleo/Cooltipz.css?ref=cooltipz.jackdomleo.dev) &bull; [docs](https://cooltipz.jackdomleo.dev) &bull; [CHANGELOG](https://github.com/JDomleo/Cooltipz.css/releases?ref=cooltipz.jackdomleo.dev)
