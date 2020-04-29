@@ -48,4 +48,10 @@
       text-align: left;
     }
   }
+
+  &__badges {
+    img {
+      max-width: 100%;
+    }
+  }
 }
