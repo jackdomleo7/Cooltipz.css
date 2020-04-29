@@ -5,38 +5,47 @@
   justify-content: center;
   margin-top: 1rem;
 
-  img {
+  &__logo {
     max-height: 16rem;
   }
 
-  h1,
-  h2 {
+  &__subHeader {
+    font-size: 1.4rem;
     margin: 0;
+    margin-top: 1rem;
     text-align: center;
   }
 
-  h2 {
-    font-size: 1.4rem;
-    margin-top: 1rem;
+  &__bullets {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    list-style-type: none;
+    margin-top: 1.5rem;
+    padding-left: 0;
+    text-align: center;
+    width: 100%;
+
+    > li {
+      margin: 0.5rem 2rem;
+      min-width: 4rem;
+    }
   }
 
   p {
-    margin-top: 1.8rem;
+    margin-top: 1.2rem;
     text-align: center;
   }
 
-  ul {
-    margin-top: 1rem;
-    text-align: left;
-  }
-
-  h3 {
+  &__features {
+    align-self: flex-start;
     margin-bottom: 0;
     margin-top: 3rem;
-  }
 
-  h3,
-  ul {
-    align-self: flex-start;
+    + ul {
+      align-self: flex-start;
+      margin-top: 1rem;
+      text-align: left;
+    }
   }
 }
