@@ -63,6 +63,7 @@
   text-indent: 0;
   text-shadow: none;
   white-space: nowrap;
+  word-wrap: break-word;
   z-index: 10;
 }
 
