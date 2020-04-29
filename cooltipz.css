@@ -5,6 +5,7 @@
   --cooltipz-font-size: 0.75rem;
   --cooltipz-slide: 6px;
   --cooltipz-border-radius: 0.125rem;
+  --cooltipz-timing: 120ms;
 }
 
 [aria-label][data-cooltipz-dir][data-cooltipz-dir="top"]::before, .cooltipz--top[aria-label][data-cooltipz-dir]::before, [aria-label][class^="cooltipz"][data-cooltipz-dir="top"]::before, .cooltipz--top[aria-label][class^="cooltipz"]::before, [aria-label][data-cooltipz-dir][data-cooltipz-dir="top-left"]::before, .cooltipz--top-left[aria-label][data-cooltipz-dir]::before, [aria-label][class^="cooltipz"][data-cooltipz-dir="top-left"]::before, .cooltipz--top-left[aria-label][class^="cooltipz"]::before, [aria-label][data-cooltipz-dir][data-cooltipz-dir="top-right"]::before, .cooltipz--top-right[aria-label][data-cooltipz-dir]::before, [aria-label][class^="cooltipz"][data-cooltipz-dir="top-right"]::before, .cooltipz--top-right[aria-label][class^="cooltipz"]::before, [aria-label][data-cooltipz-dir][data-cooltipz-dir="bottom"]::before, .cooltipz--bottom[aria-label][data-cooltipz-dir]::before, [aria-label][class^="cooltipz"][data-cooltipz-dir="bottom"]::before, .cooltipz--bottom[aria-label][class^="cooltipz"]::before, [aria-label][data-cooltipz-dir][data-cooltipz-dir="bottom-left"]::before, .cooltipz--bottom-left[aria-label][data-cooltipz-dir]::before, [aria-label][class^="cooltipz"][data-cooltipz-dir="bottom-left"]::before, .cooltipz--bottom-left[aria-label][class^="cooltipz"]::before, [aria-label][data-cooltipz-dir][data-cooltipz-dir="bottom-right"]::before, .cooltipz--bottom-right[aria-label][data-cooltipz-dir]::before, [aria-label][class^="cooltipz"][data-cooltipz-dir="bottom-right"]::before, .cooltipz--bottom-right[aria-label][class^="cooltipz"]::before, [aria-label][data-cooltipz-dir][data-cooltipz-dir="right"]::before, .cooltipz--right[aria-label][data-cooltipz-dir]::before, [aria-label][class^="cooltipz"][data-cooltipz-dir="right"]::before, .cooltipz--right[aria-label][class^="cooltipz"]::before, [aria-label][data-cooltipz-dir][data-cooltipz-dir="left"]::before, .cooltipz--left[aria-label][data-cooltipz-dir]::before, [aria-label][class^="cooltipz"][data-cooltipz-dir="left"]::before, .cooltipz--left[aria-label][class^="cooltipz"]::before {
@@ -67,7 +68,7 @@
 }
 
 [aria-label][data-cooltipz-dir]::after, [aria-label][data-cooltipz-dir]::before, [aria-label][class^="cooltipz"]::after, [aria-label][class^="cooltipz"]::before {
-  transition: all 120ms ease-out 120ms;
+  transition: all var(--cooltipz-timing, 120ms) ease-out var(--cooltipz-timing, 120ms);
   box-sizing: border-box;
   opacity: 0;
   pointer-events: none;
