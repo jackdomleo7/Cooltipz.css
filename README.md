@@ -1,7 +1,6 @@
 ![Cooltipz.css](./logo.png "Cooltipz.css logo")
 
-[![GitHub release](https://badgen.net/github/release/JDomleo/Cooltipz.css?icon=github)](https://github.com/JDomleo/Cooltipz.css) [![npm version](https://badgen.net/npm/v/cooltipz-css?icon=npm)](https://www.npmjs.com/package/cooltipz-css) [![jsDelivr CDN hits](https://badgen.net/jsdelivr/hits/npm/cooltipz-css)](https://github.com/JDomleo/Cooltipz.css#cdn) [![MIT license](https://badgen.net/badge/license/MIT/blue?icon=awesome)](https://github.com/JDomleo/Cooltipz.css#license)
-[![GitHub stars](https://badgen.net/github/stars/JDomleo/Cooltipz.css?icon=github)](https://github.com/JDomleo/Cooltipz.css/stargazers) [![npm downloads](https://badgen.net/npm/dt/cooltipz-css?icon=npm)](https://www.npmjs.com/package/cooltipz-css?ref=cooltipz.jackdomleo.dev)
+[![GitHub release](https://badgen.net/github/release/JDomleo/Cooltipz.css?icon=github)](https://github.com/JDomleo/Cooltipz.css) [![npm version](https://badgen.net/npm/v/cooltipz-css?icon=npm)](https://www.npmjs.com/package/cooltipz-css) [![jsDelivr CDN hits](https://badgen.net/jsdelivr/hits/npm/cooltipz-css)](https://github.com/JDomleo/Cooltipz.css#cdn) [![MIT license](https://badgen.net/badge/license/MIT/blue?icon=awesome)](https://github.com/JDomleo/Cooltipz.css#license) [![GitHub stars](https://badgen.net/github/stars/JDomleo/Cooltipz.css?icon=github)](https://github.com/JDomleo/Cooltipz.css/stargazers) [![npm downloads](https://badgen.net/npm/dt/cooltipz-css?icon=npm)](https://www.npmjs.com/package/cooltipz-css)
 
 ---
 
@@ -110,10 +109,8 @@ If you use Cooltipz.css in your project, maybe consider **mentioning us** like w
 
 ## Contributors
 
-<a href="https://github.com/JDomleo/Cooltipz.css/graphs/contributors">
-  <img src="https://contributors-img.web.app/image?repo=JDomleo/Cooltipz.css" alt="Jack Domleo" title="Jack Domleo" />
-</a>
+[![Jack Domleo](https://contributors-img.web.app/image?repo=JDomleo/Cooltipz.css "Jack Domleo")](https://github.com/JDomleo/Cooltipz.css/graphs/contributors)
 
 ---
 
-[npm](https://www.npmjs.com/package/cooltipz-css?ref=cooltipz.jackdomleo.dev) &bull; [GitHub](https://github.com/JDomleo/Cooltipz.css?ref=cooltipz.jackdomleo.dev) &bull; [docs](https://cooltipz.jackdomleo.dev) &bull; [CHANGELOG](https://github.com/JDomleo/Cooltipz.css/releases?ref=cooltipz.jackdomleo.dev) &bull; [License](https://github.com/JDomleo/Cooltipz.css/blob/master/LICENSE)
+[npm](https://www.npmjs.com/package/cooltipz-css) &bull; [GitHub](https://github.com/JDomleo/Cooltipz.css) &bull; [docs](https://cooltipz.jackdomleo.dev) &bull; [CHANGELOG](https://github.com/JDomleo/Cooltipz.css/releases) &bull; [License](https://github.com/JDomleo/Cooltipz.css/blob/master/LICENSE)
