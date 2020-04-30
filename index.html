@@ -62,7 +62,8 @@
         <p class="m-0">Play with Cooltipz.css on <a href="https://codepen.io/JackDomleo/pen/mderEeG?ref=cooltipz.jackdomleo.dev" rel="noreferrer" target="_blank" class="link">CodePen</a>.</p>
         <h3 class="header__features">Features</h3>
         <ul>
-          <li>Easy, simple, customisable tooltips with <strong>quick setup</strong></li>
+          <li>Easy and simple tooltips with <strong>quick setup</strong></li>
+          <li>Highly customisable</li>
           <li>Pure CSS, no JavaScript</li>
           <li>Accessible with <code class="code">aria-label</code> attributes</li>
           <li>Automatically disables animation if the user <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion?ref=cooltipz.min.css" rel="noreferrer nofollow" target="_blank" class="link">prefers redued motion</a></li>
@@ -184,7 +185,7 @@
         <hr/>
         <section id="no-animation">
           <h3>No Animation</h3>
-          <p>Animations can be disabled by apply the <code class="code">data-cooltipz-static</code> attribute. Cooltipz.css also use the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion?ref=cooltipz.jackdomleo.dev" rel="noreferrer nofollow" target="_blank" class="link">prefers-reduced-motion</a> media query, so when the user's preferences indicate reduced motion, Cooltipz.css automatically disables animation.</p>
+          <p>Animations can be disabled by applying the <code class="code">data-cooltipz-static</code> attribute or the <code class="code">.cooltipz--static</code> class. Cooltipz.css also use the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion?ref=cooltipz.jackdomleo.dev" rel="noreferrer nofollow" target="_blank" class="link">prefers-reduced-motion</a> media query, so when the user's preferences indicate reduced motion, Cooltipz.css automatically disables animation.</p>
           <div class="example">
             <button data-cooltipz-dir="top" data-cooltipz-static aria-label="Hello there!">No animation</button>
             <div class="language-markup"><pre><code class="lang-markup">&lt;button data-cooltipz-dir="top" data-cooltipz-static aria-label="Hello there!"&gt;...&lt;/button&gt;
@@ -205,7 +206,7 @@
         <hr/>
         <section id="customisation">
           <h3>Customisation</h3>
-          <p>Cooltipz.css exposes 10 CSS variables that can be overriden using your own styles:</p>
+          <p>Cooltipz.css exposes <strong>10</strong> CSS variables that can be overriden using your own styles:</p>
           <div class="variables__wrapper">
             <table class="variables">
               <thead>
@@ -290,6 +291,9 @@
   --cooltipz-border-radius: 1rem;
   --cooltipz-timing: 1s;
   --cooltipz-cursor: help;
+  --cooltipz-small: 4rem;
+  --cooltipz-medium: 14rem;
+  --cooltipz-large: 25rem;
 }</code></pre></div>
           </div>
           <p>Or override specific tooltips</p>
