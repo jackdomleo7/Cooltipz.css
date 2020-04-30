@@ -44,6 +44,7 @@
 
 [aria-label][data-cooltipz-dir][data-cooltipz-size="fit"]::after, .cooltipz--fit[aria-label][data-cooltipz-dir]::after, [aria-label][class^="cooltipz"][data-cooltipz-size="fit"]::after, .cooltipz--fit[aria-label][class^="cooltipz"]::after, [aria-label][data-cooltipz-dir][data-cooltipz-size="small"]::after, .cooltipz--small[aria-label][data-cooltipz-dir]::after, [aria-label][class^="cooltipz"][data-cooltipz-size="small"]::after, .cooltipz--small[aria-label][class^="cooltipz"]::after, [aria-label][data-cooltipz-dir][data-cooltipz-size="medium"]::after, .cooltipz--medium[aria-label][data-cooltipz-dir]::after, [aria-label][class^="cooltipz"][data-cooltipz-size="medium"]::after, .cooltipz--medium[aria-label][class^="cooltipz"]::after, [aria-label][data-cooltipz-dir][data-cooltipz-size="large"]::after, .cooltipz--large[aria-label][data-cooltipz-dir]::after, [aria-label][class^="cooltipz"][data-cooltipz-size="large"]::after, .cooltipz--large[aria-label][class^="cooltipz"]::after {
   white-space: normal;
+  word-wrap: break-word;
 }
 
 /*
@@ -71,7 +72,6 @@
   text-indent: 0;
   text-shadow: none;
   white-space: nowrap;
-  word-wrap: break-word;
   z-index: 10;
 }
 
