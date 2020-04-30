@@ -69,11 +69,13 @@ button {
   margin: 1rem 0;
   min-width: 6rem;
   padding: 1rem;
+  text-align: center;
   transition: 160ms box-shadow ease-in-out;
+  white-space: nowrap;
 
   @media (min-width: 45.625em) {
     min-width: 10rem;
-    padding: 1rem 3rem;
+    padding: 1rem;
   }
 
   &:hover,
