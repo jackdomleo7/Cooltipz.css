@@ -1,8 +1,7 @@
-$cooltipz-arrow-size: 5px !default;
 $cooltipz-arrow-shadow-fade: 1px $cooltipz-shadow-color;
 
 %base-arrow {
-  border: $cooltipz-arrow-size solid transparent;
+  border: var(--cooltipz-arrow-size, #{$cooltipz-arrow-size}) solid transparent;
   height: 0;
   width: 0;
 }
