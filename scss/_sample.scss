@@ -80,5 +80,9 @@
     &--text {
       background-color: var(--cooltipz-text-color);
     }
+
+    &--pointer {
+      cursor: pointer;
+    }
   }
 }

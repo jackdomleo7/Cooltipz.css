@@ -51,11 +51,11 @@
         <h1 class="m-0"><img class="header__logo" src="img/header-logo.png" alt="Cooltipz.css logo" /><span hidden>Cooltipz.css</span></h1>
         <h2 class="header__subHeader">Cool tooltips made from simple, pure, customisable CSS</h2>
         <ul class="header__bullets">
-          <li>Lightweight</li>
-          <li>Modern</li>
-          <li>Accessible</li>
-          <li>Customisable</li>
-          <li>Simple</li>
+          <li><em>Lightweight</em></li>
+          <li><em>Modern</em></li>
+          <li><em>Accessible</em></li>
+          <li><em>Customisable</em></li>
+          <li><em>Simple</em></li>
         </ul>
         <p>Cooltipz.css makes adding tooltips to existing HTML elements <strong>easy and simple</strong>, <strong>without JavaScript</strong>.</p>
         <p class="m-0"><strong>Current version</strong>: <a href="https://github.com/JDomleo/Cooltipz.css/releases/tag/v1.4.2?ref=cooltipz.jackdomleo.dev" rel="noreferrer" class="link">v1.4.2</a></p>
@@ -205,7 +205,7 @@
         <hr/>
         <section id="customisation">
           <h3>Customisation</h3>
-          <p>Cooltipz.css exposes 5 CSS variables that can be overriden using your own styles:</p>
+          <p>Cooltipz.css exposes 10 CSS variables that can be overriden using your own styles:</p>
           <div class="variables__wrapper">
             <table class="variables">
               <thead>
@@ -218,34 +218,64 @@
               </thead>
               <tbody>
                 <tr>
-                  <td><code class="code">--cooltips-bg-color</code></td>
+                  <td><code class="code">--cooltipz-bg-color</code></td>
                   <td>Tooltip background colour</td>
                   <td><span class="variables__sample variables__sample--bg"></span><code class="code">#1f1f1f</code></td>
                   <td>Accepts any valid value for <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/background-color?ref=cooltipz.jackdomleo.dev" rel="noreferrer nofollow" target="_blank" class="link">background-color</a></td>
                 </tr>
                 <tr>
-                  <td><code class="code">--cooltips-text-color</code></td>
+                  <td><code class="code">--cooltipz-text-color</code></td>
                   <td>Tooltip text colour</td>
                   <td><span class="variables__sample variables__sample--text"></span><code class="code">#fff</code></td>
                   <td>Accepts any valid value for <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/color?ref=cooltipz.jackdomleo.dev" rel="noreferrer nofollow" target="_blank" class="link">color</a></td>
                 </tr>
                 <tr>
-                  <td><code class="code">--cooltips-font-size</code></td>
+                  <td><code class="code">--cooltipz-font-size</code></td>
                   <td>Tooltip font size</td>
                   <td><code class="code">0.75rem</code></td>
                   <td>Accepts any valid value for <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-size?ref=cooltipz.jackdomleo.dev" rel="noreferrer nofollow" target="_blank" class="link">font-size</a></td>
                 </tr>
                 <tr>
-                  <td><code class="code">--cooltips-slide</code></td>
+                  <td><code class="code">--cooltipz-slide</code></td>
                   <td>Distance for tooltip to travel into view</td>
                   <td><code class="code">6px</code></td>
                   <td>Accepts any valid value for <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/translate?ref=cooltipz.jackdomleo.dev" rel="noreferrer nofollow" target="_blank" class="link">translate</a></td>
                 </tr>
                 <tr>
-                  <td><code class="code">--cooltips-border-radius</code></td>
+                  <td><code class="code">--cooltipz-border-radius</code></td>
                   <td>Tooltip border radius</td>
                   <td><code class="code">0.125rem</code></td>
                   <td>Accepts any valid value for <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/border-radius?ref=cooltipz.jackdomleo.dev" rel="noreferrer nofollow" target="_blank" class="link">border-radius</a></td>
+                </tr>
+                <tr>
+                  <td><code class="code">--cooltipz-timing</code></td>
+                  <td>Time for tooltip to appear</td>
+                  <td><code class="code">120ms</code></td>
+                  <td>Accepts any valid value for <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transition-duration?ref=cooltipz.jackdomleo.dev" rel="noreferrer nofollow" target="_blank" class="link">transition-duration</a></td>
+                </tr>
+                <tr>
+                  <td><code class="code">--cooltipz-cursor</code></td>
+                  <td>The cursor shown on the element the tooltip is attached to</td>
+                  <td><code class="code variables__sample--pointer">pointer</code></td>
+                  <td>Accepts any valid value for <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/cursor?ref=cooltipz.jackdomleo.dev" rel="noreferrer nofollow" target="_blank" class="link">cursor</a></td>
+                </tr>
+                <tr>
+                  <td><code class="code">--cooltipz-small</code></td>
+                  <td>The width of a size small tooltip</td>
+                  <td><code class="code">6.25rem</code></td>
+                  <td>Accepts any valid value for <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/width?ref=cooltipz.jackdomleo.dev" rel="noreferrer nofollow" target="_blank" class="link">width</a></td>
+                </tr>
+                <tr>
+                  <td><code class="code">--cooltipz-medium</code></td>
+                  <td>The width of a size medium tooltip</td>
+                  <td><code class="code">12.5rem</code></td>
+                  <td>Accepts any valid value for <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/width?ref=cooltipz.jackdomleo.dev" rel="noreferrer nofollow" target="_blank" class="link">width</a></td>
+                </tr>
+                <tr>
+                  <td><code class="code">--cooltipz-large</code></td>
+                  <td>The width of a size large tooltip</td>
+                  <td><code class="code">18.75rem</code></td>
+                  <td>Accepts any valid value for <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/width?ref=cooltipz.jackdomleo.dev" rel="noreferrer nofollow" target="_blank" class="link">width</a></td>
                 </tr>
               </tbody>
             </table>
