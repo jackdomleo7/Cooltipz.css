@@ -18,7 +18,7 @@
   &.cooltipz--small {
     &::after {
       @extend %sizes-common;
-      width: var(--cooltipz-small, 6.25rem);
+      width: var(--cooltipz-small, #{$cooltipz-small});
     }
   }
 }
@@ -28,7 +28,7 @@
   &.cooltipz--medium {
     &::after {
       @extend %sizes-common;
-      width: var(--cooltipz-medium, 12.5rem);
+      width: var(--cooltipz-medium, #{$cooltipz-medium});
     }
   }
 }
@@ -38,7 +38,7 @@
   &.cooltipz--large {
     &::after {
       @extend %sizes-common;
-      width: var(--cooltipz-large, 18.75rem);
+      width: var(--cooltipz-large, #{$cooltipz-large});
     }
   }
 }
