@@ -63,7 +63,7 @@
   box-shadow: 0 0 0.1875rem rgba(0, 0, 0, 0.3);
   color: var(--cooltipz-text-color, #fff);
   content: attr(aria-label);
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Verdana, Geneva, Tahoma, var(--cooltipz-fontawesome, Arial), sans-serif;
   font-size: var(--cooltipz-font-size, 0.75rem);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

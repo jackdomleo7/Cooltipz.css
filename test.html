@@ -10,8 +10,13 @@
     <title>Cooltipz.css - Test development file</title>
     <link rel="stylesheet" href="./cooltipz.min.css" />
     <link rel="stylesheet" href="https://cooltipz.jackdomleo.dev/css/docs.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <style>
+      :root {
+        --cooltipz-fontawesome: FontAwesome;
+      }
+
       body {
         font-family: sans-serif;
       }
@@ -138,6 +143,12 @@
         </section>
         <hr/>
         <section>
+          <h3>Content</h3>
+          <p>Should support <strong>HTML special characters</strong>, <strong>emojis</strong>, <strong>multilingual</strong>, <strong>Font Awesome</strong>.</p>
+          <button data-cooltipz-dir="top" aria-label="Font Awesome: &#xf03e; &#xf200; &#xf188; &#xf007;">Font Awesome</button>
+        </section>
+        <hr/>
+        <section>
           <h3>Customisation</h3>
           <p>Expose 11 CSS variables: <code>--cooltipz-bg-color</code>, <code>--cooltipz-text-color</code>, <code>--cooltipz-font-size</code>, <code>--cooltipz-slide</code>, <code>--cooltipz-border-radius</code>, <code>--cooltipz-timing</code>, <code>--cooltipz-cursor</code>, <code>--cooltipz-small</code>, <code>--cooltipz-medium</code>, <code>--cooltipz-large</code>, <code>--cooltipz-arrow-size</code>.</p>
           <style>
@@ -160,7 +171,7 @@
           <button class="custom--size" data-cooltipz-dir="bottom" data-cooltipz-size="medium" aria-label="I'm a medium tooltip and I've been customised!">Custom</button>
           <button class="custom--size" data-cooltipz-dir="right" data-cooltipz-size="large" aria-label="I'm a large tooltip and I've been customised!">Custom</button>
           <button class="custom--two" data-cooltipz-dir="right" aria-label="Hello there!">Custom</button>
-          <button class="custom--three" data-cooltipz-dir="right" aria-label="Hello there! 😎">Custom</button>
+          <button class="custom--three" data-cooltipz-dir="right" aria-label="Hello there!">Custom</button>
         </section>
         <style>
           .examples {
