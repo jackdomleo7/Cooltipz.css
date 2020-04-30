@@ -1,3 +1,5 @@
+$cooltipz-shadow-color: rgba(0, 0, 0, 0.3);
+
 @mixin tooltip {
   cursor: var(--cooltipz-cursor, pointer);
   position: relative;
@@ -5,7 +7,7 @@
   &::after {
     background-color: var(--cooltipz-bg-color, #1f1f1f);
     border-radius: var(--cooltipz-border-radius, 0.125rem);
-    box-shadow: 0 0 0.1875rem rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 0.1875rem $cooltipz-shadow-color;
     color: var(--cooltipz-text-color, #fff);
     content: attr(aria-label);
     font-family: Verdana, Geneva, Tahoma, sans-serif;

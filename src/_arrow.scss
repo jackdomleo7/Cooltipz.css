@@ -1,4 +1,5 @@
 $cooltipz-arrow-size: 5px !default;
+$cooltipz-arrow-shadow-fade: 1px $cooltipz-shadow-color;
 
 %base-arrow {
   border: $cooltipz-arrow-size solid transparent;
@@ -9,19 +10,23 @@ $cooltipz-arrow-size: 5px !default;
 %arrow-down {
   @extend %base-arrow;
   border-top-color: var(--cooltipz-bg-color, #1f1f1f);
+  filter: drop-shadow(0 1px $cooltipz-arrow-shadow-fade);
 }
 
 %arrow-up {
   @extend %base-arrow;
   border-bottom-color: var(--cooltipz-bg-color, #1f1f1f);
+  filter: drop-shadow(0 -1px $cooltipz-arrow-shadow-fade);
 }
 
 %arrow-left {
   @extend %base-arrow;
   border-right-color: var(--cooltipz-bg-color, #1f1f1f);
+  filter: drop-shadow(-1px 0 $cooltipz-arrow-shadow-fade);
 }
 
 %arrow-right {
   @extend %base-arrow;
   border-left-color: var(--cooltipz-bg-color, #1f1f1f);
+  filter: drop-shadow(1px 0 $cooltipz-arrow-shadow-fade);
 }
