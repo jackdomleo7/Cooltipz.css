@@ -3,31 +3,27 @@
   display: flex;
   flex-direction: column-reverse;
   margin: 2rem 0;
-}
 
-.example--stack {
-  align-items: flex-start;
-  flex-direction: column !important;
-}
+  &--stack {
+    align-items: flex-start;
+    flex-direction: column !important;
 
-.example--stack p {
-  margin: 0;
-}
+    p {
+      margin: 0;
+    }
+  }
 
-@media (min-width: 800px) {
-  .example {
+  div[class *= "language-"] {
+    width: 100%;
+  }
+
+  @media (min-width: 800px) {
     flex-direction: row;
     justify-content: space-between;
-  }
-}
 
-.example div[class *= "language-"] {
-  width: 100%;
-}
-
-@media (min-width: 800px) {
-  .example button {
-    margin-right: 2rem !important;
+    button {
+      margin-right: 2rem !important;
+    }
   }
 }
 
