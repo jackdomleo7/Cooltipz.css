@@ -146,6 +146,85 @@
           <button class="custom-cooltip--small" data-cooltipz-dir="top" data-cooltipz-size="medium" aria-label="I'm a medium tooltip and I've been customised!">Custom</button>
           <button class="custom-cooltip--small" data-cooltipz-dir="top" data-cooltipz-size="large" aria-label="I'm a large tooltip and I've been customised!">Custom</button>
         </section>
+        <style>
+          .examples {
+            margin: 50vh 0 16rem 0;
+            width: 100%;
+          }
+          .examples h3 {
+            margin-bottom: 6rem;
+          }
+          .examples div {
+            margin: 5rem 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+          .examples button {
+            margin: 0 0.5rem;
+          }
+          .examples .custom {
+            --cooltipz-bg-color: #fff;
+            --cooltipz-text-color: #000;
+            --cooltipz-font-size: 2.4rem;
+            --cooltipz-slide: 50px;
+            --cooltipz-border-radius: 1rem;
+            --cooltipz-timing: 700ms;
+            --cooltipz-cursor: help;
+          }
+          .examples .custom--small {
+            --cooltipz-small: 4.5rem;
+          }
+          .examples .custom--medium {
+            --cooltipz-medium: 8rem;
+          }
+          .examples .custom--large {
+            --cooltipz-large: 12rem;
+          }
+        </style>
+        <section class="examples">
+          <h3>Examples - use these to create a gif</h3>
+          <div>
+            <button data-cooltipz-dir="left" aria-label="Hello there!">Left</button>
+            <button data-cooltipz-dir="top" aria-label="Hello there!">Top</button>
+            <button data-cooltipz-dir="bottom" aria-label="Hello there!">Bottom</button>
+            <button data-cooltipz-dir="right" aria-label="Hello there!">Right</button>
+          </div>
+          <div>
+            <button data-cooltipz-dir="bottom-left" aria-label="Hello there!">Bottom left</button>
+            <button data-cooltipz-dir="top-left" aria-label="Hello there!">Top left</button>
+            <button data-cooltipz-dir="top-right" aria-label="Hello there!">Top right</button>
+            <button data-cooltipz-dir="bottom-right" aria-label="Hello there!">Bottom right</button>
+          </div>
+          <div>
+            <button data-cooltipz-dir="top" data-cooltipz-size="small" aria-label="Hello there! I am a small tooltip and I will wrap the text within me.">
+              Small
+            </button>
+            <button data-cooltipz-dir="top" data-cooltipz-size="medium" aria-label="Hello there! I am a medium tooltip and I will wrap the text within me. I'm wider thhan the small tooltip.">
+              Medium
+            </button>
+            <button data-cooltipz-dir="top" data-cooltipz-size="large" aria-label="Hello there! I am a large tooltip and I will wrap the text within me. I'm wider thhan the small and the medium tooltip.">
+              Large
+            </button>
+            <button data-cooltipz-dir="top" data-cooltipz-size="fit" aria-label="Hello there! I am a 'fit' tooltip and I will wrap the text within me. My width will always be equal to the width of my parent element.">
+              Fit
+            </button>
+          </div>
+          <div>
+            <button data-cooltipz-dir="top" data-cooltipz-static aria-label="Hello there!">
+              No animation
+            </button>
+            <button data-cooltipz-dir="top" data-cooltipz-visible aria-label="Hello there!">
+              Visible
+            </button>
+          </div>
+          <div>
+            <button class="custom" data-cooltipz-dir="bottom" aria-label="Hello there!">Custom</button>
+            <button class="custom--small" data-cooltipz-dir="bottom" data-cooltipz-size="small" aria-label="I'm a small tooltip with a custom width.">Custom small</button>
+            <button class="custom--medium" data-cooltipz-dir="bottom" data-cooltipz-size="medium" aria-label="I'm a medium tooltip with a custom width.">Custom medium</button>
+            <button class="custom--large" data-cooltipz-dir="bottom" data-cooltipz-size="large" aria-label="I'm a large tooltip with a custom width. I'm smaller than my default size.">Custom large</button>
+          </div>
+        </section>
       </main>
     </div>
   </body>
