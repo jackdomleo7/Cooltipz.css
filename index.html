@@ -288,11 +288,13 @@
   --cooltipz-font-size: 1.5rem;
   --cooltipz-slide: 20px;
   --cooltipz-border-radius: 1rem;
+  --cooltipz-timing: 1s;
+  --cooltipz-cursor: help;
 }</code></pre></div>
           </div>
           <p>Or override specific tooltips</p>
           <div class="example">
-            <style>.custom-cooltip {--cooltipz-bg-color: #fff;--cooltipz-text-color: #000;--cooltipz-font-size: 1.5rem;--cooltipz-slide: 50px;--cooltipz-border-radius: 1rem;}</style>
+            <style>.custom-cooltip {--cooltipz-bg-color: #fff;--cooltipz-text-color: #000;--cooltipz-font-size: 1.5rem;--cooltipz-slide: 50px;--cooltipz-border-radius: 1rem;--cooltipz-timing: 1s;--cooltipz-cursor: help;}</style>
             <button class="custom-cooltip" data-cooltipz-dir="top" aria-label="I've been customised!">Interact</button>
             <div class="language-css"><pre><code class="lang-css">.custom-cooltip {
   --cooltipz-bg-color: #fff;
@@ -300,6 +302,8 @@
   --cooltipz-font-size: 1.5rem;
   --cooltipz-slide: 50px;
   --cooltipz-border-radius: 1rem;
+  --cooltipz-timing: 1s;
+  --cooltipz-cursor: help;
 }</code></pre></div>
           </div>
         </section>
