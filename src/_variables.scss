@@ -1,15 +1,25 @@
+$cooltipz-bg-color: #1f1f1f !default;
+$cooltipz-text-color: #fff !default;
+$cooltipz-font-size: 0.75rem !default;
+$cooltipz-slide: 6px !default;
+$cooltipz-border-radius: 0.125rem !default;
+$cooltipz-timing: 120ms !default;
+$cooltipz-cursor: pointer !default;
+$cooltipz-small: 6.25rem !default;
+$cooltipz-medium: 12.5rem !default;
+$cooltipz-large: 18.75rem !default;
 $cooltipz-arrow-size: 0.3125rem !default;
 
 :root {
-  --cooltipz-bg-color: #1f1f1f;
-  --cooltipz-text-color: #fff;
-  --cooltipz-font-size: 0.75rem;
-  --cooltipz-slide: 6px;
-  --cooltipz-border-radius: 0.125rem;
-  --cooltipz-timing: 120ms;
-  --cooltipz-cursor: pointer;
-  --cooltipz-small: 6.25rem;
-  --cooltipz-medium: 12.5rem;
-  --cooltipz-large: 18.75rem;
+  --cooltipz-bg-color: #{$cooltipz-bg-color};
+  --cooltipz-text-color: #{$cooltipz-text-color};
+  --cooltipz-font-size: #{$cooltipz-font-size};
+  --cooltipz-slide: #{$cooltipz-slide};
+  --cooltipz-border-radius: #{$cooltipz-border-radius};
+  --cooltipz-timing: #{$cooltipz-timing};
+  --cooltipz-cursor: #{$cooltipz-cursor};
+  --cooltipz-small: #{$cooltipz-small};
+  --cooltipz-medium: #{$cooltipz-medium};
+  --cooltipz-large: #{$cooltipz-large};
   --cooltipz-arrow-size: #{$cooltipz-arrow-size};
 }

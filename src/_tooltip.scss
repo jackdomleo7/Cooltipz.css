@@ -1,17 +1,17 @@
 $cooltipz-shadow-color: rgba(0, 0, 0, 0.3);
 
 @mixin tooltip {
-  cursor: var(--cooltipz-cursor, pointer);
+  cursor: var(--cooltipz-cursor, #{$cooltipz-cursor});
   position: relative;
 
   &::after {
-    background-color: var(--cooltipz-bg-color, #1f1f1f);
-    border-radius: var(--cooltipz-border-radius, 0.125rem);
+    background-color: var(--cooltipz-bg-color, #{$cooltipz-bg-color});
+    border-radius: var(--cooltipz-border-radius, #{$cooltipz-border-radius});
     box-shadow: 0 0 0.1875rem $cooltipz-shadow-color;
-    color: var(--cooltipz-text-color, #fff);
+    color: var(--cooltipz-text-color, #{$cooltipz-text-color});
     content: attr(aria-label);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: var(--cooltipz-font-size, 0.75rem);
+    font-size: var(--cooltipz-font-size, #{$cooltipz-font-size});
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     font-style: normal;
