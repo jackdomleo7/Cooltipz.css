@@ -23,8 +23,8 @@ Play with Cooltipz.css on [CodePen](https://codepen.io/JackDomleo/pen/mderEeG?re
 - Accessible with aria-label attributes
 - Automatically disables animation if the user [prefers reduced motion](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion?ref=cooltipz.jackdomleo.dev)
 - Options to use classes or `data-` attributes
-- Options to import via CDN or npm
-- Options to import SCSS <sub><sup>(npm only)</sup></sub> or CSS stylesheets <sub><sup>(expanded or minified)</sup></sub>
+- Options to import via CDN, npm or yarn
+- Options to import SCSS <sub><sup>(npm &amp; yarn only)</sup></sub> or CSS stylesheets <sub><sup>(expanded or minified)</sup></sub>
 - Supports a wide range of characters and languages (including emojis, [Font Awesome 4](https://fontawesome.com/v4.7.0?ref=cooltipz.jackdomleo.dev) and [Font Awesome 5](https://fontawesome.com?ref=cooltipz.jackdomleo.dev) icons)
 - Uses [Autoprefixer](https://github.com/postcss/autoprefixer?ref=cooltipz.jackdomleo.dev) when generating the CSS stylesheets and [cssnano](https://github.com/cssnano/cssnano?ref=cooltipz.jackdomleo.dev) to minify the minfied stylesheet
 
@@ -56,19 +56,26 @@ In the below CDN links:
 @import url('https://cdn.jsdelivr.net/npm/cooltipz-css@version/file');
 ```
 
-### npm
+### Package Manager (npm or yarn)
 
-Install via npm <sub><sup>(It's best practice to install Cooltipz.css as a dependency rather than a devDependency)</sup></sub>
+It's best practice to install Cooltipz.css as a dependency rather than a devDependency. You can install `cooltipz-css` via **npm** or **yarn**.
+
+_First_ install via **npm**
 ```
 npm install cooltipz-css --save
 ```
 
-Then import into your JavaScript
+_Or_ install via **yarn**
+```
+yarn add cooltipz-css
+```
+
+_Then_ import into your JavaScript
 ```js
 import 'cooltipz-css';
 ```
 
-Or import the SCSS or CSS into your Sass/SCSS
+_Or_ import the SCSS or CSS into your Sass/SCSS
 In the below imports, replace `file` with one of the options below:
 - `src/cooltipz` <sub><sup>(.scss file)</sup></sub>
 - `cooltipz.css` <sub><sup>(Expanded .css)</sup></sub>
@@ -93,7 +100,7 @@ You have the right to use this library in any project free of charge. You **do n
 
 ---
 
-##Feedback & Support
+## Feedback & Support
 
 We appreciate any **feedback** (feel free to raise an [issue](https://github.com/JDomleo/Cooltipz.css/issues?ref=cooltipz.jackdomleo.dev) and we'll address it as soon as possible).
 **Stars on [GitHub](https://github.com/JDomleo/Cooltipz.css?ref=cooltipz.jackdomleo.dev)** are a great way to support us.
@@ -114,4 +121,4 @@ If you use Cooltipz.css in your project, maybe consider **mentioning us** like w
 
 ---
 
-[npm](https://www.npmjs.com/package/cooltipz-css) &bull; [GitHub](https://github.com/JDomleo/Cooltipz.css) &bull; [docs](https://cooltipz.jackdomleo.dev) &bull; [CHANGELOG](https://github.com/JDomleo/Cooltipz.css/releases) &bull; [License](https://github.com/JDomleo/Cooltipz.css/blob/master/LICENSE)
+[GitHub](https://github.com/JDomleo/Cooltipz.css "View the GitHub repo and maybe give us a star") &bull; [npm](https://www.npmjs.com/package/cooltipz-css "View Cooltipz.css on npmjs.com") &bull; [yarn](https://yarnpkg.com/package/cooltipz-css "View Cooltipz.css on yarnpkg.com") &bull; [docs](https://cooltipz.jackdomleo.dev "Read the official documentation") &bull; [CHANGELOG](https://github.com/JDomleo/Cooltipz.css/releases "Read all the releases") &bull; [License](https://github.com/JDomleo/Cooltipz.css/blob/master/LICENSE "MIT License")
