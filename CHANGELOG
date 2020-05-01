@@ -1,10 +1,1 @@
 A detailed CHANGELOG can be found here - https://github.com/JDomleo/Cooltipz.css/releases
-
-# Releases
-
-When creating a new release:
-
-- Update version number in `package.json`, `src/cooltipz.scss`, `(gh-pages)index.html`
-- Delete `node_modules`
-- Run `npm i` and `npm run build`
-- Commit -m "Updated version from v_old version number_ to v_new version number_"
