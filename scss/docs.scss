@@ -6,6 +6,10 @@
 @import "./github-corner";
 @import "./code";
 
+:root {
+  --cooltipz-fontawesome: fontawesome;
+}
+
 .page {
   display: flex;
   flex-direction: column;

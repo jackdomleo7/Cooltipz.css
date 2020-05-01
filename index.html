@@ -43,6 +43,7 @@
     <title>Cooltipz.css - Cool tooltips made from pure CSS</title>
     <link rel="stylesheet" href="./css/normalize.min.css" />
     <link rel="stylesheet" href="./css/docs.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
     <link rel="stylesheet" href="./css/prism.min.css" />
     <link rel="stylesheet" href="./css/cooltipz.min.css" />
   </head>
@@ -217,14 +218,53 @@
           </div>
         </section>
         <hr/>
+        <section>
+          <h3>Special Characters, Emojis and Font Icons</h3>
+          <p>Cooltipz.css supports HTML character Codes, emojis, font/glyph icons and <a href="https://fontawesome.com/v4.7.0?ref=cooltipz.jackdomleo.dev" rel="noreferrer nofollow" target="_blank" class="link">Font Awesome 4</a> and <a href="https://fontawesome.com?ref=cooltipz.jackdomleo.dev" rel="noreferrer nofollow" target="_blank" class="link">Font Awesome 5</a>.</p>
+          <div class="example">
+            <button data-cooltipz-dir="top" aria-label="HTML character codes: &copy; &reg; &#9742; &#9850; &#8709;">HTML Codes &#9835;</button>
+            <div class="language-markup"><pre><code class="lang-markup">&lt;button data-cooltipz-dir="top" aria-label="HTML character codes: &amp;copy; &amp;reg; &amp;#9742; &amp;#9850; &amp;#8709;"&gt;...&lt;/button&gt;
+&lt;button class="cooltipz--top" aria-label="HTML character codes: &amp;copy; &amp;reg; &amp;#9742; &amp;#9850; &amp;#8709;"&gt;...&lt;/button&gt;</code></pre></div>
+          </div>
+          <div class="example">
+            <button data-cooltipz-dir="top" aria-label="Emojis: 😎🚗🍔💩👏✔❤">Emojis 😎</button>
+            <div class="language-markup"><pre><code class="lang-markup">&lt;button data-cooltipz-dir="top" aria-label="Emojis: 😎🚗🍔💩👏✔❤"&gt;...&lt;/button&gt;
+&lt;button class="cooltipz--top" aria-label="Emojis: 😎🚗🍔💩👏✔❤"&gt;...&lt;/button&gt;</code></pre></div>
+          </div>
+          <div class="example">
+            <button data-cooltipz-dir="top" aria-label="Multilingual: ">Multilingual</button>
+            <div class="language-markup"><pre><code class="lang-markup">&lt;button data-cooltipz-dir="top" aria-label="Multilingual: "&gt;...&lt;/button&gt;
+&lt;button class="cooltipz--top" aria-label="Multilingual: "&gt;...&lt;/button&gt;</code></pre></div>
+          </div>
+          <h3>Font Awesome</h3>
+          <p>A <strong>little</strong> setup is required so you can use Font Awesome unicode values on tooltips in your project. You will need to add Font Awesome's <code class="code">font-family</code> name to the <code class="code">--cooltipz-fontawesome</code> CSS custom property in your project's CSS.</p>
+          <div class="example--stack">
+            <p>If you are using <a href="https://fontawesome.com/v4.7.0?ref=cooltipz.jackdomleo.dev" rel="noreferrer nofollow" target="_blank" class="link">Font Awesome 4</a>, add the below CSS code to your project's CSS:</p>
+            <div class="language-css"><pre><code class="lang-css">:root {
+  --cooltipz-fontawesome: FontAwesome;
+}</code></pre></div>
+          </div>
+          <div class="example--stack">
+            <p>If you are using <a href="https://fontawesome.com?ref=cooltipz.jackdomleo.dev" rel="noreferrer nofollow" target="_blank" class="link">Font Awesome 5</a>, find the relevant Font Awesome 5 <code class="code">font-family</code> name for your project <a href="https://fontawesome.com/how-to-use/on-the-web/advanced/css-pseudo-elements#define?ref=cooltipz.jackdomleo.dev" rel="noreferrer nofollow" target="_blank" class="link">listed here</a> and add the below CSS code to your project's CSS, replacing <code class="code">"Font Awesome 5 Free"</code> with the <code class="code">font-family</code> you need. For example:</p>
+            <div class="language-css"><pre><code class="lang-css">:root {
+  --cooltipz-fontawesome: "Font Awesome 5 Free";
+}</code></pre></div>
+          </div>
+          <div class="example">
+            <button data-cooltipz-dir="top" aria-label="Font Awesome: ">Font Awesome</button>
+            <div class="language-markup"><pre><code class="lang-markup">&lt;button data-cooltipz-dir="top" aria-label="Font Awesome: "&gt;...&lt;/button&gt;
+&lt;button class="cooltipz--top" aria-label="Font Awesome: "&gt;...&lt;/button&gt;</code></pre></div>
+          </div>
+        </section>
+        <hr/>
         <section id="customisation">
           <h3>Customisation</h3>
-          <p>Cooltipz.css exposes <strong>10</strong> CSS variables that can be overriden using your own styles:</p>
+          <p>Cooltipz.css exposes <strong>10</strong> CSS custom properties that can be overriden using your own styles:</p>
           <div class="variables__wrapper">
             <table class="variables">
               <thead>
                 <tr>
-                  <td>CSS Variable</td>
+                  <td>CSS Custom Property</td>
                   <td>Description</td>
                   <td>Default</td>
                   <td>Valid values</td>
@@ -295,7 +335,7 @@
             </table>
           </div>
           <div class="example--stack">
-            <p>To override every tooltip in your project, place your CSS variables in the <code class="code">:root</code> selector</p>
+            <p>To override every tooltip in your project, place your CSS custom properties in the <code class="code">:root</code> selector</p>
             <div class="language-css"><pre><code class="lang-css">:root {
   --cooltipz-bg-color: #f00;
   --cooltipz-text-color: #00f;
