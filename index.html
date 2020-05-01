@@ -76,8 +76,8 @@
           <li>Accessible with <code class="code">aria-label</code> attributes</li>
           <li>Automatically disables animation if the user <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion?ref=cooltipz.min.css" rel="noreferrer nofollow" target="_blank" class="link">prefers redued motion</a></li>
           <li>Options to use classes or <code class="code">data-</code> attributes</li>
-          <li>Options to import via CDN or npm</li>
-          <li>Options to import SCSS <small>(npm only)</small> or CSS stylesheets <small>(expanded or minified)</small></li>
+          <li>Options to import via CDN, npm or yarn</li>
+          <li>Options to import SCSS <small>(npm and yarn only)</small> or CSS stylesheets <small>(expanded or minified)</small></li>
           <li>Uses <a href="https://github.com/postcss/autoprefixer?ref=cooltipz.jackdomleo.dev" rel="noreferrer nofollow" target="_blank" class="link">Autoprefixer</a> when generating the CSS stylesheets and <a href="https://github.com/cssnano/cssnano?ref=cooltipz.jackdomleo.dev" rel="noreferrer nofollow" target="_blank" class="link">cssnano</a> to minify the minfied stylesheet</li>
         </ul>
         <ul class="header__badges">
@@ -92,8 +92,13 @@
             </a>
           </li>
           <li>
-            <a href="https://github.com/JDomleo/Cooltipz.css#cdn" aria-label="jsDelivr CDN hits" data-cooltipz-dir="bottom" rel="noreferrer">
-              <img src="https://badgen.net/jsdelivr/hits/npm/cooltipz-css" alt="jsDelivr CDN hits" />
+            <a href="https://www.npmjs.com/package/cooltipz-css" aria-label="npm downloads" data-cooltipz-dir="bottom" rel="noreferrer">
+              <img src="https://badgen.net/npm/dt/cooltipz-css?icon=npm" alt="npm downloads" />
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/JDomleo/Cooltipz.css#cdn" aria-label="jsDelivr CDN monthly hits" data-cooltipz-dir="bottom" rel="noreferrer">
+              <img src="https://badgen.net/jsdelivr/hits/npm/cooltipz-css?icon=jsdelivr" alt="jsDelivr CDN hits" />
             </a>
           </li>
           <li>
@@ -107,8 +112,8 @@
             </a>
           </li>
           <li>
-            <a href="https://www.npmjs.com/package/cooltipz-css" aria-label="npm downloads" data-cooltipz-dir="bottom" rel="noreferrer">
-              <img src="https://badgen.net/npm/dt/cooltipz-css?icon=npm" alt="npm downloads" />
+            <a href="https://github.com/JDomleo/Cooltipz.css/blob/master/cooltipz.min.css" aria-label="Brotli size" data-cooltipz-dir="bottom" rel="noreferrer">
+              <img src="https://badgen.net/badgesize/brotli/JDomleo/Cooltipz.css/master/cooltipz.min.css" alt="Brotli size" />
             </a>
           </li>
         </ul>
@@ -342,16 +347,21 @@
             <div class="language-css"><pre><code class="lang-css">/* Or CSS */
 @import url('https://cdn.jsdelivr.net/npm/cooltipz-css@version/file');</code></pre></div>
           </div>
-          <h4>Via npm</h4>
+          <h4>Package manager (npm or yarn)</h4>
+          <p>It's best practice to install Cooltipz.css as a dependency rather than a devDependency</p>
           <div class="example example--stack">
-            <p>Install it via <abbr data-cooltipz-dir="top" aria-label="Node Package Manager">npm</abbr> <small>(It's best practice to install Cooltipz.css as a dependency rather than a devDependency)</small></p>
+            <p><em>First</em>, install it via npm</p>
             <div class="language-"><pre><code class="language-">npm install cooltipz-css --save</code></pre></div>
           </div>
           <div class="example example--stack">
-            <p>Then import it into your JavaScript</p>
+            <p><em>Or</em>, install it via yarn</p>
+            <div class="language-"><pre><code class="language-">yarn add cooltipz-css</code></pre></div>
+          </div>
+          <div class="example example--stack">
+            <p><em>Then</em>, import it into your JavaScript</p>
             <div class="language-js"><pre><code class="lang-js">import 'cooltipz-css';</code></pre></div>
           </div>
-          <p>Or import the SCSS or CSS into your Sass/SCSS</p>
+          <p><em>Or</em>, import the SCSS or CSS into your Sass/SCSS</p>
           <p>In the below imports, replace <code class="code">file</code> with one of the options below:</p>
           <ul>
             <li><code class="code">src/cooltipz</code> <small>(.scss file)</small></li>
@@ -380,10 +390,11 @@
       <footer class="footer">
         <p>Made by <a href="https://jackdomleo.dev" target="_blank" rel="noreferrer nofollow">Jack Domleo</a>.</p>
         <ul>
-          <li><a href="https://www.npmjs.com/package/cooltipz-css?ref=cooltipz.jackdomleo.dev" rel="noreferrer">npm</a></li>
-          <li><a href="https://github.com/JDomleo/Cooltipz.css?ref=cooltipz.jackdomleo.dev" rel="noreferrer">GitHub</a></li>
+          <li><a href="https://www.npmjs.com/package/cooltipz-css" rel="noreferrer">npm</a></li>
+          <li><a href="https://yarnpkg.com/package/cooltipz-css" rel="noreferrer">yarn</a></li>
+          <li><a href="https://github.com/JDomleo/Cooltipz.css" rel="noreferrer">GitHub</a></li>
           <li><a href="https://github.com/JDomleo/Cooltipz.css/tree/master#license" rel="noreferrer">License</a></li>
-          <li><a href="https://github.com/JDomleo/Cooltipz.css/releases?ref=cooltipz.jackdomleo.dev" rel="noreferrer">CHANGELOG</a></li>
+          <li><a href="https://github.com/JDomleo/Cooltipz.css/releases" rel="noreferrer">CHANGELOG</a></li>
         </ul>
       </footer>
     </div>
