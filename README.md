@@ -1,6 +1,6 @@
 ![Cooltipz.css](./logo.png "Cooltipz.css logo")
 
-[![GitHub release](https://badgen.net/github/release/JDomleo/Cooltipz.css?icon=github)](https://github.com/JDomleo/Cooltipz.css) [![npm version](https://badgen.net/npm/v/cooltipz-css?icon=npm)](https://www.npmjs.com/package/cooltipz-css) [![jsDelivr CDN hits](https://badgen.net/jsdelivr/hits/npm/cooltipz-css)](https://github.com/JDomleo/Cooltipz.css#cdn) [![MIT license](https://badgen.net/badge/license/MIT/blue?icon=awesome)](https://github.com/JDomleo/Cooltipz.css#license) [![GitHub stars](https://badgen.net/github/stars/JDomleo/Cooltipz.css?icon=github)](https://github.com/JDomleo/Cooltipz.css/stargazers) [![npm downloads](https://badgen.net/npm/dt/cooltipz-css?icon=npm)](https://www.npmjs.com/package/cooltipz-css)
+[![GitHub release](https://badgen.net/github/release/JDomleo/Cooltipz.css?icon=github)](https://github.com/JDomleo/Cooltipz.css) [![npm version](https://badgen.net/npm/v/cooltipz-css?icon=npm)](https://www.npmjs.com/package/cooltipz-css) [![jsDelivr CDN hits](https://badgen.net/jsdelivr/hits/npm/cooltipz-css?icon=jsdelivr)](https://github.com/JDomleo/Cooltipz.css#cdn) [![MIT license](https://badgen.net/badge/license/MIT/blue?icon=awesome)](https://github.com/JDomleo/Cooltipz.css#license) [![GitHub stars](https://badgen.net/github/stars/JDomleo/Cooltipz.css?icon=github)](https://github.com/JDomleo/Cooltipz.css/stargazers) [![npm downloads](https://badgen.net/npm/dt/cooltipz-css?icon=npm)](https://www.npmjs.com/package/cooltipz-css)
 
 ---
 
