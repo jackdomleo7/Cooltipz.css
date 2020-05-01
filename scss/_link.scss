@@ -7,4 +7,8 @@
   &:focus {
     color: mix($orange, #fff, 80%);
   }
+
+  @media (prefers-reduced-motion: reduce) {
+    transition: none;
+  }
 }
