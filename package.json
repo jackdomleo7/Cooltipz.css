@@ -26,7 +26,10 @@
     "jack domleo",
     "domleo"
   ],
-  "author": "Jack Domleo",
+  "author": {
+    "name": "Jack Domleo",
+    "url": "https://jackdomleo.dev"
+  },
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/JDomleo/Cooltipz.css/issues"
