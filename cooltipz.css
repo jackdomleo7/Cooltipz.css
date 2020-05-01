@@ -62,7 +62,8 @@
 [aria-label][data-cooltipz-dir]::after, [aria-label][class^="cooltipz"]::after {
   background-color: var(--cooltipz-bg-color, #1f1f1f);
   border-radius: var(--cooltipz-border-radius, 0.125rem);
-  box-shadow: 0 0 0.1875rem rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 0 0.1875rem rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 0.1875rem rgba(0, 0, 0, 0.3);
   color: var(--cooltipz-text-color, #fff);
   content: attr(aria-label);
   font-family: Verdana, Geneva, Tahoma, var(--cooltipz-fontawesome, Arial), sans-serif;
@@ -84,23 +85,28 @@
 }
 
 [aria-label][data-cooltipz-dir]::after, [aria-label][data-cooltipz-dir]::before, [aria-label][class^="cooltipz"]::after, [aria-label][class^="cooltipz"]::before {
+  -webkit-transition: all var(--cooltipz-timing, 120ms) ease-out var(--cooltipz-timing, 120ms);
   transition: all var(--cooltipz-timing, 120ms) ease-out var(--cooltipz-timing, 120ms);
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   opacity: 0;
   pointer-events: none;
   position: absolute;
-  transition-delay: var(--cooltipz-delay-hide, 0s);
+  -webkit-transition-delay: var(--cooltipz-delay-hide, 0s);
+          transition-delay: var(--cooltipz-delay-hide, 0s);
 }
 
 @media (prefers-reduced-motion: reduce) {
   [aria-label][data-cooltipz-dir]::after, [aria-label][data-cooltipz-dir]::before, [aria-label][class^="cooltipz"]::after, [aria-label][class^="cooltipz"]::before {
+    -webkit-transition: none;
     transition: none;
   }
 }
 
 [aria-label][data-cooltipz-dir]:hover::before, [aria-label][data-cooltipz-dir]:hover::after, [aria-label][data-cooltipz-dir]:focus::before, [aria-label][data-cooltipz-dir]:focus::after, [aria-label][data-cooltipz-dir][data-cooltipz-visible]::before, [aria-label][data-cooltipz-dir][data-cooltipz-visible]::after, [aria-label][data-cooltipz-dir].cooltipz--visible::before, [aria-label][data-cooltipz-dir].cooltipz--visible::after, [aria-label][class^="cooltipz"]:hover::before, [aria-label][class^="cooltipz"]:hover::after, [aria-label][class^="cooltipz"]:focus::before, [aria-label][class^="cooltipz"]:focus::after, [aria-label][class^="cooltipz"][data-cooltipz-visible]::before, [aria-label][class^="cooltipz"][data-cooltipz-visible]::after, [aria-label][class^="cooltipz"].cooltipz--visible::before, [aria-label][class^="cooltipz"].cooltipz--visible::after {
   opacity: 1;
-  transition-delay: var(--cooltipz-delay-show, 0s);
+  -webkit-transition-delay: var(--cooltipz-delay-show, 0s);
+          transition-delay: var(--cooltipz-delay-show, 0s);
 }
 
 [aria-label][data-cooltipz-dir][data-cooltipz-dir="top"]::after, [aria-label][data-cooltipz-dir].cooltipz--top::after, [aria-label][class^="cooltipz"][data-cooltipz-dir="top"]::after, [aria-label][class^="cooltipz"].cooltipz--top::after {
@@ -110,12 +116,15 @@
 [aria-label][data-cooltipz-dir][data-cooltipz-dir="top"]::after, [aria-label][data-cooltipz-dir][data-cooltipz-dir="top"]::before, [aria-label][data-cooltipz-dir].cooltipz--top::after, [aria-label][data-cooltipz-dir].cooltipz--top::before, [aria-label][class^="cooltipz"][data-cooltipz-dir="top"]::after, [aria-label][class^="cooltipz"][data-cooltipz-dir="top"]::before, [aria-label][class^="cooltipz"].cooltipz--top::after, [aria-label][class^="cooltipz"].cooltipz--top::before {
   bottom: calc(100% - (var(--cooltipz-arrow-size, 0.3125rem) / 2));
   left: 50%;
-  transform: translate(-50%, var(--cooltipz-slide, 6px));
-  transform-origin: top;
+  -webkit-transform: translate(-50%, var(--cooltipz-slide, 6px));
+          transform: translate(-50%, var(--cooltipz-slide, 6px));
+  -webkit-transform-origin: top;
+          transform-origin: top;
 }
 
 [aria-label][data-cooltipz-dir][data-cooltipz-dir="top"]:hover::after, [aria-label][data-cooltipz-dir][data-cooltipz-dir="top"]:hover::before, [aria-label][data-cooltipz-dir][data-cooltipz-dir="top"]:focus::after, [aria-label][data-cooltipz-dir][data-cooltipz-dir="top"]:focus::before, [aria-label][data-cooltipz-dir][data-cooltipz-dir="top"][data-cooltipz-visible]::after, [aria-label][data-cooltipz-dir][data-cooltipz-dir="top"][data-cooltipz-visible]::before, [aria-label][data-cooltipz-dir][data-cooltipz-dir="top"].cooltipz--visible::after, [aria-label][data-cooltipz-dir][data-cooltipz-dir="top"].cooltipz--visible::before, [aria-label][data-cooltipz-dir].cooltipz--top:hover::after, [aria-label][data-cooltipz-dir].cooltipz--top:hover::before, [aria-label][data-cooltipz-dir].cooltipz--top:focus::after, [aria-label][data-cooltipz-dir].cooltipz--top:focus::before, [aria-label][data-cooltipz-dir].cooltipz--top[data-cooltipz-visible]::after, [aria-label][data-cooltipz-dir].cooltipz--top[data-cooltipz-visible]::before, [aria-label][data-cooltipz-dir].cooltipz--top.cooltipz--visible::after, [aria-label][data-cooltipz-dir].cooltipz--top.cooltipz--visible::before, [aria-label][class^="cooltipz"][data-cooltipz-dir="top"]:hover::after, [aria-label][class^="cooltipz"][data-cooltipz-dir="top"]:hover::before, [aria-label][class^="cooltipz"][data-cooltipz-dir="top"]:focus::after, [aria-label][class^="cooltipz"][data-cooltipz-dir="top"]:focus::before, [aria-label][class^="cooltipz"][data-cooltipz-dir="top"][data-cooltipz-visible]::after, [aria-label][class^="cooltipz"][data-cooltipz-dir="top"][data-cooltipz-visible]::before, [aria-label][class^="cooltipz"][data-cooltipz-dir="top"].cooltipz--visible::after, [aria-label][class^="cooltipz"][data-cooltipz-dir="top"].cooltipz--visible::before, [aria-label][class^="cooltipz"].cooltipz--top:hover::after, [aria-label][class^="cooltipz"].cooltipz--top:hover::before, [aria-label][class^="cooltipz"].cooltipz--top:focus::after, [aria-label][class^="cooltipz"].cooltipz--top:focus::before, [aria-label][class^="cooltipz"].cooltipz--top[data-cooltipz-visible]::after, [aria-label][class^="cooltipz"].cooltipz--top[data-cooltipz-visible]::before, [aria-label][class^="cooltipz"].cooltipz--top.cooltipz--visible::after, [aria-label][class^="cooltipz"].cooltipz--top.cooltipz--visible::before {
-  transform: translate(-50%, 0);
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
 }
 
 [aria-label][data-cooltipz-dir][data-cooltipz-dir="top-left"]::after, [aria-label][data-cooltipz-dir].cooltipz--top-left::after, [aria-label][class^="cooltipz"][data-cooltipz-dir="top-left"]::after, [aria-label][class^="cooltipz"].cooltipz--top-left::after {
@@ -129,12 +138,15 @@
 
 [aria-label][data-cooltipz-dir][data-cooltipz-dir="top-left"]::after, [aria-label][data-cooltipz-dir][data-cooltipz-dir="top-left"]::before, [aria-label][data-cooltipz-dir].cooltipz--top-left::after, [aria-label][data-cooltipz-dir].cooltipz--top-left::before, [aria-label][class^="cooltipz"][data-cooltipz-dir="top-left"]::after, [aria-label][class^="cooltipz"][data-cooltipz-dir="top-left"]::before, [aria-label][class^="cooltipz"].cooltipz--top-left::after, [aria-label][class^="cooltipz"].cooltipz--top-left::before {
   bottom: calc(100% - (var(--cooltipz-arrow-size, 0.3125rem) / 2));
-  transform: translate(0, var(--cooltipz-slide, 6px));
-  transform-origin: top;
+  -webkit-transform: translate(0, var(--cooltipz-slide, 6px));
+          transform: translate(0, var(--cooltipz-slide, 6px));
+  -webkit-transform-origin: top;
+          transform-origin: top;
 }
 
 [aria-label][data-cooltipz-dir][data-cooltipz-dir="top-left"]:hover::after, [aria-label][data-cooltipz-dir][data-cooltipz-dir="top-left"]:hover::before, [aria-label][data-cooltipz-dir][data-cooltipz-dir="top-left"]:focus::after, [aria-label][data-cooltipz-dir][data-cooltipz-dir="top-left"]:focus::before, [aria-label][data-cooltipz-dir][data-cooltipz-dir="top-left"][data-cooltipz-visible]::after, [aria-label][data-cooltipz-dir][data-cooltipz-dir="top-left"][data-cooltipz-visible]::before, [aria-label][data-cooltipz-dir][data-cooltipz-dir="top-left"].cooltipz--visible::after, [aria-label][data-cooltipz-dir][data-cooltipz-dir="top-left"].cooltipz--visible::before, [aria-label][data-cooltipz-dir].cooltipz--top-left:hover::after, [aria-label][data-cooltipz-dir].cooltipz--top-left:hover::before, [aria-label][data-cooltipz-dir].cooltipz--top-left:focus::after, [aria-label][data-cooltipz-dir].cooltipz--top-left:focus::before, [aria-label][data-cooltipz-dir].cooltipz--top-left[data-cooltipz-visible]::after, [aria-label][data-cooltipz-dir].cooltipz--top-left[data-cooltipz-visible]::before, [aria-label][data-cooltipz-dir].cooltipz--top-left.cooltipz--visible::after, [aria-label][data-cooltipz-dir].cooltipz--top-left.cooltipz--visible::before, [aria-label][class^="cooltipz"][data-cooltipz-dir="top-left"]:hover::after, [aria-label][class^="cooltipz"][data-cooltipz-dir="top-left"]:hover::before, [aria-label][class^="cooltipz"][data-cooltipz-dir="top-left"]:focus::after, [aria-label][class^="cooltipz"][data-cooltipz-dir="top-left"]:focus::before, [aria-label][class^="cooltipz"][data-cooltipz-dir="top-left"][data-cooltipz-visible]::after, [aria-label][class^="cooltipz"][data-cooltipz-dir="top-left"][data-cooltipz-visible]::before, [aria-label][class^="cooltipz"][data-cooltipz-dir="top-left"].cooltipz--visible::after, [aria-label][class^="cooltipz"][data-cooltipz-dir="top-left"].cooltipz--visible::before, [aria-label][class^="cooltipz"].cooltipz--top-left:hover::after, [aria-label][class^="cooltipz"].cooltipz--top-left:hover::before, [aria-label][class^="cooltipz"].cooltipz--top-left:focus::after, [aria-label][class^="cooltipz"].cooltipz--top-left:focus::before, [aria-label][class^="cooltipz"].cooltipz--top-left[data-cooltipz-visible]::after, [aria-label][class^="cooltipz"].cooltipz--top-left[data-cooltipz-visible]::before, [aria-label][class^="cooltipz"].cooltipz--top-left.cooltipz--visible::after, [aria-label][class^="cooltipz"].cooltipz--top-left.cooltipz--visible::before {
-  transform: translate(0);
+  -webkit-transform: translate(0);
+          transform: translate(0);
 }
 
 [aria-label][data-cooltipz-dir][data-cooltipz-dir="top-right"]::after, [aria-label][data-cooltipz-dir].cooltipz--top-right::after, [aria-label][class^="cooltipz"][data-cooltipz-dir="top-right"]::after, [aria-label][class^="cooltipz"].cooltipz--top-right::after {
@@ -148,12 +160,15 @@
 
 [aria-label][data-cooltipz-dir][data-cooltipz-dir="top-right"]::after, [aria-label][data-cooltipz-dir][data-cooltipz-dir="top-right"]::before, [aria-label][data-cooltipz-dir].cooltipz--top-right::after, [aria-label][data-cooltipz-dir].cooltipz--top-right::before, [aria-label][class^="cooltipz"][data-cooltipz-dir="top-right"]::after, [aria-label][class^="cooltipz"][data-cooltipz-dir="top-right"]::before, [aria-label][class^="cooltipz"].cooltipz--top-right::after, [aria-label][class^="cooltipz"].cooltipz--top-right::before {
   bottom: calc(100% - (var(--cooltipz-arrow-size, 0.3125rem) / 2));
-  transform: translate(0, var(--cooltipz-slide, 6px));
-  transform-origin: top;
+  -webkit-transform: translate(0, var(--cooltipz-slide, 6px));
+          transform: translate(0, var(--cooltipz-slide, 6px));
+  -webkit-transform-origin: top;
+          transform-origin: top;
 }
 
 [aria-label][data-cooltipz-dir][data-cooltipz-dir="top-right"]:hover::after, [aria-label][data-cooltipz-dir][data-cooltipz-dir="top-right"]:hover::before, [aria-label][data-cooltipz-dir][data-cooltipz-dir="top-right"]:focus::after, [aria-label][data-cooltipz-dir][data-cooltipz-dir="top-right"]:focus::before, [aria-label][data-cooltipz-dir][data-cooltipz-dir="top-right"][data-cooltipz-visible]::after, [aria-label][data-cooltipz-dir][data-cooltipz-dir="top-right"][data-cooltipz-visible]::before, [aria-label][data-cooltipz-dir][data-cooltipz-dir="top-right"].cooltipz--visible::after, [aria-label][data-cooltipz-dir][data-cooltipz-dir="top-right"].cooltipz--visible::before, [aria-label][data-cooltipz-dir].cooltipz--top-right:hover::after, [aria-label][data-cooltipz-dir].cooltipz--top-right:hover::before, [aria-label][data-cooltipz-dir].cooltipz--top-right:focus::after, [aria-label][data-cooltipz-dir].cooltipz--top-right:focus::before, [aria-label][data-cooltipz-dir].cooltipz--top-right[data-cooltipz-visible]::after, [aria-label][data-cooltipz-dir].cooltipz--top-right[data-cooltipz-visible]::before, [aria-label][data-cooltipz-dir].cooltipz--top-right.cooltipz--visible::after, [aria-label][data-cooltipz-dir].cooltipz--top-right.cooltipz--visible::before, [aria-label][class^="cooltipz"][data-cooltipz-dir="top-right"]:hover::after, [aria-label][class^="cooltipz"][data-cooltipz-dir="top-right"]:hover::before, [aria-label][class^="cooltipz"][data-cooltipz-dir="top-right"]:focus::after, [aria-label][class^="cooltipz"][data-cooltipz-dir="top-right"]:focus::before, [aria-label][class^="cooltipz"][data-cooltipz-dir="top-right"][data-cooltipz-visible]::after, [aria-label][class^="cooltipz"][data-cooltipz-dir="top-right"][data-cooltipz-visible]::before, [aria-label][class^="cooltipz"][data-cooltipz-dir="top-right"].cooltipz--visible::after, [aria-label][class^="cooltipz"][data-cooltipz-dir="top-right"].cooltipz--visible::before, [aria-label][class^="cooltipz"].cooltipz--top-right:hover::after, [aria-label][class^="cooltipz"].cooltipz--top-right:hover::before, [aria-label][class^="cooltipz"].cooltipz--top-right:focus::after, [aria-label][class^="cooltipz"].cooltipz--top-right:focus::before, [aria-label][class^="cooltipz"].cooltipz--top-right[data-cooltipz-visible]::after, [aria-label][class^="cooltipz"].cooltipz--top-right[data-cooltipz-visible]::before, [aria-label][class^="cooltipz"].cooltipz--top-right.cooltipz--visible::after, [aria-label][class^="cooltipz"].cooltipz--top-right.cooltipz--visible::before {
-  transform: translate(0);
+  -webkit-transform: translate(0);
+          transform: translate(0);
 }
 
 [aria-label][data-cooltipz-dir][data-cooltipz-dir="bottom"]::after, [aria-label][data-cooltipz-dir].cooltipz--bottom::after, [aria-label][class^="cooltipz"][data-cooltipz-dir="bottom"]::after, [aria-label][class^="cooltipz"].cooltipz--bottom::after {
@@ -163,12 +178,15 @@
 [aria-label][data-cooltipz-dir][data-cooltipz-dir="bottom"]::after, [aria-label][data-cooltipz-dir][data-cooltipz-dir="bottom"]::before, [aria-label][data-cooltipz-dir].cooltipz--bottom::after, [aria-label][data-cooltipz-dir].cooltipz--bottom::before, [aria-label][class^="cooltipz"][data-cooltipz-dir="bottom"]::after, [aria-label][class^="cooltipz"][data-cooltipz-dir="bottom"]::before, [aria-label][class^="cooltipz"].cooltipz--bottom::after, [aria-label][class^="cooltipz"].cooltipz--bottom::before {
   left: 50%;
   top: calc(100% - (var(--cooltipz-arrow-size, 0.3125rem) / 2));
-  transform: translate(-50%, calc(var(--cooltipz-slide, 6px) * -1));
-  transform-origin: bottom;
+  -webkit-transform: translate(-50%, calc(var(--cooltipz-slide, 6px) * -1));
+          transform: translate(-50%, calc(var(--cooltipz-slide, 6px) * -1));
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
 }
 
 [aria-label][data-cooltipz-dir][data-cooltipz-dir="bottom"]:hover::after, [aria-label][data-cooltipz-dir][data-cooltipz-dir="bottom"]:hover::before, [aria-label][data-cooltipz-dir][data-cooltipz-dir="bottom"]:focus::after, [aria-label][data-cooltipz-dir][data-cooltipz-dir="bottom"]:focus::before, [aria-label][data-cooltipz-dir][data-cooltipz-dir="bottom"][data-cooltipz-visible]::after, [aria-label][data-cooltipz-dir][data-cooltipz-dir="bottom"][data-cooltipz-visible]::before, [aria-label][data-cooltipz-dir][data-cooltipz-dir="bottom"].cooltipz--visible::after, [aria-label][data-cooltipz-dir][data-cooltipz-dir="bottom"].cooltipz--visible::before, [aria-label][data-cooltipz-dir].cooltipz--bottom:hover::after, [aria-label][data-cooltipz-dir].cooltipz--bottom:hover::before, [aria-label][data-cooltipz-dir].cooltipz--bottom:focus::after, [aria-label][data-cooltipz-dir].cooltipz--bottom:focus::before, [aria-label][data-cooltipz-dir].cooltipz--bottom[data-cooltipz-visible]::after, [aria-label][data-cooltipz-dir].cooltipz--bottom[data-cooltipz-visible]::before, [aria-label][data-cooltipz-dir].cooltipz--bottom.cooltipz--visible::after, [aria-label][data-cooltipz-dir].cooltipz--bottom.cooltipz--visible::before, [aria-label][class^="cooltipz"][data-cooltipz-dir="bottom"]:hover::after, [aria-label][class^="cooltipz"][data-cooltipz-dir="bottom"]:hover::before, [aria-label][class^="cooltipz"][data-cooltipz-dir="bottom"]:focus::after, [aria-label][class^="cooltipz"][data-cooltipz-dir="bottom"]:focus::before, [aria-label][class^="cooltipz"][data-cooltipz-dir="bottom"][data-cooltipz-visible]::after, [aria-label][class^="cooltipz"][data-cooltipz-dir="bottom"][data-cooltipz-visible]::before, [aria-label][class^="cooltipz"][data-cooltipz-dir="bottom"].cooltipz--visible::after, [aria-label][class^="cooltipz"][data-cooltipz-dir="bottom"].cooltipz--visible::before, [aria-label][class^="cooltipz"].cooltipz--bottom:hover::after, [aria-label][class^="cooltipz"].cooltipz--bottom:hover::before, [aria-label][class^="cooltipz"].cooltipz--bottom:focus::after, [aria-label][class^="cooltipz"].cooltipz--bottom:focus::before, [aria-label][class^="cooltipz"].cooltipz--bottom[data-cooltipz-visible]::after, [aria-label][class^="cooltipz"].cooltipz--bottom[data-cooltipz-visible]::before, [aria-label][class^="cooltipz"].cooltipz--bottom.cooltipz--visible::after, [aria-label][class^="cooltipz"].cooltipz--bottom.cooltipz--visible::before {
-  transform: translate(-50%, 0);
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
 }
 
 [aria-label][data-cooltipz-dir][data-cooltipz-dir="bottom-left"]::after, [aria-label][data-cooltipz-dir].cooltipz--bottom-left::after, [aria-label][class^="cooltipz"][data-cooltipz-dir="bottom-left"]::after, [aria-label][class^="cooltipz"].cooltipz--bottom-left::after {
@@ -182,12 +200,15 @@
 
 [aria-label][data-cooltipz-dir][data-cooltipz-dir="bottom-left"]::after, [aria-label][data-cooltipz-dir][data-cooltipz-dir="bottom-left"]::before, [aria-label][data-cooltipz-dir].cooltipz--bottom-left::after, [aria-label][data-cooltipz-dir].cooltipz--bottom-left::before, [aria-label][class^="cooltipz"][data-cooltipz-dir="bottom-left"]::after, [aria-label][class^="cooltipz"][data-cooltipz-dir="bottom-left"]::before, [aria-label][class^="cooltipz"].cooltipz--bottom-left::after, [aria-label][class^="cooltipz"].cooltipz--bottom-left::before {
   top: calc(100% - (var(--cooltipz-arrow-size, 0.3125rem) / 2));
-  transform: translate(0, calc(var(--cooltipz-slide, 6px) * -1));
-  transform-origin: bottom;
+  -webkit-transform: translate(0, calc(var(--cooltipz-slide, 6px) * -1));
+          transform: translate(0, calc(var(--cooltipz-slide, 6px) * -1));
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
 }
 
 [aria-label][data-cooltipz-dir][data-cooltipz-dir="bottom-left"]:hover::after, [aria-label][data-cooltipz-dir][data-cooltipz-dir="bottom-left"]:hover::before, [aria-label][data-cooltipz-dir][data-cooltipz-dir="bottom-left"]:focus::after, [aria-label][data-cooltipz-dir][data-cooltipz-dir="bottom-left"]:focus::before, [aria-label][data-cooltipz-dir][data-cooltipz-dir="bottom-left"][data-cooltipz-visible]::after, [aria-label][data-cooltipz-dir][data-cooltipz-dir="bottom-left"][data-cooltipz-visible]::before, [aria-label][data-cooltipz-dir][data-cooltipz-dir="bottom-left"].cooltipz--visible::after, [aria-label][data-cooltipz-dir][data-cooltipz-dir="bottom-left"].cooltipz--visible::before, [aria-label][data-cooltipz-dir].cooltipz--bottom-left:hover::after, [aria-label][data-cooltipz-dir].cooltipz--bottom-left:hover::before, [aria-label][data-cooltipz-dir].cooltipz--bottom-left:focus::after, [aria-label][data-cooltipz-dir].cooltipz--bottom-left:focus::before, [aria-label][data-cooltipz-dir].cooltipz--bottom-left[data-cooltipz-visible]::after, [aria-label][data-cooltipz-dir].cooltipz--bottom-left[data-cooltipz-visible]::before, [aria-label][data-cooltipz-dir].cooltipz--bottom-left.cooltipz--visible::after, [aria-label][data-cooltipz-dir].cooltipz--bottom-left.cooltipz--visible::before, [aria-label][class^="cooltipz"][data-cooltipz-dir="bottom-left"]:hover::after, [aria-label][class^="cooltipz"][data-cooltipz-dir="bottom-left"]:hover::before, [aria-label][class^="cooltipz"][data-cooltipz-dir="bottom-left"]:focus::after, [aria-label][class^="cooltipz"][data-cooltipz-dir="bottom-left"]:focus::before, [aria-label][class^="cooltipz"][data-cooltipz-dir="bottom-left"][data-cooltipz-visible]::after, [aria-label][class^="cooltipz"][data-cooltipz-dir="bottom-left"][data-cooltipz-visible]::before, [aria-label][class^="cooltipz"][data-cooltipz-dir="bottom-left"].cooltipz--visible::after, [aria-label][class^="cooltipz"][data-cooltipz-dir="bottom-left"].cooltipz--visible::before, [aria-label][class^="cooltipz"].cooltipz--bottom-left:hover::after, [aria-label][class^="cooltipz"].cooltipz--bottom-left:hover::before, [aria-label][class^="cooltipz"].cooltipz--bottom-left:focus::after, [aria-label][class^="cooltipz"].cooltipz--bottom-left:focus::before, [aria-label][class^="cooltipz"].cooltipz--bottom-left[data-cooltipz-visible]::after, [aria-label][class^="cooltipz"].cooltipz--bottom-left[data-cooltipz-visible]::before, [aria-label][class^="cooltipz"].cooltipz--bottom-left.cooltipz--visible::after, [aria-label][class^="cooltipz"].cooltipz--bottom-left.cooltipz--visible::before {
-  transform: translate(0);
+  -webkit-transform: translate(0);
+          transform: translate(0);
 }
 
 [aria-label][data-cooltipz-dir][data-cooltipz-dir="bottom-right"]::after, [aria-label][data-cooltipz-dir].cooltipz--bottom-right::after, [aria-label][class^="cooltipz"][data-cooltipz-dir="bottom-right"]::after, [aria-label][class^="cooltipz"].cooltipz--bottom-right::after {
@@ -201,12 +222,15 @@
 
 [aria-label][data-cooltipz-dir][data-cooltipz-dir="bottom-right"]::after, [aria-label][data-cooltipz-dir][data-cooltipz-dir="bottom-right"]::before, [aria-label][data-cooltipz-dir].cooltipz--bottom-right::after, [aria-label][data-cooltipz-dir].cooltipz--bottom-right::before, [aria-label][class^="cooltipz"][data-cooltipz-dir="bottom-right"]::after, [aria-label][class^="cooltipz"][data-cooltipz-dir="bottom-right"]::before, [aria-label][class^="cooltipz"].cooltipz--bottom-right::after, [aria-label][class^="cooltipz"].cooltipz--bottom-right::before {
   top: calc(100% - (var(--cooltipz-arrow-size, 0.3125rem) / 2));
-  transform: translate(0, calc(var(--cooltipz-slide, 6px) * -1));
-  transform-origin: bottom;
+  -webkit-transform: translate(0, calc(var(--cooltipz-slide, 6px) * -1));
+          transform: translate(0, calc(var(--cooltipz-slide, 6px) * -1));
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
 }
 
 [aria-label][data-cooltipz-dir][data-cooltipz-dir="bottom-right"]:hover::after, [aria-label][data-cooltipz-dir][data-cooltipz-dir="bottom-right"]:hover::before, [aria-label][data-cooltipz-dir][data-cooltipz-dir="bottom-right"]:focus::after, [aria-label][data-cooltipz-dir][data-cooltipz-dir="bottom-right"]:focus::before, [aria-label][data-cooltipz-dir][data-cooltipz-dir="bottom-right"][data-cooltipz-visible]::after, [aria-label][data-cooltipz-dir][data-cooltipz-dir="bottom-right"][data-cooltipz-visible]::before, [aria-label][data-cooltipz-dir][data-cooltipz-dir="bottom-right"].cooltipz--visible::after, [aria-label][data-cooltipz-dir][data-cooltipz-dir="bottom-right"].cooltipz--visible::before, [aria-label][data-cooltipz-dir].cooltipz--bottom-right:hover::after, [aria-label][data-cooltipz-dir].cooltipz--bottom-right:hover::before, [aria-label][data-cooltipz-dir].cooltipz--bottom-right:focus::after, [aria-label][data-cooltipz-dir].cooltipz--bottom-right:focus::before, [aria-label][data-cooltipz-dir].cooltipz--bottom-right[data-cooltipz-visible]::after, [aria-label][data-cooltipz-dir].cooltipz--bottom-right[data-cooltipz-visible]::before, [aria-label][data-cooltipz-dir].cooltipz--bottom-right.cooltipz--visible::after, [aria-label][data-cooltipz-dir].cooltipz--bottom-right.cooltipz--visible::before, [aria-label][class^="cooltipz"][data-cooltipz-dir="bottom-right"]:hover::after, [aria-label][class^="cooltipz"][data-cooltipz-dir="bottom-right"]:hover::before, [aria-label][class^="cooltipz"][data-cooltipz-dir="bottom-right"]:focus::after, [aria-label][class^="cooltipz"][data-cooltipz-dir="bottom-right"]:focus::before, [aria-label][class^="cooltipz"][data-cooltipz-dir="bottom-right"][data-cooltipz-visible]::after, [aria-label][class^="cooltipz"][data-cooltipz-dir="bottom-right"][data-cooltipz-visible]::before, [aria-label][class^="cooltipz"][data-cooltipz-dir="bottom-right"].cooltipz--visible::after, [aria-label][class^="cooltipz"][data-cooltipz-dir="bottom-right"].cooltipz--visible::before, [aria-label][class^="cooltipz"].cooltipz--bottom-right:hover::after, [aria-label][class^="cooltipz"].cooltipz--bottom-right:hover::before, [aria-label][class^="cooltipz"].cooltipz--bottom-right:focus::after, [aria-label][class^="cooltipz"].cooltipz--bottom-right:focus::before, [aria-label][class^="cooltipz"].cooltipz--bottom-right[data-cooltipz-visible]::after, [aria-label][class^="cooltipz"].cooltipz--bottom-right[data-cooltipz-visible]::before, [aria-label][class^="cooltipz"].cooltipz--bottom-right.cooltipz--visible::after, [aria-label][class^="cooltipz"].cooltipz--bottom-right.cooltipz--visible::before {
-  transform: translate(0);
+  -webkit-transform: translate(0);
+          transform: translate(0);
 }
 
 [aria-label][data-cooltipz-dir][data-cooltipz-dir="left"]::after, [aria-label][data-cooltipz-dir].cooltipz--left::after, [aria-label][class^="cooltipz"][data-cooltipz-dir="left"]::after, [aria-label][class^="cooltipz"].cooltipz--left::after {
@@ -216,12 +240,15 @@
 [aria-label][data-cooltipz-dir][data-cooltipz-dir="left"]::after, [aria-label][data-cooltipz-dir][data-cooltipz-dir="left"]::before, [aria-label][data-cooltipz-dir].cooltipz--left::after, [aria-label][data-cooltipz-dir].cooltipz--left::before, [aria-label][class^="cooltipz"][data-cooltipz-dir="left"]::after, [aria-label][class^="cooltipz"][data-cooltipz-dir="left"]::before, [aria-label][class^="cooltipz"].cooltipz--left::after, [aria-label][class^="cooltipz"].cooltipz--left::before {
   right: calc(100% - (var(--cooltipz-arrow-size, 0.3125rem) / 2));
   top: 50%;
-  transform: translate(var(--cooltipz-slide, 6px), -50%);
-  transform-origin: left;
+  -webkit-transform: translate(var(--cooltipz-slide, 6px), -50%);
+          transform: translate(var(--cooltipz-slide, 6px), -50%);
+  -webkit-transform-origin: left;
+          transform-origin: left;
 }
 
 [aria-label][data-cooltipz-dir][data-cooltipz-dir="left"]:hover::after, [aria-label][data-cooltipz-dir][data-cooltipz-dir="left"]:hover::before, [aria-label][data-cooltipz-dir][data-cooltipz-dir="left"]:focus::after, [aria-label][data-cooltipz-dir][data-cooltipz-dir="left"]:focus::before, [aria-label][data-cooltipz-dir][data-cooltipz-dir="left"][data-cooltipz-visible]::after, [aria-label][data-cooltipz-dir][data-cooltipz-dir="left"][data-cooltipz-visible]::before, [aria-label][data-cooltipz-dir][data-cooltipz-dir="left"].cooltipz--visible::after, [aria-label][data-cooltipz-dir][data-cooltipz-dir="left"].cooltipz--visible::before, [aria-label][data-cooltipz-dir].cooltipz--left:hover::after, [aria-label][data-cooltipz-dir].cooltipz--left:hover::before, [aria-label][data-cooltipz-dir].cooltipz--left:focus::after, [aria-label][data-cooltipz-dir].cooltipz--left:focus::before, [aria-label][data-cooltipz-dir].cooltipz--left[data-cooltipz-visible]::after, [aria-label][data-cooltipz-dir].cooltipz--left[data-cooltipz-visible]::before, [aria-label][data-cooltipz-dir].cooltipz--left.cooltipz--visible::after, [aria-label][data-cooltipz-dir].cooltipz--left.cooltipz--visible::before, [aria-label][class^="cooltipz"][data-cooltipz-dir="left"]:hover::after, [aria-label][class^="cooltipz"][data-cooltipz-dir="left"]:hover::before, [aria-label][class^="cooltipz"][data-cooltipz-dir="left"]:focus::after, [aria-label][class^="cooltipz"][data-cooltipz-dir="left"]:focus::before, [aria-label][class^="cooltipz"][data-cooltipz-dir="left"][data-cooltipz-visible]::after, [aria-label][class^="cooltipz"][data-cooltipz-dir="left"][data-cooltipz-visible]::before, [aria-label][class^="cooltipz"][data-cooltipz-dir="left"].cooltipz--visible::after, [aria-label][class^="cooltipz"][data-cooltipz-dir="left"].cooltipz--visible::before, [aria-label][class^="cooltipz"].cooltipz--left:hover::after, [aria-label][class^="cooltipz"].cooltipz--left:hover::before, [aria-label][class^="cooltipz"].cooltipz--left:focus::after, [aria-label][class^="cooltipz"].cooltipz--left:focus::before, [aria-label][class^="cooltipz"].cooltipz--left[data-cooltipz-visible]::after, [aria-label][class^="cooltipz"].cooltipz--left[data-cooltipz-visible]::before, [aria-label][class^="cooltipz"].cooltipz--left.cooltipz--visible::after, [aria-label][class^="cooltipz"].cooltipz--left.cooltipz--visible::before {
-  transform: translate(0, -50%);
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
 }
 
 [aria-label][data-cooltipz-dir][data-cooltipz-dir="right"]::after, [aria-label][data-cooltipz-dir].cooltipz--right::after, [aria-label][class^="cooltipz"][data-cooltipz-dir="right"]::after, [aria-label][class^="cooltipz"].cooltipz--right::after {
@@ -231,12 +258,15 @@
 [aria-label][data-cooltipz-dir][data-cooltipz-dir="right"]::after, [aria-label][data-cooltipz-dir][data-cooltipz-dir="right"]::before, [aria-label][data-cooltipz-dir].cooltipz--right::after, [aria-label][data-cooltipz-dir].cooltipz--right::before, [aria-label][class^="cooltipz"][data-cooltipz-dir="right"]::after, [aria-label][class^="cooltipz"][data-cooltipz-dir="right"]::before, [aria-label][class^="cooltipz"].cooltipz--right::after, [aria-label][class^="cooltipz"].cooltipz--right::before {
   left: calc(100% - (var(--cooltipz-arrow-size, 0.3125rem) / 2));
   top: 50%;
-  transform: translate(calc(var(--cooltipz-slide, 6px) * -1), -50%);
-  transform-origin: right;
+  -webkit-transform: translate(calc(var(--cooltipz-slide, 6px) * -1), -50%);
+          transform: translate(calc(var(--cooltipz-slide, 6px) * -1), -50%);
+  -webkit-transform-origin: right;
+          transform-origin: right;
 }
 
 [aria-label][data-cooltipz-dir][data-cooltipz-dir="right"]:hover::after, [aria-label][data-cooltipz-dir][data-cooltipz-dir="right"]:hover::before, [aria-label][data-cooltipz-dir][data-cooltipz-dir="right"]:focus::after, [aria-label][data-cooltipz-dir][data-cooltipz-dir="right"]:focus::before, [aria-label][data-cooltipz-dir][data-cooltipz-dir="right"][data-cooltipz-visible]::after, [aria-label][data-cooltipz-dir][data-cooltipz-dir="right"][data-cooltipz-visible]::before, [aria-label][data-cooltipz-dir][data-cooltipz-dir="right"].cooltipz--visible::after, [aria-label][data-cooltipz-dir][data-cooltipz-dir="right"].cooltipz--visible::before, [aria-label][data-cooltipz-dir].cooltipz--right:hover::after, [aria-label][data-cooltipz-dir].cooltipz--right:hover::before, [aria-label][data-cooltipz-dir].cooltipz--right:focus::after, [aria-label][data-cooltipz-dir].cooltipz--right:focus::before, [aria-label][data-cooltipz-dir].cooltipz--right[data-cooltipz-visible]::after, [aria-label][data-cooltipz-dir].cooltipz--right[data-cooltipz-visible]::before, [aria-label][data-cooltipz-dir].cooltipz--right.cooltipz--visible::after, [aria-label][data-cooltipz-dir].cooltipz--right.cooltipz--visible::before, [aria-label][class^="cooltipz"][data-cooltipz-dir="right"]:hover::after, [aria-label][class^="cooltipz"][data-cooltipz-dir="right"]:hover::before, [aria-label][class^="cooltipz"][data-cooltipz-dir="right"]:focus::after, [aria-label][class^="cooltipz"][data-cooltipz-dir="right"]:focus::before, [aria-label][class^="cooltipz"][data-cooltipz-dir="right"][data-cooltipz-visible]::after, [aria-label][class^="cooltipz"][data-cooltipz-dir="right"][data-cooltipz-visible]::before, [aria-label][class^="cooltipz"][data-cooltipz-dir="right"].cooltipz--visible::after, [aria-label][class^="cooltipz"][data-cooltipz-dir="right"].cooltipz--visible::before, [aria-label][class^="cooltipz"].cooltipz--right:hover::after, [aria-label][class^="cooltipz"].cooltipz--right:hover::before, [aria-label][class^="cooltipz"].cooltipz--right:focus::after, [aria-label][class^="cooltipz"].cooltipz--right:focus::before, [aria-label][class^="cooltipz"].cooltipz--right[data-cooltipz-visible]::after, [aria-label][class^="cooltipz"].cooltipz--right[data-cooltipz-visible]::before, [aria-label][class^="cooltipz"].cooltipz--right.cooltipz--visible::after, [aria-label][class^="cooltipz"].cooltipz--right.cooltipz--visible::before {
-  transform: translate(0, -50%);
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
 }
 
 [aria-label][data-cooltipz-dir][data-cooltipz-size="fit"]::after, [aria-label][data-cooltipz-dir].cooltipz--fit::after, [aria-label][class^="cooltipz"][data-cooltipz-size="fit"]::after, [aria-label][class^="cooltipz"].cooltipz--fit::after {
@@ -256,5 +286,6 @@
 }
 
 [aria-label][data-cooltipz-dir][data-cooltipz-static]::after, [aria-label][data-cooltipz-dir][data-cooltipz-static]::before, [aria-label][data-cooltipz-dir].cooltipz--static::after, [aria-label][data-cooltipz-dir].cooltipz--static::before, [aria-label][class^="cooltipz"][data-cooltipz-static]::after, [aria-label][class^="cooltipz"][data-cooltipz-static]::before, [aria-label][class^="cooltipz"].cooltipz--static::after, [aria-label][class^="cooltipz"].cooltipz--static::before {
+  -webkit-transition: none;
   transition: none;
 }
