@@ -9,8 +9,8 @@ $cooltipz-small: 6.25rem !default;
 $cooltipz-medium: 12.5rem !default;
 $cooltipz-large: 18.75rem !default;
 $cooltipz-arrow-size: 0.3125rem !default;
-$cooltipz-delay-show: 0s;
-$cooltipz-delay-hide: 0s;
+$cooltipz-delay-show: 0s !default;
+$cooltipz-delay-hide: 0s !default;
 
 :root {
   --cooltipz-bg-color: #{$cooltipz-bg-color};
