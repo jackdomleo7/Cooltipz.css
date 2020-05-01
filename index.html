@@ -79,6 +79,7 @@
           <li>Options to use classes or <code class="code">data-</code> attributes</li>
           <li>Options to import via CDN, npm or yarn</li>
           <li>Options to import SCSS <small>(npm and yarn only)</small> or CSS stylesheets <small>(expanded or minified)</small></li>
+          <li>Supports a wide range of characters and languages (including emojis, <a href="https://fontawesome.com/v4.7.0?ref=cooltipz.jackdomleo.dev" rel="noreferrer nofollow" target="_blank" class="link">Font Awesome 4</a> and <a href="https://fontawesome.com?ref=cooltipz.jackdomleo.dev" rel="noreferrer nofollow" target="_blank" class="link">Font Awesome 5</a> icons)</li>
           <li>Uses <a href="https://github.com/postcss/autoprefixer?ref=cooltipz.jackdomleo.dev" rel="noreferrer nofollow" target="_blank" class="link">Autoprefixer</a> when generating the CSS stylesheets and <a href="https://github.com/cssnano/cssnano?ref=cooltipz.jackdomleo.dev" rel="noreferrer nofollow" target="_blank" class="link">cssnano</a> to minify the minfied stylesheet</li>
         </ul>
         <ul class="header__badges">
@@ -232,9 +233,9 @@
 &lt;button class="cooltipz--top" aria-label="Emojis: 😎🚗🍔💩👏✔❤"&gt;...&lt;/button&gt;</code></pre></div>
           </div>
           <div class="example">
-            <button data-cooltipz-dir="top" aria-label="Multilingual: ">Multilingual</button>
-            <div class="language-markup"><pre><code class="lang-markup">&lt;button data-cooltipz-dir="top" aria-label="Multilingual: "&gt;...&lt;/button&gt;
-&lt;button class="cooltipz--top" aria-label="Multilingual: "&gt;...&lt;/button&gt;</code></pre></div>
+            <button data-cooltipz-dir="top" aria-label="Multilingual: こんにちは | ਸਤ ਸ੍ਰੀ ਅਕਾਲ | हैलो">Multilingual</button>
+            <div class="language-markup"><pre><code class="lang-markup">&lt;button data-cooltipz-dir="top" aria-label="Multilingual: こんにちは | ਸਤ ਸ੍ਰੀ ਅਕਾਲ | हैलो"&gt;...&lt;/button&gt;
+&lt;button class="cooltipz--top" aria-label="Multilingual: こんにちは | ਸਤ ਸ੍ਰੀ ਅਕਾਲ | हैलो"&gt;...&lt;/button&gt;</code></pre></div>
           </div>
           <h3>Font Awesome</h3>
           <p>A <strong>little</strong> setup is required so you can use Font Awesome unicode values on tooltips in your project. You will need to add Font Awesome's <code class="code">font-family</code> name to the <code class="code">--cooltipz-fontawesome</code> CSS custom property in your project's CSS.</p>
@@ -251,15 +252,15 @@
 }</code></pre></div>
           </div>
           <div class="example">
-            <button data-cooltipz-dir="top" aria-label="Font Awesome: ">Font Awesome</button>
-            <div class="language-markup"><pre><code class="lang-markup">&lt;button data-cooltipz-dir="top" aria-label="Font Awesome: "&gt;...&lt;/button&gt;
-&lt;button class="cooltipz--top" aria-label="Font Awesome: "&gt;...&lt;/button&gt;</code></pre></div>
+            <button data-cooltipz-dir="top" aria-label="Font Awesome: &#xf03e; &#xf200; &#xf188; &#xf007;">Font Awesome</button>
+            <div class="language-markup"><pre><code class="lang-markup">&lt;button data-cooltipz-dir="top" aria-label="Font Awesome: &amp;#xf03e; &amp;#xf200; &amp;#xf188; &amp;#xf007;"&gt;...&lt;/button&gt;
+&lt;button class="cooltipz--top" aria-label="Font Awesome: &amp;#xf03e; &amp;#xf200; &amp;#xf188; &amp;#xf007;"&gt;...&lt;/button&gt;</code></pre></div>
           </div>
         </section>
         <hr/>
         <section id="customisation">
           <h3>Customisation</h3>
-          <p>Cooltipz.css exposes <strong>10</strong> CSS custom properties that can be overriden using your own styles:</p>
+          <p>Cooltipz.css exposes <strong>13</strong> CSS custom properties that can be overriden using your own styles:</p>
           <div class="variables__wrapper">
             <table class="variables">
               <thead>
@@ -331,6 +332,24 @@
                   <td><code class="code">18.75rem</code></td>
                   <td>Accepts any valid value for <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/width?ref=cooltipz.jackdomleo.dev" rel="noreferrer nofollow" target="_blank" class="link">width</a></td>
                 </tr>
+                <tr>
+                  <td><code class="code">--cooltipz-delay-show</code></td>
+                  <td>The timed delay for the tooltip to show</td>
+                  <td><code class="code">0s</code></td>
+                  <td>Accepts any valid value for <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transition-delay?ref=cooltipz.jackdomleo.dev" rel="noreferrer nofollow" target="_blank" class="link">transition-delay</a></td>
+                </tr>
+                <tr>
+                  <td><code class="code">--cooltipz-delay-hide</code></td>
+                  <td>The timed delay for the tooltip to hide</td>
+                  <td><code class="code">0s</code></td>
+                  <td>Accepts any valid value for <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transition-delay?ref=cooltipz.jackdomleo.dev" rel="noreferrer nofollow" target="_blank" class="link">transition-delay</a></td>
+                </tr>
+                <tr>
+                  <td><code class="code">--cooltipz-arrow-size</code></td>
+                  <td>The size of the tooltip arrow</td>
+                  <td><code class="code">0.3125rem</code></td>
+                  <td>Accepts any valid value for <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/border-width?ref=cooltipz.jackdomleo.dev" rel="noreferrer nofollow" target="_blank" class="link">border-width</a></td>
+                </tr>
               </tbody>
             </table>
           </div>
@@ -347,11 +366,14 @@
   --cooltipz-small: 4rem;
   --cooltipz-medium: 14rem;
   --cooltipz-large: 25rem;
+  --cooltipz-delay-show: 1s;
+  --cooltipz-delay-hide: 2s;
+  --cooltipz-arrow-size: 0.75rem;
 }</code></pre></div>
           </div>
           <p>Or override specific tooltips</p>
           <div class="example">
-            <style>.custom-cooltip {--cooltipz-bg-color: #fff;--cooltipz-text-color: #000;--cooltipz-font-size: 1.5rem;--cooltipz-slide: 50px;--cooltipz-border-radius: 1rem;--cooltipz-timing: 1s;--cooltipz-cursor: help;}</style>
+            <style>.custom-cooltip {--cooltipz-bg-color: #fff;--cooltipz-text-color: #000;--cooltipz-font-size: 1.5rem;--cooltipz-slide: 50px;--cooltipz-border-radius: 1rem;--cooltipz-timing: 1s;--cooltipz-cursor: help;--cooltipz-delay-show: 1s;--cooltipz-delay-hide: 2s;--cooltipz-arrow-size: 0.75rem;}</style>
             <button class="custom-cooltip" data-cooltipz-dir="top" aria-label="I've been customised!">Custom</button>
             <div class="language-css"><pre><code class="lang-css">.custom-cooltip {
   --cooltipz-bg-color: #fff;
@@ -361,6 +383,9 @@
   --cooltipz-border-radius: 1rem;
   --cooltipz-timing: 1s;
   --cooltipz-cursor: help;
+  --cooltipz-delay-show: 1s;
+  --cooltipz-delay-hide: 2s;
+  --cooltipz-arrow-size: 0.75rem;
 }</code></pre></div>
           </div>
         </section>
