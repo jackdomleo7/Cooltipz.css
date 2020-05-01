@@ -10,7 +10,10 @@
     "type": "git",
     "url": "git+https://github.com/JDomleo/Cooltipz.css.git"
   },
-  "author": "Jack Domleo",
+  "author": {
+    "name": "Jack Domleo",
+    "url": "https://jackdomleo.dev"
+  },
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/JDomleo/Cooltipz.css/issues"
