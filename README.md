@@ -1,7 +1,6 @@
 ![Cooltipz.css](./logo.png "Cooltipz.css logo")
 
 [![GitHub release](https://badgen.net/github/release/JDomleo/Cooltipz.css?icon=github)](https://github.com/JDomleo/Cooltipz.css "Latest release") [![npm version](https://badgen.net/npm/v/cooltipz-css?icon=npm)](https://www.npmjs.com/package/cooltipz-css "Latest version") [![npm downloads](https://badgen.net/npm/dt/cooltipz-css?icon=npm)](https://www.npmjs.com/package/cooltipz-css "npm downloads") [![jsDelivr CDN hits](https://badgen.net/jsdelivr/hits/npm/cooltipz-css?icon=jsdelivr)](https://github.com/JDomleo/Cooltipz.css#cdn "jsDelivr CDN monthly hits") [![MIT license](https://badgen.net/badge/license/MIT/blue?icon=awesome)](https://github.com/JDomleo/Cooltipz.css#license "MIT License") [![GitHub stars](https://badgen.net/github/stars/JDomleo/Cooltipz.css?icon=github)](https://github.com/JDomleo/Cooltipz.css/stargazers "GitHub stars") [![Brotli size](https://badgen.net/badgesize/brotli/JDomleo/Cooltipz.css/master/cooltipz.min.css)](https://github.com/JDomleo/Cooltipz.css/blob/master/cooltipz.min.css "File size - Brotli")
-![]()
 
 ---
 
