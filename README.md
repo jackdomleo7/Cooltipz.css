@@ -10,7 +10,7 @@
 
 _Lightweight &bull; Modern &bull; Accessible &bull; Customisable &bull; Simple_
 
-A pure CSS tooltip library that is lightweight, modern, accessible, customisable and easy to use.
+Cooltipz.css is a pure CSS tooltip library that is lightweight, modern, accessible, customisable and easy to use.
 
 [Read the docs here](https://cooltipz.jackdomleo.dev)
 
