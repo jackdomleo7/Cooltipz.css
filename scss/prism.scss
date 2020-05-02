@@ -153,6 +153,12 @@ div {
     }
   }
 
+  &.language-cli {
+    &::before {
+      content: "CLI";
+    }
+  }
+
   &.language-none {
     pre {
       padding: 1em;
