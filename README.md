@@ -9,6 +9,8 @@ https://cooltipz.jackdomleo.dev
 - `git clone https://github.com/JDomleo/Cooltipz.css.git`
 - `git checkout gh-pages`
 - `npm i`
+- `npm run serve`
+- Navigate to http://localhost:1234
 
 ---
 
