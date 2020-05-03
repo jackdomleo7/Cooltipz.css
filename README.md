@@ -14,7 +14,7 @@ Cooltipz.css is a pure CSS tooltip library that is lightweight, modern, accessib
 
 [Read the docs here](https://cooltipz.jackdomleo.dev)
 
-Play with Cooltipz.css on [CodePen](https://codepen.io/JackDomleo/pen/mderEeG?ref=cooltipz.jackdomleo.dev).
+Play with Cooltipz.css on [CodePen](https://codepen.io/JackDomleo/pen/mderEeG).
 
 **Features**
 - Easy and simple tooltips with **quick setup**
@@ -102,8 +102,8 @@ You have the right to use this library in any project free of charge. You **do n
 
 ## Feedback & Support
 
-We appreciate any **feedback** (feel free to raise an [issue](https://github.com/JDomleo/Cooltipz.css/issues?ref=cooltipz.jackdomleo.dev) and we'll address it as soon as possible).
-**Stars on [GitHub](https://github.com/JDomleo/Cooltipz.css?ref=cooltipz.jackdomleo.dev)** are a great way to support us.
+We appreciate any **feedback** (feel free to raise an [issue](https://github.com/JDomleo/Cooltipz.css/issues) and we'll address it as soon as possible).
+**Stars on [GitHub](https://github.com/JDomleo/Cooltipz.css)** are a great way to support us.
 If you liked this library, **share** Cooltipz.css on social media with the [#cooltipzcss](https://twitter.com/search?q=cooltipzcss%20OR%20cooltipz.css "View #cooltipzcss on Twitter") hastag.
 If you use Cooltipz.css in your project, maybe consider **mentioning us** like we have in our [Special Thanks](#special-thanks) section.
 
