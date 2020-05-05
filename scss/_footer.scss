@@ -3,13 +3,14 @@
   background-color: #f80;
   display: flex;
   flex-direction: column;
-  font-weight: 700;
+  font-weight: 400;
   justify-content: center;
   padding: 1.5rem 0;
   text-align: center;
 
   a {
     color: inherit;
+    font-weight: 700;
     text-decoration: none;
 
     &:hover,
