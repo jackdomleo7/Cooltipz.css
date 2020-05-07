@@ -53,6 +53,6 @@
     "postcss-cli": "^7.1.1",
     "stylelint": "^13.3.3",
     "stylelint-order": "^4.0.0",
-    "stylelint-scss": "^3.17.1"
+    "stylelint-scss": "^3.17.2"
   }
 }
