@@ -29,7 +29,7 @@
     "sitemap-generator-cli": "^7.5.0",
     "stylelint": "^13.3.3",
     "stylelint-order": "^4.0.0",
-    "stylelint-scss": "^3.17.1"
+    "stylelint-scss": "^3.17.2"
   },
   "dependencies": {
     "cooltipz-css": "^1.6.0",
