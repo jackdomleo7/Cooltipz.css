@@ -11,4 +11,10 @@
   @media (prefers-reduced-motion: reduce) {
     transition: none;
   }
+
+  &--jump {
+    display: inline-block;
+    height: 1.2rem;
+    width: 1.2rem;
+  }
 }

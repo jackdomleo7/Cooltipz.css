@@ -45,13 +45,10 @@
 
     <link rel="apple-touch-icon" sizes="180x180" href="./img/favicons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./img/favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="194x194" href="./img/favicons/favicon-194x194.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="./img/favicons/android-chrome-192x192.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./img/favicons/favicon-16x16.png">
-    <link rel="manifest" href="./site.webmanifest">
-    <link rel="mask-icon" href="./img/favicons/safari-pinned-tab.svg" color="#dd542d">
-    <meta name="msapplication-config" content="./browserconfig.xml">
-    <meta name="msapplication-TileColor" content="#da532c">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="./img/favicons/safari-pinned-tab.svg" color="#000000">
+    <meta name="msapplication-TileColor" content="#2d89ef">
     <meta name="msapplication-TileImage" content="./img/favicons/mstile-144x144.png">
     <meta name="theme-color" content="#ffffff">
 
@@ -134,7 +131,7 @@
             </a>
           </li>
         </ul>
-        <ul class="header__share">
+        <ul class="header__share" id="social-share">
           <li>
             <a href="https://twitter.com/intent/tweet?text=Cooltipz.css is a pure CSS tooltip library that is lightweight, modern, accessible, customisable and easy to use.&via=jackdomleo7&url=https://cooltipz.jackdomleo.dev&hashtags=cooltipzcss,css" target="_blank" class="link" aria-label="Share to Twitter" data-cooltipz-dir="bottom">
               <svg class="twitter" aria-hidden="true">
@@ -168,8 +165,15 @@
       <hr/>
       <main class="page__main">
         <section id="direction">
-          <h3>Tooltip Direction<sup class="required" aria-hidden="true">*</sup><small> - (exactly <u>one</u> direction is required for the tooltip to display)</small></h3>
-          <p>So the tooltip displays correctly, <strong>exactly one</strong> direction is required.</p>
+          <h3>
+            Tooltip Direction<sup class="required" aria-hidden="true">*</sup>
+            <a href="#direction" class="link link--jump" aria-label="Direction">
+              <svg aria-hidden="true">
+                <use xlink:href="/assets/sprite.svg#icon-link"></use>
+              </svg>
+            </a>
+          </h3>
+          <p>So the tooltip displays correctly, <strong>exactly <u>one</u></strong> direction is required.</p>
           <div class="example">
             <button data-cooltipz-dir="top" aria-label="Hello there!">Top</button>
             <div class="language-markup"><pre><code class="lang-markup">&lt;button data-cooltipz-dir="top" aria-label="Hello there!"&gt;...&lt;/button&gt;
@@ -213,7 +217,14 @@
         </section>
         <hr/>
         <section id="size">
-          <h3>Tooltip Size</h3>
+          <h3>
+            Tooltip Size
+            <a href="#size" class="link link--jump" aria-label="Size">
+              <svg aria-hidden="true">
+                <use xlink:href="/assets/sprite.svg#icon-link"></use>
+              </svg>
+            </a>
+          </h3>
           <p>The default behaviour for a tooltip size is to remain on a single line, no matter the content within it. If you want the content to wrap, use one of the below sizes:</p>
           <ul>
             <li>Small - <code class="code">data-cooltipz-size="small"</code> / <code class="code">.cooltipz--small</code></li>
@@ -244,7 +255,14 @@
         </section>
         <hr/>
         <section id="no-animation">
-          <h3>No Animation</h3>
+          <h3>
+            No Animation
+            <a href="#no-animation" class="link link--jump" aria-label="No animation">
+              <svg aria-hidden="true">
+                <use xlink:href="/assets/sprite.svg#icon-link"></use>
+              </svg>
+            </a>
+          </h3>
           <p>Animations can be disabled by applying the <code class="code">data-cooltipz-static</code> attribute or the <code class="code">.cooltipz--static</code> class. Cooltipz.css also use the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion?ref=cooltipz.jackdomleo.dev" rel="nofollow" target="_blank" class="link">prefers-reduced-motion</a> media query, so when the user's preferences indicate reduced motion, Cooltipz.css automatically disables animation.</p>
           <div class="example">
             <button data-cooltipz-dir="top" data-cooltipz-static aria-label="Hello there!">No animation</button>
@@ -254,7 +272,14 @@
         </section>
         <hr/>
         <section id="visible">
-          <h3>Always Visible</h3>
+          <h3>
+            Always Visible
+            <a href="#visible" class="link link--jump" aria-label="Visible">
+              <svg aria-hidden="true">
+                <use xlink:href="/assets/sprite.svg#icon-link"></use>
+              </svg>
+            </a>
+          </h3>
           <p>Add the <code class="code">data-cooltipz-visible</code> attribute or the <code class="code">.cooltipz--visible</code> class to make the tooltip always show, even if the user isn't hovering or focusing it.</p>
           <p>Tooltips can be shown programatically by using the <a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/setAttribute?ref=cooltipz.jackdomleo.dev" rel="nofollow" target="_blank" class="link"><code class="code">setAttribute()</code> JavaScript function</a>.</p>
           <div class="example">
@@ -264,8 +289,15 @@
           </div>
         </section>
         <hr/>
-        <section>
-          <h3>Special Characters, Emojis and Font Icons</h3>
+        <section id="special-characters">
+          <h3>
+            Special Characters, Emojis and Font Icons
+            <a href="#special-characters" class="link link--jump" aria-label="Tooltip direction">
+              <svg aria-hidden="true">
+                <use xlink:href="/assets/sprite.svg#icon-link"></use>
+              </svg>
+            </a>
+          </h3>
           <p>Cooltipz.css supports HTML character Codes, emojis, font/glyph icons and <a href="https://fontawesome.com/v4.7.0?ref=cooltipz.jackdomleo.dev" rel="nofollow" target="_blank" class="link">Font Awesome 4</a> and <a href="https://fontawesome.com?ref=cooltipz.jackdomleo.dev" rel="nofollow" target="_blank" class="link">Font Awesome 5</a>.</p>
           <div class="example">
             <button data-cooltipz-dir="top" aria-label="HTML character codes: &copy; &reg; &#9742; &#9850; &#8709;">HTML Codes &#9835;</button>
@@ -282,7 +314,14 @@
             <div class="language-markup"><pre><code class="lang-markup">&lt;button data-cooltipz-dir="top" aria-label="Multilingual: こんにちは | ਸਤ ਸ੍ਰੀ ਅਕਾਲ | हैलो"&gt;...&lt;/button&gt;
 &lt;button class="cooltipz--top" aria-label="Multilingual: こんにちは | ਸਤ ਸ੍ਰੀ ਅਕਾਲ | हैलो"&gt;...&lt;/button&gt;</code></pre></div>
           </div>
-          <h3>Font Awesome</h3>
+          <h3 id="font-awesome">
+            Font Awesome
+            <a href="#font-awesome" class="link link--jump" aria-label="Tooltip direction">
+              <svg aria-hidden="true">
+                <use xlink:href="/assets/sprite.svg#icon-link"></use>
+              </svg>
+            </a>
+          </h3>
           <p>A <strong>little</strong> setup is required so you can use Font Awesome unicode values on tooltips in your project. You will need to add Font Awesome's <code class="code">font-family</code> name to the <code class="code">--cooltipz-fontawesome</code> CSS custom property in your project's CSS.</p>
           <div class="example--stack">
             <p>If you are using <a href="https://fontawesome.com/v4.7.0?ref=cooltipz.jackdomleo.dev" rel="nofollow" target="_blank" class="link">Font Awesome 4</a>, add the below CSS code to your project's CSS:</p>
@@ -304,7 +343,14 @@
         </section>
         <hr/>
         <section id="customisation">
-          <h3>Customisation</h3>
+          <h3>
+            Customisation
+            <a href="#customisation" class="link link--jump" aria-label="Tooltip direction">
+              <svg aria-hidden="true">
+                <use xlink:href="/assets/sprite.svg#icon-link"></use>
+              </svg>
+            </a>
+          </h3>
           <p>Cooltipz.css exposes <strong>13</strong> CSS custom properties that can be overriden using your own styles:</p>
           <div class="variables__wrapper">
             <table class="variables">
@@ -444,7 +490,14 @@
         </section>
         <hr/>
         <section id="installation">
-          <h3>Installation</h3>
+          <h3>
+            Installation
+            <a href="#installation" class="link link--jump" aria-label="Tooltip direction">
+              <svg aria-hidden="true">
+                <use xlink:href="/assets/sprite.svg#icon-link"></use>
+              </svg>
+            </a>
+          </h3>
           <h4>CDN</h4>
           <p>In the below CDN links:</p>
           <ul>
@@ -496,17 +549,38 @@
         </section>
         <hr/>
         <section id="beware">
-          <h3>Beware</h3>
+          <h3>
+            Beware
+            <a href="#beware" class="link link--jump" aria-label="Tooltip direction">
+              <svg aria-hidden="true">
+                <use xlink:href="/assets/sprite.svg#icon-link"></use>
+              </svg>
+            </a>
+          </h3>
           <p><strong>Important</strong>: Cooltipz.css uses the <code class="code">::before</code> and <code class="code">::after</code> psuedo elements to display the tooltips, therefore you must beware of the following:</p>
           <ul>
             <li>Cooltipz.css will not work on self-closing HTML elements.</li>
             <li>If the HTML element already has existing <code class="code">::before</code> or <code class="code">::after</code> styling, these could conflict with the Cooltipz.css styles and cause unexpected outputs.</li>
           </ul>
         </section>
+        <hr/>
+        <section id="feedback">
+          <h3>
+            Feedback &amp; Support
+            <a href="#feedback" class="link link--jump" aria-label="Tooltip direction">
+              <svg aria-hidden="true">
+                <use xlink:href="/assets/sprite.svg#icon-link"></use>
+              </svg>
+            </a>
+          </h3>
+          <p>
+            We appreciate any <strong>feedback</strong> (feel free to raise an <a href="https://github.com/JDomleo/Cooltipz.css/issues" class="link" rel="nofollow">issue</a> and we'll address it as soon as possible). <strong><a href="https://github.com/JDomleo/Cooltipz.css/stargazers" class="link" rel="nofollow">Stars on GitHub</a></strong> are a great way to support us. If you liked this library, <strong><a href="#social-share" class="link">share</a></strong> Cooltipz.css on social media with the <a href="https://twitter.com/search?q=cooltipzcss%20OR%20cooltipz.css" class="link" rel="nofollow">#cooltipzcss</a> hastag. If you use Cooltipz.css in your project, maybe consider mentioning us in a README or a website footer, but our <a href="https://github.com/JDomleo/Cooltipz.css/tree/master#license" class="link">License</a> states the <code class="code">/*! Cooltipz.css vVERSION | MIT License | github.com/JDomleo/Cooltipz.css */</code> must remain in the CSS.
+          </p>
+        </section>
       </main>
       <hr/>
       <footer class="footer">
-        <p>Made by <a href="https://jackdomleo.dev" target="_blank" rel="nofollow">Jack Domleo</a>.</p>
+        <p>Made by <a href="https://jackdomleo.dev?ref=cooltipz.jackdomleo.dev" target="_blank" rel="nofollow">Jack Domleo</a>.</p>
         <ul>
           <li><a href="https://www.npmjs.com/package/cooltipz-css">npm</a></li>
           <li><a href="https://yarnpkg.com/package/cooltipz-css">yarn</a></li>
@@ -514,6 +588,7 @@
           <li><a href="https://github.com/JDomleo/Cooltipz.css/tree/master#license">License</a></li>
           <li><a href="https://github.com/JDomleo/Cooltipz.css/releases">CHANGELOG</a></li>
         </ul>
+        <p>Copyright &copy; 2020 - present Cooltipz.css</p>
       </footer>
     </div>
     <script src="./js/prism.js"></script>

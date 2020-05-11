@@ -25,8 +25,12 @@
   &__main {
     flex: 1;
 
-    h3 .required {
-      color: $orange;
+    h3 {
+      position: relative;
+
+      .required {
+        color: $orange;
+      }
     }
   }
 }
