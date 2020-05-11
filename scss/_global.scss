@@ -11,6 +11,7 @@ html {
   box-sizing: border-box;
   font-family: sans-serif;
   scroll-behavior: smooth;
+  scroll-padding-top: 2rem;
 }
 
 @media (prefers-reduced-motion: reduce) {
