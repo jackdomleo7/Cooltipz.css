@@ -16,6 +16,12 @@
 }
 
 .github-corner {
+  height: 5rem;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 5rem;
+
   &:hover {
     .octo-arm {
       animation: octocat-wave 560ms ease-in-out;
@@ -26,12 +32,7 @@
     border: 0;
     color: #fff;
     fill: #151513;
-    height: 5rem;
-    left: 0;
-    position: absolute;
-    top: 0;
     transform: scale(-1, 1);
-    width: 5rem;
   }
 
   .octo-arm {
