@@ -157,11 +157,23 @@ div {
     &::before {
       content: "CLI";
     }
+
+    code {
+      &::before {
+        content: "$ ";
+      }
+    }
   }
 
   &.language-none {
     pre {
       padding: 1em;
+    }
+  }
+
+  &.no-label {
+    &::before {
+      content: "" !important;
     }
   }
 }

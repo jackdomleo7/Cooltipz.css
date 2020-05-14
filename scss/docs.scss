@@ -10,27 +10,19 @@
   --cooltipz-fontawesome: fontawesome;
 }
 
-.page {
-  display: flex;
-  flex-direction: column;
-  margin: 0 auto;
-  max-width: 68rem;
-  min-height: 100vh;
-  padding: 0 2rem;
+.sr-only {
+  border: 0 !important;
+  clip: rect(1px, 1px, 1px, 1px) !important;
+  clip-path: inset(50%) !important;
+  height: 1px !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  padding: 0 !important;
+  position: absolute !important;
+  white-space: nowrap !important;
+  width: 1px !important;
+}
 
-  @media (min-width: 450px) {
-    padding: 0 3.25rem;
-  }
-
-  &__main {
-    flex: 1;
-
-    h3 {
-      position: relative;
-
-      .required {
-        color: $orange;
-      }
-    }
-  }
+.select-all {
+  user-select: all;
 }

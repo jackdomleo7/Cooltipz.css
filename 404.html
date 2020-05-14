@@ -4,11 +4,16 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-165367468-2"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+      if(window.location.hostname != "cooltipz.jackdomleo.dev") {
+        window['ga-disable-UA-165367468-2'] = true;
+      }
+      else {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
 
-      gtag('config', 'UA-165367468-2');
+        gtag('config', 'UA-165367468-2');
+      }
     </script>
 
     <meta charset="utf-8">
