@@ -127,6 +127,7 @@ div {
     position: relative;
 
     &::before {
+      color: #999;
       font-family: Verdana, Geneva, Tahoma, sans-serif;
       font-size: 0.7rem;
       position: absolute;
@@ -138,6 +139,12 @@ div {
   &.language-css {
     &::before {
       content: "CSS";
+    }
+  }
+
+  &.language-sass {
+    &::before {
+      content: "Sass / SCSS";
     }
   }
 

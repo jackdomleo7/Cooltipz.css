@@ -11,16 +11,27 @@
     margin: 0;
   }
 
-  &__gh-stars {
-    height: 2rem;
+  &__badges {
+    align-items: center;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
 
-    &:hover,
-    &:focus {
-      filter: drop-shadow(0.0625rem 0.0625rem 0.0625rem rgba(0, 0, 0, 0.1)) invert(5%);
-    }
+    a {
+      height: 1.5rem;
 
-    img {
-      height: 100%;
+      @media screen and (min-width: 30em) {
+        height: 2rem;
+      }
+
+      &:hover,
+      &:focus {
+        filter: drop-shadow(0.0625rem 0.0625rem 0.0625rem rgba(0, 0, 0, 0.1)) invert(5%);
+      }
+
+      img {
+        height: 100%;
+      }
     }
   }
 
@@ -31,7 +42,7 @@
     gap: 2rem;
     justify-content: space-evenly;
     list-style-type: none;
-    margin-top: 2rem;
+    margin: 2rem 0 0;
     padding-left: 0;
 
     svg {

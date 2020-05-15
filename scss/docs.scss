@@ -10,6 +10,15 @@
   --cooltipz-fontawesome: fontawesome;
 }
 
+.main {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 62.5rem;
+  padding: 0 1.5rem;
+}
+
 .sr-only {
   border: 0 !important;
   clip: rect(1px, 1px, 1px, 1px) !important;
@@ -24,5 +33,21 @@
 }
 
 .select-all {
+  cursor: pointer;
   user-select: all;
+}
+
+.center {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.direction {
+  &__examples {
+    display: grid;
+    gap: 0.5rem;
+    grid-template: 1fr 1fr 1fr / auto auto auto;
+    margin: 2rem 0;
+  }
 }

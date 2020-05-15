@@ -32,7 +32,7 @@
     <meta name="twitter:image" content="https://cooltipz.jackdomleo.dev/img/open-graph.png">
 
     <meta property="og:url" content="https://cooltipz.jackdomleo.dev">
-    <meta property="og:title" content="Cooltipz.css - Cool tooltips made from pure CSS">
+    <meta property="og:title" content="Cooltipz.css - Cool customisable tooltips made from pure CSS">
     <meta property="og:description" content="Cooltipz.css is a pure CSS tooltip library that is lightweight, modern, accessible, customisable and easy to use.">
     <meta property="og:locale" content="en_GB">
     <meta property="og:image" content="https://cooltipz.jackdomleo.dev/img/open-graph.png">
@@ -52,7 +52,7 @@
     <meta name="msapplication-TileImage" content="./img/favicons/mstile-144x144.png">
     <meta name="theme-color" content="#ffffff">
 
-    <title>Cooltipz.css - Cool tooltips made from pure CSS</title>
+    <title>Cooltipz.css - Cool customisable tooltips made from pure CSS</title>
     <link rel="stylesheet" href="./css/normalize.min.css" />
     <link rel="stylesheet" href="./css/docs.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
@@ -67,9 +67,16 @@
       </h1>
       <h2>Cool customisable tooltips made from pure CSS</h2>
       <div class="language-cli no-label"><pre><code class="language-cli select-all">npm install cooltipz-css</code></pre></div>
-      <a class="header__gh-stars" href="https://github.com/JDomleo/Cooltipz.css/stargazers" rel="nofollow">
-        <img alt="GitHub stars" src="https://img.shields.io/github/stars/JDomleo/Cooltipz.css?style=social" />
-      </a>
+      <div class="header__badges">
+        <a href="https://github.com/JDomleo/Cooltipz.css/stargazers" rel="nofollow">
+          <img alt="GitHub stars" src="https://img.shields.io/github/stars/JDomleo/Cooltipz.css?style=social" />
+          <span class="sr-only">GitHub stars</span>
+        </a>
+        <a href="https://github.com/JDomleo/Cooltipz.css/releases" rel="nofollow">
+          <img alt="GitHub release (latest by date)" src="https://img.shields.io/github/v/release/JDomleo/Cooltipz.css?label=Version&style=social">
+          <span class="sr-only">Latest release</span>
+        </a>
+      </div>
       <ul class="features">
         <li>
           <svg aria-hidden="true">
@@ -97,6 +104,92 @@
         </li>
       </ul>
     </header>
+    <main class="main">
+      <hr/>
+      <section id="getting-started">
+        <h3>Getting started</h3>
+        <p>To get started using Cooltipz.css in your project, all you need to do is:</p>
+        <ol>
+          <li><a href="#usage" class="link">Install</a> cooltipz-css via CDN, npm or yarn</li>
+          <li>Add an <code class="code">aria-label</code> and a <a href="#direction" class="link">direction</a> to any non self-closing HTML tag</li>
+          <li>(Optional) Add any modifiers and/or <a href="#customise" class="link">customise</a> your own tooltip</li>
+        </ol>
+        <p>Depending on your preference, you can choose to use classes or <code class="code">data-</code> attributes.</p>
+      </section>
+      <hr/>
+      <section id="usage">
+        <h3>Usage</h3>
+        <h4>CDN</h4>
+        <img alt="jsDelivr hits (npm)" src="https://img.shields.io/jsdelivr/npm/hm/cooltipz-css?label=jsDelivr%20hits&logo=jsdelivr&style=social">
+        <p>In the below CDN links:</p>
+        <ul>
+          <li>Replace <code class="code">:version</code> with a version <a href="https://www.npmjs.com/package/cooltipz-css?activeTab=versions" rel="nofollow" target="_blank" class="link">listed here</a> (latest version is always recommended). If you always want to get the latest stylesheet, remove <code class="code">@:version</code> completely (Not recommended).</li>
+          <li>
+            Replace <code class="code">:file</code> with one of the below
+            <ul>
+              <li><code class="code">cooltipz.css</code> <small>(Expanded stylesheet)</small></li>
+              <li><code class="code">cooltipz.min.css</code> <small>(Minified stylesheet)</small></li>
+            </ul>
+          </li>
+          <li>Then import via HTML or CSS</li>
+        </ul>
+        <div class="example example--stack">
+          <div class="language-markup"><pre><code class="language-markup select-all">&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cooltipz-css@:version/:file" /&gt;</code></pre></div>
+        </div>
+        <div class="example example--stack">
+          <div class="language-css"><pre><code class="language-css select-all">@import url('https://cdn.jsdelivr.net/npm/cooltipz-css@:version/:file');</code></pre></div>
+        </div>
+        <h4>Package manager (npm or yarn)</h4>
+        <img alt="npm downloads" src="https://img.shields.io/npm/dt/cooltipz-css?logo=npm&style=social">
+        <div class="example example--stack">
+          <p><em>First</em>, install it via npm</p>
+          <div class="language-cli"><pre><code class="language-cli select-all">npm install cooltipz-css --save</code></pre></div>
+        </div>
+        <div class="example example--stack">
+          <p><em>Or</em>, install it via yarn</p>
+          <div class="language-cli"><pre><code class="language-cli select-all">yarn add cooltipz-css</code></pre></div>
+        </div>
+        <div class="example example--stack">
+          <p><em>Then</em>, import it into your JavaScript</p>
+          <div class="language-js"><pre><code class="language-js select-all">import 'cooltipz-css';</code></pre></div>
+        </div>
+        <p><em>Or</em>, import the SCSS or CSS into your Sass/SCSS</p>
+        <p>In the below imports, replace <code class="code">:file</code> with one of the options below:</p>
+        <ul>
+          <li><code class="code">src/cooltipz</code> <small>(.scss file)</small></li>
+          <li><code class="code">cooltipz.css</code> <small>(Expanded .css)</small></li>
+          <li><code class="code">cooltipz.min.css</code> <small>(Minified .css)</small></li>
+        </ul>
+        <div class="example example--stack">
+          <div class="language-sass"><pre><code class="language-css">/* Webpack */
+@import '~cooltipz-css/:file';
+
+/* Non webpack */
+@import 'path/to/node_modules/cooltipz-css/:file';</code></pre></div>
+        </div>
+      </section>
+      <hr/>
+      <section id="direction" class="direction">
+        <h3>Direction<sup class="required" aria-hidden="true">*</sup></h3>
+        <p><strong>Exactly <u>one</u></strong> direction value is required.</p>
+        <div class="direction__examples">
+          <button aria-label="Hello" data-cooltipz-dir="bottom-right">bottom-right</button>
+          <button aria-label="Hello" data-cooltipz-dir="bottom">bottom</button>
+          <button aria-label="Hello" data-cooltipz-dir="bottom-left">bottom-left</button>
+          <button aria-label="Hello" data-cooltipz-dir="right">right</button>
+          <code class="code center">data-cooltipz-dir</code>
+          <button aria-label="Hello" data-cooltipz-dir="left">left</button>
+          <button aria-label="Hello" data-cooltipz-dir="top-right">top-right</button>
+          <button aria-label="Hello" data-cooltipz-dir="top">top</button>
+          <button aria-label="Hello" data-cooltipz-dir="top-left">top-left</button>
+        </div>
+        <div class="language-markup"><pre><code class="language-markup">&lt;button aria-label="Tooltip message" data-cooltipz-dir="top"&gt;...&lt;/button&gt;</code></pre></div>
+        <p>Now you have your basic tooltip, try some of the modifiers and try customising your own tooltip.</p>
+      </section>
+    </main>
+    <footer class="footer">
+      Made with <span aria-label="coolness" data-cooltipz-dir="top">😎</span> by Jack Domleo
+    </footer>
     <script src="./js/prism.js"></script>
   </body>
 </html>
