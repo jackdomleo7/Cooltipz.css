@@ -5,6 +5,7 @@
 @import "./link";
 @import "./github-corner";
 @import "./code";
+@import "./button";
 
 :root {
   --cooltipz-fontawesome: fontawesome;
@@ -40,6 +41,7 @@
 .center {
   align-items: center;
   display: flex;
+  gap: 0.5rem;
   justify-content: center;
 }
 
@@ -49,6 +51,10 @@
     gap: 0.5rem;
     grid-template: 1fr 1fr 1fr / auto auto auto;
     margin: 2rem 0;
+  }
+
+  .required {
+    color: $orange;
   }
 }
 
@@ -66,5 +72,11 @@
     @media screen and (min-width: 45em) {
       grid-template: auto / 1fr 1fr 1fr 1fr;
     }
+  }
+}
+
+.visible {
+  &__example {
+    margin-top: 2.5rem;
   }
 }

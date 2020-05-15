@@ -199,10 +199,46 @@
         </div>
         <div class="language-markup"><pre><code class="language-markup">&lt;button aria-label="Tooltip message" data-cooltipz-dir="top" data-cooltipz-size="fit"&gt;...&lt;/button&gt;</code></pre></div>
       </section>
+      <hr/>
+      <section id="no-animation">
+        <h3>No animation</h3>
+        <div class="center">
+          <button aria-label="Hello" data-cooltipz-dir="top" data-cooltipz-static>No animation</button>
+        </div>
+        <div class="example example--stack">
+          <p>You can disable animation for a single tooltip:</p>
+          <div class="language-markup"><pre><code class="language-markup">&lt;button aria-label="Tooltip message" data-cooltipz-dir="top" data-cooltipz-static&gt;...&lt;/button&gt;</code></pre></div>
+        </div>
+        <div class="example example--stack">
+          <p>Or you can disable animation on <strong>all</strong> tooltips by customising the <code class="code">--cooltipz-timing</code> custom property:</p>
+          <div class="language-css"><pre><code class="language-css">:root {
+  --cooltipz-timing: 0;
+}</code></pre></div>
+        </div>
+        <p>Animation is automatically disabled if the user's preferences are set to <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion" rel="nofollow noopener" class="link">prefers reduced motion</a>.</p>
+      </section>
+      <hr/>
+      <section id="visible">
+        <h3>Always visible</h3>
+        <div class="center">
+          <button aria-label="Hello" data-cooltipz-dir="top" data-cooltipz-visible>Always visible</button>
+        </div>
+        <div class="example example--stack">
+          <p>You can make a tooltip always appear:</p>
+          <div class="language-markup"><pre><code class="language-markup">&lt;button aria-label="Tooltip message" data-cooltipz-dir="top" data-cooltipz-visible&gt;...&lt;</code></pre></div>
+        </div>
+        <p>This can also be useful if you need to programmatically show a tooltip.</p>
+        <div class="center visible__example">
+          <button class="button" onclick="programmaticallyShowTooltip('example-js-toggle')">Click me</button>
+          <button class="cooltipz--visible" id="example-js-toggle" aria-label="I get toggled with JavaScript" data-cooltipz-dir="top">JavaScript</button>
+        </div>
+      </section>
+      <hr/>
     </main>
     <footer class="footer">
       Made with <span aria-label="coolness" data-cooltipz-dir="top">😎</span> by Jack Domleo
     </footer>
+    <script src="./js/main.js"></script>
     <script src="./js/prism.js"></script>
   </body>
 </html>
