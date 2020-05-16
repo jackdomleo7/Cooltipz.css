@@ -225,12 +225,48 @@
         </div>
         <div class="example example--stack">
           <p>You can make a tooltip always appear:</p>
-          <div class="language-markup"><pre><code class="language-markup">&lt;button aria-label="Tooltip message" data-cooltipz-dir="top" data-cooltipz-visible&gt;...&lt;</code></pre></div>
+          <div class="language-markup"><pre><code class="language-markup">&lt;button aria-label="Tooltip message" data-cooltipz-dir="top" data-cooltipz-visible&gt;...&lt;/button&gt;</code></pre></div>
         </div>
         <p>This can also be useful if you need to programmatically show a tooltip.</p>
         <div class="center visible__example">
           <button class="button" onclick="programmaticallyShowTooltip('example-js-toggle')">Click me</button>
           <button class="cooltipz--visible" id="example-js-toggle" aria-label="I get toggled with JavaScript" data-cooltipz-dir="top">JavaScript</button>
+        </div>
+      </section>
+      <hr/>
+      <section id="special-characters">
+        <h3>Special characters</h3>
+        <p>Not a problem.</p>
+        <div class="center">
+          <button aria-label="&copy; &reg; &#9742; &#9850; &#8709; 😎🚗🍔💩👏✔❤ ਸਤ ਸ੍ਰੀ ਅਕਾਲ" data-cooltipz-dir="top">Special characters</button>
+        </div>
+        <div class="language-markup"><pre><code class="language-markup">&lt;button aria-label="&amp;copy; &amp;reg; &amp;#9742; &amp;#9850; &amp;#8709; 😎🚗🍔💩👏✔❤ ਸਤ ਸ੍ਰੀ ਅਕਾਲ" data-cooltipz-dir="top" data-cooltipz-visible&gt;...&lt;/button&gt;</code></pre></div>
+      </section>
+      <hr/>
+      <section id="font-awesome">
+        <h3>Font Awesome</h3>
+        <p>A <strong>little</strong> setup is required to use Font Awesome's unicode values in the tooltip's <code class="code">aria-label</code> attribute.</p>
+        <p>You will need to set a value for the <code class="code">--cooltipz-fontawesome</code> custom property.</p>
+        <br/>
+        <div class="center">
+          <button aria-label="&#xf03e; &#xf200; &#xf188; &#xf007;" data-cooltipz-dir="top">Font Awesome</button>
+        </div>
+        <div class="language-markup"><pre><code class="language-markup">&lt;button aria-label="&amp;#xf03e; &amp;#xf200; &amp;#xf188; &amp;#xf007;" data-cooltipz-dir="top"&gt;...&lt;/button&gt;</code></pre></div>
+        <br/>
+        <h4>Font Awesome 4</h4>
+        <div class="example example--stack">
+          <p>If you are using <a href="https://fontawesome.com/v4.7.0?ref=cooltipz.jackdomleo.dev" rel="nofollow noopener" target="_blank" class="link">Font Awesome 4</a>, add the following to your CSS:</p>
+          <div class="language-css"><pre><code class="language-css">:root {
+  --cooltipz-fontawesome: FontAwesome;
+}</code></pre></div>
+        </div>
+        <br/>
+        <h4>Font Awesome 5</h4>
+        <div class="example example--stack">
+          <p>If you are using <a href="https://fontawesome.com?ref=cooltipz.jackdomleo.dev" rel="nofollow noopener" target="_blank" class="link">Font Awesome 5</a>, you will need to find the relevant <code class="code">font-family</code> for your usage of Font Awesome <a href="https://fontawesome.com/how-to-use/on-the-web/advanced/css-pseudo-elements#define" rel="nofollow" target="_blank" class="link">listed here</a> and set it to the <code class="code">--cooltipz-fontawesome</code> custom property, for example:</p>
+          <div class="language-css"><pre><code class="language-css">:root {
+  --cooltipz-fontawesome: "Font Awesome 5 Free";
+}</code></pre></div>
         </div>
       </section>
       <hr/>
