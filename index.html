@@ -178,27 +178,30 @@
           <button aria-label="Hello" data-cooltipz-dir="bottom">bottom</button>
           <button aria-label="Hello" data-cooltipz-dir="bottom-left">bottom-left</button>
           <button aria-label="Hello" data-cooltipz-dir="right">right</button>
-          <code class="code center">data-cooltipz-dir</code>
+          <div></div>
           <button aria-label="Hello" data-cooltipz-dir="left">left</button>
           <button aria-label="Hello" data-cooltipz-dir="top-right">top-right</button>
           <button aria-label="Hello" data-cooltipz-dir="top">top</button>
           <button aria-label="Hello" data-cooltipz-dir="top-left">top-left</button>
         </div>
-        <div class="language-markup"><pre><code class="language-markup">&lt;button aria-label="Tooltip message" data-cooltipz-dir="top"&gt;...&lt;/button&gt;</code></pre></div>
+        <div class="language-markup"><pre><code class="language-markup">&lt;button aria-label="Tooltip message" data-cooltipz-dir="top"&gt;...&lt;/button&gt;
+&lt;!-- OR --&gt;
+&lt;button aria-label="Tooltip message" class="cooltipz--top"&gt;...&lt;/button&gt;</code></pre></div>
         <p>Now you have your basic tooltip, try some of the modifiers and try customising your own tooltip.</p>
       </section>
       <hr/>
       <section id="size" class="size">
         <h3>Size</h3>
         <p>By default, the tooltip's content will not wrap. If you want the tooltip content to wrap, use one of the <em>size modifiers</em> below.</p>
-        <code class="code center">data-cooltipz-size</code>
         <div class="size__examples">
           <button aria-label="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." data-cooltipz-dir="top" data-cooltipz-size="small">small</button>
           <button aria-label="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." data-cooltipz-dir="top" data-cooltipz-size="medium">medium</button>
           <button aria-label="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." data-cooltipz-dir="top" data-cooltipz-size="large">large</button>
           <button aria-label="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." data-cooltipz-dir="top" data-cooltipz-size="fit">fit</button>
         </div>
-        <div class="language-markup"><pre><code class="language-markup">&lt;button aria-label="Tooltip message" data-cooltipz-dir="top" data-cooltipz-size="fit"&gt;...&lt;/button&gt;</code></pre></div>
+        <div class="language-markup"><pre><code class="language-markup">&lt;button aria-label="Tooltip message" data-cooltipz-dir="top" data-cooltipz-size="fit"&gt;...&lt;/button&gt;
+&lt;!-- OR --&gt;
+&lt;button aria-label="Tooltip message" class="cooltipz--top cooltipz--fit"&gt;...&lt;/button&gt;</code></pre></div>
       </section>
       <hr/>
       <section id="no-animation">
@@ -208,7 +211,9 @@
         </div>
         <div class="example example--stack">
           <p>You can disable animation for a single tooltip:</p>
-          <div class="language-markup"><pre><code class="language-markup">&lt;button aria-label="Tooltip message" data-cooltipz-dir="top" data-cooltipz-static&gt;...&lt;/button&gt;</code></pre></div>
+          <div class="language-markup"><pre><code class="language-markup">&lt;button aria-label="Tooltip message" data-cooltipz-dir="top" data-cooltipz-static&gt;...&lt;/button&gt;
+&lt;!-- OR --&gt;
+&lt;button aria-label="Tooltip message" class="cooltipz--top cooltipz--static"&gt;...&lt;/button&gt;</code></pre></div>
         </div>
         <div class="example example--stack">
           <p>Or you can disable animation on <strong>all</strong> tooltips by customising the <code class="code">--cooltipz-timing</code> custom property:</p>
@@ -226,7 +231,9 @@
         </div>
         <div class="example example--stack">
           <p>You can make a tooltip always appear:</p>
-          <div class="language-markup"><pre><code class="language-markup">&lt;button aria-label="Tooltip message" data-cooltipz-dir="top" data-cooltipz-visible&gt;...&lt;/button&gt;</code></pre></div>
+          <div class="language-markup"><pre><code class="language-markup">&lt;button aria-label="Tooltip message" data-cooltipz-dir="top" data-cooltipz-visible&gt;...&lt;/button&gt;
+&lt;!-- OR --&gt;
+&lt;button aria-label="Tooltip message" class="cooltipz--top cooltipz--visible"&gt;...&lt;/button&gt;</code></pre></div>
         </div>
         <p>This can also be useful if you need to programmatically show a tooltip.</p>
         <div class="center visible__example">
