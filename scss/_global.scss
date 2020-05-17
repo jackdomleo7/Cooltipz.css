@@ -1,6 +1,10 @@
 $blue: #1e80ff;
 $orange: #ff5100;
 
+:root {
+  --cooltipz-fontawesome: fontawesome;
+}
+
 ::selection {
   background-color: mix($blue, #fff, 80%);
   color: #fff;
@@ -88,8 +92,4 @@ svg {
   height: 100%;
   pointer-events: none;
   width: 100%;
-}
-
-.m-0 {
-  margin: 0 !important;
 }
