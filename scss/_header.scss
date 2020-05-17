@@ -36,14 +36,17 @@
   }
 
   .features {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
     font-size: 0.9rem;
     gap: 2rem;
-    justify-content: space-evenly;
+    grid-template: auto / 1fr 1fr;
     list-style-type: none;
     margin: 2rem 0 0;
     padding-left: 0;
+
+    @media screen and (min-width: 37.5em) {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
 
     svg {
       height: 2.5rem;
