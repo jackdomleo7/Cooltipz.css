@@ -390,6 +390,15 @@
         <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
       </section>
       <hr/>
+      <section id="drawbacks">
+        <h3>Drawbacks</h3>
+        <p><strong>Important</strong>: Cooltipz.css uses the <code class="code">::before</code> and <code class="code">::after</code> psuedo elements to display the tooltips, so be cautious of the following:</p>
+          <ul>
+            <li>Cooltipz.css will not work on self-closing HTML elements.</li>
+            <li>If the HTML element already has existing <code class="code">::before</code> or <code class="code">::after</code> styling, these could conflict with the Cooltipz.css styles and cause unexpected outputs.</li>
+          </ul>
+      </section>
+      <hr/>
     </main>
     <footer class="footer">
       Made with <span aria-label="coolness" data-cooltipz-dir="top">😎</span> by Jack Domleo
