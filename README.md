@@ -20,7 +20,8 @@ Setup for Cooltipz.css `gh-pages` branch
 
 ### Branch
 
-Branch names should begin with `gh-pages__`
+- Branch names should be prefixed with `gh-pages__`
+- Be sure when submitting a pull request, the base branch is `gh-pages` and NOT `master`
 
 ---
 
