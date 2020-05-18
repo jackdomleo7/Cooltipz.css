@@ -3,34 +3,18 @@
 @import "./footer";
 @import "./sample";
 @import "./link";
-@import "./github-corner";
+@import "../node_modules/normalize.css/normalize";
+@import "./buy-me-a-coffee";
 @import "./code";
+@import "./button";
+@import "./helpers";
+@import "./sections";
 
-:root {
-  --cooltipz-fontawesome: fontawesome;
-}
-
-.page {
+.main {
   display: flex;
+  flex: 1;
   flex-direction: column;
   margin: 0 auto;
-  max-width: 68rem;
-  min-height: 100vh;
-  padding: 0 2rem;
-
-  @media (min-width: 450px) {
-    padding: 0 3.25rem;
-  }
-
-  &__main {
-    flex: 1;
-
-    h3 {
-      position: relative;
-
-      .required {
-        color: $orange;
-      }
-    }
-  }
+  max-width: 62.5rem;
+  padding: 0 1.5rem;
 }

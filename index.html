@@ -32,7 +32,7 @@
     <meta name="twitter:image" content="https://cooltipz.jackdomleo.dev/img/open-graph.png">
 
     <meta property="og:url" content="https://cooltipz.jackdomleo.dev">
-    <meta property="og:title" content="Cooltipz.css - Cool tooltips made from pure CSS">
+    <meta property="og:title" content="Cooltipz.css - Cool customisable tooltips made from pure CSS">
     <meta property="og:description" content="Cooltipz.css is a pure CSS tooltip library that is lightweight, modern, accessible, customisable and easy to use.">
     <meta property="og:locale" content="en_GB">
     <meta property="og:image" content="https://cooltipz.jackdomleo.dev/img/open-graph.png">
@@ -52,86 +52,462 @@
     <meta name="msapplication-TileImage" content="./img/favicons/mstile-144x144.png">
     <meta name="theme-color" content="#ffffff">
 
-    <title>Cooltipz.css - Cool tooltips made from pure CSS</title>
-    <link rel="stylesheet" href="./css/normalize.min.css" />
+    <title>Cooltipz.css - Cool customisable tooltips made from pure CSS</title>
     <link rel="stylesheet" href="./css/docs.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cookie" />
     <link rel="stylesheet" href="./css/prism.min.css" />
     <link rel="stylesheet" href="./css/cooltipz.min.css" />
   </head>
   <body>
-    <a href="https://github.com/JDomleo/Cooltipz.css" target="_blank" class="github-corner" aria-label="View source on GitHub">
-      <svg viewBox="0 0 250 250" aria-hidden="true">
-        <path d="M0 0l115 115h15l12 27 108 108V0z"/>
-        <path class="octo-arm" d="M128.3 109c-14.5-9.3-9.3-19.4-9.3-19.4 3-6.9 1.5-11 1.5-11-1.3-6.6 2.9-2.3 2.9-2.3 3.9 4.6 2.1 11 2.1 11-2.6 10.3 5.1 14.6 8.9 15.9" fill="currentColor"/>
-        <path class="octo-body" fill="currentColor" d="M115 115c-.1.1 3.7 1.5 4.8.4l13.9-13.8c3.2-2.4 6.2-3.2 8.5-3-8.4-10.6-14.7-24.2 1.6-40.6 4.7-4.6 10.2-6.8 15.9-7 .6-1.6 3.5-7.4 11.7-10.9 0 0 4.7 2.4 7.4 16.1 4.3 2.4 8.4 5.6 12.1 9.2 3.6 3.6 6.8 7.8 9.2 12.2 13.7 2.6 16.2 7.3 16.2 7.3-3.6 8.2-9.4 11.1-10.9 11.7-.3 5.8-2.4 11.2-7.1 15.9-16.4 16.4-30 10-40.6 1.6.2 2.8-1 6.8-5 10.8L141 136.5c-1.2 1.2.6 5.4.8 5.3z"/>
-      </svg>
-    </a>
-    <div class="page">
-      <header class="header">
-        <h1 class="m-0"><img class="header__logo" src="img/header-logo.png" alt="Cooltipz.css logo" /><span hidden>Cooltipz.css</span></h1>
-        <h2 class="header__subHeader">Cool tooltips made from simple, pure, customisable CSS</h2>
-        <ul class="header__bullets">
-          <li><em>Lightweight</em></li>
-          <li><em>Modern</em></li>
-          <li><em>Accessible</em></li>
-          <li><em>Customisable</em></li>
-          <li><em>Simple</em></li>
-        </ul>
-        <p>Cooltipz.css makes adding tooltips to existing HTML elements <strong>easy and simple</strong>, <strong>without JavaScript</strong>.</p>
-        <p class="m-0"><strong>Current version</strong>: <a href="https://github.com/JDomleo/Cooltipz.css/releases/tag/v1.6.0" class="link">v1.6.0</a></p>
-        <p class="m-0">Play with Cooltipz.css on <a href="https://codepen.io/JackDomleo/pen/mderEeG" target="_blank" class="link">CodePen</a>.</p>
-        <h3 class="header__features">Features</h3>
+    <header class="header">
+      <h1 class="m-0">
+        <img class="header__logo" src="img/header-logo.png" alt="Cooltipz.css logo" />
+        <span class="sr-only">Cooltipz.css</span>
+      </h1>
+      <h2>Cool customisable tooltips made from pure CSS</h2>
+      <div class="language-cli no-label"><pre><code class="language-cli select-all">npm install cooltipz-css</code></pre></div>
+      <div class="header__badges">
+        <a href="https://github.com/JDomleo/Cooltipz.css/stargazers" rel="nofollow">
+          <img alt="GitHub stars" src="https://img.shields.io/github/stars/JDomleo/Cooltipz.css?style=social" />
+          <span class="sr-only">GitHub stars</span>
+        </a>
+        <a href="https://github.com/JDomleo/Cooltipz.css/releases" rel="nofollow">
+          <img alt="GitHub release (latest by date)" src="https://img.shields.io/github/v/release/JDomleo/Cooltipz.css?label=Version&style=social">
+          <span class="sr-only">Latest release</span>
+        </a>
+      </div>
+      <ul class="features">
+        <li>
+          <svg aria-hidden="true">
+            <use xlink:href="/assets/sprite.svg#icon-shipping-fast"></use>
+          </svg>
+          <h3>Quick setup</h3>
+        </li>
+        <li>
+          <svg aria-hidden="true">
+            <use xlink:href="/assets/sprite.svg#icon-css"></use>
+          </svg>
+          <h3>Pure CSS</h3>
+        </li>
+        <li>
+          <svg aria-hidden="true">
+            <use xlink:href="/assets/sprite.svg#icon-universal-access"></use>
+          </svg>
+          <h3>Accessible</h3>
+        </li>
+        <li>
+          <svg aria-hidden="true">
+            <use xlink:href="/assets/sprite.svg#icon-palette"></use>
+          </svg>
+          <h3>Customisable</h3>
+        </li>
+        <li>
+          <svg aria-hidden="true">
+            <use xlink:href="/assets/sprite.svg#icon-postcss"></use>
+          </svg>
+          <h3>PostCSS</h3>
+        </li>
+        <li>
+          <svg aria-hidden="true">
+            <use xlink:href="/assets/sprite.svg#icon-smile"></use>
+          </svg>
+          <h3>Easy</h3>
+        </li>
+      </ul>
+    </header>
+    <main class="main">
+      <hr/>
+      <section id="getting-started">
+        <h3>
+          Getting started
+          <a href="#getting-started" class="link link--jump" aria-label="Getting started">
+            <svg aria-hidden="true">
+              <use xlink:href="/assets/sprite.svg#icon-link"></use>
+            </svg>
+          </a>
+        </h3>
+        <p>To get started using Cooltipz.css in your project, all you need to do is:</p>
+        <ol>
+          <li><a href="#usage" class="link">Install</a> cooltipz-css via CDN, npm or yarn</li>
+          <li>Add an <code class="code">aria-label</code> and a <a href="#direction" class="link">direction</a> to any non self-closing HTML tag</li>
+          <li>(Optional) Add any modifiers and/or <a href="#customise" class="link">customise</a> your own tooltip</li>
+        </ol>
+        <p>Depending on your preference, you can choose to use classes or <code class="code">data-</code> attributes.</p>
+      </section>
+      <hr/>
+      <section id="usage">
+        <h3>
+          Usage
+          <a href="#usage" class="link link--jump" aria-label="Usage">
+            <svg aria-hidden="true">
+              <use xlink:href="/assets/sprite.svg#icon-link"></use>
+            </svg>
+          </a>
+        </h3>
+        <h4>CDN</h4>
+        <img alt="jsDelivr hits (npm)" src="https://img.shields.io/jsdelivr/npm/hm/cooltipz-css?label=jsDelivr%20hits&logo=jsdelivr&style=social">
+        <p>In the below CDN links:</p>
         <ul>
-          <li>Easy and simple tooltips with <strong>quick setup</strong></li>
-          <li>Highly customisable</li>
-          <li>Pure CSS, no JavaScript</li>
-          <li>Accessible with <code class="code">aria-label</code> attributes</li>
-          <li>Automatically disables animation if the user <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion?ref=cooltipz.min.css" rel="nofollow" target="_blank" class="link">prefers redued motion</a></li>
-          <li>Options to use classes or <code class="code">data-</code> attributes</li>
-          <li>Options to import via CDN, npm or yarn</li>
-          <li>Options to import SCSS <small>(npm and yarn only)</small> or CSS stylesheets <small>(expanded or minified)</small></li>
-          <li>Supports a wide range of characters and languages (including emojis, <a href="https://fontawesome.com/v4.7.0?ref=cooltipz.jackdomleo.dev" rel="nofollow" target="_blank" class="link">Font Awesome 4</a> and <a href="https://fontawesome.com?ref=cooltipz.jackdomleo.dev" rel="nofollow" target="_blank" class="link">Font Awesome 5</a> icons)</li>
-          <li>Uses <a href="https://github.com/postcss/autoprefixer?ref=cooltipz.jackdomleo.dev" rel="nofollow" target="_blank" class="link">Autoprefixer</a> when generating the CSS stylesheets and <a href="https://github.com/cssnano/cssnano?ref=cooltipz.jackdomleo.dev" rel="nofollow" target="_blank" class="link">cssnano</a> to minify the minfied stylesheet</li>
+          <li>Replace <code class="code">:version</code> with a version <a href="https://www.npmjs.com/package/cooltipz-css?activeTab=versions" rel="nofollow" target="_blank" class="link">listed here</a> (latest version is always recommended). If you always want to get the latest stylesheet, remove <code class="code">@:version</code> completely (Not recommended).</li>
+          <li>
+            Replace <code class="code">:file</code> with one of the below
+            <ul>
+              <li><code class="code">cooltipz.css</code> <small>(Expanded stylesheet)</small></li>
+              <li><code class="code">cooltipz.min.css</code> <small>(Minified stylesheet)</small></li>
+            </ul>
+          </li>
+          <li>Then import via HTML or CSS</li>
         </ul>
-        <ul class="header__badges">
-          <li>
-            <a href="https://github.com/JDomleo/Cooltipz.css" aria-label="GitHub latest release" data-cooltipz-dir="bottom">
-              <img src="https://badgen.net/github/release/JDomleo/Cooltipz.css?icon=github" alt="GitHub release" />
-            </a>
-          </li>
-          <li>
-            <a href="https://www.npmjs.com/package/cooltipz-css" aria-label="npm latest version" data-cooltipz-dir="bottom">
-              <img src="https://badgen.net/npm/v/cooltipz-css?icon=npm" alt="npm version" />
-            </a>
-          </li>
-          <li>
-            <a href="https://www.npmjs.com/package/cooltipz-css" aria-label="npm downloads" data-cooltipz-dir="bottom">
-              <img src="https://badgen.net/npm/dt/cooltipz-css?icon=npm" alt="npm downloads" />
-            </a>
-          </li>
-          <li>
-            <a href="https://github.com/JDomleo/Cooltipz.css#cdn" aria-label="jsDelivr CDN monthly hits" data-cooltipz-dir="bottom">
-              <img src="https://badgen.net/jsdelivr/hits/npm/cooltipz-css?icon=jsdelivr" alt="jsDelivr CDN hits" />
-            </a>
-          </li>
-          <li>
-            <a href="https://github.com/JDomleo/Cooltipz.css#license" aria-label="MIT license" data-cooltipz-dir="bottom">
-              <img src="https://badgen.net/badge/license/MIT/blue?icon=awesome" alt="MIT license" />
-            </a>
-          </li>
-          <li>
-            <a href="https://github.com/JDomleo/Cooltipz.css/stargazers" aria-label="GitHub stars" data-cooltipz-dir="bottom">
-              <img src="https://badgen.net/github/stars/JDomleo/Cooltipz.css?icon=github" alt="GitHub stars" />
-            </a>
-          </li>
-          <li>
-            <a href="https://github.com/JDomleo/Cooltipz.css/blob/master/cooltipz.min.css" aria-label="Brotli size" data-cooltipz-dir="bottom">
-              <img src="https://badgen.net/badgesize/brotli/JDomleo/Cooltipz.css/master/cooltipz.min.css" alt="Brotli size" />
-            </a>
-          </li>
+        <div class="example example--stack">
+          <div class="language-markup"><pre><code class="language-markup select-all">&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cooltipz-css@:version/:file" /&gt;</code></pre></div>
+        </div>
+        <div class="example example--stack">
+          <div class="language-css"><pre><code class="language-css select-all">@import url('https://cdn.jsdelivr.net/npm/cooltipz-css@:version/:file');</code></pre></div>
+        </div>
+        <h4>Package manager (npm or yarn)</h4>
+        <img alt="npm downloads" src="https://img.shields.io/npm/dt/cooltipz-css?logo=npm&style=social">
+        <div class="example example--stack">
+          <p><em>First</em>, install it via npm</p>
+          <div class="language-cli"><pre><code class="language-cli select-all">npm install cooltipz-css --save</code></pre></div>
+        </div>
+        <div class="example example--stack">
+          <p><em>Or</em>, install it via yarn</p>
+          <div class="language-cli"><pre><code class="language-cli select-all">yarn add cooltipz-css</code></pre></div>
+        </div>
+        <div class="example example--stack">
+          <p><em>Then</em>, import it into your JavaScript</p>
+          <div class="language-js"><pre><code class="language-js select-all">import 'cooltipz-css';</code></pre></div>
+        </div>
+        <p><em>Or</em>, import the SCSS or CSS into your Sass/SCSS</p>
+        <p>In the below imports, replace <code class="code">:file</code> with one of the options below:</p>
+        <ul>
+          <li><code class="code">src/cooltipz</code> <small>(.scss file)</small></li>
+          <li><code class="code">cooltipz.css</code> <small>(Expanded .css)</small></li>
+          <li><code class="code">cooltipz.min.css</code> <small>(Minified .css)</small></li>
         </ul>
-        <ul class="header__share" id="social-share">
+        <div class="example example--stack">
+          <div class="language-sass"><pre><code class="language-css">/* Webpack */
+@import '~cooltipz-css/:file';
+
+/* Non webpack */
+@import 'path/to/node_modules/cooltipz-css/:file';</code></pre></div>
+        </div>
+      </section>
+      <hr/>
+      <section id="direction" class="direction">
+        <h3>
+          Direction<sup class="required" aria-hidden="true">*</sup>
+          <a href="#direction" class="link link--jump" aria-label="Direction">
+            <svg aria-hidden="true">
+              <use xlink:href="/assets/sprite.svg#icon-link"></use>
+            </svg>
+          </a>
+        </h3>
+        <p><strong>Exactly <u>one</u></strong> direction value is required.</p>
+        <div class="direction__examples">
+          <button aria-label="Hello" data-cooltipz-dir="bottom-right">bottom-right</button>
+          <button aria-label="Hello" data-cooltipz-dir="bottom">bottom</button>
+          <button aria-label="Hello" data-cooltipz-dir="bottom-left">bottom-left</button>
+          <button aria-label="Hello" data-cooltipz-dir="right">right</button>
+          <div></div>
+          <button aria-label="Hello" data-cooltipz-dir="left">left</button>
+          <button aria-label="Hello" data-cooltipz-dir="top-right">top-right</button>
+          <button aria-label="Hello" data-cooltipz-dir="top">top</button>
+          <button aria-label="Hello" data-cooltipz-dir="top-left">top-left</button>
+        </div>
+        <div class="language-markup"><pre><code class="language-markup">&lt;button aria-label="Tooltip message" data-cooltipz-dir="top"&gt;...&lt;/button&gt;
+&lt;!-- OR --&gt;
+&lt;button aria-label="Tooltip message" class="cooltipz--top"&gt;...&lt;/button&gt;</code></pre></div>
+        <p>Now you have your basic tooltip, try some of the modifiers and try customising your own tooltip.</p>
+      </section>
+      <hr/>
+      <section id="size" class="size">
+        <h3>
+          Size
+          <a href="#size" class="link link--jump" aria-label="Size">
+            <svg aria-hidden="true">
+              <use xlink:href="/assets/sprite.svg#icon-link"></use>
+            </svg>
+          </a>
+        </h3>
+        <p>By default, the tooltip's content will not wrap. If you want the tooltip content to wrap, use one of the <em>size modifiers</em> below.</p>
+        <div class="size__examples">
+          <button aria-label="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." data-cooltipz-dir="top" data-cooltipz-size="small">small</button>
+          <button aria-label="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." data-cooltipz-dir="top" data-cooltipz-size="medium">medium</button>
+          <button aria-label="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." data-cooltipz-dir="top" data-cooltipz-size="large">large</button>
+          <button aria-label="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." data-cooltipz-dir="top" data-cooltipz-size="fit">fit</button>
+        </div>
+        <div class="language-markup"><pre><code class="language-markup">&lt;button aria-label="Tooltip message" data-cooltipz-dir="top" data-cooltipz-size="fit"&gt;...&lt;/button&gt;
+&lt;!-- OR --&gt;
+&lt;button aria-label="Tooltip message" class="cooltipz--top cooltipz--fit"&gt;...&lt;/button&gt;</code></pre></div>
+      </section>
+      <hr/>
+      <section id="no-animation">
+        <h3>
+          No animation
+          <a href="#no-animation" class="link link--jump" aria-label="No animation">
+            <svg aria-hidden="true">
+              <use xlink:href="/assets/sprite.svg#icon-link"></use>
+            </svg>
+          </a>
+        </h3>
+        <div class="center">
+          <button aria-label="Hello" data-cooltipz-dir="top" data-cooltipz-static>No animation</button>
+        </div>
+        <div class="example example--stack">
+          <p>You can disable animation for a single tooltip:</p>
+          <div class="language-markup"><pre><code class="language-markup">&lt;button aria-label="Tooltip message" data-cooltipz-dir="top" data-cooltipz-static&gt;...&lt;/button&gt;
+&lt;!-- OR --&gt;
+&lt;button aria-label="Tooltip message" class="cooltipz--top cooltipz--static"&gt;...&lt;/button&gt;</code></pre></div>
+        </div>
+        <div class="example example--stack">
+          <p>Or you can disable animation on <strong>all</strong> tooltips by customising the <code class="code">--cooltipz-timing</code> custom property:</p>
+          <div class="language-css"><pre><code class="language-css">:root {
+  --cooltipz-timing: 0;
+}</code></pre></div>
+        </div>
+        <p>Animation is automatically disabled if the user's preferences are set to <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion" rel="nofollow noopener" class="link">prefers reduced motion</a>.</p>
+      </section>
+      <hr/>
+      <section id="visible">
+        <h3>
+          Always visible
+          <a href="#visible" class="link link--jump" aria-label="Always visible">
+            <svg aria-hidden="true">
+              <use xlink:href="/assets/sprite.svg#icon-link"></use>
+            </svg>
+          </a>
+        </h3>
+        <div class="center">
+          <button aria-label="Hello" data-cooltipz-dir="top" data-cooltipz-visible>Always visible</button>
+        </div>
+        <div class="example example--stack">
+          <p>You can make a tooltip always appear:</p>
+          <div class="language-markup"><pre><code class="language-markup">&lt;button aria-label="Tooltip message" data-cooltipz-dir="top" data-cooltipz-visible&gt;...&lt;/button&gt;
+&lt;!-- OR --&gt;
+&lt;button aria-label="Tooltip message" class="cooltipz--top cooltipz--visible"&gt;...&lt;/button&gt;</code></pre></div>
+        </div>
+        <p>This can also be useful if you need to programmatically show a tooltip.</p>
+        <div class="center visible__example">
+          <button class="button--alt" onclick="programmaticallyShowTooltip('example-js-toggle')">Click me</button>
+          <button class="cooltipz--visible" id="example-js-toggle" aria-label="I get toggled with JavaScript" data-cooltipz-dir="top">JavaScript</button>
+        </div>
+      </section>
+      <hr/>
+      <section id="special-characters">
+        <h3>
+          Special characters
+          <a href="#special-characters" class="link link--jump" aria-label="Special characters">
+            <svg aria-hidden="true">
+              <use xlink:href="/assets/sprite.svg#icon-link"></use>
+            </svg>
+          </a>
+        </h3>
+        <p>Not a problem.</p>
+        <div class="center">
+          <button aria-label="&copy; &reg; &#9742; &#9850; &#8709; 😎🚗🍔💩👏✔❤ ਸਤ ਸ੍ਰੀ ਅਕਾਲ" data-cooltipz-dir="top">Special characters</button>
+        </div>
+        <div class="language-markup"><pre><code class="language-markup">&lt;button aria-label="&amp;copy; &amp;reg; &amp;#9742; &amp;#9850; &amp;#8709; 😎🚗🍔💩👏✔❤ ਸਤ ਸ੍ਰੀ ਅਕਾਲ" data-cooltipz-dir="top" data-cooltipz-visible&gt;...&lt;/button&gt;</code></pre></div>
+      </section>
+      <hr/>
+      <section id="font-awesome">
+        <h3>
+          Font Awesome
+          <a href="#font-awesome" class="link link--jump" aria-label="Font Awesome">
+            <svg aria-hidden="true">
+              <use xlink:href="/assets/sprite.svg#icon-link"></use>
+            </svg>
+          </a>
+        </h3>
+        <p>A <strong>little</strong> setup is required to use Font Awesome's unicode values in the tooltip's <code class="code">aria-label</code> attribute.</p>
+        <p>You will need to set a value for the <code class="code">--cooltipz-fontawesome</code> custom property.</p>
+        <br/>
+        <div class="center">
+          <button aria-label="&#xf03e; &#xf200; &#xf188; &#xf007;" data-cooltipz-dir="top">Font Awesome</button>
+        </div>
+        <div class="language-markup"><pre><code class="language-markup">&lt;button aria-label="&amp;#xf03e; &amp;#xf200; &amp;#xf188; &amp;#xf007;" data-cooltipz-dir="top"&gt;...&lt;/button&gt;</code></pre></div>
+        <br/>
+        <h4>Font Awesome 4</h4>
+        <div class="example example--stack">
+          <p>If you are using <a href="https://fontawesome.com/v4.7.0?ref=cooltipz.jackdomleo.dev" rel="nofollow noopener" target="_blank" class="link">Font Awesome 4</a>, add the following to your CSS:</p>
+          <div class="language-css"><pre><code class="language-css">:root {
+  --cooltipz-fontawesome: FontAwesome;
+}</code></pre></div>
+        </div>
+        <br/>
+        <h4>Font Awesome 5</h4>
+        <div class="example example--stack">
+          <p>If you are using <a href="https://fontawesome.com?ref=cooltipz.jackdomleo.dev" rel="nofollow noopener" target="_blank" class="link">Font Awesome 5</a>, you will need to find the relevant <code class="code">font-family</code> for your usage of Font Awesome <a href="https://fontawesome.com/how-to-use/on-the-web/advanced/css-pseudo-elements#define" rel="nofollow" target="_blank" class="link">listed here</a> and set it to the <code class="code">--cooltipz-fontawesome</code> custom property, for example:</p>
+          <div class="language-css"><pre><code class="language-css">:root {
+  --cooltipz-fontawesome: "Font Awesome 5 Free";
+}</code></pre></div>
+        </div>
+      </section>
+      <hr/>
+      <section id="customise">
+        <h3>
+          Customisation
+          <a href="#customise" class="link link--jump" aria-label="Customisation">
+            <svg aria-hidden="true">
+              <use xlink:href="/assets/sprite.svg#icon-link"></use>
+            </svg>
+          </a>
+        </h3>
+        <p>There are <strong>13</strong> custom properties for you to customise your own tooltips.</p>
+        <div class="variables__wrapper">
+          <table class="variables">
+            <thead>
+              <tr>
+                <td>CSS Custom Property</td>
+                <td>Description</td>
+                <td>Default</td>
+                <td>Valid values</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><code class="code">--cooltipz-bg-color</code></td>
+                <td>Tooltip background colour</td>
+                <td><span class="variables__sample variables__sample--bg"></span><code class="code">#1f1f1f</code></td>
+                <td>Accepts any valid value for <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/background-color?ref=cooltipz.jackdomleo.dev" rel="nofollow" target="_blank" class="link">background-color</a></td>
+              </tr>
+              <tr>
+                <td><code class="code">--cooltipz-text-color</code></td>
+                <td>Tooltip text colour</td>
+                <td><span class="variables__sample variables__sample--text"></span><code class="code">#fff</code></td>
+                <td>Accepts any valid value for <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/color?ref=cooltipz.jackdomleo.dev" rel="nofollow" target="_blank" class="link">color</a></td>
+              </tr>
+              <tr>
+                <td><code class="code">--cooltipz-font-size</code></td>
+                <td>Tooltip font size</td>
+                <td><code class="code">0.75rem</code></td>
+                <td>Accepts any valid value for <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-size?ref=cooltipz.jackdomleo.dev" rel="nofollow" target="_blank" class="link">font-size</a></td>
+              </tr>
+              <tr>
+                <td><code class="code">--cooltipz-slide</code></td>
+                <td>Distance for tooltip to travel into view</td>
+                <td><code class="code">6px</code></td>
+                <td>Accepts any valid value for <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/translate?ref=cooltipz.jackdomleo.dev" rel="nofollow" target="_blank" class="link">translate</a></td>
+              </tr>
+              <tr>
+                <td><code class="code">--cooltipz-border-radius</code></td>
+                <td>Tooltip border radius</td>
+                <td><code class="code">0.125rem</code></td>
+                <td>Accepts any valid value for <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/border-radius?ref=cooltipz.jackdomleo.dev" rel="nofollow" target="_blank" class="link">border-radius</a></td>
+              </tr>
+              <tr>
+                <td><code class="code">--cooltipz-timing</code></td>
+                <td>Time for tooltip to appear</td>
+                <td><code class="code">120ms</code></td>
+                <td>Accepts any valid value for <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transition-duration?ref=cooltipz.jackdomleo.dev" rel="nofollow" target="_blank" class="link">transition-duration</a></td>
+              </tr>
+              <tr>
+                <td><code class="code">--cooltipz-cursor</code></td>
+                <td>The cursor shown on the element the tooltip is attached to</td>
+                <td><code class="code variables__sample--pointer">pointer</code></td>
+                <td>Accepts any valid value for <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/cursor?ref=cooltipz.jackdomleo.dev" rel="nofollow" target="_blank" class="link">cursor</a></td>
+              </tr>
+              <tr>
+                <td><code class="code">--cooltipz-small</code></td>
+                <td>The width of a size small tooltip</td>
+                <td><code class="code">6.25rem</code></td>
+                <td>Accepts any valid value for <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/width?ref=cooltipz.jackdomleo.dev" rel="nofollow" target="_blank" class="link">width</a></td>
+              </tr>
+              <tr>
+                <td><code class="code">--cooltipz-medium</code></td>
+                <td>The width of a size medium tooltip</td>
+                <td><code class="code">12.5rem</code></td>
+                <td>Accepts any valid value for <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/width?ref=cooltipz.jackdomleo.dev" rel="nofollow" target="_blank" class="link">width</a></td>
+              </tr>
+              <tr>
+                <td><code class="code">--cooltipz-large</code></td>
+                <td>The width of a size large tooltip</td>
+                <td><code class="code">18.75rem</code></td>
+                <td>Accepts any valid value for <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/width?ref=cooltipz.jackdomleo.dev" rel="nofollow" target="_blank" class="link">width</a></td>
+              </tr>
+              <tr>
+                <td><code class="code">--cooltipz-delay-show</code></td>
+                <td>The timed delay for the tooltip to show</td>
+                <td><code class="code">0s</code></td>
+                <td>Accepts any valid value for <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transition-delay?ref=cooltipz.jackdomleo.dev" rel="nofollow" target="_blank" class="link">transition-delay</a></td>
+              </tr>
+              <tr>
+                <td><code class="code">--cooltipz-delay-hide</code></td>
+                <td>The timed delay for the tooltip to hide</td>
+                <td><code class="code">0s</code></td>
+                <td>Accepts any valid value for <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transition-delay?ref=cooltipz.jackdomleo.dev" rel="nofollow" target="_blank" class="link">transition-delay</a></td>
+              </tr>
+              <tr>
+                <td><code class="code">--cooltipz-arrow-size</code></td>
+                <td>The size of the tooltip arrow</td>
+                <td><code class="code">0.3125rem</code></td>
+                <td>Accepts any valid value for <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/border-width?ref=cooltipz.jackdomleo.dev" rel="nofollow" target="_blank" class="link">border-width</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="example example--stack">
+          <p>To customise <strong>all</strong> tooltips, place your custom properties in the <code class="code">:root</code> selector:</p>
+          <div class="language-css"><pre><code class="language-css">:root {
+  --cooltipz-bg-color: #ffffff;
+  --cooltipz-text-color: #000000;
+  --cooltipz-font-size: 1.2rem;
+}</code></pre></div>
+        </div>
+        <div class="example example--stack">
+          <p><i>Or</i> you can customise specific tooltips. The below example will customise any tooltips on the <code class="code">.custom</code> element <strong>and</strong> and children of it:</p>
+          <div class="language-css"><pre><code class="language-css">.custom {
+  --cooltipz-arrow-size: 1.5rem;
+  --cooltipz-cursor: help;
+  --cooltipz-timing: 0;
+}</code></pre></div>
+        </div>
+        <p>See our <a href="https://codepen.io/JackDomleo/pen/mderEeG" class="link" rel="nofollow noopener" target="_blank">CodePen</a> for lots of examples of customisation:</p>
+        <p class="codepen" data-height="476" data-theme-id="default" data-default-tab="result" data-user="JackDomleo" data-slug-hash="mderEeG" style="height: 476px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Cooltipz.css - Cool tooltips made from pure CSS">
+          <span>See the Pen <a href="https://codepen.io/JackDomleo/pen/mderEeG">
+          Cooltipz.css - Cool tooltips made from pure CSS</a> by Jack Domleo (<a href="https://codepen.io/JackDomleo">@JackDomleo</a>)
+          on <a href="https://codepen.io">CodePen</a>.</span>
+        </p>
+        <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+      </section>
+      <hr/>
+      <section id="drawbacks">
+        <h3>
+          Drawbacks
+          <a href="#drawbacks" class="link link--jump" aria-label="Drawbacks">
+            <svg aria-hidden="true">
+              <use xlink:href="/assets/sprite.svg#icon-link"></use>
+            </svg>
+          </a>
+        </h3>
+        <p><strong>Important</strong>: Cooltipz.css uses the <code class="code">::before</code> and <code class="code">::after</code> psuedo elements to display the tooltips, so be cautious of the following:</p>
+          <ul>
+            <li>Tooltips will not work on self-closing HTML elements because they don't have a <code class="code">::before</code> and <code class="code">::after</code> psuedo element.</li>
+            <li>If the HTML element already has existing <code class="code">::before</code> or <code class="code">::after</code> styling, these could conflict with the Cooltipz.css styles and cause unexpected outputs.</li>
+          </ul>
+      </section>
+      <hr/>
+      <section id="feedback" class="feedback">
+        <h3>
+          Feedback and support
+          <a href="#feedback" class="link link--jump" aria-label="Feedback and support">
+            <svg aria-hidden="true">
+              <use xlink:href="/assets/sprite.svg#icon-link"></use>
+            </svg>
+          </a>
+        </h3>
+        <p>We appreciate any feedback, good or bad and are always looking for new ideas to improve the user experience (UX), developer experience (DX) and accessibility of the tooltips. You may want to consider:</p>
+        <ul>
+          <li>Raising a <a href="https://github.com/JDomleo/Cooltipz.css/issues" rel="nofollow noopener" class="link">GitHub issue</a></li>
+          <li>Contacting the <a href="https://jackdomleo.dev?ref=cooltipz.jackdomleo.dev" rel="nofollow noopener" class="link">author</a> directly</li>
+          <li>Starring the <a href="https://github.com/JDomleo/Cooltipz.css" rel="nofollow noopener" class="link">GitHub repository</a></li>
+          <li>Giving the <a href="https://codepen.io/JackDomleo/pen/mderEeG" rel="nofollow noopener" class="link">CodePen</a> a like</li>
+          <li>Mentioning 'Cooltipz.css' in a README or footer</li>
+          <li>Supporting Cooltipz.css on <a href="https://www.buymeacoffee.com/jackdomleo" rel="nofollow noopener" class="link">Buy Me a Coffee</a></li>
+          <li>Share on social media with the hashtag <em>#cooltipzcss</em></li>
+        </ul>
+        <ul class="feedback__share center" id="social-share">
           <li>
             <a href="https://twitter.com/intent/tweet?text=Cooltipz.css is a pure CSS tooltip library that is lightweight, modern, accessible, customisable and easy to use.&via=jackdomleo7&url=https://cooltipz.jackdomleo.dev&hashtags=cooltipzcss,css" target="_blank" class="link" aria-label="Share to Twitter" data-cooltipz-dir="bottom">
               <svg class="twitter" aria-hidden="true">
@@ -161,436 +537,53 @@
             </a>
           </li>
         </ul>
-      </header>
+      </section>
       <hr/>
-      <main class="page__main">
-        <section id="direction">
-          <h3>
-            Tooltip Direction<sup class="required" aria-hidden="true">*</sup>
-            <a href="#direction" class="link link--jump" aria-label="Direction">
-              <svg aria-hidden="true">
-                <use xlink:href="/assets/sprite.svg#icon-link"></use>
-              </svg>
-            </a>
-          </h3>
-          <p>So the tooltip displays correctly, <strong>exactly <u>one</u></strong> direction is required.</p>
-          <div class="example">
-            <button data-cooltipz-dir="top" aria-label="Hello there!">Top</button>
-            <div class="language-markup"><pre><code class="lang-markup">&lt;button data-cooltipz-dir="top" aria-label="Hello there!"&gt;...&lt;/button&gt;
-&lt;button class="cooltipz--top" aria-label="Hello there!"&gt;...&lt;/button&gt;</code></pre></div>
-          </div>
-          <div class="example">
-            <button data-cooltipz-dir="bottom" aria-label="Hello there!">Bottom</button>
-            <div class="language-markup"><pre><code class="lang-markup">&lt;button data-cooltipz-dir="bottom" aria-label="Hello there!"&gt;...&lt;/button&gt;
-&lt;button class="cooltipz--bottom" aria-label="Hello there!"&gt;...&lt;/button&gt;</code></pre></div>
-          </div>
-          <div class="example">
-            <button data-cooltipz-dir="right" aria-label="Hello there!">Right</button>
-            <div class="language-markup"><pre><code class="lang-markup">&lt;button data-cooltipz-dir="right" aria-label="Hello there!"&gt;...&lt;/button&gt;
-&lt;button class="cooltipz--right" aria-label="Hello there!"&gt;...&lt;/button&gt;</code></pre></div>
-          </div>
-          <div class="example">
-            <button data-cooltipz-dir="left" aria-label="Hello there!">Left</button>
-            <div class="language-markup"><pre><code class="lang-markup">&lt;button data-cooltipz-dir="left" aria-label="Hello there!"&gt;...&lt;/button&gt;
-&lt;button class="cooltipz--left" aria-label="Hello there!"&gt;...&lt;/button&gt;</code></pre></div>
-          </div>
-          <div class="example">
-            <button data-cooltipz-dir="top-left" aria-label="Hello there!">Top left</button>
-            <div class="language-markup"><pre><code class="lang-markup">&lt;button data-cooltipz-dir="top-left" aria-label="Hello there!"&gt;...&lt;/button&gt;
-&lt;button class="cooltipz--top-left" aria-label="Hello there!"&gt;...&lt;/button&gt;</code></pre></div>
-          </div>
-          <div class="example">
-            <button data-cooltipz-dir="top-right" aria-label="Hello there!">Top right</button>
-            <div class="language-markup"><pre><code class="lang-markup">&lt;button data-cooltipz-dir="top-right" aria-label="Hello there!"&gt;...&lt;/button&gt;
-&lt;button class="cooltipz--top-right" aria-label="Hello there!"&gt;...&lt;/button&gt;</code></pre></div>
-          </div>
-          <div class="example">
-            <button data-cooltipz-dir="bottom-left" aria-label="Hello there!">Bottom left</button>
-            <div class="language-markup"><pre><code class="lang-markup">&lt;button data-cooltipz-dir="bottom-left" aria-label="Hello there!"&gt;...&lt;/button&gt;
-&lt;button class="cooltipz--bottom-left" aria-label="Hello there!"&gt;...&lt;/button&gt;</code></pre></div>
-          </div>
-          <div class="example">
-            <button data-cooltipz-dir="bottom-right" aria-label="Hello there!">Bottom right</button>
-            <div class="language-markup"><pre><code class="lang-markup">&lt;button data-cooltipz-dir="bottom-right" aria-label="Hello there!"&gt;...&lt;/button&gt;
-&lt;button class="cooltipz--bottom-right" aria-label="Hello there!"&gt;...&lt;/button&gt;</code></pre></div>
-          </div>
-        </section>
-        <hr/>
-        <section id="size">
-          <h3>
-            Tooltip Size
-            <a href="#size" class="link link--jump" aria-label="Size">
-              <svg aria-hidden="true">
-                <use xlink:href="/assets/sprite.svg#icon-link"></use>
-              </svg>
-            </a>
-          </h3>
-          <p>The default behaviour for a tooltip size is to remain on a single line, no matter the content within it. If you want the content to wrap, use one of the below sizes:</p>
-          <ul>
-            <li>Small - <code class="code">data-cooltipz-size="small"</code> / <code class="code">.cooltipz--small</code></li>
-            <li>Medium - <code class="code">data-cooltipz-size="medium"</code> / <code class="code">.cooltipz--medium</code></li>
-            <li>Large - <code class="code">data-cooltipz-size="large"</code> / <code class="code">.cooltipz--large</code></li>
-            <li>Fit - <code class="code">data-cooltipz-size="fit"</code> / <code class="code">.cooltipz--fit</code></li>
-          </ul>
-          <div class="example">
-            <button data-cooltipz-dir="top" data-cooltipz-size="small" aria-label="Hello there! I am a small tooltip and I will wrap the text within me.">Small</button>
-            <div class="language-markup"><pre><code class="lang-markup">&lt;button data-cooltipz-dir="top" data-cooltipz-size="small" aria-label="Hello there! I am a small tooltip and I will wrap the text within me."&gt;...&lt;/button&gt;
-&lt;button class="cooltipz--top cooltipz--small" aria-label="Hello there! I am a small tooltip and I will wrap the text within me."&gt;...&lt;/button&gt;</code></pre></div>
-          </div>
-          <div class="example">
-            <button data-cooltipz-dir="top" data-cooltipz-size="medium" aria-label="Hello there! I am a medium tooltip and I will wrap the text within me. I'm wider thhan the small tooltip.">Medium</button>
-            <div class="language-markup"><pre><code class="lang-markup">&lt;button data-cooltipz-dir="top" data-cooltipz-size="medium" aria-label="Hello there! I am a medium tooltip and I will wrap the text within me. I'm wider thhan the small tooltip."&gt;...&lt;/button&gt;
-&lt;button class="cooltipz--top cooltipz--medium" aria-label="Hello there! I am a medium tooltip and I will wrap the text within me. I'm wider thhan the small tooltip."&gt;...&lt;/button&gt;</code></pre></div>
-          </div>
-          <div class="example">
-            <button data-cooltipz-dir="top" data-cooltipz-size="large" aria-label="Hello there! I am a large tooltip and I will wrap the text within me. I'm wider thhan the small and the medium tooltip.">Large</button>
-            <div class="language-markup"><pre><code class="lang-markup">&lt;button data-cooltipz-dir="top" data-cooltipz-size="large" aria-label="Hello there! I am a large tooltip and I will wrap the text within me. I'm wider thhan the small and the medium tooltip."&gt;...&lt;/button&gt;
-&lt;button class="cooltipz--top cooltipz--large" aria-label="Hello there! I am a large tooltip and I will wrap the text within me. I'm wider thhan the small and the medium tooltip."&gt;...&lt;/button&gt;</code></pre></div>
-          </div>
-          <div class="example">
-            <button data-cooltipz-dir="top" data-cooltipz-size="fit" aria-label="Hello there! I am a 'fit' tooltip and I will wrap the text within me. My width will always be equal to the width of my parent element.">Fit</button>
-            <div class="language-markup"><pre><code class="lang-markup">&lt;button data-cooltipz-dir="top" data-cooltipz-size="fit" aria-label="Hello there! I am a 'fit' tooltip and I will wrap the text within me. My width will always be equal to the width of my parent element."&gt;...&lt;/button&gt;
-&lt;button class="cooltipz--top cooltipz--fit" aria-label="Hello there! I am a 'fit' tooltip and I will wrap the text within me. My width will always be equal to the width of my parent element."&gt;...&lt;/button&gt;</code></pre></div>
-          </div>
-        </section>
-        <hr/>
-        <section id="no-animation">
-          <h3>
-            No Animation
-            <a href="#no-animation" class="link link--jump" aria-label="No animation">
-              <svg aria-hidden="true">
-                <use xlink:href="/assets/sprite.svg#icon-link"></use>
-              </svg>
-            </a>
-          </h3>
-          <p>Animations can be disabled by applying the <code class="code">data-cooltipz-static</code> attribute or the <code class="code">.cooltipz--static</code> class. Cooltipz.css also use the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion?ref=cooltipz.jackdomleo.dev" rel="nofollow" target="_blank" class="link">prefers-reduced-motion</a> media query, so when the user's preferences indicate reduced motion, Cooltipz.css automatically disables animation.</p>
-          <div class="example">
-            <button data-cooltipz-dir="top" data-cooltipz-static aria-label="Hello there!">No animation</button>
-            <div class="language-markup"><pre><code class="lang-markup">&lt;button data-cooltipz-dir="top" data-cooltipz-static aria-label="Hello there!"&gt;...&lt;/button&gt;
-&lt;button class="cooltipz--top cooltipz--static" aria-label="Hello there!"&gt;...&lt;/button&gt;</code></pre></div>
-          </div>
-        </section>
-        <hr/>
-        <section id="visible">
-          <h3>
-            Always Visible
-            <a href="#visible" class="link link--jump" aria-label="Visible">
-              <svg aria-hidden="true">
-                <use xlink:href="/assets/sprite.svg#icon-link"></use>
-              </svg>
-            </a>
-          </h3>
-          <p>Add the <code class="code">data-cooltipz-visible</code> attribute or the <code class="code">.cooltipz--visible</code> class to make the tooltip always show, even if the user isn't hovering or focusing it.</p>
-          <p>Tooltips can be shown programatically by using the <a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/setAttribute?ref=cooltipz.jackdomleo.dev" rel="nofollow" target="_blank" class="link"><code class="code">setAttribute()</code> JavaScript function</a>.</p>
-          <div class="example">
-            <button data-cooltipz-dir="top" data-cooltipz-visible aria-label="I'm always visible!">Visible</button>
-            <div class="language-markup"><pre><code class="lang-markup">&lt;button data-cooltipz-dir="top" data-cooltipz-visible aria-label="I'm always visible!"&gt;...&lt;/button&gt;
-&lt;button class="cooltipz--top cooltipz--visible" aria-label="I'm always visible!"&gt;...&lt;/button&gt;</code></pre></div>
-          </div>
-        </section>
-        <hr/>
-        <section id="special-characters">
-          <h3>
-            Special Characters, Emojis and Font Icons
-            <a href="#special-characters" class="link link--jump" aria-label="Tooltip direction">
-              <svg aria-hidden="true">
-                <use xlink:href="/assets/sprite.svg#icon-link"></use>
-              </svg>
-            </a>
-          </h3>
-          <p>Cooltipz.css supports HTML character Codes, emojis, font/glyph icons and <a href="https://fontawesome.com/v4.7.0?ref=cooltipz.jackdomleo.dev" rel="nofollow" target="_blank" class="link">Font Awesome 4</a> and <a href="https://fontawesome.com?ref=cooltipz.jackdomleo.dev" rel="nofollow" target="_blank" class="link">Font Awesome 5</a>.</p>
-          <div class="example">
-            <button data-cooltipz-dir="top" aria-label="HTML character codes: &copy; &reg; &#9742; &#9850; &#8709;">HTML Codes &#9835;</button>
-            <div class="language-markup"><pre><code class="lang-markup">&lt;button data-cooltipz-dir="top" aria-label="HTML character codes: &amp;copy; &amp;reg; &amp;#9742; &amp;#9850; &amp;#8709;"&gt;...&lt;/button&gt;
-&lt;button class="cooltipz--top" aria-label="HTML character codes: &amp;copy; &amp;reg; &amp;#9742; &amp;#9850; &amp;#8709;"&gt;...&lt;/button&gt;</code></pre></div>
-          </div>
-          <div class="example">
-            <button data-cooltipz-dir="top" aria-label="Emojis: 😎🚗🍔💩👏✔❤">Emojis 😎</button>
-            <div class="language-markup"><pre><code class="lang-markup">&lt;button data-cooltipz-dir="top" aria-label="Emojis: 😎🚗🍔💩👏✔❤"&gt;...&lt;/button&gt;
-&lt;button class="cooltipz--top" aria-label="Emojis: 😎🚗🍔💩👏✔❤"&gt;...&lt;/button&gt;</code></pre></div>
-          </div>
-          <div class="example">
-            <button data-cooltipz-dir="top" aria-label="Multilingual: こんにちは | ਸਤ ਸ੍ਰੀ ਅਕਾਲ | हैलो">Multilingual</button>
-            <div class="language-markup"><pre><code class="lang-markup">&lt;button data-cooltipz-dir="top" aria-label="Multilingual: こんにちは | ਸਤ ਸ੍ਰੀ ਅਕਾਲ | हैलो"&gt;...&lt;/button&gt;
-&lt;button class="cooltipz--top" aria-label="Multilingual: こんにちは | ਸਤ ਸ੍ਰੀ ਅਕਾਲ | हैलो"&gt;...&lt;/button&gt;</code></pre></div>
-          </div>
-          <h3 id="font-awesome">
-            Font Awesome
-            <a href="#font-awesome" class="link link--jump" aria-label="Tooltip direction">
-              <svg aria-hidden="true">
-                <use xlink:href="/assets/sprite.svg#icon-link"></use>
-              </svg>
-            </a>
-          </h3>
-          <p>A <strong>little</strong> setup is required so you can use Font Awesome unicode values on tooltips in your project. You will need to add Font Awesome's <code class="code">font-family</code> name to the <code class="code">--cooltipz-fontawesome</code> CSS custom property in your project's CSS.</p>
-          <div class="example--stack">
-            <p>If you are using <a href="https://fontawesome.com/v4.7.0?ref=cooltipz.jackdomleo.dev" rel="nofollow" target="_blank" class="link">Font Awesome 4</a>, add the below CSS code to your project's CSS:</p>
-            <div class="language-css"><pre><code class="lang-css">:root {
-  --cooltipz-fontawesome: FontAwesome;
-}</code></pre></div>
-          </div>
-          <div class="example--stack">
-            <p>If you are using <a href="https://fontawesome.com?ref=cooltipz.jackdomleo.dev" rel="nofollow" target="_blank" class="link">Font Awesome 5</a>, find the relevant Font Awesome 5 <code class="code">font-family</code> name for your project <a href="https://fontawesome.com/how-to-use/on-the-web/advanced/css-pseudo-elements#define?ref=cooltipz.jackdomleo.dev" rel="nofollow" target="_blank" class="link">listed here</a> and add the below CSS code to your project's CSS, replacing <code class="code">"Font Awesome 5 Free"</code> with the <code class="code">font-family</code> you need. For example:</p>
-            <div class="language-css"><pre><code class="lang-css">:root {
-  --cooltipz-fontawesome: "Font Awesome 5 Free";
-}</code></pre></div>
-          </div>
-          <div class="example">
-            <button data-cooltipz-dir="top" aria-label="Font Awesome: &#xf03e; &#xf200; &#xf188; &#xf007;">Font Awesome</button>
-            <div class="language-markup"><pre><code class="lang-markup">&lt;button data-cooltipz-dir="top" aria-label="Font Awesome: &amp;#xf03e; &amp;#xf200; &amp;#xf188; &amp;#xf007;"&gt;...&lt;/button&gt;
-&lt;button class="cooltipz--top" aria-label="Font Awesome: &amp;#xf03e; &amp;#xf200; &amp;#xf188; &amp;#xf007;"&gt;...&lt;/button&gt;</code></pre></div>
-          </div>
-        </section>
-        <hr/>
-        <section id="customisation">
-          <h3>
-            Customisation
-            <a href="#customisation" class="link link--jump" aria-label="Tooltip direction">
-              <svg aria-hidden="true">
-                <use xlink:href="/assets/sprite.svg#icon-link"></use>
-              </svg>
-            </a>
-          </h3>
-          <p>Cooltipz.css exposes <strong>13</strong> CSS custom properties that can be overriden using your own styles:</p>
-          <div class="variables__wrapper">
-            <table class="variables">
-              <thead>
-                <tr>
-                  <td>CSS Custom Property</td>
-                  <td>Description</td>
-                  <td>Default</td>
-                  <td>Valid values</td>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td><code class="code">--cooltipz-bg-color</code></td>
-                  <td>Tooltip background colour</td>
-                  <td><span class="variables__sample variables__sample--bg"></span><code class="code">#1f1f1f</code></td>
-                  <td>Accepts any valid value for <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/background-color?ref=cooltipz.jackdomleo.dev" rel="nofollow" target="_blank" class="link">background-color</a></td>
-                </tr>
-                <tr>
-                  <td><code class="code">--cooltipz-text-color</code></td>
-                  <td>Tooltip text colour</td>
-                  <td><span class="variables__sample variables__sample--text"></span><code class="code">#fff</code></td>
-                  <td>Accepts any valid value for <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/color?ref=cooltipz.jackdomleo.dev" rel="nofollow" target="_blank" class="link">color</a></td>
-                </tr>
-                <tr>
-                  <td><code class="code">--cooltipz-font-size</code></td>
-                  <td>Tooltip font size</td>
-                  <td><code class="code">0.75rem</code></td>
-                  <td>Accepts any valid value for <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-size?ref=cooltipz.jackdomleo.dev" rel="nofollow" target="_blank" class="link">font-size</a></td>
-                </tr>
-                <tr>
-                  <td><code class="code">--cooltipz-slide</code></td>
-                  <td>Distance for tooltip to travel into view</td>
-                  <td><code class="code">6px</code></td>
-                  <td>Accepts any valid value for <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/translate?ref=cooltipz.jackdomleo.dev" rel="nofollow" target="_blank" class="link">translate</a></td>
-                </tr>
-                <tr>
-                  <td><code class="code">--cooltipz-border-radius</code></td>
-                  <td>Tooltip border radius</td>
-                  <td><code class="code">0.125rem</code></td>
-                  <td>Accepts any valid value for <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/border-radius?ref=cooltipz.jackdomleo.dev" rel="nofollow" target="_blank" class="link">border-radius</a></td>
-                </tr>
-                <tr>
-                  <td><code class="code">--cooltipz-timing</code></td>
-                  <td>Time for tooltip to appear</td>
-                  <td><code class="code">120ms</code></td>
-                  <td>Accepts any valid value for <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transition-duration?ref=cooltipz.jackdomleo.dev" rel="nofollow" target="_blank" class="link">transition-duration</a></td>
-                </tr>
-                <tr>
-                  <td><code class="code">--cooltipz-cursor</code></td>
-                  <td>The cursor shown on the element the tooltip is attached to</td>
-                  <td><code class="code variables__sample--pointer">pointer</code></td>
-                  <td>Accepts any valid value for <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/cursor?ref=cooltipz.jackdomleo.dev" rel="nofollow" target="_blank" class="link">cursor</a></td>
-                </tr>
-                <tr>
-                  <td><code class="code">--cooltipz-small</code></td>
-                  <td>The width of a size small tooltip</td>
-                  <td><code class="code">6.25rem</code></td>
-                  <td>Accepts any valid value for <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/width?ref=cooltipz.jackdomleo.dev" rel="nofollow" target="_blank" class="link">width</a></td>
-                </tr>
-                <tr>
-                  <td><code class="code">--cooltipz-medium</code></td>
-                  <td>The width of a size medium tooltip</td>
-                  <td><code class="code">12.5rem</code></td>
-                  <td>Accepts any valid value for <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/width?ref=cooltipz.jackdomleo.dev" rel="nofollow" target="_blank" class="link">width</a></td>
-                </tr>
-                <tr>
-                  <td><code class="code">--cooltipz-large</code></td>
-                  <td>The width of a size large tooltip</td>
-                  <td><code class="code">18.75rem</code></td>
-                  <td>Accepts any valid value for <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/width?ref=cooltipz.jackdomleo.dev" rel="nofollow" target="_blank" class="link">width</a></td>
-                </tr>
-                <tr>
-                  <td><code class="code">--cooltipz-delay-show</code></td>
-                  <td>The timed delay for the tooltip to show</td>
-                  <td><code class="code">0s</code></td>
-                  <td>Accepts any valid value for <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transition-delay?ref=cooltipz.jackdomleo.dev" rel="nofollow" target="_blank" class="link">transition-delay</a></td>
-                </tr>
-                <tr>
-                  <td><code class="code">--cooltipz-delay-hide</code></td>
-                  <td>The timed delay for the tooltip to hide</td>
-                  <td><code class="code">0s</code></td>
-                  <td>Accepts any valid value for <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transition-delay?ref=cooltipz.jackdomleo.dev" rel="nofollow" target="_blank" class="link">transition-delay</a></td>
-                </tr>
-                <tr>
-                  <td><code class="code">--cooltipz-arrow-size</code></td>
-                  <td>The size of the tooltip arrow</td>
-                  <td><code class="code">0.3125rem</code></td>
-                  <td>Accepts any valid value for <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/border-width?ref=cooltipz.jackdomleo.dev" rel="nofollow" target="_blank" class="link">border-width</a></td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          <div class="example--stack">
-            <p>To override every tooltip in your project, place your CSS custom properties in the <code class="code">:root</code> selector</p>
-            <div class="language-css"><pre><code class="lang-css">:root {
-  --cooltipz-bg-color: #f00;
-  --cooltipz-text-color: #00f;
-  --cooltipz-font-size: 1.5rem;
-  --cooltipz-slide: 20px;
-  --cooltipz-border-radius: 1rem;
-  --cooltipz-timing: 1s;
-  --cooltipz-cursor: help;
-  --cooltipz-small: 4rem;
-  --cooltipz-medium: 14rem;
-  --cooltipz-large: 25rem;
-  --cooltipz-delay-show: 1s;
-  --cooltipz-delay-hide: 2s;
-  --cooltipz-arrow-size: 0.75rem;
-}</code></pre></div>
-          </div>
-          <p>Or override specific tooltips</p>
-          <div class="example">
-            <style>.custom-cooltip {--cooltipz-bg-color: #fff;--cooltipz-text-color: #000;--cooltipz-font-size: 1.5rem;--cooltipz-slide: 50px;--cooltipz-border-radius: 1rem;--cooltipz-timing: 1s;--cooltipz-cursor: help;--cooltipz-delay-show: 1s;--cooltipz-delay-hide: 2s;--cooltipz-arrow-size: 0.75rem;}</style>
-            <button class="custom-cooltip" data-cooltipz-dir="top" aria-label="I've been customised!">Custom</button>
-            <div class="language-css"><pre><code class="lang-css">.custom-cooltip {
-  --cooltipz-bg-color: #fff;
-  --cooltipz-text-color: #000;
-  --cooltipz-font-size: 1.5rem;
-  --cooltipz-slide: 50px;
-  --cooltipz-border-radius: 1rem;
-  --cooltipz-timing: 1s;
-  --cooltipz-cursor: help;
-  --cooltipz-delay-show: 1s;
-  --cooltipz-delay-hide: 2s;
-  --cooltipz-arrow-size: 0.75rem;
-}</code></pre></div>
-          </div>
-          <div class="example">
-            <style>.custom-cooltip-two {--cooltipz-arrow-size: 1.5rem;}</style>
-            <button class="custom-cooltip-two" data-cooltipz-dir="left" aria-label="Hello!">Custom</button>
-            <div class="language-css"><pre><code class="lang-css">.custom-cooltip-two {
-  --cooltipz-arrow-size: 1.5rem;
-}</code></pre></div>
-          </div>
-          <p>For more really cool examples of customising tooltips from Cooltipz.css, take a look our <a href="https://codepen.io/JackDomleo/pen/mderEeG" target="_blank" class="link">CodePen</a>.</p>
-        </section>
-        <hr/>
-        <section id="installation">
-          <h3>
-            Installation
-            <a href="#installation" class="link link--jump" aria-label="Tooltip direction">
-              <svg aria-hidden="true">
-                <use xlink:href="/assets/sprite.svg#icon-link"></use>
-              </svg>
-            </a>
-          </h3>
-          <h4>CDN</h4>
-          <p>In the below CDN links:</p>
-          <ul>
-            <li>Replace <code class="code">version</code> after the <code class="code">@</code> with a version <a href="https://www.npmjs.com/package/cooltipz-css?activeTab=versions" rel="nofollow" target="_blank" class="link">listed here</a> (latest version is always recommended). If you always want to get the latest stylesheet, remove <code class="code">@version</code> completely (Not recommended).</li>
-            <li>
-              Replace <code class="code">file</code> with one of the below
-              <ul>
-                <li><code class="code">cooltipz.css</code> <small>(Expanded stylesheet)</small></li>
-                <li><code class="code">cooltipz.min.css</code> <small>(Minified stylesheet)</small></li>
-              </ul>
-            </li>
-          </ul>
-          <div class="example example--stack">
-            <div class="language-markup"><pre><code class="lang-markup">&lt;!-- HTML --&gt;
-&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cooltipz-css@version/file" /&gt;</code></pre></div>
-          </div>
-          <div class="example example--stack">
-            <div class="language-css"><pre><code class="lang-css">/* Or CSS */
-@import url('https://cdn.jsdelivr.net/npm/cooltipz-css@version/file');</code></pre></div>
-          </div>
-          <h4>Package manager (npm or yarn)</h4>
-          <p>It's best practice to install Cooltipz.css as a dependency rather than a devDependency</p>
-          <div class="example example--stack">
-            <p><em>First</em>, install it via npm</p>
-            <div class="language-cli"><pre><code class="language-cli">npm install cooltipz-css --save</code></pre></div>
-          </div>
-          <div class="example example--stack">
-            <p><em>Or</em>, install it via yarn</p>
-            <div class="language-cli"><pre><code class="language-cli">yarn add cooltipz-css</code></pre></div>
-          </div>
-          <div class="example example--stack">
-            <p><em>Then</em>, import it into your JavaScript</p>
-            <div class="language-js"><pre><code class="lang-js">import 'cooltipz-css';</code></pre></div>
-          </div>
-          <p><em>Or</em>, import the SCSS or CSS into your Sass/SCSS</p>
-          <p>In the below imports, replace <code class="code">file</code> with one of the options below:</p>
-          <ul>
-            <li><code class="code">src/cooltipz</code> <small>(.scss file)</small></li>
-            <li><code class="code">cooltipz.css</code> <small>(Expanded .css)</small></li>
-            <li><code class="code">cooltipz.min.css</code> <small>(Minified .css)</small></li>
-          </ul>
-          <div class="example example--stack">
-            <div class="language-css"><pre><code class="lang-css">/* Webpack */
-@import '~cooltipz-css/file';
-
-/* Non webpack */
-@import 'path/to/node_modules/cooltipz-css/file';</code></pre></div>
-          </div>
-        </section>
-        <hr/>
-        <section id="beware">
-          <h3>
-            Beware
-            <a href="#beware" class="link link--jump" aria-label="Tooltip direction">
-              <svg aria-hidden="true">
-                <use xlink:href="/assets/sprite.svg#icon-link"></use>
-              </svg>
-            </a>
-          </h3>
-          <p><strong>Important</strong>: Cooltipz.css uses the <code class="code">::before</code> and <code class="code">::after</code> psuedo elements to display the tooltips, therefore you must beware of the following:</p>
-          <ul>
-            <li>Cooltipz.css will not work on self-closing HTML elements.</li>
-            <li>If the HTML element already has existing <code class="code">::before</code> or <code class="code">::after</code> styling, these could conflict with the Cooltipz.css styles and cause unexpected outputs.</li>
-          </ul>
-        </section>
-        <hr/>
-        <section id="feedback">
-          <h3>
-            Feedback &amp; Support
-            <a href="#feedback" class="link link--jump" aria-label="Tooltip direction">
-              <svg aria-hidden="true">
-                <use xlink:href="/assets/sprite.svg#icon-link"></use>
-              </svg>
-            </a>
-          </h3>
-          <p>
-            We appreciate any <strong>feedback</strong> (feel free to raise an <a href="https://github.com/JDomleo/Cooltipz.css/issues" class="link" rel="nofollow">issue</a> and we'll address it as soon as possible). <strong><a href="https://github.com/JDomleo/Cooltipz.css/stargazers" class="link" rel="nofollow">Stars on GitHub</a></strong> are a great way to support us. If you liked this library, <strong><a href="#social-share" class="link">share</a></strong> Cooltipz.css on social media with the <a href="https://twitter.com/search?q=cooltipzcss%20OR%20cooltipz.css" class="link" rel="nofollow">#cooltipzcss</a> hastag. If you use Cooltipz.css in your project, maybe consider mentioning us in a README or a website footer, but our <a href="https://github.com/JDomleo/Cooltipz.css/tree/master#license" class="link">License</a> states the <code class="code">/*! Cooltipz.css vVERSION | MIT License | github.com/JDomleo/Cooltipz.css */</code> must remain in the CSS.
-          </p>
-        </section>
-      </main>
+      <section id="license">
+        <h3>
+          License
+          <a href="#license" class="link link--jump" aria-label="License">
+            <svg aria-hidden="true">
+              <use xlink:href="/assets/sprite.svg#icon-link"></use>
+            </svg>
+          </a>
+        </h3>
+        <p>Cooltipz.css is licensed under <a href="https://github.com/JDomleo/Cooltipz.css#license" rel="nofollow noopener" class="link">MIT</a>. As a minimum, you are required to KEEP AND NOT REMOVE the following code at the beginning of your downloaded/installed Cooltipz.css CSS, where <code class="code">:version</code> is replaced with the version number you are using:</p>
+        <div class="language-css"><pre><code class="language-css">/*! Cooltipz.css v:version | MIT License | github.com/JDomleo/Cooltipz.css */</code></pre></div>
+        <p>Cooltipz.css is FREE for personal and commercial use.</p>
+        <p>Commercial use should consider a small donation on <a href="https://www.buymeacoffee.com/jackdomleo" rel="nofollow noopener" class="link">Buy Me a Coffee</a>.</p>
+      </section>
       <hr/>
-      <footer class="footer">
-        <p>Made by <a href="https://jackdomleo.dev?ref=cooltipz.jackdomleo.dev" target="_blank" rel="nofollow">Jack Domleo</a>.</p>
-        <ul>
-          <li><a href="https://www.npmjs.com/package/cooltipz-css">npm</a></li>
-          <li><a href="https://yarnpkg.com/package/cooltipz-css">yarn</a></li>
-          <li><a href="https://github.com/JDomleo/Cooltipz.css">GitHub</a></li>
-          <li><a href="https://github.com/JDomleo/Cooltipz.css/tree/master#license">License</a></li>
-          <li><a href="https://github.com/JDomleo/Cooltipz.css/releases">CHANGELOG</a></li>
-        </ul>
-        <p>Copyright &copy; 2020 - present Cooltipz.css</p>
-      </footer>
-    </div>
+    </main>
+    <footer class="footer">
+      <div class="center">
+        <img src="/img/footer-icon.png" alt="Cooltipz.css icon" />
+        <span id="copyright">&copy; Cooltipz.css</span>
+      </div>
+      <p>Made with <span aria-label="coolness" data-cooltipz-dir="top">😎</span> by <a href="https://jackdomleo.dev?ref=cooltipz.jackdomleo.dev" rel="nofollow noopener" class="link">Jack Domleo</a>.</p>
+      <a class="bmc-button" target="_blank" href="https://www.buymeacoffee.com/jackdomleo" rel="nofollow noopener">
+        <img src="https://cdn.buymeacoffee.com/buttons/bmc-new-btn-logo.svg" alt="Buy me a coffee" />
+        <span>Buy me a coffee</span>
+      </a>
+      <ul>
+        <li>
+          <a href="https://github.com/JDomleo/Cooltipz.css" rel="nofollow noopener" class="link">GitHub</a>
+        </li>
+        <li>
+          <a href="https://www.npmjs.com/package/cooltipz-css" rel="nofollow noopener" class="link">npm</a>
+        </li>
+        <li>
+          <a href="https://yarnpkg.com/package/cooltipz-css" rel="nofollow noopener" class="link">Yarn</a>
+        </li>
+        <li>
+          <a href="https://github.com/JDomleo/Cooltipz.css#license" rel="nofollow noopener" class="link">License</a>
+        </li>
+        <li>
+          <a href="https://github.com/JDomleo/Cooltipz.css/releases" rel="nofollow noopener" class="link">CHANGELOG</a>
+        </li>
+      </ul>
+    </footer>
+    <script src="./js/main.js"></script>
     <script src="./js/prism.js"></script>
   </body>
 </html>

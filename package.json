@@ -4,7 +4,7 @@
   "private": true,
   "description": "Documentation website for Cooltipz.css",
   "scripts": {
-    "docs": "stylelint \"**/*.scss\" --fix && node-sass scss/docs.scss css/docs.min.css && node-sass scss/cooltipz.scss css/cooltipz.min.css && node-sass scss/normalize.scss css/normalize.min.css && node-sass scss/prism.scss css/prism.min.css && node-sass scss/404.scss css/404.min.css && npx postcss css --use autoprefixer cssnano --replace && npx sitemap-generator-cli https://cooltipz.jackdomleo.dev --last-mod",
+    "docs": "stylelint \"**/*.scss\" --fix && node-sass scss/docs.scss css/docs.min.css && node-sass scss/cooltipz.scss css/cooltipz.min.css && node-sass scss/prism.scss css/prism.min.css && node-sass scss/404.scss css/404.min.css && npx postcss css --use autoprefixer cssnano --replace && npx sitemap-generator-cli https://cooltipz.jackdomleo.dev --last-mod",
     "serve": "http-server ./ --port 1234 -a localhost"
   },
   "repository": {
@@ -21,18 +21,18 @@
   },
   "homepage": "https://cooltipz.jackdomleo.dev",
   "devDependencies": {
-    "autoprefixer": "^9.7.6",
+    "autoprefixer": "^9.8.0",
     "cssnano": "^4.1.10",
     "http-server": "^0.12.3",
     "node-sass": "^4.14.1",
     "postcss-cli": "^7.1.1",
     "sitemap-generator-cli": "^7.5.0",
-    "stylelint": "^13.3.3",
+    "stylelint": "^13.4.0",
     "stylelint-order": "^4.0.0",
     "stylelint-scss": "^3.17.2"
   },
   "dependencies": {
-    "cooltipz-css": "^1.6.0",
+    "cooltipz-css": "^1.6.1",
     "normalize.css": "^8.0.1"
   }
 }

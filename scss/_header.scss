@@ -2,103 +2,55 @@
   align-items: center;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  margin-top: 1rem;
+  gap: 1rem;
+  padding: 1rem;
+  text-align: center;
 
-  &__logo {
-    max-height: 16rem;
-  }
-
-  &__subHeader {
-    font-size: 1.4rem;
+  h2 {
+    font-size: 1.3rem;
     margin: 0;
-    margin-top: 1rem;
-    text-align: center;
-  }
-
-  &__bullets {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    list-style-type: none;
-    margin-top: 1.5rem;
-    padding-left: 0;
-    text-align: center;
-    width: 100%;
-
-    > li {
-      margin: 0.5rem 2rem;
-      min-width: 4rem;
-    }
-  }
-
-  p {
-    margin-top: 1.2rem;
-    text-align: center;
-  }
-
-  &__features {
-    align-self: flex-start;
-    margin-bottom: 0;
-    margin-top: 3rem;
-
-    + ul {
-      align-self: flex-start;
-      margin-top: 1rem;
-      text-align: left;
-    }
   }
 
   &__badges {
     align-items: center;
     display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
+    gap: 1rem;
     justify-content: center;
-    list-style-type: none;
-    padding-left: 0;
 
-    img {
-      max-width: 100%;
+    a {
+      height: 1.5rem;
+
+      @media screen and (min-width: 30em) {
+        height: 2rem;
+      }
+
+      &:hover,
+      &:focus {
+        filter: drop-shadow(0.0625rem 0.0625rem 0.0625rem rgba(0, 0, 0, 0.1)) invert(5%);
+      }
+
+      img {
+        height: 100%;
+      }
     }
   }
 
-  &__share {
-    align-items: center;
-    display: flex;
-    gap: 1rem;
+  .features {
+    display: grid;
+    font-size: 0.9rem;
+    gap: 2rem;
+    grid-template: auto / 1fr 1fr;
     list-style-type: none;
-    margin-bottom: 0;
-    margin-top: 1rem;
+    margin: 2rem 0 0;
     padding-left: 0;
 
-    li {
-      display: inline-block;
-    }
-
-    a {
-      display: block;
+    @media screen and (min-width: 37.5em) {
+      grid-template-columns: 1fr 1fr 1fr;
     }
 
     svg {
-      height: 2rem;
-      width: 2rem;
-
-      &.twitter {
-        color: #1c9cea;
-      }
-
-      &.linkedin {
-        color: #007bb6;
-      }
-
-      &.reddit {
-        color: #ff4500;
-      }
-
-      &.facebook {
-        color: #3b579d;
-      }
+      height: 2.5rem;
+      width: 2.5rem;
     }
   }
 }
