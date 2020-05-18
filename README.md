@@ -139,4 +139,19 @@ We appreciate any feedback, good or bad and are always looking for new ideas to 
 
 ---
 
+## Development
+
+### Setup
+
+- `git clone https://github.com/JDomleo/Cooltipz.css.git`
+- `cd Cooltipz.css`
+- `npm i`
+- `npm run build` to compile development SCSS to CSS
+
+### Branch
+
+All branches should be prefixed with `master__`
+
+---
+
 [GitHub](https://github.com/JDomleo/Cooltipz.css "View the GitHub repo and maybe give us a star") &bull; [npm](https://www.npmjs.com/package/cooltipz-css "View Cooltipz.css on npmjs.com") &bull; [yarn](https://yarnpkg.com/package/cooltipz-css "View Cooltipz.css on yarnpkg.com") &bull; [docs](https://cooltipz.jackdomleo.dev "Read the official documentation") &bull; [CHANGELOG](https://github.com/JDomleo/Cooltipz.css/releases "Read all the releases") &bull; [License](https://github.com/JDomleo/Cooltipz.css#license "MIT License")
