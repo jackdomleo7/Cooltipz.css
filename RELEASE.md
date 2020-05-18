@@ -2,7 +2,7 @@
 
 When creating a new release:
 
-- Update version number in `package.json`, `src/cooltipz.scss`, `(gh-pages)index.html`
+- Update version number in `package.json`, `src/cooltipz.scss`
 - Delete `node_modules/`
 - Run `npm run prerelease`
 - `git commit -m "Updated version from v_old version number_ to v_new version number_"`
