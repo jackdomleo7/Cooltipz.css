@@ -5,7 +5,7 @@
 
 ![Maintenance](https://img.shields.io/maintenance/yes/2020 "This library is actively being maintained") [![MIT License](https://img.shields.io/badge/License-MIT-important)](https://github.com/JDomleo/Cooltipz.css#license "Read license") [![Brotli size](https://badgen.net/badgesize/brotli/JDomleo/Cooltipz.css/master/cooltipz.min.css)](https://github.com/JDomleo/Cooltipz.css/blob/master/cooltipz.min.css "File size - Brotli")
 
-[![GitHub stars](https://img.shields.io/github/stars/JDomleo/Cooltipz.css?style=social)](https://github.com/JDomleo/Cooltipz.css/stargazers "Total GitHub stars") [![GitHub release (latest by date)](https://img.shields.io/github/v/release/JDomleo/Cooltipz.css?style=social)](https://github.com/JDomleo/Cooltipz.css/stargazers "Current version/release") [![npm](https://img.shields.io/npm/dt/cooltipz-css?logo=npm&style=social)](https://www.npmjs.com/package/cooltipz-css "Total npm downloads") ![jsDelivr hits (npm)](https://img.shields.io/jsdelivr/npm/hm/cooltipz-css?label=JsDelivr&logo=jsdelivr&style=social "Monthly JsDelivr CDN hits")
+[![GitHub stars](https://img.shields.io/github/stars/JDomleo/Cooltipz.css?style=social)](https://github.com/JDomleo/Cooltipz.css/stargazers "Total GitHub stars") [![GitHub release (latest by date)](https://img.shields.io/github/v/release/JDomleo/Cooltipz.css?style=social)](https://github.com/JDomleo/Cooltipz.css/releases "Current version/release") [![npm](https://img.shields.io/npm/dt/cooltipz-css?logo=npm&style=social)](https://www.npmjs.com/package/cooltipz-css "Total npm downloads") ![jsDelivr hits (npm)](https://img.shields.io/jsdelivr/npm/hm/cooltipz-css?label=JsDelivr&logo=jsdelivr&style=social "Monthly JsDelivr CDN hits")
 
 ---
 
