@@ -19,12 +19,7 @@
     "tooltips",
     "cooltips",
     "cooltip",
-    "hints",
-    "purecss",
-    "pure-css",
-    "jdomleo",
-    "jack domleo",
-    "domleo"
+    "hints"
   ],
   "author": {
     "name": "Jack Domleo",
@@ -49,12 +44,12 @@
   "devDependencies": {
     "node-sass": "^4.14.1",
     "postcss-cli": "^7.1.1",
-    "stylelint": "^13.4.0",
-    "stylelint-order": "^4.0.0",
-    "stylelint-scss": "^3.17.2"
+    "stylelint": "^13.6.1",
+    "stylelint-order": "^4.1.0",
+    "stylelint-scss": "^3.18.0"
   },
   "dependencies": {
-    "autoprefixer": "^9.8.0",
+    "autoprefixer": "^9.8.4",
     "cssnano": "^4.1.10"
   }
 }
