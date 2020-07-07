@@ -1,7 +1,7 @@
 
 ![Cooltipz.css](./logo.png "Cooltipz.css logo")
 
-<a href="https://www.buymeacoffee.com/jackdomleo" target="_blank" title="Buy Me A Coffee"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: 41px !important;width: 174px !important;box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;"></a>
+<a href="https://www.buymeacoffee.com/jackdomleo7" target="_blank" title="Buy Me A Coffee"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: 41px !important;width: 174px !important;box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;"></a>
 
 ![Maintenance](https://img.shields.io/maintenance/yes/2020 "This library is actively being maintained") [![MIT License](https://img.shields.io/badge/License-MIT-important)](https://github.com/JDomleo/Cooltipz.css#license "Read license") [![Brotli size](https://badgen.net/badgesize/brotli/JDomleo/Cooltipz.css/master/cooltipz.min.css)](https://github.com/JDomleo/Cooltipz.css/blob/master/cooltipz.min.css "File size - Brotli")
 
@@ -103,7 +103,7 @@ Type - **MIT**
 
 You have the right to use this library in any project FREE of charge for personal and commercial use.
 
-Commercial use should consider a small donation on [Buy Me a Coffee](https://www.buymeacoffee.com/jackdomleo).
+Commercial use should consider a small donation on [Buy Me a Coffee](https://www.buymeacoffee.com/jackdomleo7).
 
 You **do not** have the right to resell, sublicense or redistribute (even for free) this library.
 
