@@ -12,7 +12,7 @@ Setup for Cooltipz.css `gh-pages` branch
 
 ### Setup
 
-- `git clone https://github.com/JDomleo/Cooltipz.css.git`
+- `git clone https://github.com/jackdomleo7/Cooltipz.css.git`
 - `git checkout gh-pages`
 - `npm i`
 - `npm run serve`

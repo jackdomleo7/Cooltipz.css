@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/JDomleo/Cooltipz.css.git"
+    "url": "git+https://github.com/jackdomleo7/Cooltipz.css.git"
   },
   "author": {
     "name": "Jack Domleo",
@@ -17,7 +17,7 @@
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/JDomleo/Cooltipz.css/issues"
+    "url": "https://github.com/jackdomleo7/Cooltipz.css/issues"
   },
   "homepage": "https://cooltipz.jackdomleo.dev",
   "devDependencies": {
