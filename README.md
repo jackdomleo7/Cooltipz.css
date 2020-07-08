@@ -3,9 +3,9 @@
 
 <a href="https://www.buymeacoffee.com/jackdomleo7" target="_blank" title="Buy Me A Coffee"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: 41px !important;width: 174px !important;box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;"></a>
 
-![Maintenance](https://img.shields.io/maintenance/yes/2020 "This library is actively being maintained") [![MIT License](https://img.shields.io/badge/License-MIT-important)](https://github.com/JDomleo/Cooltipz.css#license "Read license") [![Brotli size](https://badgen.net/badgesize/brotli/JDomleo/Cooltipz.css/master/cooltipz.min.css)](https://github.com/JDomleo/Cooltipz.css/blob/master/cooltipz.min.css "File size - Brotli")
+![Maintenance](https://img.shields.io/maintenance/yes/2020 "This library is actively being maintained") [![MIT License](https://img.shields.io/badge/License-MIT-important)](https://github.com/jackdomleo7/Cooltipz.css#license "Read license") [![Brotli size](https://badgen.net/badgesize/brotli/jackdomleo7/Cooltipz.css/master/cooltipz.min.css)](https://github.com/jackdomleo7/Cooltipz.css/blob/master/cooltipz.min.css "File size - Brotli")
 
-[![GitHub stars](https://img.shields.io/github/stars/JDomleo/Cooltipz.css?style=social)](https://github.com/JDomleo/Cooltipz.css/stargazers "Total GitHub stars") [![GitHub release (latest by date)](https://img.shields.io/github/v/release/JDomleo/Cooltipz.css?style=social)](https://github.com/JDomleo/Cooltipz.css/releases "Current version/release") [![npm](https://img.shields.io/npm/dt/cooltipz-css?logo=npm&style=social)](https://www.npmjs.com/package/cooltipz-css "Total npm downloads") ![jsDelivr hits (npm)](https://img.shields.io/jsdelivr/npm/hm/cooltipz-css?label=JsDelivr&logo=jsdelivr&style=social "Monthly JsDelivr CDN hits")
+[![GitHub stars](https://img.shields.io/github/stars/jackdomleo7/Cooltipz.css?style=social)](https://github.com/jackdomleo7/Cooltipz.css/stargazers "Total GitHub stars") [![GitHub release (latest by date)](https://img.shields.io/github/v/release/jackdomleo7/Cooltipz.css?style=social)](https://github.com/jackdomleo7/Cooltipz.css/releases "Current version/release") [![npm](https://img.shields.io/npm/dt/cooltipz-css?logo=npm&style=social)](https://www.npmjs.com/package/cooltipz-css "Total npm downloads") ![jsDelivr hits (npm)](https://img.shields.io/jsdelivr/npm/hm/cooltipz-css?label=JsDelivr&logo=jsdelivr&style=social "Monthly JsDelivr CDN hits")
 
 ---
 
@@ -99,7 +99,7 @@ In the below imports, replace `:file` with one of the options below:
 
 Type - **MIT**
 
-[Read license](https://github.com/JDomleo/Cooltipz.css/blob/master/LICENSE)
+[Read license](https://github.com/jackdomleo7/Cooltipz.css/blob/master/LICENSE)
 
 You have the right to use this library in any project FREE of charge for personal and commercial use.
 
@@ -109,7 +109,7 @@ You **do not** have the right to resell, sublicense or redistribute (even for fr
 
 Cooltipz.css is licensed under MIT. As a minimum, you are required to KEEP AND NOT REMOVE the following code at the beginning of your downloaded/installed Cooltipz.css CSS, where `:version` is replaced with the version number you are using:
 ```css
-/*! Cooltipz.css v:version | MIT License | github.com/JDomleo/Cooltipz.css */
+/*! Cooltipz.css v:version | MIT License | github.com/jackdomleo7/Cooltipz.css */
 ```
 
 ---
@@ -117,9 +117,9 @@ Cooltipz.css is licensed under MIT. As a minimum, you are required to KEEP AND N
 ## Feedback and support
 
 We appreciate any feedback, good or bad and are always looking for new ideas to improve the user experience (UX), developer experience (DX) and accessibility of the tooltips. You may want to consider:
-- Raising a [GitHub issue](https://github.com/JDomleo/Cooltipz.css/issues)
+- Raising a [GitHub issue](https://github.com/jackdomleo7/Cooltipz.css/issues)
 - Contacting the [author](https://jackdomleo.dev?ref=cooltipz.jackdomleo.dev) directly
-- Starring the [GitHub repository](https://github.com/JDomleo/Cooltipz.css)
+- Starring the [GitHub repository](https://github.com/jackdomleo7/Cooltipz.css)
 - Giving the [CodePen](https://codepen.io/JackDomleo/pen/mderEeG) a like
 - Mentioning 'Cooltipz.css' in a README or footer
 - Supporting Cooltipz.css on [Buy Me a Coffee](https://www.buymeacoffee.com/jackdomleo)
@@ -135,7 +135,7 @@ We appreciate any feedback, good or bad and are always looking for new ideas to 
 
 ## Contributors
 
-[![Jack Domleo](https://contributors-img.web.app/image?repo=JDomleo/Cooltipz.css "Jack Domleo")](https://github.com/JDomleo/Cooltipz.css/graphs/contributors)
+[![Jack Domleo](https://contributors-img.web.app/image?repo=jackdomleo7/Cooltipz.css "Jack Domleo")](https://github.com/jackdomleo7/Cooltipz.css/graphs/contributors)
 
 ---
 
@@ -143,7 +143,7 @@ We appreciate any feedback, good or bad and are always looking for new ideas to 
 
 ### Setup
 
-- `git clone https://github.com/JDomleo/Cooltipz.css.git`
+- `git clone https://github.com/jackdomleo7/Cooltipz.css.git`
 - `cd Cooltipz.css`
 - `npm i`
 - `npm run build` to compile development SCSS to CSS
@@ -154,4 +154,4 @@ All branches should be prefixed with `master__`
 
 ---
 
-[GitHub](https://github.com/JDomleo/Cooltipz.css "View the GitHub repo and maybe give us a star") &bull; [npm](https://www.npmjs.com/package/cooltipz-css "View Cooltipz.css on npmjs.com") &bull; [yarn](https://yarnpkg.com/package/cooltipz-css "View Cooltipz.css on yarnpkg.com") &bull; [docs](https://cooltipz.jackdomleo.dev "Read the official documentation") &bull; [CHANGELOG](https://github.com/JDomleo/Cooltipz.css/releases "Read all the releases") &bull; [License](https://github.com/JDomleo/Cooltipz.css#license "MIT License")
+[GitHub](https://github.com/jackdomleo7/Cooltipz.css "View the GitHub repo and maybe give us a star") &bull; [npm](https://www.npmjs.com/package/cooltipz-css "View Cooltipz.css on npmjs.com") &bull; [yarn](https://yarnpkg.com/package/cooltipz-css "View Cooltipz.css on yarnpkg.com") &bull; [docs](https://cooltipz.jackdomleo.dev "Read the official documentation") &bull; [CHANGELOG](https://github.com/jackdomleo7/Cooltipz.css/releases "Read all the releases") &bull; [License](https://github.com/jackdomleo7/Cooltipz.css#license "MIT License")
