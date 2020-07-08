@@ -1,6 +1,6 @@
 {
   "name": "cooltipz-css",
-  "version": "1.6.3",
+  "version": "1.6.4",
   "description": "Cooltipz.css is a pure CSS tooltip library that is lightweight, modern, accessible, customisable and easy to use",
   "scripts": {
     "build": "stylelint \"**/*.scss\" --fix && node-sass src/cooltipz.scss ./cooltipz.min.css --output-style compressed && node-sass src/cooltipz.scss ./cooltipz.css --output-style expanded && npx postcss cooltipz.min.css --use autoprefixer cssnano --replace --no-map && npx postcss cooltipz.css --use autoprefixer --replace --no-map",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/JDomleo/Cooltipz.css.git"
+    "url": "git+https://github.com/jackdomleo7/Cooltipz.css.git"
   },
   "keywords": [
     "tooltip",
@@ -27,7 +27,7 @@
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/JDomleo/Cooltipz.css/issues"
+    "url": "https://github.com/jackdomleo7/Cooltipz.css/issues"
   },
   "homepage": "https://cooltipz.jackdomleo.dev",
   "files": [
