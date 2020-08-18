@@ -1,4 +1,4 @@
-/*! Cooltipz.css v1.6.4 | MIT License | github.com/jackdomleo7/Cooltipz.css */
+/*! Cooltipz.css v1.6.5 | MIT License | github.com/jackdomleo7/Cooltipz.css */
 
 @import "./variables";
 @import "./tooltip";
@@ -14,7 +14,6 @@
 
 [aria-label] { // Required
   &[data-cooltipz-dir], // Required
-  &[class ^= "cooltipz"], // Required
   &[class *= "cooltipz"] { // Required
     // Default
     @include tooltip;
