@@ -14,7 +14,6 @@
 
 [aria-label] { // Required
   &[data-cooltipz-dir], // Required
-  &[class ^= "cooltipz"], // Required
   &[class *= "cooltipz"] { // Required
     // Default
     @include tooltip;
