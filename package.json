@@ -49,7 +49,7 @@
     "stylelint-scss": "^3.18.0"
   },
   "dependencies": {
-    "autoprefixer": "^9.8.4",
+    "autoprefixer": "^9.8.6",
     "cssnano": "^4.1.10"
   }
 }
