@@ -1,8 +1,7 @@
 {
   "defaultSeverity": "warning",
   "plugins": [
-    "stylelint-scss",
-    "stylelint-order"
+    "stylelint-scss"
   ],
   "rules": {
     "color-no-invalid-hex": true,
@@ -125,7 +124,6 @@
     "scss/dollar-variable-colon-space-before": "never",
     "scss/declaration-nested-properties": "never",
     "scss/selector-no-redundant-nesting-selector": true,
-    "scss/no-duplicate-dollar-variables": true,
-    "order/properties-alphabetical-order": true
+    "scss/no-duplicate-dollar-variables": true
   }
 }
