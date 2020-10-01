@@ -27,7 +27,7 @@
     "no-invalid-double-slash-comments": true,
     "color-named": "never",
     "function-url-no-scheme-relative": true,
-    "unit-blacklist": ["pt", "pc", "cm", "mm", "in", "ex", "ch", "rad"],
+    "unit-disallowed-list": ["pt", "pc", "cm", "mm", "in", "ex", "ch", "rad"],
     "shorthand-property-no-redundant-values": true,
     "declaration-block-single-line-max-declarations": 1,
     "selector-max-empty-lines": 0,
