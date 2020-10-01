@@ -25,6 +25,9 @@
     "name": "Jack Domleo",
     "url": "https://jackdomleo.dev"
   },
+  "contributors": [
+    "Jack Domleo <jackdomleo7@gmail.com> (https://jackdomleo.dev)"
+  ],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/jackdomleo7/Cooltipz.css/issues"
