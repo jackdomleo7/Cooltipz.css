@@ -25,10 +25,10 @@ Setup for Cooltipz.css `gh-pages` branch
 
 ---
 
-## Generating production ready documentation
+## Generating production-ready documentation
 
 The live docs will automatically update when a push is made to `gh-pages`.
-Run `npm run docs` to generate the production ready CSS and sitemap.xml
+Run `npm run docs` to generate the production-ready CSS and sitemap.xml
 
 ---
 
