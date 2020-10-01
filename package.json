@@ -28,7 +28,6 @@
     "postcss-cli": "^7.1.1",
     "sitemap-generator-cli": "^7.5.0",
     "stylelint": "^13.6.1",
-    "stylelint-order": "^4.1.0",
     "stylelint-scss": "^3.18.0"
   },
   "dependencies": {
