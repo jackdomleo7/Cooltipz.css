@@ -1,5 +1,5 @@
 
-![Cooltipz.css](./logo.png "Cooltipz.css logo")
+![Cooltipz.css](./assets/logo.png "Cooltipz.css logo")
 
 <a href="https://www.buymeacoffee.com/jackdomleo7" target="_blank" title="Buy Me A Coffee"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: 41px !important;width: 174px !important;box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;"></a>
 
@@ -37,7 +37,7 @@ Play with Cooltipz.css on [CodePen](https://codepen.io/JackDomleo/pen/mderEeG).
 
 ## Examples
 
-![Cooltipz.css examples](./examples.gif)
+![Cooltipz.css examples](./assets/examples.gif)
 
 ---
 
@@ -127,18 +127,6 @@ We appreciate any feedback, good or bad and are always looking for new ideas to 
 
 ---
 
-## Special thanks
-
-[Autoprefixer](https://github.com/postcss/autoprefixer?ref=cooltipz.jackdomleo.dev "Applying vendor prefixes to the distributed CSS") &bull; [cssnano](https://cssnano.co?ref=cooltipz.jackdomleo.dev "Minifies the minified stylesheet even further") &bull; [node-sass](https://github.com/sass/node-sas?ref=cooltipz.jackdomleo.dev "Compiling source SCSS to CSS") &bull; [postcss-cli](https://github.com/postcss/postcss-cli?ref=cooltipz.jackdomleo.dev "CLI for applying postcss plugins - Autoprefixer, cssnano") &bull; [Stylelint](https://stylelint.io?ref=cooltipz.jackdomleo.dev "Linter for styles") &bull; [stylelint-scss](https://github.com/kristerkari/stylelint-scss?ref=cooltipz.jackdomleo.dev "Plugin for Stylelint specificaly for SCSS") &bull; [stylelint-order](https://github.com/hudochenkov/stylelint-order?ref=cooltipz.jackdomleo.dev "Plugin for Stylelint for ordering CSS properties") &bull; [shields.io](https://shields.io?ref=cooltipz.jackdomleo.dev "Provides the ability to add badges to markdown and HTML") &bull; [GitHub](https://github.com?ref=cooltipz.jackdomleo.dev "Ability for a remote repo") &bull; [npm](https://www.npmjs.com?ref=cooltipz.jackdomleo.dev "npm package") &bull; [jsDelivr](https://www.jsdelivr.com?ref=cooltipz.jackdomleo.dev "CDN for linking to an external stylesheet")
-
----
-
-## Contributors
-
-[![Jack Domleo](https://contributors-img.web.app/image?repo=jackdomleo7/Cooltipz.css "Jack Domleo")](https://github.com/jackdomleo7/Cooltipz.css/graphs/contributors)
-
----
-
 ## Development
 
 ### Setup
@@ -150,7 +138,7 @@ We appreciate any feedback, good or bad and are always looking for new ideas to 
 
 ### Branch
 
-All branches should be prefixed with `master__`
+All branches should be prefixed with `master__`.
 
 ---
 

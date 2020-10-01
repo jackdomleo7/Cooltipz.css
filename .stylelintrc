@@ -1,8 +1,7 @@
 {
   "defaultSeverity": "warning",
   "plugins": [
-    "stylelint-scss",
-    "stylelint-order"
+    "stylelint-scss"
   ],
   "rules": {
     "color-no-invalid-hex": true,
@@ -28,7 +27,7 @@
     "no-invalid-double-slash-comments": true,
     "color-named": "never",
     "function-url-no-scheme-relative": true,
-    "unit-blacklist": ["pt", "pc", "cm", "mm", "in", "ex", "ch", "rad"],
+    "unit-disallowed-list": ["pt", "pc", "cm", "mm", "in", "ex", "ch", "rad"],
     "shorthand-property-no-redundant-values": true,
     "declaration-block-single-line-max-declarations": 1,
     "selector-max-empty-lines": 0,
@@ -125,7 +124,6 @@
     "scss/dollar-variable-colon-space-before": "never",
     "scss/declaration-nested-properties": "never",
     "scss/selector-no-redundant-nesting-selector": true,
-    "scss/no-duplicate-dollar-variables": true,
-    "order/properties-alphabetical-order": true
+    "scss/no-duplicate-dollar-variables": true
   }
 }
