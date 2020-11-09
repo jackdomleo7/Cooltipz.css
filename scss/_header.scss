@@ -38,11 +38,13 @@
   .features {
     display: grid;
     font-size: 0.9rem;
+    font-weight: 700;
     gap: 2rem;
     grid-template: auto / 1fr 1fr;
     list-style-type: none;
     margin: 2rem 0 0;
     padding-left: 0;
+    margin-bottom: 0.5rem;
 
     @media screen and (min-width: 37.5em) {
       grid-template-columns: 1fr 1fr 1fr;
