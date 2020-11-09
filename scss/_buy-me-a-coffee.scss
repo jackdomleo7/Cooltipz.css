@@ -14,7 +14,16 @@
   padding: 0.4375rem 0.9375rem 0.4375rem 0.625rem;
   text-decoration: none;
 
-  img {
+  &:hover,
+  &:focus {
+    svg {
+      transition: 160ms ease;
+      transform-origin: bottom;
+      transform: rotate(-6deg);
+    }
+  }
+
+  svg {
     border: none;
     box-shadow: none;
     height: 1.375rem;
