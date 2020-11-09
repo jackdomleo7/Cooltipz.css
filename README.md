@@ -1,7 +1,7 @@
 
 ![Cooltipz.css](./assets/logo.png "Cooltipz.css logo")
 
-<a href="https://www.buymeacoffee.com/jackdomleo7" target="_blank" title="Buy Me A Coffee"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: 41px !important;width: 174px !important;box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;"></a>
+<a href="https://www.buymeacoffee.com/jackdomleo7" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-orange.png" alt="Buy Me A Coffee" style="height: 50px !important;width: 190px !important;" ></a>
 
 <a href="https://www.producthunt.com/posts/cooltipz-css?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-cooltipz-css" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=269594&theme=light" alt="Cooltipz.css - A modern, customisable, accessible pure CSS tooltip library. | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" /></a>
 
@@ -122,6 +122,7 @@ We appreciate any feedback, good or bad and are always looking for new ideas to 
 - Raising a [GitHub issue](https://github.com/jackdomleo7/Cooltipz.css/issues)
 - Contacting the [author](https://jackdomleo.dev?ref=cooltipz.jackdomleo.dev) directly
 - Starring the [GitHub repository](https://github.com/jackdomleo7/Cooltipz.css)
+- Giving Cooltipz.css an [upvote on Product Hunt](https://www.producthunt.com/posts/cooltipz-css)
 - Giving the [CodePen](https://codepen.io/JackDomleo/pen/mderEeG) a like
 - Mentioning 'Cooltipz.css' in a README or footer
 - Supporting Cooltipz.css on [Buy Me a Coffee](https://www.buymeacoffee.com/jackdomleo)
