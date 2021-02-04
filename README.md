@@ -1,13 +1,14 @@
+<div align="center">
 
-![Cooltipz.css](./assets/logo.png "Cooltipz.css logo")
+  ![Cooltipz.css](./assets/logo.png "Cooltipz.css logo")
 
-<a href="https://www.buymeacoffee.com/jackdomleo7" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-orange.png" alt="Buy Me A Coffee" style="height: 50px !important;width: 190px !important;" height="50" width="190" ></a>
+  <a href="https://www.buymeacoffee.com/jackdomleo7" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-orange.png" alt="Buy Me A Coffee" style="height: 50px !important;width: 190px !important;" height="50" width="190" ></a> <a href="https://www.producthunt.com/posts/cooltipz-css?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-cooltipz-css" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=269594&theme=light" alt="Cooltipz.css - A modern, customisable, accessible pure CSS tooltip library. | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" /></a>
 
-<a href="https://www.producthunt.com/posts/cooltipz-css?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-cooltipz-css" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=269594&theme=light" alt="Cooltipz.css - A modern, customisable, accessible pure CSS tooltip library. | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" /></a>
+  ![Maintenance](https://img.shields.io/maintenance/yes/2021) [![MIT License](https://img.shields.io/badge/License-MIT-important)](https://github.com/jackdomleo7/Cooltipz.css#license "Read license") [![Brotli size](https://badgen.net/badgesize/brotli/jackdomleo7/Cooltipz.css/master/cooltipz.min.css)](https://github.com/jackdomleo7/Cooltipz.css/blob/master/cooltipz.min.css "File size - Brotli")
 
-![Maintenance](https://img.shields.io/maintenance/yes/2020 "This library is actively being maintained") [![MIT License](https://img.shields.io/badge/License-MIT-important)](https://github.com/jackdomleo7/Cooltipz.css#license "Read license") [![Brotli size](https://badgen.net/badgesize/brotli/jackdomleo7/Cooltipz.css/master/cooltipz.min.css)](https://github.com/jackdomleo7/Cooltipz.css/blob/master/cooltipz.min.css "File size - Brotli")
+  [![GitHub stars](https://img.shields.io/github/stars/jackdomleo7/Cooltipz.css?style=social)](https://github.com/jackdomleo7/Cooltipz.css/stargazers "Total GitHub stars") [![GitHub release (latest by date)](https://img.shields.io/github/v/release/jackdomleo7/Cooltipz.css?style=social)](https://github.com/jackdomleo7/Cooltipz.css/releases "Current version/release") [![npm](https://img.shields.io/npm/dt/cooltipz-css?logo=npm&style=social)](https://www.npmjs.com/package/cooltipz-css "Total npm downloads") ![jsDelivr hits (npm)](https://img.shields.io/jsdelivr/npm/hm/cooltipz-css?label=JsDelivr&logo=jsdelivr&style=social "Monthly JsDelivr CDN hits")
 
-[![GitHub stars](https://img.shields.io/github/stars/jackdomleo7/Cooltipz.css?style=social)](https://github.com/jackdomleo7/Cooltipz.css/stargazers "Total GitHub stars") [![GitHub release (latest by date)](https://img.shields.io/github/v/release/jackdomleo7/Cooltipz.css?style=social)](https://github.com/jackdomleo7/Cooltipz.css/releases "Current version/release") [![npm](https://img.shields.io/npm/dt/cooltipz-css?logo=npm&style=social)](https://www.npmjs.com/package/cooltipz-css "Total npm downloads") ![jsDelivr hits (npm)](https://img.shields.io/jsdelivr/npm/hm/cooltipz-css?label=JsDelivr&logo=jsdelivr&style=social "Monthly JsDelivr CDN hits")
+</div>
 
 ---
 
