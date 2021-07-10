@@ -1,9 +1,9 @@
 {
   "name": "cooltipz-css",
-  "version": "1.6.7",
+  "version": "1.6.8",
   "description": "Cooltipz.css is a pure CSS tooltip library that is lightweight, modern, accessible, customisable and easy to use",
   "scripts": {
-    "build": "stylelint \"**/*.scss\" --fix && node-sass src/cooltipz.scss ./cooltipz.min.css --output-style compressed && node-sass src/cooltipz.scss ./cooltipz.css --output-style expanded && npx postcss cooltipz.min.css --use autoprefixer cssnano --replace --no-map && npx postcss cooltipz.css --use autoprefixer --replace --no-map",
+    "build": "stylelint \"**/*.scss\" --fix && sass --no-source-map src/cooltipz.scss ./cooltipz.min.css --style=compressed && sass --no-source-map src/cooltipz.scss ./cooltipz.css --style=expanded && npx postcss cooltipz.min.css --use autoprefixer cssnano --replace --no-map && npx postcss cooltipz.css --use autoprefixer --replace --no-map",
     "prerelease": "npm i && npm audit fix && npm run build"
   },
   "repository": {
@@ -45,13 +45,13 @@
   "main": "cooltipz.min.css",
   "style": "cooltipz.min.css",
   "devDependencies": {
-    "autoprefixer": "^10.2.4",
-    "cssnano": "^4.1.10",
-    "node-sass": "^5.0.0",
-    "postcss": "^8.2.4",
+    "autoprefixer": "^10.3.0",
+    "cssnano": "^4.1.11",
+    "postcss": "^8.3.5",
     "postcss-cli": "^8.3.1",
-    "stylelint": "^13.9.0",
-    "stylelint-scss": "^3.18.0"
+    "sass": "^1.35.2",
+    "stylelint": "^13.13.1",
+    "stylelint-scss": "^3.19.0"
   },
   "dependencies": {}
 }
