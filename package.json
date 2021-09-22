@@ -1,6 +1,6 @@
 {
   "name": "cooltipz-css",
-  "version": "1.6.8",
+  "version": "1.7.0",
   "description": "Cooltipz.css is a pure CSS tooltip library that is lightweight, modern, accessible, customisable and easy to use",
   "scripts": {
     "build": "stylelint \"**/*.scss\" --fix && sass --no-source-map src/cooltipz.scss ./cooltipz.min.css --style=compressed && sass --no-source-map src/cooltipz.scss ./cooltipz.css --style=expanded && npx postcss cooltipz.min.css --use autoprefixer cssnano --replace --no-map && npx postcss cooltipz.css --use autoprefixer --replace --no-map",
