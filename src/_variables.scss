@@ -1,4 +1,7 @@
 $cooltipz-bg-color: #1f1f1f !default;
+$cooltipz-border-width: 0 !default;
+$cooltipz-border-style: solid !default;
+$cooltipz-border-color: $cooltipz-bg-color !default;
 $cooltipz-text-color: #fff !default;
 $cooltipz-font-size: 0.75rem !default;
 $cooltipz-slide: 6px !default;
@@ -14,6 +17,9 @@ $cooltipz-delay-hide: 0s !default;
 
 :root {
   --cooltipz-bg-color: #{$cooltipz-bg-color};
+  --cooltipz-border-width: #{$cooltipz-border-width};
+  --cooltipz-border-style: #{$cooltipz-border-style};
+  --cooltipz-border-color: #{$cooltipz-border-color};
   --cooltipz-text-color: #{$cooltipz-text-color};
   --cooltipz-font-size: #{$cooltipz-font-size};
   --cooltipz-slide: #{$cooltipz-slide};

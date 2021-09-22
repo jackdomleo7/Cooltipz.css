@@ -168,7 +168,7 @@
         <hr/>
         <section>
           <h3>Customisation</h3>
-          <p>Expose 13 CSS variables: <code>--cooltipz-bg-color</code>, <code>--cooltipz-text-color</code>, <code>--cooltipz-font-size</code>, <code>--cooltipz-slide</code>, <code>--cooltipz-border-radius</code>, <code>--cooltipz-timing</code>, <code>--cooltipz-cursor</code>, <code>--cooltipz-small</code>, <code>--cooltipz-medium</code>, <code>--cooltipz-large</code>, <code>--cooltipz-arrow-size</code>, <code>--cooltipz-delay-show</code>, <code>--cooltipz-delay-hide</code>.</p>
+          <p>Expose 16 CSS variables: <code>--cooltipz-bg-color</code>, <code>--cooltipz-border-width</code>, <code>--cooltipz-border-style</code>, <code>--cooltipz-border-color</code>, <code>--cooltipz-text-color</code>, <code>--cooltipz-font-size</code>, <code>--cooltipz-slide</code>, <code>--cooltipz-border-radius</code>, <code>--cooltipz-timing</code>, <code>--cooltipz-cursor</code>, <code>--cooltipz-small</code>, <code>--cooltipz-medium</code>, <code>--cooltipz-large</code>, <code>--cooltipz-arrow-size</code>, <code>--cooltipz-delay-show</code>, <code>--cooltipz-delay-hide</code>.</p>
           <style>
             .custom--one{
               --cooltipz-bg-color: #fff; --cooltipz-text-color: #000; --cooltipz-font-size: 1.5rem; --cooltipz-slide: 50px; --cooltipz-border-radius: 1rem; --cooltipz-timing: 1s; --cooltipz-cursor: help;
@@ -187,6 +187,12 @@
               --cooltipz-delay-show: 1s;
               --cooltipz-delay-hide: 2s;
             }
+            .custom--five {
+              --cooltipz-border-width: 2px;
+              --cooltipz-border-color: #000;
+              --cooltipz-bg-color: #fff;
+              --cooltipz-text-color: #000;
+            }
           </style>
           <button class="custom--one" data-cooltipz-dir="top" aria-label="I've been customised!">Custom</button>
           <button class="custom--size" data-cooltipz-dir="top" data-cooltipz-size="small" aria-label="I'm a small tooltip and I've been customised!">Custom</button>
@@ -195,6 +201,7 @@
           <button class="custom--two" data-cooltipz-dir="right" aria-label="Hello there!">Custom</button>
           <button class="custom--three" data-cooltipz-dir="right" aria-label="Hello there!">Custom</button>
           <button class="custom--four" data-cooltipz-dir="right" aria-label="Hello there!">Custom</button>
+          <button class="custom--five" data-cooltipz-dir="right" aria-label="Hello there!">Custom</button>
         </section>
         <style>
           .examples {
