@@ -4,3 +4,4 @@
 
 // npm
 node_modules
+*.tgz
