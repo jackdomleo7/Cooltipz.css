@@ -7,5 +7,10 @@
 }
 
 @mixin no-animations {
-  transition: none;
+  transition:None ;
+}
+@mixin animations{
+
+  transition: width 2s, height 4s;
+
 }
