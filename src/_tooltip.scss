@@ -8,7 +8,8 @@
   &::after {
     background-color: var(--cooltipz-bg-color, #{$cooltipz-bg-color});
     border-radius: var(--cooltipz-border-radius, #{$cooltipz-border-radius});
-    border: var(--cooltipz-border-width, #{$cooltipz-border-width})
+    border:
+      var(--cooltipz-border-width, #{$cooltipz-border-width})
       var(--cooltipz-border-style, #{$cooltipz-border-style})
       var(--cooltipz-border-color, #{$cooltipz-border-color});
     box-shadow: 0 0 0.1875rem $cooltipz-shadow-color;
@@ -35,8 +36,9 @@
   &::after,
   &::before {
     @include base-animations;
+
     box-sizing: border-box;
-    opacity: 0;
+    opacity: 0%;
     pointer-events: none;
     position: absolute;
     transition-delay: var(--cooltipz-delay-hide, #{$cooltipz-delay-hide});
@@ -48,7 +50,7 @@
   &.cooltipz--visible {
     &::before,
     &::after {
-      opacity: 1;
+      opacity: 100%;
       transition-delay: var(--cooltipz-delay-show, #{$cooltipz-delay-show});
     }
   }

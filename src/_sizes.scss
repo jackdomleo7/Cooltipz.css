@@ -6,40 +6,44 @@
 }
 
 @mixin size-fit {
-  &[data-cooltipz-size = "fit"],
+  &[data-cooltipz-size="fit"],
   &.cooltipz--fit {
     &::after {
       @extend %sizes-common;
+
       width: 100%;
     }
   }
 }
 
 @mixin size-small {
-  &[data-cooltipz-size = "small"],
+  &[data-cooltipz-size="small"],
   &.cooltipz--small {
     &::after {
       @extend %sizes-common;
+
       width: var(--cooltipz-small, #{$cooltipz-small});
     }
   }
 }
 
 @mixin size-medium {
-  &[data-cooltipz-size = "medium"],
+  &[data-cooltipz-size="medium"],
   &.cooltipz--medium {
     &::after {
       @extend %sizes-common;
+
       width: var(--cooltipz-medium, #{$cooltipz-medium});
     }
   }
 }
 
 @mixin size-large {
-  &[data-cooltipz-size = "large"],
+  &[data-cooltipz-size="large"],
   &.cooltipz--large {
     &::after {
       @extend %sizes-common;
+
       width: var(--cooltipz-large, #{$cooltipz-large});
     }
   }
