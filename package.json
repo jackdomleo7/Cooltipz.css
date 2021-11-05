@@ -57,5 +57,13 @@
     "sass": "^1.43.4",
     "stylelint": "^13.13.1",
     "stylelint-scss": "^3.21.0"
+  },
+  "peerDependencies": {
+    "sass": "1.x"
+  },
+  "peerDependenciesMeta": {
+    "sass": {
+      "optional": true
+    }
   }
 }
