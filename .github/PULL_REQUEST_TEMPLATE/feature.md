@@ -1,7 +1,7 @@
 ---
 name: 🙋‍♂️ Feature
 about: Submit a new feature
-labels: 'project enhancement'
+labels: 'enhancement'
 title: '[FEATURE]: <title>'
 ---
 
