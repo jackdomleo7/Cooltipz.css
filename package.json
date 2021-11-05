@@ -47,13 +47,13 @@
   "main": "cooltipz.min.css",
   "style": "cooltipz.min.css",
   "devDependencies": {
-    "autoprefixer": "^10.3.5",
-    "cssnano": "^4.1.11",
+    "autoprefixer": "^10.4.0",
+    "cssnano": "^5.0.9",
     "git-branch-is": "^4.0.0",
     "is-git-status-clean": "^1.0.0",
-    "postcss": "^8.3.7",
-    "postcss-cli": "^8.3.1",
-    "sass": "^1.42.1",
+    "postcss": "^8.3.11",
+    "postcss-cli": "^9.0.2",
+    "sass": "^1.43.4",
     "stylelint": "^13.13.1",
     "stylelint-scss": "^3.21.0"
   }
