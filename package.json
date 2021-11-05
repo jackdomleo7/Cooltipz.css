@@ -65,5 +65,9 @@
     "sass": {
       "optional": true
     }
+  },
+  "engines": {
+    "node": ">=16",
+    "npm": ">=8"
   }
 }
