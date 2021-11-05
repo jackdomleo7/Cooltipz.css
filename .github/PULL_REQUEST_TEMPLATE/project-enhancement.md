@@ -1,7 +1,7 @@
 ---
 name: 🚀 Project enhancement
 about: Submit an enhancement or maintenance
-labels: 'project enhancement'
+labels: 'enhancement'
 title: '[ENHANCEMENT]: <title>'
 ---
 
