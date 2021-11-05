@@ -5,7 +5,8 @@
   "scripts": {
     "build": "stylelint \"**/*.scss\" --fix && sass --no-source-map src/cooltipz.scss ./cooltipz.min.css --style=compressed && sass --no-source-map src/cooltipz.scss ./cooltipz.css --style=expanded && npx postcss cooltipz.min.css --use autoprefixer cssnano --replace --no-map && npx postcss cooltipz.css --use autoprefixer --replace --no-map",
     "prerelease": "npm i && npm audit fix && npm run build",
-    "prepublishOnly": "git-branch-is master && npm run build"
+    "prepublishOnly": "git-branch-is master && is-git-status-clean && npm run build",
+    "has-no-changes": "is-git-status-clean"
   },
   "repository": {
     "type": "git",
@@ -49,11 +50,11 @@
     "autoprefixer": "^10.3.5",
     "cssnano": "^4.1.11",
     "git-branch-is": "^4.0.0",
+    "is-git-status-clean": "^1.0.0",
     "postcss": "^8.3.7",
     "postcss-cli": "^8.3.1",
     "sass": "^1.42.1",
     "stylelint": "^13.13.1",
     "stylelint-scss": "^3.21.0"
-  },
-  "dependencies": {}
+  }
 }
