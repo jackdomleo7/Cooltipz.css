@@ -1,3 +1,6 @@
+@use "./variables/scss" as *;
+@use "./arrow" as *;
+
 $cooltipz-margin: calc(var(--cooltipz-arrow-size, #{$cooltipz-arrow-size}) * 2);
 $cooltipz-corner-direction-position: calc(var(--cooltipz-arrow-size, #{$cooltipz-arrow-size}) / 2);
 $cooltipz-y-direction-position: calc(100% - (var(--cooltipz-arrow-size, #{$cooltipz-arrow-size}) / 2));

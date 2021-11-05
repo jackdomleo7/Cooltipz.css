@@ -1,0 +1,20 @@
+@use "./scss" as *;
+
+:root {
+  --cooltipz-bg-color: #{$cooltipz-bg-color};
+  --cooltipz-border-width: #{$cooltipz-border-width};
+  --cooltipz-border-style: #{$cooltipz-border-style};
+  --cooltipz-border-color: #{$cooltipz-border-color};
+  --cooltipz-text-color: #{$cooltipz-text-color};
+  --cooltipz-font-size: #{$cooltipz-font-size};
+  --cooltipz-slide: #{$cooltipz-slide};
+  --cooltipz-border-radius: #{$cooltipz-border-radius};
+  --cooltipz-timing: #{$cooltipz-timing};
+  --cooltipz-cursor: #{$cooltipz-cursor};
+  --cooltipz-small: #{$cooltipz-small};
+  --cooltipz-medium: #{$cooltipz-medium};
+  --cooltipz-large: #{$cooltipz-large};
+  --cooltipz-arrow-size: #{$cooltipz-arrow-size};
+  --cooltipz-delay-show: #{$cooltipz-delay-show};
+  --cooltipz-delay-hide: #{$cooltipz-delay-hide};
+}

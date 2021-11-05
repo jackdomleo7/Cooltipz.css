@@ -1,11 +1,11 @@
 /*! Cooltipz.css v1.7.1 | MIT License | github.com/jackdomleo7/Cooltipz.css */
 
-@import "./variables";
-@import "./tooltip";
-@import "./animations";
-@import "./arrow";
-@import "./directions";
-@import "./sizes";
+@use "./variables/css" as *;
+@use "./tooltip" as *;
+@use "./animations" as *;
+@use "./arrow" as *;
+@use "./directions" as *;
+@use "./sizes" as *;
 
 /*
 ::before = arrow

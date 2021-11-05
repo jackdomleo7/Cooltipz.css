@@ -1,4 +1,5 @@
-$cooltipz-shadow-color: rgba(0, 0, 0, 0.3);
+@use "./variables/scss" as *;
+@use "./animations" as *;
 
 @mixin tooltip {
   cursor: var(--cooltipz-cursor, #{$cooltipz-cursor});

@@ -1,3 +1,5 @@
+@use "./variables/scss" as *;
+
 $cooltipz-arrow-shadow-fade: 1px $cooltipz-shadow-color;
 
 %base-arrow {

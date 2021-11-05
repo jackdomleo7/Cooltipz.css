@@ -1,3 +1,5 @@
+@use "./variables/scss" as *;
+
 @mixin base-animations {
   transition: all var(--cooltipz-timing, #{$cooltipz-timing}) ease-out var(--cooltipz-timing, #{$cooltipz-timing});
 
