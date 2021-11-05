@@ -1,3 +1,5 @@
+@use "./variables/scss" as *;
+
 $cooltipz-arrow-shadow-fade: 1px $cooltipz-shadow-color;
 
 %base-arrow {
@@ -8,24 +10,28 @@ $cooltipz-arrow-shadow-fade: 1px $cooltipz-shadow-color;
 
 %arrow-down {
   @extend %base-arrow;
+
   border-top-color: var(--cooltipz-border-color, #{$cooltipz-border-color});
   filter: drop-shadow(0 1px $cooltipz-arrow-shadow-fade);
 }
 
 %arrow-up {
   @extend %base-arrow;
+
   border-bottom-color: var(--cooltipz-border-color, #{$cooltipz-border-color});
   filter: drop-shadow(0 -1px $cooltipz-arrow-shadow-fade);
 }
 
 %arrow-left {
   @extend %base-arrow;
+
   border-right-color: var(--cooltipz-border-color, #{$cooltipz-border-color});
   filter: drop-shadow(-1px 0 $cooltipz-arrow-shadow-fade);
 }
 
 %arrow-right {
   @extend %base-arrow;
+
   border-left-color: var(--cooltipz-border-color, #{$cooltipz-border-color});
   filter: drop-shadow(1px 0 $cooltipz-arrow-shadow-fade);
 }

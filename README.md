@@ -2,7 +2,9 @@
 
   ![Cooltipz.css](./assets/logo.png "Cooltipz.css logo")
 
-  <a href="https://www.buymeacoffee.com/jackdomleo7" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-orange.png" alt="Buy Me A Coffee" style="height: 50px !important;width: 190px !important;" height="50" width="190" ></a> <a href="https://www.producthunt.com/posts/cooltipz-css?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-cooltipz-css" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=269594&theme=light" alt="Cooltipz.css - A modern, customisable, accessible pure CSS tooltip library. | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" /></a>
+  <a href="https://www.buymeacoffee.com/jackdomleo7" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-orange.png" alt="Buy Me A Coffee" style="height: 50px !important;width: 190px !important;" height="50" width="190" ></a> <a href="https://www.producthunt.com/posts/cooltipz-css?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-cooltipz-css" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=269594&theme=light" alt="Cooltipz.css - A modern, customisable, accessible pure CSS tooltip library. | Product Hunt" style="width: 250px; height: 50px;" width="250" height="50" /></a>
+
+  [![Pipeline](https://github.com/jackdomleo7/Cooltipz.css/actions/workflows/pipeline.yml/badge.svg?branch=master)](https://github.com/jackdomleo7/Cooltipz.css/actions/workflows/pipeline.yml)
 
   ![Maintenance](https://img.shields.io/maintenance/yes/2021) [![MIT License](https://img.shields.io/badge/License-MIT-important)](https://github.com/jackdomleo7/Cooltipz.css#license "Read license") [![Brotli size](https://badgen.net/badgesize/brotli/jackdomleo7/Cooltipz.css/master/cooltipz.min.css)](https://github.com/jackdomleo7/Cooltipz.css/blob/master/cooltipz.min.css "File size - Brotli")
 
@@ -16,11 +18,11 @@
 
 **Cool customisable tooltips made from pure CSS**
 
-_Lightweight &bull; Modern &bull; Accessible &bull; Customisable &bull; Simple_
+_Lightweight &bull; Accessible &bull; Customisable &bull; Simple_
 
 Cooltipz.css is a pure CSS tooltip library that is lightweight, modern, accessible, customisable and easy to use.
 
-[Read the docs here - cooltipz.jackdomleo.dev](https://cooltipz.jackdomleo.dev)
+Official documentation: [cooltipz.jackdomleo.dev](https://cooltipz.jackdomleo.dev).
 
 Play with Cooltipz.css on [CodePen](https://codepen.io/JackDomleo/pen/mderEeG).
 
@@ -28,7 +30,7 @@ Play with Cooltipz.css on [CodePen](https://codepen.io/JackDomleo/pen/mderEeG).
 - Easy and simple tooltips with **quick setup**
 - Pure CSS, no JavaScript
 - Highly customisable
-- Accessible with aria-label attributes
+- Accessible with `aria-label` attributes
 - Automatically disables animation if the user [prefers reduced motion](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion?ref=cooltipz.jackdomleo.dev)
 - Options to use classes or `data-` attributes
 - Options to import via CDN, npm or yarn
@@ -66,7 +68,7 @@ In the below CDN links:
 
 ### Package manager (npm or yarn)
 
-It's best practice to install Cooltipz.css as a dependency rather than a devDependency. You can install `cooltipz-css` via **npm** or **yarn**.
+It's best practice to install Cooltipz.css as a dependency rather than a dev dependency. You can install `cooltipz-css` via **npm** or **yarn**.
 
 _First_ install via **npm**
 ```
@@ -83,17 +85,17 @@ _Then_ import into your JavaScript
 import 'cooltipz-css';
 ```
 
-_Or_ import the SCSS or CSS into your Sass/SCSS
-In the below imports, replace `:file` with one of the options below:
+_Or_ use the SCSS or CSS into your Sass/SCSS
+In the below example, replace `:file` with one of the options below:
 - `src/cooltipz` <sub><sup>(.scss file)</sup></sub>
 - `cooltipz.css` <sub><sup>(Expanded .css)</sup></sub>
 - `cooltipz.min.css` <sub><sup>(Minified .css)</sup></sub>
 ```scss
 /* Webpack */
-@import '~cooltipz-css/:file';
+@use '~cooltipz-css/:file' as *;
 
 /* Non-webpack */
-@import 'path/to/node_modules/cooltipz-css/:file';
+@use 'path/to/node_modules/cooltipz-css/:file' as *;
 ```
 
 ---
@@ -125,9 +127,9 @@ We appreciate any feedback, good or bad and are always looking for new ideas to 
 - Starring the [GitHub repository](https://github.com/jackdomleo7/Cooltipz.css)
 - Giving Cooltipz.css an [upvote on Product Hunt](https://www.producthunt.com/posts/cooltipz-css)
 - Giving the [CodePen](https://codepen.io/JackDomleo/pen/mderEeG) a like
-- Mentioning 'Cooltipz.css' in a README or footer
-- Supporting Cooltipz.css on [Buy Me a Coffee](https://www.buymeacoffee.com/jackdomleo)
-- Share on social media with the hashtag <em>#cooltipzcss</em>
+- Mentioning '[Cooltipz.css](https://cooltipz.jackdomleo.dev)' in a README or footer
+- Supporting the Cooltipz.css creator on [Buy Me a Coffee](https://www.buymeacoffee.com/jackdomleo)
+- Share on social media
 
 ---
 
@@ -135,14 +137,16 @@ We appreciate any feedback, good or bad and are always looking for new ideas to 
 
 ### Setup
 
-- `git clone https://github.com/jackdomleo7/Cooltipz.css.git`
+- Fork this repository if required
+- `git clone https://github.com/jackdomleo7/Cooltipz.css.git` or clone your forked repository
 - `cd Cooltipz.css`
-- `npm i`
+- `npm ci`
 - `npm run build` to compile development SCSS to CSS
 
 ### Branch
 
-All branches should be prefixed with `master__`.
+- All branches should be prefixed with the issue number
+- All branches must have a descriptive name
 
 ---
 
