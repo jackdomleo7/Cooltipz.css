@@ -90,7 +90,7 @@
   transition: all var(--cooltipz-timing, 120ms) ease-out var(--cooltipz-timing, 120ms);
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  opacity: 0;
+  opacity: 0%;
   pointer-events: none;
   position: absolute;
   -webkit-transition-delay: var(--cooltipz-delay-hide, 0s);
@@ -103,7 +103,7 @@
   }
 }
 [aria-label][data-cooltipz-dir]:hover::before, [aria-label][data-cooltipz-dir]:hover::after, [aria-label][data-cooltipz-dir]:focus::before, [aria-label][data-cooltipz-dir]:focus::after, [aria-label][data-cooltipz-dir][data-cooltipz-visible]::before, [aria-label][data-cooltipz-dir][data-cooltipz-visible]::after, [aria-label][data-cooltipz-dir].cooltipz--visible::before, [aria-label][data-cooltipz-dir].cooltipz--visible::after, [aria-label][class*=cooltipz]:hover::before, [aria-label][class*=cooltipz]:hover::after, [aria-label][class*=cooltipz]:focus::before, [aria-label][class*=cooltipz]:focus::after, [aria-label][class*=cooltipz][data-cooltipz-visible]::before, [aria-label][class*=cooltipz][data-cooltipz-visible]::after, [aria-label][class*=cooltipz].cooltipz--visible::before, [aria-label][class*=cooltipz].cooltipz--visible::after {
-  opacity: 1;
+  opacity: 100%;
   -webkit-transition-delay: var(--cooltipz-delay-show, 0s);
           transition-delay: var(--cooltipz-delay-show, 0s);
 }
