@@ -1,3 +1,4 @@
+@use "sass:color";
 @use "./variables" as *;
 
 :root {
@@ -5,7 +6,7 @@
 }
 
 ::selection {
-  background-color: mix($blue, #fff, 80%);
+  background-color: color.mix($blue, #fff, 80%);
   color: #fff;
   text-shadow: none;
 }

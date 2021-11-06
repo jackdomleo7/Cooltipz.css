@@ -4,8 +4,10 @@
   "private": true,
   "description": "Documentation website for Cooltipz.css",
   "scripts": {
-    "docs": "stylelint \"**/*.scss\" --fix && sass --no-source-map scss/docs.scss css/docs.min.css && sass --no-source-map scss/cooltipz.scss css/cooltipz.min.css && sass --no-source-map scss/prism.scss css/prism.min.css && sass --no-source-map scss/404.scss css/404.min.css && npx postcss css --use autoprefixer cssnano --replace",
-    "serve": "http-server ./ --port 1234 -a localhost"
+    "docs": "npm run lint:fix && sass --no-source-map scss/docs.scss css/docs.min.css && sass --no-source-map scss/cooltipz.scss css/cooltipz.min.css && sass --no-source-map scss/prism.scss css/prism.min.css && sass --no-source-map scss/404.scss css/404.min.css && npx postcss css --use autoprefixer cssnano --replace",
+    "serve": "http-server ./ --port 1234 -a localhost",
+    "lint:check": "stylelint \"**/*.scss\"",
+    "lint:fix": "stylelint \"**/*.scss\" --fix"
   },
   "repository": {
     "type": "git",
@@ -31,8 +33,8 @@
     "postcss-cli": "^9.0.2",
     "sass": "^1.43.4",
     "sitemap-generator-cli": "^7.5.0",
-    "stylelint": "^13.13.1",
-    "stylelint-scss": "^3.21.0"
+    "stylelint": "^14.0.1",
+    "stylelint-config-standard-scss": "^2.0.1"
   },
   "dependencies": {
     "cooltipz-css": "^2.0.0",
