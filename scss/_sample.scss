@@ -1,3 +1,5 @@
+@use "./variables" as *;
+
 .example {
   align-items: center;
   display: flex;
@@ -13,7 +15,7 @@
     }
   }
 
-  div[class *= "language-"] {
+  div[class*="language-"] {
     width: 100%;
   }
 
@@ -32,7 +34,11 @@
 
   &__wrapper {
     background-attachment: local, local, scroll, scroll;
-    background-image: linear-gradient(to right, #fff, rgba(255, 255, 255, 0)), linear-gradient(to left, #fff, rgba(255, 255, 255, 0)), linear-gradient(to right, #c3c3c5, rgba(195, 195, 197, 0)), linear-gradient(to left, #c3c3c5, rgba(195, 195, 197, 0));
+    background-image:
+      linear-gradient(to right, #fff, rgb(255 255 255 / 0%)),
+      linear-gradient(to left, #fff, rgb(255 255 255 / 0%)),
+      linear-gradient(to right, #c3c3c5, rgb(195 195 197 / 0%)),
+      linear-gradient(to left, #c3c3c5, rgb(195 195 197 / 0%));
     background-position: 0 0, 100% 0, 0 0, 100% 0;
     background-repeat: no-repeat;
     background-size: 4em 100%, 4em 100%, 1em 100%, 1em 100%;
@@ -40,39 +46,39 @@
     overflow-x: auto;
   }
 
-  thead {
-    font-weight: 700;
-
-    tr {
-      border-bottom: 1px solid #777;
-    }
-  }
-
   tr {
     align-items: center;
     display: flex;
     margin: 1rem 0;
 
+    thead & {
+      border-bottom: 1px solid #777;
+    }
+
     td {
       padding: 0.5rem;
 
-      &:nth-child( 1 ),
-      &:nth-child( 2 ) {
+      &:nth-child(1),
+      &:nth-child(2) {
         width: 14rem;
       }
 
-      &:nth-child( 3 ) {
+      &:nth-child(3) {
         width: 8rem;
       }
 
-      &:nth-child( 4 ) {
+      &:nth-child(4) {
         width: 16rem;
       }
     }
 
-    &:nth-child( 2n - 1 ) {
+    &:nth-child(2n - 1) {
       background-color: fade-out(#eee, 0.5);
     }
+  }
+
+  thead {
+    font-weight: 700;
   }
 
   &__sample {
