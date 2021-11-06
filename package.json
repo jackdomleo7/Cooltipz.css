@@ -35,7 +35,7 @@
     "stylelint-scss": "^3.21.0"
   },
   "dependencies": {
-    "cooltipz-css": "^1.7.1",
+    "cooltipz-css": "^2.0.0",
     "normalize.css": "^8.0.1"
   }
 }
