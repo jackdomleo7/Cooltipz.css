@@ -1,5 +1,4 @@
-$blue: #1e80ff;
-$orange: #ff5100;
+@use "./variables" as *;
 
 :root {
   --cooltipz-fontawesome: fontawesome;

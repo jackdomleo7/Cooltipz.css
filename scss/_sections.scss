@@ -1,3 +1,5 @@
+@use "./variables" as *;
+
 .direction {
   &__examples {
     display: grid;

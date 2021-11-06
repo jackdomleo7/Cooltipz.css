@@ -1,3 +1,3 @@
-@import "./global";
-@import "./header";
-@import "./link"
+@use "./global" as *;
+@use "./header" as *;
+@use "./link" as *;

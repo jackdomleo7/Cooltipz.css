@@ -1,14 +1,14 @@
-@import "./global";
-@import "./header";
-@import "./footer";
-@import "./sample";
-@import "./link";
-@import "../node_modules/normalize.css/normalize";
-@import "./buy-me-a-coffee";
-@import "./code";
-@import "./button";
-@import "./helpers";
-@import "./sections";
+@use "./global" as *;
+@use "./header" as *;
+@use "./footer" as *;
+@use "./sample" as *;
+@use "./link" as *;
+@use "../node_modules/normalize.css/normalize" as *;
+@use "./buy-me-a-coffee" as *;
+@use "./code" as *;
+@use "./button" as *;
+@use "./helpers" as *;
+@use "./sections" as *;
 
 .main {
   display: flex;
