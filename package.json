@@ -50,7 +50,7 @@
   "style": "cooltipz.min.css",
   "devDependencies": {
     "autoprefixer": "^10.4.0",
-    "cssnano": "^5.0.9",
+    "cssnano": "^5.0.10",
     "git-branch-is": "^4.0.0",
     "is-git-status-clean": "^1.0.0",
     "postcss": "^8.3.11",
