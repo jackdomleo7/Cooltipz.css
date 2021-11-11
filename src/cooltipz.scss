@@ -43,3 +43,14 @@
     }
   }
 }
+
+// Do not show tooltip if attribute is empty
+[#{$cooltipz-attribute}=""] {
+  &[data-cooltipz-dir],
+  &[class*="cooltipz"] {
+    &::before,
+    &::after {
+      display: none;
+    }
+  }
+}
