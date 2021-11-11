@@ -37,7 +37,7 @@
     "stylelint-config-standard-scss": "^2.0.1"
   },
   "dependencies": {
-    "cooltipz-css": "^2.0.0",
+    "cooltipz-css": "^2.1.0",
     "normalize.css": "^8.0.1"
   }
 }
