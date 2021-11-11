@@ -4,6 +4,7 @@ $cooltipz-border-style: solid !default;
 $cooltipz-border-color: $cooltipz-bg-color !default;
 $cooltipz-text-color: #fff !default;
 $cooltipz-font-size: 0.75rem !default;
+$cooltipz-font-family: verdana, geneva, tahoma, var(--cooltipz-fontawesome, Arial), sans-serif !default;
 $cooltipz-slide: 6px !default;
 $cooltipz-border-radius: 0.125rem !default;
 $cooltipz-timing: 120ms !default;
