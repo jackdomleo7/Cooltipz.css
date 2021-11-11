@@ -5,6 +5,7 @@
   --cooltipz-border-color: #1f1f1f;
   --cooltipz-text-color: #fff;
   --cooltipz-font-size: 0.75rem;
+  --cooltipz-font-family: verdana, geneva, tahoma, var(--cooltipz-fontawesome, Arial), sans-serif;
   --cooltipz-slide: 6px;
   --cooltipz-border-radius: 0.125rem;
   --cooltipz-timing: 120ms;
@@ -69,7 +70,7 @@
           box-shadow: 0 0 0.1875rem rgba(0, 0, 0, 0.3);
   color: var(--cooltipz-text-color, #fff);
   content: attr(aria-label);
-  font-family: Verdana, Geneva, Tahoma, var(--cooltipz-fontawesome, Arial), sans-serif;
+  font-family: var(--cooltipz-font-family, verdana, geneva, tahoma, var(--cooltipz-fontawesome, Arial), sans-serif);
   font-size: var(--cooltipz-font-size, 0.75rem);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

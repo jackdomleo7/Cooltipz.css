@@ -15,7 +15,7 @@
     box-shadow: 0 0 0.1875rem $cooltipz-shadow-color;
     color: var(--cooltipz-text-color, #{$cooltipz-text-color});
     content: attr(#{$cooltipz-attribute});
-    font-family: Verdana, Geneva, Tahoma, var(--cooltipz-fontawesome, Arial), sans-serif;
+    font-family: var(--cooltipz-font-family, #{$cooltipz-font-family});
     font-size: var(--cooltipz-font-size, #{$cooltipz-font-size});
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
