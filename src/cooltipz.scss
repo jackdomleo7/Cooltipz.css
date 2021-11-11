@@ -1,5 +1,6 @@
 /*! Cooltipz.css v2.0.0 | MIT License | github.com/jackdomleo7/Cooltipz.css */
 
+@use "./variables/scss" as *;
 @use "./variables/css" as *;
 @use "./tooltip" as *;
 @use "./animations" as *;
@@ -12,7 +13,7 @@
 ::after = tooltip box and content
 */
 
-[aria-label] { // Required
+[#{$cooltipz-attribute}] { // Required
   &[data-cooltipz-dir], // Required
   &[class*="cooltipz"] { // Required
     // Default
