@@ -6,7 +6,7 @@
 
   [![Pipeline](https://github.com/jackdomleo7/Cooltipz.css/actions/workflows/pipeline.yml/badge.svg?branch=master)](https://github.com/jackdomleo7/Cooltipz.css/actions/workflows/pipeline.yml)
 
-  ![Maintenance](https://img.shields.io/maintenance/yes/2021) [![MIT License](https://img.shields.io/badge/License-MIT-important)](https://github.com/jackdomleo7/Cooltipz.css#license "Read license") [![Brotli size](https://badgen.net/badgesize/brotli/jackdomleo7/Cooltipz.css/master/cooltipz.min.css)](https://github.com/jackdomleo7/Cooltipz.css/blob/master/cooltipz.min.css "File size - Brotli")
+  [![MIT License](https://img.shields.io/badge/License-MIT-important)](https://github.com/jackdomleo7/Cooltipz.css#license "Read license") [![Brotli size](https://badgen.net/badgesize/brotli/jackdomleo7/Cooltipz.css/master/cooltipz.min.css)](https://github.com/jackdomleo7/Cooltipz.css/blob/master/cooltipz.min.css "File size - Brotli")
 
   [![GitHub stars](https://img.shields.io/github/stars/jackdomleo7/Cooltipz.css?style=social)](https://github.com/jackdomleo7/Cooltipz.css/stargazers "Total GitHub stars") [![GitHub release (latest by date)](https://img.shields.io/github/v/release/jackdomleo7/Cooltipz.css?style=social)](https://github.com/jackdomleo7/Cooltipz.css/releases "Current version/release") [![npm](https://img.shields.io/npm/dt/cooltipz-css?logo=npm&style=social)](https://www.npmjs.com/package/cooltipz-css "Total npm downloads") ![jsDelivr hits (npm)](https://img.shields.io/jsdelivr/npm/hm/cooltipz-css?label=JsDelivr&logo=jsdelivr&style=social "Monthly JsDelivr CDN hits")
 
