@@ -4,8 +4,8 @@
   "description": "Cooltipz.css is a pure CSS tooltip library that is lightweight, modern, accessible, customisable and easy to use",
   "scripts": {
     "build": "npm run lint:fix && concurrently \"sass --no-source-map src/cooltipz.scss ./cooltipz.min.css --style=compressed\" \"sass --no-source-map src/cooltipz.scss ./cooltipz.css --style=expanded\" && concurrently \"npx postcss cooltipz.min.css --use autoprefixer cssnano --replace --no-map\" \"npx postcss cooltipz.css --use autoprefixer --replace --no-map\"",
-    "lint:check": "stylelint \"**/*.scss\"",
-    "lint:fix": "stylelint \"**/*.scss\" --fix",
+    "lint:check": "stylelint \"**/*.scss\" --max-warnings=0",
+    "lint:fix": "stylelint \"**/*.scss\" --max-warnings=0 --fix",
     "prepublishOnly": "git-branch-is master && is-git-status-clean && npm run build",
     "prepack": "npm run build",
     "has-no-changes": "is-git-status-clean"
