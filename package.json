@@ -3,7 +3,7 @@
   "version": "2.1.0",
   "description": "Cooltipz.css is a pure CSS tooltip library that is lightweight, modern, accessible, customisable and easy to use",
   "scripts": {
-    "build": "npm run lint:fix && sass --no-source-map src/cooltipz.scss ./cooltipz.min.css --style=compressed && sass --no-source-map src/cooltipz.scss ./cooltipz.css --style=expanded && npx postcss cooltipz.min.css --use autoprefixer cssnano --replace --no-map && npx postcss cooltipz.css --use autoprefixer --replace --no-map",
+    "build": "npm run lint:fix && concurrently \"sass --no-source-map src/cooltipz.scss ./cooltipz.min.css --style=compressed\" \"sass --no-source-map src/cooltipz.scss ./cooltipz.css --style=expanded\" && concurrently \"npx postcss cooltipz.min.css --use autoprefixer cssnano --replace --no-map\" \"npx postcss cooltipz.css --use autoprefixer --replace --no-map\"",
     "lint:check": "stylelint \"**/*.scss\"",
     "lint:fix": "stylelint \"**/*.scss\" --fix",
     "prepublishOnly": "git-branch-is master && is-git-status-clean && npm run build",
@@ -50,6 +50,7 @@
   "style": "cooltipz.min.css",
   "devDependencies": {
     "autoprefixer": "^10.4.2",
+    "concurrently": "^7.0.0",
     "cssnano": "^5.0.15",
     "git-branch-is": "^4.0.0",
     "is-git-status-clean": "^1.0.0",
