@@ -26,18 +26,18 @@
   },
   "homepage": "https://cooltipz.jackdomleo.dev",
   "devDependencies": {
-    "autoprefixer": "^10.4.0",
-    "cssnano": "^5.0.10",
-    "http-server": "^14.0.0",
-    "postcss": "^8.3.11",
-    "postcss-cli": "^9.0.2",
-    "sass": "^1.43.4",
+    "autoprefixer": "^10.4.13",
+    "cssnano": "^5.1.14",
+    "http-server": "^14.1.1",
+    "postcss": "^8.4.21",
+    "postcss-cli": "^10.1.0",
+    "sass": "^1.57.1",
     "sitemap-generator-cli": "^7.5.0",
-    "stylelint": "^14.0.1",
-    "stylelint-config-standard-scss": "^2.0.1"
+    "stylelint": "^14.16.1",
+    "stylelint-config-standard-scss": "^6.1.0"
   },
   "dependencies": {
-    "cooltipz-css": "^2.1.0",
+    "cooltipz-css": "^2.1.1",
     "normalize.css": "^8.0.1"
   }
 }
