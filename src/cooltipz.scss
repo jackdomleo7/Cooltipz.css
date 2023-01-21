@@ -32,6 +32,7 @@
     @include size-small;
     @include size-medium;
     @include size-large;
+    @include size-custom;
 
     &[data-cooltipz-static],
     &.cooltipz--static {
