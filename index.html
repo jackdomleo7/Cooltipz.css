@@ -249,6 +249,13 @@
         <div class="language-markup"><pre><code class="language-markup">&lt;button aria-label="Tooltip message" data-cooltipz-dir="top" data-cooltipz-size="fit"&gt;...&lt;/button&gt;
 &lt;!-- OR --&gt;
 &lt;button aria-label="Tooltip message" class="cooltipz--top cooltipz--fit"&gt;...&lt;/button&gt;</code></pre></div>
+          <div class="size__examples" style="grid-template-columns: 1fr; justify-content: center; max-width: 10rem; margin-inline: auto;">
+            <button aria-label="Lorem ipsum dolor sit amet,&#xa;consectetur adipiscing elit,&#xa;sed do eiusmod tempor incididunt ut&#xa;labore et dolore magna aliqua." data-cooltipz-dir="top" data-cooltipz-size="custom">custom</button>
+          </div>
+          <p>Use <code class="code">data-cooltipz-dir="custom"</code> or <code class="code">class="cooltipz--custom"</code> if you want to manually implement new lines and have the width automatically adjust to the longest line. You can implement a newline with the <code class="code">&amp;#xa;</code> character.</p>
+          <div class="language-markup"><pre><code class="language-markup">&lt;button aria-label="Tooltip message&amp;#xa;with new line" data-cooltipz-dir="top" data-cooltipz-size="custom"&gt;...&lt;/button&gt;
+&lt;!-- OR --&gt;
+&lt;button aria-label="Tooltip message&amp;#xa;with new line" class="cooltipz--top cooltipz--custom"&gt;...&lt;/button&gt;</code></pre></div>
       </section>
       <hr/>
       <section id="no-animation">
