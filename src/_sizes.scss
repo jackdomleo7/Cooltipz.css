@@ -48,3 +48,13 @@
     }
   }
 }
+
+@mixin size-custom {
+  &[data-cooltipz-size="custom"],
+  &.cooltipz--custom {
+    &::after {
+      white-space: pre;
+      word-wrap: break-word;
+    }
+  }
+}

@@ -252,6 +252,10 @@
 [aria-label][data-cooltipz-dir][data-cooltipz-size=large]::after, [aria-label][data-cooltipz-dir].cooltipz--large::after, [aria-label][class*=cooltipz][data-cooltipz-size=large]::after, [aria-label][class*=cooltipz].cooltipz--large::after {
   width: var(--cooltipz-large, 18.75rem);
 }
+[aria-label][data-cooltipz-dir][data-cooltipz-size=custom]::after, [aria-label][data-cooltipz-dir].cooltipz--custom::after, [aria-label][class*=cooltipz][data-cooltipz-size=custom]::after, [aria-label][class*=cooltipz].cooltipz--custom::after {
+  white-space: pre;
+  word-wrap: break-word;
+}
 [aria-label][data-cooltipz-dir][data-cooltipz-static]::after, [aria-label][data-cooltipz-dir][data-cooltipz-static]::before, [aria-label][data-cooltipz-dir].cooltipz--static::after, [aria-label][data-cooltipz-dir].cooltipz--static::before, [aria-label][class*=cooltipz][data-cooltipz-static]::after, [aria-label][class*=cooltipz][data-cooltipz-static]::before, [aria-label][class*=cooltipz].cooltipz--static::after, [aria-label][class*=cooltipz].cooltipz--static::before {
   -webkit-transition: none;
   transition: none;
