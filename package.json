@@ -1,6 +1,6 @@
 {
   "name": "cooltipz-css",
-  "version": "2.2.1",
+  "version": "2.2.2",
   "description": "Cooltipz.css is a pure CSS tooltip library that is lightweight, modern, accessible, customisable and easy to use",
   "scripts": {
     "build": "npm run lint:fix && concurrently \"sass --no-source-map src/cooltipz.scss ./cooltipz.min.css --style=compressed\" \"sass --no-source-map src/cooltipz.scss ./cooltipz.css --style=expanded\" && concurrently \"npx postcss cooltipz.min.css --use autoprefixer cssnano --replace --no-map\" \"npx postcss cooltipz.css --use autoprefixer --replace --no-map\"",
@@ -49,15 +49,15 @@
   "main": "cooltipz.min.css",
   "style": "cooltipz.min.css",
   "devDependencies": {
-    "autoprefixer": "^10.4.13",
+    "autoprefixer": "^10.4.14",
     "concurrently": "^7.6.0",
-    "cssnano": "^5.1.14",
+    "cssnano": "^5.1.15",
     "git-branch-is": "^4.0.0",
     "is-git-status-clean": "^1.0.0",
     "postcss": "^8.4.21",
     "postcss-cli": "^10.1.0",
-    "sass": "^1.58.1",
-    "stylelint": "^15.1.0",
+    "sass": "^1.60.0",
+    "stylelint": "^15.3.0",
     "stylelint-config-standard-scss": "^7.0.1"
   },
   "peerDependencies": {
@@ -68,8 +68,8 @@
       "optional": true
     }
   },
+  "packageManager": "npm@9.6.2",
   "engines": {
-    "node": ">=14",
-    "npm": ">=9"
+    "node": ">=14"
   }
 }
