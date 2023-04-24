@@ -51,7 +51,7 @@
   "devDependencies": {
     "autoprefixer": "^10.4.14",
     "concurrently": "^7.6.0",
-    "cssnano": "^5.1.15",
+    "cssnano": "^6.0.0",
     "git-branch-is": "^4.0.0",
     "is-git-status-clean": "^1.0.0",
     "postcss": "^8.4.21",
