@@ -10,17 +10,19 @@ $cooltipz-y-direction-position: calc(100% - (var(--cooltipz-arrow-size, #{$coolt
   &.cooltipz--top {
     &::after {
       margin-bottom: $cooltipz-margin;
+      transform: translate(-50%, var(--cooltipz-slide, #{$cooltipz-slide}));
     }
 
     &::before {
       @extend %arrow-down;
+
+      transform: translate(calc(-50% + var(--cooltipz-arrow-offset, #{$cooltipz-arrow-offset})), var(--cooltipz-slide, #{$cooltipz-slide}));
     }
 
     &::after,
     &::before {
       bottom: $cooltipz-y-direction-position;
       left: 50%;
-      transform: translate(-50%, var(--cooltipz-slide, #{$cooltipz-slide}));
       transform-origin: top;
     }
 
@@ -28,8 +30,11 @@ $cooltipz-y-direction-position: calc(100% - (var(--cooltipz-arrow-size, #{$coolt
     &:focus,
     &[data-cooltipz-visible],
     &.cooltipz--visible {
-      &::after,
       &::before {
+        transform: translate(calc(-50% + var(--cooltipz-arrow-offset, #{$cooltipz-arrow-offset})), 0);
+      }
+
+      &::after {
         transform: translate(-50%, 0);
       }
     }
@@ -42,18 +47,19 @@ $cooltipz-y-direction-position: calc(100% - (var(--cooltipz-arrow-size, #{$coolt
     &::after {
       left: 0;
       margin-bottom: $cooltipz-margin;
+      transform: translate(0, var(--cooltipz-slide, #{$cooltipz-slide}));
     }
 
     &::before {
       @extend %arrow-down;
 
       left: $cooltipz-corner-direction-position;
+      transform: translate(var(--cooltipz-arrow-offset, #{$cooltipz-arrow-offset}), var(--cooltipz-slide, #{$cooltipz-slide}));
     }
 
     &::after,
     &::before {
       bottom: $cooltipz-y-direction-position;
-      transform: translate(0, var(--cooltipz-slide, #{$cooltipz-slide}));
       transform-origin: top;
     }
 
@@ -61,8 +67,11 @@ $cooltipz-y-direction-position: calc(100% - (var(--cooltipz-arrow-size, #{$coolt
     &:focus,
     &[data-cooltipz-visible],
     &.cooltipz--visible {
-      &::after,
       &::before {
+        transform: translate(var(--cooltipz-arrow-offset, #{$cooltipz-arrow-offset}), 0);
+      }
+
+      &::after {
         transform: translate(0);
       }
     }
@@ -75,18 +84,19 @@ $cooltipz-y-direction-position: calc(100% - (var(--cooltipz-arrow-size, #{$coolt
     &::after {
       margin-bottom: $cooltipz-margin;
       right: 0;
+      transform: translate(0, var(--cooltipz-slide, #{$cooltipz-slide}));
     }
 
     &::before {
       @extend %arrow-down;
 
       right: $cooltipz-corner-direction-position;
+      transform: translate(var(--cooltipz-arrow-offset, #{$cooltipz-arrow-offset}), var(--cooltipz-slide, #{$cooltipz-slide}));
     }
 
     &::after,
     &::before {
       bottom: $cooltipz-y-direction-position;
-      transform: translate(0, var(--cooltipz-slide, #{$cooltipz-slide}));
       transform-origin: top;
     }
 
@@ -94,8 +104,11 @@ $cooltipz-y-direction-position: calc(100% - (var(--cooltipz-arrow-size, #{$coolt
     &:focus,
     &[data-cooltipz-visible],
     &.cooltipz--visible {
-      &::after,
       &::before {
+        transform: translate(var(--cooltipz-arrow-offset, #{$cooltipz-arrow-offset}), 0);
+      }
+
+      &::after {
         transform: translate(0);
       }
     }
@@ -107,17 +120,19 @@ $cooltipz-y-direction-position: calc(100% - (var(--cooltipz-arrow-size, #{$coolt
   &.cooltipz--bottom {
     &::after {
       margin-top: $cooltipz-margin;
+      transform: translate(-50%, calc(var(--cooltipz-slide, #{$cooltipz-slide}) * -1));
     }
 
     &::before {
       @extend %arrow-up;
+
+      transform: translate(calc(-50% + var(--cooltipz-arrow-offset, #{$cooltipz-arrow-offset})), calc(var(--cooltipz-slide, #{$cooltipz-slide}) * -1));
     }
 
     &::after,
     &::before {
       left: 50%;
       top: $cooltipz-y-direction-position;
-      transform: translate(-50%, calc(var(--cooltipz-slide, #{$cooltipz-slide}) * -1));
       transform-origin: bottom;
     }
 
@@ -125,8 +140,11 @@ $cooltipz-y-direction-position: calc(100% - (var(--cooltipz-arrow-size, #{$coolt
     &:focus,
     &[data-cooltipz-visible],
     &.cooltipz--visible {
-      &::after,
       &::before {
+        transform: translate(calc(-50% + var(--cooltipz-arrow-offset, #{$cooltipz-arrow-offset})), 0);
+      }
+
+      &::after {
         transform: translate(-50%, 0);
       }
     }
@@ -139,18 +157,19 @@ $cooltipz-y-direction-position: calc(100% - (var(--cooltipz-arrow-size, #{$coolt
     &::after {
       left: 0;
       margin-top: $cooltipz-margin;
+      transform: translate(0, calc(var(--cooltipz-slide, #{$cooltipz-slide}) * -1));
     }
 
     &::before {
       @extend %arrow-up;
 
       left: $cooltipz-corner-direction-position;
+      transform: translate(var(--cooltipz-arrow-offset, #{$cooltipz-arrow-offset}), calc(var(--cooltipz-slide, #{$cooltipz-slide}) * -1));
     }
 
     &::after,
     &::before {
       top: $cooltipz-y-direction-position;
-      transform: translate(0, calc(var(--cooltipz-slide, #{$cooltipz-slide}) * -1));
       transform-origin: bottom;
     }
 
@@ -158,8 +177,11 @@ $cooltipz-y-direction-position: calc(100% - (var(--cooltipz-arrow-size, #{$coolt
     &:focus,
     &[data-cooltipz-visible],
     &.cooltipz--visible {
-      &::after,
       &::before {
+        transform: translate(var(--cooltipz-arrow-offset, #{$cooltipz-arrow-offset}), 0);
+      }
+
+      &::after {
         transform: translate(0);
       }
     }
@@ -172,18 +194,19 @@ $cooltipz-y-direction-position: calc(100% - (var(--cooltipz-arrow-size, #{$coolt
     &::after {
       margin-top: $cooltipz-margin;
       right: 0;
+      transform: translate(0, calc(var(--cooltipz-slide, #{$cooltipz-slide}) * -1));
     }
 
     &::before {
       @extend %arrow-up;
 
       right: $cooltipz-corner-direction-position;
+      transform: translate(var(--cooltipz-arrow-offset, #{$cooltipz-arrow-offset}), calc(var(--cooltipz-slide, #{$cooltipz-slide}) * -1));
     }
 
     &::after,
     &::before {
       top: $cooltipz-y-direction-position;
-      transform: translate(0, calc(var(--cooltipz-slide, #{$cooltipz-slide}) * -1));
       transform-origin: bottom;
     }
 
@@ -191,8 +214,11 @@ $cooltipz-y-direction-position: calc(100% - (var(--cooltipz-arrow-size, #{$coolt
     &:focus,
     &[data-cooltipz-visible],
     &.cooltipz--visible {
-      &::after,
       &::before {
+        transform: translate(var(--cooltipz-arrow-offset, #{$cooltipz-arrow-offset}), 0);
+      }
+
+      &::after {
         transform: translate(0);
       }
     }
@@ -204,17 +230,19 @@ $cooltipz-y-direction-position: calc(100% - (var(--cooltipz-arrow-size, #{$coolt
   &.cooltipz--left {
     &::after {
       margin-right: $cooltipz-margin;
+      transform: translate(var(--cooltipz-slide, #{$cooltipz-slide}), -50%);
     }
 
     &::before {
       @extend %arrow-right;
+
+      transform: translate(var(--cooltipz-slide, #{$cooltipz-slide}), calc(-50% + var(--cooltipz-arrow-offset, #{$cooltipz-arrow-offset})));
     }
 
     &::after,
     &::before {
       right: $cooltipz-y-direction-position;
       top: 50%;
-      transform: translate(var(--cooltipz-slide, #{$cooltipz-slide}), -50%);
       transform-origin: left;
     }
 
@@ -222,8 +250,11 @@ $cooltipz-y-direction-position: calc(100% - (var(--cooltipz-arrow-size, #{$coolt
     &:focus,
     &[data-cooltipz-visible],
     &.cooltipz--visible {
-      &::after,
       &::before {
+        transform: translate(0, calc(-50% + var(--cooltipz-arrow-offset, #{$cooltipz-arrow-offset})));
+      }
+
+      &::after {
         transform: translate(0, -50%);
       }
     }
@@ -235,17 +266,19 @@ $cooltipz-y-direction-position: calc(100% - (var(--cooltipz-arrow-size, #{$coolt
   &.cooltipz--right {
     &::after {
       margin-left: $cooltipz-margin;
+      transform: translate(calc(var(--cooltipz-slide, #{$cooltipz-slide}) * -1), -50%);
     }
 
     &::before {
       @extend %arrow-left;
+
+      transform: translate(calc(var(--cooltipz-slide, #{$cooltipz-slide}) * -1), calc(-50% + var(--cooltipz-arrow-offset, #{$cooltipz-arrow-offset})));
     }
 
     &::after,
     &::before {
       left: $cooltipz-y-direction-position;
       top: 50%;
-      transform: translate(calc(var(--cooltipz-slide, #{$cooltipz-slide}) * -1), -50%);
       transform-origin: right;
     }
 
@@ -253,8 +286,11 @@ $cooltipz-y-direction-position: calc(100% - (var(--cooltipz-arrow-size, #{$coolt
     &:focus,
     &[data-cooltipz-visible],
     &.cooltipz--visible {
-      &::after,
       &::before {
+        transform: translate(0, calc(-50% + var(--cooltipz-arrow-offset, #{$cooltipz-arrow-offset})));
+      }
+
+      &::after {
         transform: translate(0, -50%);
       }
     }

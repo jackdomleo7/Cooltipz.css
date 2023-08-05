@@ -1,6 +1,6 @@
 {
   "name": "cooltipz-css",
-  "version": "2.2.2",
+  "version": "2.3.0",
   "description": "Cooltipz.css is a pure CSS tooltip library that is lightweight, modern, accessible, customisable and easy to use",
   "scripts": {
     "build": "npm run lint:fix && concurrently \"sass --no-source-map src/cooltipz.scss ./cooltipz.min.css --style=compressed\" \"sass --no-source-map src/cooltipz.scss ./cooltipz.css --style=expanded\" && concurrently \"npx postcss cooltipz.min.css --use autoprefixer cssnano --replace --no-map\" \"npx postcss cooltipz.css --use autoprefixer --replace --no-map\"",
@@ -50,15 +50,15 @@
   "style": "cooltipz.min.css",
   "devDependencies": {
     "autoprefixer": "^10.4.14",
-    "concurrently": "^7.6.0",
-    "cssnano": "^5.1.15",
+    "concurrently": "^8.2.0",
+    "cssnano": "^6.0.1",
     "git-branch-is": "^4.0.0",
     "is-git-status-clean": "^1.0.0",
-    "postcss": "^8.4.21",
+    "postcss": "^8.4.27",
     "postcss-cli": "^10.1.0",
-    "sass": "^1.60.0",
-    "stylelint": "^15.3.0",
-    "stylelint-config-standard-scss": "^7.0.1"
+    "sass": "^1.64.2",
+    "stylelint": "^15.10.2",
+    "stylelint-config-standard-scss": "^10.0.0"
   },
   "peerDependencies": {
     "sass": "1.x"
