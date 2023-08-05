@@ -13,6 +13,8 @@ $cooltipz-small: 6.25rem !default;
 $cooltipz-medium: 12.5rem !default;
 $cooltipz-large: 18.75rem !default;
 $cooltipz-arrow-size: 0.3125rem !default;
+/* stylelint-disable-next-line length-zero-no-unit */
+$cooltipz-arrow-offset: 0px !default;
 $cooltipz-delay-show: 0s !default;
 $cooltipz-delay-hide: 0s !default;
 $cooltipz-attribute: "aria-label" !default;
