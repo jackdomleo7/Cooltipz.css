@@ -41,7 +41,7 @@ body {
   font-size: 0.875rem;
 }
 
-@media (min-width: 45.625em) {
+@media (width >= 45.625em) {
   body {
     font-size: 1rem;
   }
@@ -78,7 +78,7 @@ ol,
 ul {
   padding-left: 1.5rem;
 
-  @media (min-width: 48rem) {
+  @media (width >= 48rem) {
     padding-left: 2.5rem;
   }
 }

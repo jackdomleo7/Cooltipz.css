@@ -11,7 +11,7 @@ button {
   text-align: center;
   transition: 160ms box-shadow ease-in-out;
 
-  @media (min-width: 45.625em) {
+  @media (width >= 45.625em) {
     font-size: 1rem;
   }
 

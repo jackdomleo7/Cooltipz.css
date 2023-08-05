@@ -19,7 +19,7 @@
     width: 100%;
   }
 
-  @media (min-width: 800px) {
+  @media (width >= 800px) {
     flex-direction: row;
     justify-content: space-between;
 

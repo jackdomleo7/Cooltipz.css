@@ -20,11 +20,11 @@
     grid-template: auto auto auto auto / 1fr;
     margin: 2rem 0;
 
-    @media screen and (min-width: 36em) {
+    @media screen and (width >= 36em) {
       grid-template: auto auto / 1fr 1fr;
     }
 
-    @media screen and (min-width: 45em) {
+    @media screen and (width >= 45em) {
       grid-template: auto / 1fr 1fr 1fr 1fr;
     }
   }
