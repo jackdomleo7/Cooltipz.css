@@ -1,5 +1,5 @@
 window.onload = function() {
-  document.getElementById('copyright').innerHTML = '&copy;' + new Date().getFullYear() + ' Cooltipz.css';
+  document.getElementById('copyright').innerHTML = '&copy;2020-' + new Date().getFullYear() + ' Cooltipz.css';
 }
 
 function programmaticallyShowTooltip(elementToApplyTooltip) {
