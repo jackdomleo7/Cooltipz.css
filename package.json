@@ -49,15 +49,15 @@
   "main": "cooltipz.min.css",
   "style": "cooltipz.min.css",
   "devDependencies": {
-    "autoprefixer": "^10.4.14",
-    "concurrently": "^8.2.0",
-    "cssnano": "^6.0.1",
+    "autoprefixer": "^10.4.20",
+    "concurrently": "^8.2.2",
+    "cssnano": "^6.1.2",
     "git-branch-is": "^4.0.0",
     "is-git-status-clean": "^1.0.0",
-    "postcss": "^8.4.27",
+    "postcss": "^8.4.49",
     "postcss-cli": "^10.1.0",
-    "sass": "^1.64.2",
-    "stylelint": "^15.10.2",
+    "sass": "^1.82.0",
+    "stylelint": "^15.11.0",
     "stylelint-config-standard-scss": "^10.0.0"
   },
   "peerDependencies": {
@@ -68,7 +68,7 @@
       "optional": true
     }
   },
-  "packageManager": "npm@9.6.2",
+  "packageManager": "npm@9.9.4",
   "engines": {
     "node": ">=14"
   }
