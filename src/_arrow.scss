@@ -6,6 +6,10 @@ $cooltipz-arrow-shadow-fade: 1px $cooltipz-shadow-color;
   border: var(--cooltipz-arrow-size, #{$cooltipz-arrow-size}) solid transparent;
   height: 0;
   width: 0;
+
+  @media(forced-colors: active) {
+    border-color: Canvas;
+  }
 }
 
 %arrow-down {
@@ -13,6 +17,10 @@ $cooltipz-arrow-shadow-fade: 1px $cooltipz-shadow-color;
 
   border-top-color: var(--cooltipz-border-color, #{$cooltipz-border-color});
   filter: drop-shadow(0 1px $cooltipz-arrow-shadow-fade);
+
+  @media(forced-colors: active) {
+    border-top-color: CanvasText;
+  }
 }
 
 %arrow-up {
@@ -20,6 +28,10 @@ $cooltipz-arrow-shadow-fade: 1px $cooltipz-shadow-color;
 
   border-bottom-color: var(--cooltipz-border-color, #{$cooltipz-border-color});
   filter: drop-shadow(0 -1px $cooltipz-arrow-shadow-fade);
+
+  @media(forced-colors: active) {
+    border-bottom-color: CanvasText;
+  }
 }
 
 %arrow-left {
@@ -27,6 +39,10 @@ $cooltipz-arrow-shadow-fade: 1px $cooltipz-shadow-color;
 
   border-right-color: var(--cooltipz-border-color, #{$cooltipz-border-color});
   filter: drop-shadow(-1px 0 $cooltipz-arrow-shadow-fade);
+
+  @media(forced-colors: active) {
+    border-right-color: CanvasText;
+  }
 }
 
 %arrow-right {
@@ -34,4 +50,8 @@ $cooltipz-arrow-shadow-fade: 1px $cooltipz-shadow-color;
 
   border-left-color: var(--cooltipz-border-color, #{$cooltipz-border-color});
   filter: drop-shadow(1px 0 $cooltipz-arrow-shadow-fade);
+
+  @media(forced-colors: active) {
+    border-left-color: CanvasText;
+  }
 }
