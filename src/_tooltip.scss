@@ -40,13 +40,13 @@
 
   &::after,
   &::before {
-    @include base-animations;
-
     box-sizing: border-box;
     opacity: 0;
     pointer-events: none;
     position: absolute;
     transition-delay: var(--cooltipz-delay-hide, #{$cooltipz-delay-hide});
+
+    @include base-animations;
   }
 
   &:hover,

@@ -120,8 +120,6 @@
   z-index: 11;
 }
 [aria-label][data-cooltipz-dir]::after, [aria-label][data-cooltipz-dir]::before, [aria-label][class*=cooltipz]::after, [aria-label][class*=cooltipz]::before {
-  -webkit-transition: all var(--cooltipz-timing, 120ms) ease-out var(--cooltipz-timing, 120ms);
-  transition: all var(--cooltipz-timing, 120ms) ease-out var(--cooltipz-timing, 120ms);
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   opacity: 0;
@@ -129,6 +127,8 @@
   position: absolute;
   -webkit-transition-delay: var(--cooltipz-delay-hide, 0s);
           transition-delay: var(--cooltipz-delay-hide, 0s);
+  -webkit-transition: all var(--cooltipz-timing, 120ms) ease-out var(--cooltipz-timing, 120ms);
+  transition: all var(--cooltipz-timing, 120ms) ease-out var(--cooltipz-timing, 120ms);
 }
 @media (prefers-reduced-motion: reduce) {
   [aria-label][data-cooltipz-dir]::after, [aria-label][data-cooltipz-dir]::before, [aria-label][class*=cooltipz]::after, [aria-label][class*=cooltipz]::before {
