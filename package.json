@@ -68,7 +68,6 @@
       "optional": true
     }
   },
-  "packageManager": "npm@9.9.4",
   "engines": {
     "node": ">=14"
   }
