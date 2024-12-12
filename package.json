@@ -57,8 +57,8 @@
     "postcss": "^8.4.49",
     "postcss-cli": "^11.0.0",
     "sass": "^1.82.0",
-    "stylelint": "^15.11.0",
-    "stylelint-config-standard-scss": "^10.0.0"
+    "stylelint": "^16.11.0",
+    "stylelint-config-standard-scss": "^14.0.0"
   },
   "peerDependencies": {
     "sass": "1.x"
