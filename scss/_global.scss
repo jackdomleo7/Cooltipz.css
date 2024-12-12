@@ -15,8 +15,7 @@ html {
   box-sizing: border-box;
   font-family: sans-serif;
   height: 100vh;
-  overflow-x: hidden;
-  overflow-y: auto;
+  overflow: hidden auto;
   scroll-behavior: smooth;
   scroll-padding-top: 2rem;
   width: 100vw;
