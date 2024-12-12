@@ -9,6 +9,7 @@ $cooltipz-arrow-shadow-fade: 1px $cooltipz-shadow-color;
 
   @media(forced-colors: active) {
     border-color: Canvas;
+    filter: none !important;
   }
 }
 
