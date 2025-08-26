@@ -25,6 +25,7 @@ title: '[BUG]: <title>'
   Provide screenshots if applicable.
 -->
 Cooltipz.css version:
+Cooltipz.css stylesheet: main | data-attrs | classes
 
 ## What is the expected result?
 

@@ -5,8 +5,10 @@
 @use "./tooltip" as *;
 @use "./animations" as *;
 @use "./arrow" as *;
-@use "./directions" as *;
-@use "./sizes" as *;
+@use "./directions-data-attrs" as data-dirs;
+@use "./directions-classes" as class-dirs;
+@use "./sizes-data-attrs" as data-sizes;
+@use "./sizes-classes" as class-sizes;
 
 /*
 ::before = arrow
@@ -19,20 +21,35 @@
     // Default
     @include tooltip;
 
-    // Modifiers
-    @include dir-top;
-    @include dir-top-left;
-    @include dir-top-right;
-    @include dir-bottom;
-    @include dir-bottom-left;
-    @include dir-bottom-right;
-    @include dir-left;
-    @include dir-right;
-    @include size-fit;
-    @include size-small;
-    @include size-medium;
-    @include size-large;
-    @include size-custom;
+    // Modifiers - Data attributes
+    @include data-dirs.dir-top;
+    @include data-dirs.dir-top-left;
+    @include data-dirs.dir-top-right;
+    @include data-dirs.dir-bottom;
+    @include data-dirs.dir-bottom-left;
+    @include data-dirs.dir-bottom-right;
+    @include data-dirs.dir-left;
+    @include data-dirs.dir-right;
+    @include data-sizes.size-fit;
+    @include data-sizes.size-small;
+    @include data-sizes.size-medium;
+    @include data-sizes.size-large;
+    @include data-sizes.size-custom;
+
+    // Modifiers - Classes
+    @include class-dirs.dir-top;
+    @include class-dirs.dir-top-left;
+    @include class-dirs.dir-top-right;
+    @include class-dirs.dir-bottom;
+    @include class-dirs.dir-bottom-left;
+    @include class-dirs.dir-bottom-right;
+    @include class-dirs.dir-left;
+    @include class-dirs.dir-right;
+    @include class-sizes.size-fit;
+    @include class-sizes.size-small;
+    @include class-sizes.size-medium;
+    @include class-sizes.size-large;
+    @include class-sizes.size-custom;
 
     &[data-cooltipz-static],
     &.cooltipz--static {

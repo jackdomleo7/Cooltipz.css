@@ -1,0 +1,6 @@
+@use "./tooltip-base" as *;
+
+@mixin tooltip {
+  @include tooltip-base;
+  @include tooltip-hover-classes;
+}

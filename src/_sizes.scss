@@ -1,60 +1,36 @@
-@use "./variables/scss" as *;
-
-%sizes-common {
-  white-space: normal;
-  word-wrap: break-word;
-}
+@use "./sizes-base" as *;
 
 @mixin size-fit {
   &[data-cooltipz-size="fit"],
   &.cooltipz--fit {
-    &::after {
-      @extend %sizes-common;
-
-      width: 100%;
-    }
+    @include size-fit-base;
   }
 }
 
 @mixin size-small {
   &[data-cooltipz-size="small"],
   &.cooltipz--small {
-    &::after {
-      @extend %sizes-common;
-
-      width: var(--cooltipz-small, #{$cooltipz-small});
-    }
+    @include size-small-base;
   }
 }
 
 @mixin size-medium {
   &[data-cooltipz-size="medium"],
   &.cooltipz--medium {
-    &::after {
-      @extend %sizes-common;
-
-      width: var(--cooltipz-medium, #{$cooltipz-medium});
-    }
+    @include size-medium-base;
   }
 }
 
 @mixin size-large {
   &[data-cooltipz-size="large"],
   &.cooltipz--large {
-    &::after {
-      @extend %sizes-common;
-
-      width: var(--cooltipz-large, #{$cooltipz-large});
-    }
+    @include size-large-base;
   }
 }
 
 @mixin size-custom {
   &[data-cooltipz-size="custom"],
   &.cooltipz--custom {
-    &::after {
-      white-space: pre;
-      word-wrap: break-word;
-    }
+    @include size-custom-base;
   }
 }

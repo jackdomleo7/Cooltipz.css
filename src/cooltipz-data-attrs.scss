@@ -1,0 +1,53 @@
+@use "./license";
+@forward "./variables/scss";
+@use "./variables/scss" as variables;
+@use "./variables/css" as *;
+@use "./tooltip-data-attrs" as *;
+@use "./animations" as *;
+@use "./arrow" as *;
+@use "./directions-data-attrs" as *;
+@use "./sizes-data-attrs" as *;
+
+/*
+::before = arrow
+::after = tooltip box and content
+*/
+
+[#{variables.$cooltipz-attribute}] { // Required
+  &[data-cooltipz-dir] { // Required
+    // Default
+    @include tooltip;
+
+    // Modifiers
+    @include dir-top;
+    @include dir-top-left;
+    @include dir-top-right;
+    @include dir-bottom;
+    @include dir-bottom-left;
+    @include dir-bottom-right;
+    @include dir-left;
+    @include dir-right;
+    @include size-fit;
+    @include size-small;
+    @include size-medium;
+    @include size-large;
+    @include size-custom;
+
+    &[data-cooltipz-static] {
+      &::after,
+      &::before {
+        @include no-animations;
+      }
+    }
+  }
+}
+
+// Do not show tooltip if attribute is empty
+[#{variables.$cooltipz-attribute}=""] {
+  &[data-cooltipz-dir] {
+    &::before,
+    &::after {
+      display: none;
+    }
+  }
+}

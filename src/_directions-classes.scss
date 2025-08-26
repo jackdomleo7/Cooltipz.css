@@ -1,0 +1,57 @@
+@use "./directions-base" as *;
+
+@mixin dir-top {
+  &.cooltipz--top {
+    @include direction-top-base;
+    @include direction-top-hover-classes;
+  }
+}
+
+@mixin dir-top-left {
+  &.cooltipz--top-left {
+    @include direction-top-left-base;
+    @include direction-top-left-hover-classes;
+  }
+}
+
+@mixin dir-top-right {
+  &.cooltipz--top-right {
+    @include direction-top-right-base;
+    @include direction-top-right-hover-classes;
+  }
+}
+
+@mixin dir-bottom {
+  &.cooltipz--bottom {
+    @include direction-bottom-base;
+    @include direction-bottom-hover-classes;
+  }
+}
+
+@mixin dir-bottom-left {
+  &.cooltipz--bottom-left {
+    @include direction-bottom-left-base;
+    @include direction-bottom-left-hover-classes;
+  }
+}
+
+@mixin dir-bottom-right {
+  &.cooltipz--bottom-right {
+    @include direction-bottom-right-base;
+    @include direction-bottom-right-hover-classes;
+  }
+}
+
+@mixin dir-left {
+  &.cooltipz--left {
+    @include direction-left-base;
+    @include direction-left-hover-classes;
+  }
+}
+
+@mixin dir-right {
+  &.cooltipz--right {
+    @include direction-right-base;
+    @include direction-right-hover-classes;
+  }
+}

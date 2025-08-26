@@ -1,62 +1,21 @@
-@use "./variables/scss" as *;
-@use "./animations" as *;
+@use "./tooltip-base" as *;
 
+@mixin tooltip-combined {
+  @include tooltip-base;
+  @include tooltip-hover-combined;
+}
+
+@mixin tooltip-data-attrs {
+  @include tooltip-base;
+  @include tooltip-hover-data-attrs;
+}
+
+@mixin tooltip-classes {
+  @include tooltip-base;
+  @include tooltip-hover-classes;
+}
+
+// Keep the original for backward compatibility
 @mixin tooltip {
-  cursor: var(--cooltipz-cursor, #{$cooltipz-cursor});
-  position: relative;
-
-  &::after {
-    background-color: var(--cooltipz-bg-color, #{$cooltipz-bg-color});
-    border-radius: var(--cooltipz-border-radius, #{$cooltipz-border-radius});
-    border:
-      var(--cooltipz-border-width, #{$cooltipz-border-width})
-      var(--cooltipz-border-style, #{$cooltipz-border-style})
-      var(--cooltipz-border-color, #{$cooltipz-border-color});
-    box-shadow: 0 0 0.1875rem $cooltipz-shadow-color;
-    color: var(--cooltipz-text-color, #{$cooltipz-text-color});
-    content: attr(#{$cooltipz-attribute});
-    font-family: var(--cooltipz-font-family, #{$cooltipz-font-family});
-    font-size: var(--cooltipz-font-size, #{$cooltipz-font-size});
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    font-style: normal;
-    font-weight: 400;
-    padding: 0.5em 1em;
-    text-indent: 0;
-    text-shadow: none;
-    white-space: nowrap;
-    z-index: 10;
-
-    @media(forced-colors: active) {
-      border: 1px solid CanvasText;
-      color: CanvasText;
-    }
-  }
-
-  &::before {
-    content: "";
-    z-index: 11;
-  }
-
-  &::after,
-  &::before {
-    box-sizing: border-box;
-    opacity: 0;
-    pointer-events: none;
-    position: absolute;
-    transition-delay: var(--cooltipz-delay-hide, #{$cooltipz-delay-hide});
-
-    @include base-animations;
-  }
-
-  &:hover,
-  &:focus,
-  &[data-cooltipz-visible],
-  &.cooltipz--visible {
-    &::before,
-    &::after {
-      opacity: 1;
-      transition-delay: var(--cooltipz-delay-show, #{$cooltipz-delay-show});
-    }
-  }
+  @include tooltip-combined;
 }
