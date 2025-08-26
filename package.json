@@ -1,6 +1,6 @@
 {
   "name": "cooltipz-css",
-  "version": "2.3.1",
+  "version": "2.4.0",
   "description": "Cooltipz.css is a pure CSS tooltip library that is lightweight, modern, accessible, customisable and easy to use",
   "scripts": {
     "build": "npm run lint:fix && concurrently \"npm run build:combined\" \"npm run build:data-attrs\" \"npm run build:classes\"",
