@@ -116,6 +116,15 @@
           <li>(Optional) Add any modifiers and/or <a href="#customise" class="link">customise</a> your own tooltip</li>
         </ol>
         <p>Depending on your preference, you can choose to use classes or <code class="code">data-</code> attributes.</p>
+        
+        <h4>Choose Your Version</h4>
+        <p>Cooltipz.css is available in three optimized versions:</p>
+        <ul>
+          <li><strong>Combined Version</strong> - Support for both classes and data attributes</li>
+          <li><strong>Data Attributes Only</strong> - Lightweight version with only <code class="code">data-</code> attributes</li>
+          <li><strong>Classes Only</strong> - Lightweight version with only class selectors</li>
+        </ul>
+        <p><em>Choose the specialized version that matches your preferred approach for ~40% smaller file size!</em></p>
       </section>
       <hr/>
       <section id="usage">
@@ -129,14 +138,38 @@
         </h3>
         <h4>CDN</h4>
         <img alt="jsDelivr hits (npm)" src="https://img.shields.io/jsdelivr/npm/hm/cooltipz-css?label=jsDelivr%20hits&logo=jsdelivr&style=social" loading="lazy">
+        
+        <p><strong>Cooltipz.css is available in three versions:</strong></p>
+        <ul>
+          <li><strong>Combined</strong> - Full version supporting both data attributes and classes</li>
+          <li><strong>Data attributes only</strong> - Lighter version (~40% smaller) for data-attribute usage only</li>
+          <li><strong>Classes only</strong> - Lighter version (~40% smaller) for class-based usage only</li>
+        </ul>
+        
         <p>In the below CDN links:</p>
         <ul>
           <li>Replace <code class="code">:version</code> with a version <a href="https://www.npmjs.com/package/cooltipz-css?activeTab=versions" rel="nofollow" target="_blank" class="link">listed here</a> (latest version is always recommended). If you always want to get the latest stylesheet, remove <code class="code">@:version</code> completely (Not recommended).</li>
           <li>
-            Replace <code class="code">:file</code> with one of the below
+            Replace <code class="code">:file</code> with one of the below:
             <ul>
-              <li><code class="code">cooltipz.css</code> <small>(Expanded stylesheet)</small></li>
-              <li><code class="code">cooltipz.min.css</code> <small>(Minified stylesheet)</small></li>
+              <li><strong>Combined (full functionality):</strong>
+                <ul>
+                  <li><code class="code">cooltipz.css</code> <small>(Expanded stylesheet)</small></li>
+                  <li><code class="code">cooltipz.min.css</code> <small>(Minified stylesheet)</small></li>
+                </ul>
+              </li>
+              <li><strong>Data attributes only (smaller bundle):</strong>
+                <ul>
+                  <li><code class="code">cooltipz-data-attrs.css</code> <small>(Expanded stylesheet)</small></li>
+                  <li><code class="code">cooltipz-data-attrs.min.css</code> <small>(Minified stylesheet)</small></li>
+                </ul>
+              </li>
+              <li><strong>Classes only (smaller bundle):</strong>
+                <ul>
+                  <li><code class="code">cooltipz-classes.css</code> <small>(Expanded stylesheet)</small></li>
+                  <li><code class="code">cooltipz-classes.min.css</code> <small>(Minified stylesheet)</small></li>
+                </ul>
+              </li>
             </ul>
           </li>
           <li>Then import via HTML or CSS</li>
@@ -166,10 +199,22 @@
         </div>
         <p><em>Or</em>, import the SCSS or CSS into your Sass/SCSS</p>
         <p>In the below imports, replace <code class="code">:file</code> with one of the options below:</p>
+        
+        <p><strong>SCSS source files:</strong></p>
         <ul>
-          <li><code class="code">src/cooltipz</code> <small>(.scss file)</small></li>
-          <li><code class="code">cooltipz.css</code> <small>(Expanded .css)</small></li>
-          <li><code class="code">cooltipz.min.css</code> <small>(Minified .css)</small></li>
+          <li><code class="code">src/cooltipz</code> <small>(.scss file - combined version)</small></li>
+          <li><code class="code">src/cooltipz-data-attrs</code> <small>(.scss file - data attributes only)</small></li>
+          <li><code class="code">src/cooltipz-classes</code> <small>(.scss file - classes only)</small></li>
+        </ul>
+        
+        <p><strong>Compiled CSS files:</strong></p>
+        <ul>
+          <li><code class="code">cooltipz.css</code> <small>(Expanded .css - combined version)</small></li>
+          <li><code class="code">cooltipz.min.css</code> <small>(Minified .css - combined version)</small></li>
+          <li><code class="code">cooltipz-data-attrs.css</code> <small>(Expanded .css - data attributes only)</small></li>
+          <li><code class="code">cooltipz-data-attrs.min.css</code> <small>(Minified .css - data attributes only)</small></li>
+          <li><code class="code">cooltipz-classes.css</code> <small>(Expanded .css - classes only)</small></li>
+          <li><code class="code">cooltipz-classes.min.css</code> <small>(Minified .css - classes only)</small></li>
         </ul>
         <div class="example example--stack">
           <div class="language-sass"><pre><code class="language-css">/* Webpack */
