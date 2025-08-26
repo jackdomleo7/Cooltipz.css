@@ -1,0 +1,396 @@
+@use "./variables/scss" as *;
+@use "./arrow" as *;
+
+$cooltipz-margin: calc(var(--cooltipz-arrow-size, #{$cooltipz-arrow-size}) * 2);
+$cooltipz-corner-direction-position: calc(var(--cooltipz-arrow-size, #{$cooltipz-arrow-size}) / 2);
+$cooltipz-y-direction-position: calc(100% - (var(--cooltipz-arrow-size, #{$cooltipz-arrow-size}) / 2));
+
+// Base direction styles (shared positioning and transforms)
+@mixin direction-top-base {
+  &::after {
+    margin-bottom: $cooltipz-margin;
+    transform: translate(-50%, var(--cooltipz-slide, #{$cooltipz-slide}));
+  }
+
+  &::before {
+    @extend %arrow-down;
+
+    transform: translate(calc(-50% + var(--cooltipz-arrow-offset, #{$cooltipz-arrow-offset})), var(--cooltipz-slide, #{$cooltipz-slide}));
+  }
+
+  &::after,
+  &::before {
+    bottom: $cooltipz-y-direction-position;
+    left: 50%;
+    transform-origin: top;
+  }
+}
+
+@mixin direction-top-hover-base {
+  &:hover,
+  &:focus,
+  &[data-cooltipz-visible] {
+    &::before {
+      transform: translate(calc(-50% + var(--cooltipz-arrow-offset, #{$cooltipz-arrow-offset})), 0);
+    }
+
+    &::after {
+      transform: translate(-50%, 0);
+    }
+  }
+}
+
+@mixin direction-top-left-base {
+  &::after {
+    left: 0;
+    margin-bottom: $cooltipz-margin;
+    transform: translate(0, var(--cooltipz-slide, #{$cooltipz-slide}));
+  }
+
+  &::before {
+    @extend %arrow-down;
+
+    left: $cooltipz-corner-direction-position;
+    transform: translate(calc(-50% + var(--cooltipz-arrow-offset, #{$cooltipz-arrow-offset})), var(--cooltipz-slide, #{$cooltipz-slide}));
+  }
+
+  &::after,
+  &::before {
+    bottom: $cooltipz-y-direction-position;
+    transform-origin: top;
+  }
+}
+
+@mixin direction-top-left-hover-base {
+  &:hover,
+  &:focus,
+  &[data-cooltipz-visible] {
+    &::before {
+      transform: translate(calc(-50% + var(--cooltipz-arrow-offset, #{$cooltipz-arrow-offset})), 0);
+    }
+
+    &::after {
+      transform: translate(0, 0);
+    }
+  }
+}
+
+@mixin direction-top-right-base {
+  &::after {
+    margin-bottom: $cooltipz-margin;
+    right: 0;
+    transform: translate(0, var(--cooltipz-slide, #{$cooltipz-slide}));
+  }
+
+  &::before {
+    @extend %arrow-down;
+
+    right: $cooltipz-corner-direction-position;
+    transform: translate(calc(50% + var(--cooltipz-arrow-offset, #{$cooltipz-arrow-offset})), var(--cooltipz-slide, #{$cooltipz-slide}));
+  }
+
+  &::after,
+  &::before {
+    bottom: $cooltipz-y-direction-position;
+    transform-origin: top;
+  }
+}
+
+@mixin direction-top-right-hover-base {
+  &:hover,
+  &:focus,
+  &[data-cooltipz-visible] {
+    &::before {
+      transform: translate(calc(50% + var(--cooltipz-arrow-offset, #{$cooltipz-arrow-offset})), 0);
+    }
+
+    &::after {
+      transform: translate(0, 0);
+    }
+  }
+}
+
+@mixin direction-bottom-base {
+  &::after {
+    margin-top: $cooltipz-margin;
+    transform: translate(-50%, calc(var(--cooltipz-slide, #{$cooltipz-slide}) * -1));
+  }
+
+  &::before {
+    @extend %arrow-up;
+
+    transform: translate(calc(-50% + var(--cooltipz-arrow-offset, #{$cooltipz-arrow-offset})), calc(var(--cooltipz-slide, #{$cooltipz-slide}) * -1));
+  }
+
+  &::after,
+  &::before {
+    left: 50%;
+    top: $cooltipz-y-direction-position;
+    transform-origin: bottom;
+  }
+}
+
+@mixin direction-bottom-hover-base {
+  &:hover,
+  &:focus,
+  &[data-cooltipz-visible] {
+    &::before {
+      transform: translate(calc(-50% + var(--cooltipz-arrow-offset, #{$cooltipz-arrow-offset})), 0);
+    }
+
+    &::after {
+      transform: translate(-50%, 0);
+    }
+  }
+}
+
+@mixin direction-bottom-left-base {
+  &::after {
+    left: 0;
+    margin-top: $cooltipz-margin;
+    transform: translate(0, calc(var(--cooltipz-slide, #{$cooltipz-slide}) * -1));
+  }
+
+  &::before {
+    @extend %arrow-up;
+
+    left: $cooltipz-corner-direction-position;
+    transform: translate(calc(-50% + var(--cooltipz-arrow-offset, #{$cooltipz-arrow-offset})), calc(var(--cooltipz-slide, #{$cooltipz-slide}) * -1));
+  }
+
+  &::after,
+  &::before {
+    top: $cooltipz-y-direction-position;
+    transform-origin: bottom;
+  }
+}
+
+@mixin direction-bottom-left-hover-base {
+  &:hover,
+  &:focus,
+  &[data-cooltipz-visible] {
+    &::before {
+      transform: translate(calc(-50% + var(--cooltipz-arrow-offset, #{$cooltipz-arrow-offset})), 0);
+    }
+
+    &::after {
+      transform: translate(0, 0);
+    }
+  }
+}
+
+@mixin direction-bottom-right-base {
+  &::after {
+    margin-top: $cooltipz-margin;
+    right: 0;
+    transform: translate(0, calc(var(--cooltipz-slide, #{$cooltipz-slide}) * -1));
+  }
+
+  &::before {
+    @extend %arrow-up;
+
+    right: $cooltipz-corner-direction-position;
+    transform: translate(calc(50% + var(--cooltipz-arrow-offset, #{$cooltipz-arrow-offset})), calc(var(--cooltipz-slide, #{$cooltipz-slide}) * -1));
+  }
+
+  &::after,
+  &::before {
+    top: $cooltipz-y-direction-position;
+    transform-origin: bottom;
+  }
+}
+
+@mixin direction-bottom-right-hover-base {
+  &:hover,
+  &:focus,
+  &[data-cooltipz-visible] {
+    &::before {
+      transform: translate(calc(50% + var(--cooltipz-arrow-offset, #{$cooltipz-arrow-offset})), 0);
+    }
+
+    &::after {
+      transform: translate(0, 0);
+    }
+  }
+}
+
+@mixin direction-left-base {
+  &::after {
+    margin-right: $cooltipz-margin;
+    transform: translate(var(--cooltipz-slide, #{$cooltipz-slide}), -50%);
+  }
+
+  &::before {
+    @extend %arrow-right;
+
+    transform: translate(var(--cooltipz-slide, #{$cooltipz-slide}), calc(-50% + var(--cooltipz-arrow-offset, #{$cooltipz-arrow-offset})));
+  }
+
+  &::after,
+  &::before {
+    right: $cooltipz-y-direction-position;
+    top: 50%;
+    transform-origin: left;
+  }
+}
+
+@mixin direction-left-hover-base {
+  &:hover,
+  &:focus,
+  &[data-cooltipz-visible] {
+    &::before {
+      transform: translate(0, calc(-50% + var(--cooltipz-arrow-offset, #{$cooltipz-arrow-offset})));
+    }
+
+    &::after {
+      transform: translate(0, -50%);
+    }
+  }
+}
+
+@mixin direction-right-base {
+  &::after {
+    margin-left: $cooltipz-margin;
+    transform: translate(calc(var(--cooltipz-slide, #{$cooltipz-slide}) * -1), -50%);
+  }
+
+  &::before {
+    @extend %arrow-left;
+
+    transform: translate(calc(var(--cooltipz-slide, #{$cooltipz-slide}) * -1), calc(-50% + var(--cooltipz-arrow-offset, #{$cooltipz-arrow-offset})));
+  }
+
+  &::after,
+  &::before {
+    left: $cooltipz-y-direction-position;
+    top: 50%;
+    transform-origin: right;
+  }
+}
+
+@mixin direction-right-hover-base {
+  &:hover,
+  &:focus,
+  &[data-cooltipz-visible] {
+    &::before {
+      transform: translate(0, calc(-50% + var(--cooltipz-arrow-offset, #{$cooltipz-arrow-offset})));
+    }
+
+    &::after {
+      transform: translate(0, -50%);
+    }
+  }
+}
+
+// Classes-specific hover states (using .cooltipz--visible instead of [data-cooltipz-visible])
+@mixin direction-top-hover-classes {
+  &:hover,
+  &:focus,
+  &.cooltipz--visible {
+    &::before {
+      transform: translate(calc(-50% + var(--cooltipz-arrow-offset, #{$cooltipz-arrow-offset})), 0);
+    }
+
+    &::after {
+      transform: translate(-50%, 0);
+    }
+  }
+}
+
+@mixin direction-top-left-hover-classes {
+  &:hover,
+  &:focus,
+  &.cooltipz--visible {
+    &::before {
+      transform: translate(calc(-50% + var(--cooltipz-arrow-offset, #{$cooltipz-arrow-offset})), 0);
+    }
+
+    &::after {
+      transform: translate(0, 0);
+    }
+  }
+}
+
+@mixin direction-top-right-hover-classes {
+  &:hover,
+  &:focus,
+  &.cooltipz--visible {
+    &::before {
+      transform: translate(calc(50% + var(--cooltipz-arrow-offset, #{$cooltipz-arrow-offset})), 0);
+    }
+
+    &::after {
+      transform: translate(0, 0);
+    }
+  }
+}
+
+@mixin direction-bottom-hover-classes {
+  &:hover,
+  &:focus,
+  &.cooltipz--visible {
+    &::before {
+      transform: translate(calc(-50% + var(--cooltipz-arrow-offset, #{$cooltipz-arrow-offset})), 0);
+    }
+
+    &::after {
+      transform: translate(-50%, 0);
+    }
+  }
+}
+
+@mixin direction-bottom-left-hover-classes {
+  &:hover,
+  &:focus,
+  &.cooltipz--visible {
+    &::before {
+      transform: translate(calc(-50% + var(--cooltipz-arrow-offset, #{$cooltipz-arrow-offset})), 0);
+    }
+
+    &::after {
+      transform: translate(0, 0);
+    }
+  }
+}
+
+@mixin direction-bottom-right-hover-classes {
+  &:hover,
+  &:focus,
+  &.cooltipz--visible {
+    &::before {
+      transform: translate(calc(50% + var(--cooltipz-arrow-offset, #{$cooltipz-arrow-offset})), 0);
+    }
+
+    &::after {
+      transform: translate(0, 0);
+    }
+  }
+}
+
+@mixin direction-left-hover-classes {
+  &:hover,
+  &:focus,
+  &.cooltipz--visible {
+    &::before {
+      transform: translate(0, calc(-50% + var(--cooltipz-arrow-offset, #{$cooltipz-arrow-offset})));
+    }
+
+    &::after {
+      transform: translate(0, -50%);
+    }
+  }
+}
+
+@mixin direction-right-hover-classes {
+  &:hover,
+  &:focus,
+  &.cooltipz--visible {
+    &::before {
+      transform: translate(0, calc(-50% + var(--cooltipz-arrow-offset, #{$cooltipz-arrow-offset})));
+    }
+
+    &::after {
+      transform: translate(0, -50%);
+    }
+  }
+}

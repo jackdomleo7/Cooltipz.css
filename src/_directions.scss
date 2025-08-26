@@ -1,298 +1,73 @@
-@use "./variables/scss" as *;
-@use "./arrow" as *;
-
-$cooltipz-margin: calc(var(--cooltipz-arrow-size, #{$cooltipz-arrow-size}) * 2);
-$cooltipz-corner-direction-position: calc(var(--cooltipz-arrow-size, #{$cooltipz-arrow-size}) / 2);
-$cooltipz-y-direction-position: calc(100% - (var(--cooltipz-arrow-size, #{$cooltipz-arrow-size}) / 2));
+@use "./directions-base" as *;
 
 @mixin dir-top {
   &[data-cooltipz-dir="top"],
   &.cooltipz--top {
-    &::after {
-      margin-bottom: $cooltipz-margin;
-      transform: translate(-50%, var(--cooltipz-slide, #{$cooltipz-slide}));
-    }
-
-    &::before {
-      @extend %arrow-down;
-
-      transform: translate(calc(-50% + var(--cooltipz-arrow-offset, #{$cooltipz-arrow-offset})), var(--cooltipz-slide, #{$cooltipz-slide}));
-    }
-
-    &::after,
-    &::before {
-      bottom: $cooltipz-y-direction-position;
-      left: 50%;
-      transform-origin: top;
-    }
-
-    &:hover,
-    &:focus,
-    &[data-cooltipz-visible],
-    &.cooltipz--visible {
-      &::before {
-        transform: translate(calc(-50% + var(--cooltipz-arrow-offset, #{$cooltipz-arrow-offset})), 0);
-      }
-
-      &::after {
-        transform: translate(-50%, 0);
-      }
-    }
+    @include direction-top-base;
+    @include direction-top-hover-base;
+    @include direction-top-hover-classes;
   }
 }
 
 @mixin dir-top-left {
   &[data-cooltipz-dir="top-left"],
   &.cooltipz--top-left {
-    &::after {
-      left: 0;
-      margin-bottom: $cooltipz-margin;
-      transform: translate(0, var(--cooltipz-slide, #{$cooltipz-slide}));
-    }
-
-    &::before {
-      @extend %arrow-down;
-
-      left: $cooltipz-corner-direction-position;
-      transform: translate(var(--cooltipz-arrow-offset, #{$cooltipz-arrow-offset}), var(--cooltipz-slide, #{$cooltipz-slide}));
-    }
-
-    &::after,
-    &::before {
-      bottom: $cooltipz-y-direction-position;
-      transform-origin: top;
-    }
-
-    &:hover,
-    &:focus,
-    &[data-cooltipz-visible],
-    &.cooltipz--visible {
-      &::before {
-        transform: translate(var(--cooltipz-arrow-offset, #{$cooltipz-arrow-offset}), 0);
-      }
-
-      &::after {
-        transform: translate(0);
-      }
-    }
+    @include direction-top-left-base;
+    @include direction-top-left-hover-base;
+    @include direction-top-left-hover-classes;
   }
 }
 
 @mixin dir-top-right {
   &[data-cooltipz-dir="top-right"],
   &.cooltipz--top-right {
-    &::after {
-      margin-bottom: $cooltipz-margin;
-      right: 0;
-      transform: translate(0, var(--cooltipz-slide, #{$cooltipz-slide}));
-    }
-
-    &::before {
-      @extend %arrow-down;
-
-      right: $cooltipz-corner-direction-position;
-      transform: translate(var(--cooltipz-arrow-offset, #{$cooltipz-arrow-offset}), var(--cooltipz-slide, #{$cooltipz-slide}));
-    }
-
-    &::after,
-    &::before {
-      bottom: $cooltipz-y-direction-position;
-      transform-origin: top;
-    }
-
-    &:hover,
-    &:focus,
-    &[data-cooltipz-visible],
-    &.cooltipz--visible {
-      &::before {
-        transform: translate(var(--cooltipz-arrow-offset, #{$cooltipz-arrow-offset}), 0);
-      }
-
-      &::after {
-        transform: translate(0);
-      }
-    }
+    @include direction-top-right-base;
+    @include direction-top-right-hover-base;
+    @include direction-top-right-hover-classes;
   }
 }
 
 @mixin dir-bottom {
   &[data-cooltipz-dir="bottom"],
   &.cooltipz--bottom {
-    &::after {
-      margin-top: $cooltipz-margin;
-      transform: translate(-50%, calc(var(--cooltipz-slide, #{$cooltipz-slide}) * -1));
-    }
-
-    &::before {
-      @extend %arrow-up;
-
-      transform: translate(calc(-50% + var(--cooltipz-arrow-offset, #{$cooltipz-arrow-offset})), calc(var(--cooltipz-slide, #{$cooltipz-slide}) * -1));
-    }
-
-    &::after,
-    &::before {
-      left: 50%;
-      top: $cooltipz-y-direction-position;
-      transform-origin: bottom;
-    }
-
-    &:hover,
-    &:focus,
-    &[data-cooltipz-visible],
-    &.cooltipz--visible {
-      &::before {
-        transform: translate(calc(-50% + var(--cooltipz-arrow-offset, #{$cooltipz-arrow-offset})), 0);
-      }
-
-      &::after {
-        transform: translate(-50%, 0);
-      }
-    }
+    @include direction-bottom-base;
+    @include direction-bottom-hover-base;
+    @include direction-bottom-hover-classes;
   }
 }
 
 @mixin dir-bottom-left {
   &[data-cooltipz-dir="bottom-left"],
   &.cooltipz--bottom-left {
-    &::after {
-      left: 0;
-      margin-top: $cooltipz-margin;
-      transform: translate(0, calc(var(--cooltipz-slide, #{$cooltipz-slide}) * -1));
-    }
-
-    &::before {
-      @extend %arrow-up;
-
-      left: $cooltipz-corner-direction-position;
-      transform: translate(var(--cooltipz-arrow-offset, #{$cooltipz-arrow-offset}), calc(var(--cooltipz-slide, #{$cooltipz-slide}) * -1));
-    }
-
-    &::after,
-    &::before {
-      top: $cooltipz-y-direction-position;
-      transform-origin: bottom;
-    }
-
-    &:hover,
-    &:focus,
-    &[data-cooltipz-visible],
-    &.cooltipz--visible {
-      &::before {
-        transform: translate(var(--cooltipz-arrow-offset, #{$cooltipz-arrow-offset}), 0);
-      }
-
-      &::after {
-        transform: translate(0);
-      }
-    }
+    @include direction-bottom-left-base;
+    @include direction-bottom-left-hover-base;
+    @include direction-bottom-left-hover-classes;
   }
 }
 
 @mixin dir-bottom-right {
   &[data-cooltipz-dir="bottom-right"],
   &.cooltipz--bottom-right {
-    &::after {
-      margin-top: $cooltipz-margin;
-      right: 0;
-      transform: translate(0, calc(var(--cooltipz-slide, #{$cooltipz-slide}) * -1));
-    }
-
-    &::before {
-      @extend %arrow-up;
-
-      right: $cooltipz-corner-direction-position;
-      transform: translate(var(--cooltipz-arrow-offset, #{$cooltipz-arrow-offset}), calc(var(--cooltipz-slide, #{$cooltipz-slide}) * -1));
-    }
-
-    &::after,
-    &::before {
-      top: $cooltipz-y-direction-position;
-      transform-origin: bottom;
-    }
-
-    &:hover,
-    &:focus,
-    &[data-cooltipz-visible],
-    &.cooltipz--visible {
-      &::before {
-        transform: translate(var(--cooltipz-arrow-offset, #{$cooltipz-arrow-offset}), 0);
-      }
-
-      &::after {
-        transform: translate(0);
-      }
-    }
+    @include direction-bottom-right-base;
+    @include direction-bottom-right-hover-base;
+    @include direction-bottom-right-hover-classes;
   }
 }
 
 @mixin dir-left {
   &[data-cooltipz-dir="left"],
   &.cooltipz--left {
-    &::after {
-      margin-right: $cooltipz-margin;
-      transform: translate(var(--cooltipz-slide, #{$cooltipz-slide}), -50%);
-    }
-
-    &::before {
-      @extend %arrow-right;
-
-      transform: translate(var(--cooltipz-slide, #{$cooltipz-slide}), calc(-50% + var(--cooltipz-arrow-offset, #{$cooltipz-arrow-offset})));
-    }
-
-    &::after,
-    &::before {
-      right: $cooltipz-y-direction-position;
-      top: 50%;
-      transform-origin: left;
-    }
-
-    &:hover,
-    &:focus,
-    &[data-cooltipz-visible],
-    &.cooltipz--visible {
-      &::before {
-        transform: translate(0, calc(-50% + var(--cooltipz-arrow-offset, #{$cooltipz-arrow-offset})));
-      }
-
-      &::after {
-        transform: translate(0, -50%);
-      }
-    }
+    @include direction-left-base;
+    @include direction-left-hover-base;
+    @include direction-left-hover-classes;
   }
 }
 
 @mixin dir-right {
   &[data-cooltipz-dir="right"],
   &.cooltipz--right {
-    &::after {
-      margin-left: $cooltipz-margin;
-      transform: translate(calc(var(--cooltipz-slide, #{$cooltipz-slide}) * -1), -50%);
-    }
-
-    &::before {
-      @extend %arrow-left;
-
-      transform: translate(calc(var(--cooltipz-slide, #{$cooltipz-slide}) * -1), calc(-50% + var(--cooltipz-arrow-offset, #{$cooltipz-arrow-offset})));
-    }
-
-    &::after,
-    &::before {
-      left: $cooltipz-y-direction-position;
-      top: 50%;
-      transform-origin: right;
-    }
-
-    &:hover,
-    &:focus,
-    &[data-cooltipz-visible],
-    &.cooltipz--visible {
-      &::before {
-        transform: translate(0, calc(-50% + var(--cooltipz-arrow-offset, #{$cooltipz-arrow-offset})));
-      }
-
-      &::after {
-        transform: translate(0, -50%);
-      }
-    }
+    @include direction-right-base;
+    @include direction-right-hover-base;
+    @include direction-right-hover-classes;
   }
 }

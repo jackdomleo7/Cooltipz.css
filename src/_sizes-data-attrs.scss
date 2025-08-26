@@ -1,0 +1,31 @@
+@use "./sizes-base" as *;
+
+@mixin size-fit {
+  &[data-cooltipz-size="fit"] {
+    @include size-fit-base;
+  }
+}
+
+@mixin size-small {
+  &[data-cooltipz-size="small"] {
+    @include size-small-base;
+  }
+}
+
+@mixin size-medium {
+  &[data-cooltipz-size="medium"] {
+    @include size-medium-base;
+  }
+}
+
+@mixin size-large {
+  &[data-cooltipz-size="large"] {
+    @include size-large-base;
+  }
+}
+
+@mixin size-custom {
+  &[data-cooltipz-size="custom"] {
+    @include size-custom-base;
+  }
+}

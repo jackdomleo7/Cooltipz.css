@@ -1,0 +1,46 @@
+@use "./variables/scss" as *;
+
+// Shared size base styles
+%sizes-common {
+  white-space: normal;
+  word-wrap: break-word;
+}
+
+@mixin size-fit-base {
+  &::after {
+    @extend %sizes-common;
+
+    width: 100%;
+  }
+}
+
+@mixin size-small-base {
+  &::after {
+    @extend %sizes-common;
+
+    width: var(--cooltipz-small, #{$cooltipz-small});
+  }
+}
+
+@mixin size-medium-base {
+  &::after {
+    @extend %sizes-common;
+
+    width: var(--cooltipz-medium, #{$cooltipz-medium});
+  }
+}
+
+@mixin size-large-base {
+  &::after {
+    @extend %sizes-common;
+
+    width: var(--cooltipz-large, #{$cooltipz-large});
+  }
+}
+
+@mixin size-custom-base {
+  &::after {
+    white-space: pre;
+    word-wrap: break-word;
+  }
+}
