@@ -3,20 +3,49 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <meta name="robots" content="index, follow">
     <meta name="author" content="Jack Domleo">
     <meta name="description" content="Cooltipz.css is a pure CSS tooltip library that is lightweight, modern, accessible, customisable and easy to use.">
     <meta name="keywords" content="cooltipz.css, cooltipz css, cooltips.css, cooltips css, cooltipz-css, cooltips-css, cooltipz, tooltips, cooltips, tooltipz, tooltipz css, tooltips css, tooltipz-css, tooltips-css, cool tooltips, cool tooltipz, coolhintz, cool tips, tool tips, cool tipz, css, pure css, jackdomleo, jack domleo, domleo">
 
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Cooltipz.css">
-    <meta name="twitter:description" content="Cooltipz.css is a pure CSS tooltip library that is lightweight, modern, accessible, customisable and easy to use.">
-    <meta name="twitter:image" content="https://cooltipz.jackdomleo.dev/img/open-graph.png">
+    <meta name="language" content="en-GB">
+    <meta name="generator" content="Cooltipz.css Documentation">
+    <meta name="classification" content="Software, Web Development, CSS Library">
+    <meta name="subject" content="Pure CSS Tooltip Library">
+    <meta name="copyright" content="© 2025 Jack Domleo">
+    <link rel="canonical" href="https://cooltipz.jackdomleo.dev/">
 
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "Cooltipz.css",
+      "description": "A pure CSS tooltip library that is lightweight, modern, accessible, customisable and easy to use",
+      "url": "https://cooltipz.jackdomleo.dev",
+      "downloadUrl": "https://www.npmjs.com/package/cooltipz-css",
+      "author": {
+        "@type": "Person",
+        "name": "Jack Domleo",
+        "url": "https://jackdomleo.dev"
+      },
+      "applicationCategory": "DeveloperApplication"
+    }
+    </script>
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@jackdomleo7">
+    <meta name="twitter:creator" content="@jackdomleo7">
+    <meta name="twitter:title" content="Cooltipz.css - Cool customisable tooltips made from pure CSS">
+    <meta name="twitter:description" content="A pure CSS tooltip library that is lightweight, modern, accessible, customisable and easy to use.">
+    <meta name="twitter:image" content="https://cooltipz.jackdomleo.dev/img/open-graph.png">
+    <meta name="twitter:image:alt" content="Cooltipz.css - Cool customisable tooltips made from pure CSS">
+
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Cooltipz.css">
     <meta property="og:url" content="https://cooltipz.jackdomleo.dev">
     <meta property="og:title" content="Cooltipz.css - Cool customisable tooltips made from pure CSS">
-    <meta property="og:description" content="Cooltipz.css is a pure CSS tooltip library that is lightweight, modern, accessible, customisable and easy to use.">
+    <meta property="og:description" content="A pure CSS tooltip library that is lightweight, modern, accessible, customisable and easy to use.">
     <meta property="og:locale" content="en_GB">
     <meta property="og:image" content="https://cooltipz.jackdomleo.dev/img/open-graph.png">
     <meta property="og:image:url" content="https://cooltipz.jackdomleo.dev/img/open-graph.png">
@@ -24,7 +53,7 @@
     <meta property="og:image:type" content="image/png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
-    <meta property="og:image:alt" content="Cooltipz.css">
+    <meta property="og:image:alt" content="Cooltipz.css - Cool customisable tooltips made from pure CSS">
 
     <link rel="apple-touch-icon" sizes="180x180" href="./img/favicons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./img/favicons/favicon-32x32.png">
@@ -36,26 +65,43 @@
     <meta name="theme-color" content="#ffffff">
 
     <title>Cooltipz.css - Cool customisable tooltips made from pure CSS</title>
-    <link rel="stylesheet" href="./css/docs.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
-    <link rel="stylesheet" href="./css/prism.min.css" />
-    <link rel="stylesheet" href="./css/cooltipz.min.css" />
+    
+    <!-- DNS prefetch for external resources -->
+    <link rel="dns-prefetch" href="//img.shields.io">
+    
+    <!-- Preload critical CSS -->
+    <link rel="preload" href="./css/docs.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="./css/docs.min.css"></noscript>
+    
+    <!-- Critical CSS should load synchronously -->
+    <link rel="stylesheet" href="./css/cooltipz.min.css">
+    
+    <!-- Non-critical CSS can load asynchronously -->
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous"></noscript>
+    
+    <link rel="preload" href="./css/prism.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="./css/prism.min.css"></noscript>
   </head>
   <body>
+    <!-- Skip links for accessibility -->
+    <a href="#main-content" class="skip-link sr-only">Skip to main content</a>
+    <a href="#getting-started" class="skip-link sr-only">Skip to getting started</a>
+    
     <header class="header">
       <h1 class="m-0">
-        <img class="header__logo" src="img/header-logo.png" alt="Cooltipz.css logo" />
+        <img class="header__logo" src="img/header-logo.png" alt="Cooltipz.css logo" fetchpriority="high" width="530" height="280" />
         <span class="sr-only">Cooltipz.css</span>
       </h1>
       <h2>Cool customisable tooltips made from pure CSS</h2>
       <div class="language-cli no-label"><pre><code class="language-cli select-all">npm install cooltipz-css</code></pre></div>
       <div class="header__badges">
         <a href="https://github.com/jackdomleo7/Cooltipz.css/stargazers" rel="nofollow">
-          <img alt="GitHub stars" src="https://img.shields.io/github/stars/jackdomleo7/Cooltipz.css?style=social" />
+          <img alt="GitHub stars" src="https://img.shields.io/github/stars/jackdomleo7/Cooltipz.css?style=social" height="32" fetchpriority="high" />
           <span class="sr-only">GitHub stars</span>
         </a>
         <a href="https://github.com/jackdomleo7/Cooltipz.css/releases" rel="nofollow">
-          <img alt="GitHub release (latest by date)" src="https://img.shields.io/github/v/release/jackdomleo7/Cooltipz.css?label=Version&style=social">
+          <img alt="Latest release" src="https://img.shields.io/github/v/release/jackdomleo7/Cooltipz.css?label=Version&style=social" height="32" fetchpriority="high">
           <span class="sr-only">Latest release</span>
         </a>
       </div>
@@ -98,12 +144,13 @@
         </li>
       </ul>
     </header>
-    <main class="main">
+    <main id="main-content" class="main" role="main">
       <hr/>
       <section id="getting-started">
         <h3>
           Getting started
-          <a href="#getting-started" class="link link--jump" aria-label="Getting started">
+          <a href="#getting-started" class="link link--jump" aria-label="Link to Getting started section">
+            <span class="sr-only">Link to section</span>
             <svg aria-hidden="true">
               <use xlink:href="/assets/sprite.svg#icon-link"></use>
             </svg>
@@ -118,26 +165,32 @@
         <p>Depending on your preference, you can choose to use classes or <code class="code">data-</code> attributes.</p>
         
         <h4>Choose Your Version</h4>
-        <p>Cooltipz.css is available in three optimized versions:</p>
-        <ul>
-          <li><strong>Combined Version</strong> - Support for both classes and data attributes</li>
-          <li><strong>Data Attributes Only</strong> - Lightweight version with only <code class="code">data-</code> attributes</li>
-          <li><strong>Classes Only</strong> - Lightweight version with only class selectors</li>
-        </ul>
-        <p><em>Choose the specialized version that matches your preferred approach for ~40% smaller file size!</em></p>
+        <p>Cooltipz.css is available in three optimized versions to suit different development preferences:</p>
+        <dl>
+          <dt><strong>Combined Version (40KB minified)</strong></dt>
+          <dd>Full-featured version supporting both class and data attribute approaches. Choose this if you need maximum flexibility or are unsure which approach to use.</dd>
+          
+          <dt><strong>Data Attributes Only (24KB minified)</strong></dt>
+          <dd>Lightweight version using <code class="code">data-cooltipz-*</code> attributes. Choose this if you prefer HTML-first styling and cleaner markup.</dd>
+          
+          <dt><strong>Classes Only (24KB minified)</strong></dt>
+          <dd>Lightweight version using CSS classes like <code class="code">cooltipz--top</code>. Choose this if you prefer traditional CSS class-based styling.</dd>
+        </dl>
+        <p><strong>💡 Performance tip:</strong> The specialized versions are ~40% smaller, improving load times and reducing bandwidth usage.</p>
       </section>
       <hr/>
       <section id="usage">
         <h3>
           Usage
-          <a href="#usage" class="link link--jump" aria-label="Usage">
+          <a href="#usage" class="link link--jump" aria-label="Link to Usage section">
+            <span class="sr-only">Link to section</span>
             <svg aria-hidden="true">
               <use xlink:href="/assets/sprite.svg#icon-link"></use>
             </svg>
           </a>
         </h3>
         <h4>CDN</h4>
-        <img alt="jsDelivr hits (npm)" src="https://img.shields.io/jsdelivr/npm/hm/cooltipz-css?label=jsDelivr%20hits&logo=jsdelivr&style=social" loading="lazy">
+        <img alt="" src="https://img.shields.io/jsdelivr/npm/hm/cooltipz-css?label=jsDelivr%20hits&logo=jsdelivr&style=social" loading="lazy" height="20">
         
         <p><strong>Cooltipz.css is available in three versions:</strong></p>
         <ul>
@@ -182,7 +235,7 @@
         </div>
         <h4>Package manager (npm or yarn)</h4>
         <a href="https://www.npmjs.com/package/cooltipz-css" rel="nofollow" target="_blank" class="link">
-          <img alt="npm downloads" src="https://img.shields.io/npm/dt/cooltipz-css?logo=npm&style=social" loading="lazy">
+          <img alt="npm downloads" src="https://img.shields.io/npm/dt/cooltipz-css?logo=npm&style=social" loading="lazy" height="20">
           <span class="sr-only">npm downloads</span>
         </a>
         <div class="example example--stack">
@@ -617,56 +670,6 @@
           </ul>
       </section>
       <hr/>
-      <section id="feedback" class="feedback">
-        <h3>
-          Feedback and support
-          <a href="#feedback" class="link link--jump" aria-label="Feedback and support">
-            <svg aria-hidden="true">
-              <use xlink:href="/assets/sprite.svg#icon-link"></use>
-            </svg>
-          </a>
-        </h3>
-        <p>We appreciate any feedback, good or bad and are always looking for new ideas to improve the user experience (UX), developer experience (DX) and accessibility of the tooltips. You may want to consider:</p>
-        <ul>
-          <li>Raising a <a href="https://github.com/jackdomleo7/Cooltipz.css/issues" rel="nofollow noopener" class="link">GitHub issue</a></li>
-          <li>Contacting the <a href="https://jackdomleo.dev" rel="nofollow noopener" class="link">author</a> directly</li>
-          <li>Starring the <a href="https://github.com/jackdomleo7/Cooltipz.css" rel="nofollow noopener" class="link">GitHub repository</a></li>
-          <li>Giving the <a href="https://codepen.io/jackdomleo7/pen/mderEeG" rel="nofollow noopener" class="link">CodePen</a> a like</li>
-          <li>Mentioning 'Cooltipz.css' in a README or footer</li>
-          <li>Share on social media with the hashtag <em>#cooltipzcss</em></li>
-        </ul>
-        <ul class="feedback__share center" id="social-share">
-          <li>
-            <a href="https://twitter.com/intent/tweet?text=Cooltipz.css is a pure CSS tooltip library that is lightweight, modern, accessible, customisable and easy to use.&via=jackdomleo7&url=https://cooltipz.jackdomleo.dev&hashtags=cooltipzcss,css" target="_blank" class="link" aria-label="Share to Twitter" data-cooltipz-dir="bottom">
-              <svg class="twitter" aria-hidden="true">
-                <use xlink:href="/assets/sprite.svg#icon-twitter"></use>
-              </svg>
-            </a>
-          </li>
-          <li>
-            <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://cooltipz.jackdomleo.dev&title=Cooltipz.css is a pure CSS tooltip library that is lightweight, modern, accessible, customisable and easy to use&summary=Cooltipz.css&source=cooltipz.jackdomleo.dev" target="_blank" class="link" aria-label="Share to LinkedIn" data-cooltipz-dir="bottom">
-              <svg class="linkedin" aria-hidden="true">
-                <use xlink:href="/assets/sprite.svg#icon-linkedin"></use>
-              </svg>
-            </a>
-          </li>
-          <li>
-            <a href="https://www.reddit.com/submit?url=https://cooltipz.jackdomleo.dev&title=Cooltipz.css is a pure CSS tooltip library that is lightweight, modern, accessible, customisable and easy to use" target="_blank" class="link" aria-label="Share to Reddit" data-cooltipz-dir="bottom">
-              <svg class="reddit" aria-hidden="true">
-                <use xlink:href="/assets/sprite.svg#icon-reddit"></use>
-              </svg>
-            </a>
-          </li>
-          <li>
-            <a href="https://www.facebook.com/sharer/sharer.php?u=https://cooltipz.jackdomleo.dev" target="_blank" class="link" aria-label="Share to Facebook" data-cooltipz-dir="bottom">
-              <svg class="facebook" aria-hidden="true">
-                <use xlink:href="/assets/sprite.svg#icon-facebook"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
-      </section>
-      <hr/>
       <section id="license">
         <h3>
           License
@@ -684,8 +687,8 @@
     </main>
     <footer class="footer">
       <div class="center">
-        <img src="/img/footer-icon.png" alt="Cooltipz.css icon" loading="lazy" />
-        <span id="copyright">&copy;2020- Cooltipz.css</span>
+        <img src="/img/footer-icon.png" alt="Cooltipz.css icon" loading="lazy" width="50" height="50" />
+        <span id="copyright">&copy;2020-Present Cooltipz.css</span>
       </div>
       <p>Made with <span aria-label="coolness" data-cooltipz-dir="top">😎</span> by <a href="https://jackdomleo.dev" rel="nofollow noopener" class="link">Jack Domleo</a>.</p>
       <ul>
@@ -696,9 +699,6 @@
           <a href="https://www.npmjs.com/package/cooltipz-css" rel="nofollow noopener" class="link">npm</a>
         </li>
         <li>
-          <a href="https://yarnpkg.com/package/cooltipz-css" rel="nofollow noopener" class="link">Yarn</a>
-        </li>
-        <li>
           <a href="https://github.com/jackdomleo7/Cooltipz.css#license" rel="nofollow noopener" class="link">License</a>
         </li>
         <li>
@@ -707,6 +707,6 @@
       </ul>
     </footer>
     <script src="./js/main.js"></script>
-    <script src="./js/prism.js"></script>
+    <script src="./js/prism.js" defer></script>
   </body>
 </html>
