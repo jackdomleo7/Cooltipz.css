@@ -38,21 +38,21 @@ $cooltipz-arrow-shadow-fade: 1px $cooltipz-shadow-color;
 %arrow-left {
   @extend %base-arrow;
 
-  border-right-color: var(--cooltipz-border-color, #{$cooltipz-border-color});
+  border-inline-end-color: var(--cooltipz-border-color, #{$cooltipz-border-color});
   filter: drop-shadow(-1px 0 $cooltipz-arrow-shadow-fade);
 
   @media(forced-colors: active) {
-    border-right-color: CanvasText;
+    border-inline-end-color: CanvasText;
   }
 }
 
 %arrow-right {
   @extend %base-arrow;
 
-  border-left-color: var(--cooltipz-border-color, #{$cooltipz-border-color});
+  border-inline-start-color: var(--cooltipz-border-color, #{$cooltipz-border-color});
   filter: drop-shadow(1px 0 $cooltipz-arrow-shadow-fade);
 
   @media(forced-colors: active) {
-    border-left-color: CanvasText;
+    border-inline-start-color: CanvasText;
   }
 }

@@ -10,7 +10,7 @@
   &::after {
     @extend %sizes-common;
 
-    width: 100%;
+    inline-size: 100%;
   }
 }
 
@@ -18,7 +18,7 @@
   &::after {
     @extend %sizes-common;
 
-    width: var(--cooltipz-small, #{$cooltipz-small});
+    inline-size: var(--cooltipz-small, #{$cooltipz-small});
   }
 }
 
@@ -26,7 +26,7 @@
   &::after {
     @extend %sizes-common;
 
-    width: var(--cooltipz-medium, #{$cooltipz-medium});
+    inline-size: var(--cooltipz-medium, #{$cooltipz-medium});
   }
 }
 
@@ -34,7 +34,7 @@
   &::after {
     @extend %sizes-common;
 
-    width: var(--cooltipz-large, #{$cooltipz-large});
+    inline-size: var(--cooltipz-large, #{$cooltipz-large});
   }
 }
 

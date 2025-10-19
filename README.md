@@ -29,6 +29,7 @@ Play with Cooltipz.css on [CodePen](https://codepen.io/JackDomleo/pen/mderEeG).
 - Pure CSS, no JavaScript
 - Highly customisable
 - **Multiple versions available** - Combined, data attributes only, or classes only for optimal bundle size
+- **Internationalisation support** - Full RTL language support and modern CSS logical properties for global accessibility
 - Accessible with `aria-label` attributes
 - Automatically disables animation if the user [prefers reduced motion](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion?ref=cooltipz.jackdomleo.dev)
 - Options to use classes or `data-` attributes
@@ -60,15 +61,15 @@ In the below CDN links:
 - Replace `:version` with a version [listed here](https://www.npmjs.com/package/cooltipz-css?activeTab=versions) (latest version is always recommended). If you always want to get the latest stylesheet, remove `@:version` completely (Not recommended).
 - Replace `:file` with one of the below:
   
-  **Combined (full functionality - 3.06kB when compressed):**
+  **Combined (full functionality - 3.13kB when compressed):**
   - `cooltipz.css` <sub><sup>(Expanded stylesheet)</sup></sub>
   - `cooltipz.min.css` <sub><sup>(Minified stylesheet)</sup></sub>
   
-  **Data attributes only (smaller bundle - 1.81kB when compressed):**
+  **Data attributes only (smaller bundle - 1.88kB when compressed):**
   - `cooltipz-data-attrs.css` <sub><sup>(Expanded stylesheet)</sup></sub>
   - `cooltipz-data-attrs.min.css` <sub><sup>(Minified stylesheet)</sup></sub>
   
-  **Classes only (smaller bundle - 1.79kB when compressed):**
+  **Classes only (smaller bundle - 1.85kB when compressed):**
   - `cooltipz-classes.css` <sub><sup>(Expanded stylesheet)</sup></sub>
   - `cooltipz-classes.min.css` <sub><sup>(Minified stylesheet)</sup></sub>
 
