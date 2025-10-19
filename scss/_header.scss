@@ -45,17 +45,17 @@
     gap: 2rem;
     grid-template: auto / 1fr 1fr;
     list-style-type: none;
-    margin: 2rem 0 0;
-    padding-left: 0;
-    margin-bottom: 0.5rem;
+    margin-block: 2rem 0.5rem;
+    margin-inline: 0;
+    padding-inline-start: 0;
 
     @media screen and (width >= 37.5em) {
       grid-template-columns: 1fr 1fr 1fr;
     }
 
     svg {
-      height: 2.5rem;
-      width: 2.5rem;
+      block-size: 2.5rem;
+      inline-size: 2.5rem;
     }
   }
 }

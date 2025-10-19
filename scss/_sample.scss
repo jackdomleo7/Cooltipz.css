@@ -16,7 +16,7 @@
   }
 
   div[class*="language-"] {
-    width: 100%;
+    inline-size: 100%;
   }
 
   @media (width >= 800px) {
@@ -24,13 +24,13 @@
     justify-content: space-between;
 
     button {
-      margin-right: 2rem !important;
+      margin-inline-end: 2rem !important;
     }
   }
 }
 
 .variables {
-  width: 100%;
+  inline-size: 100%;
 
   &__wrapper {
     background-attachment: local, local, scroll, scroll;
@@ -52,7 +52,7 @@
     margin: 1rem 0;
 
     thead & {
-      border-bottom: 1px solid #777;
+      border-block-end: 1px solid #777;
     }
 
     td {
@@ -60,15 +60,15 @@
 
       &:nth-child(1),
       &:nth-child(2) {
-        width: 14rem;
+        inline-size: 14rem;
       }
 
       &:nth-child(3) {
-        width: 12rem;
+        inline-size: 12rem;
       }
 
       &:nth-child(4) {
-        width: 16rem;
+        inline-size: 16rem;
       }
     }
 
@@ -84,9 +84,9 @@
   &__sample {
     border: 1px solid #000;
     display: inline-block;
-    height: 0.8rem;
-    margin-right: 0.5rem;
-    width: 0.8rem;
+    block-size: 0.8rem;
+    margin-inline-end: 0.5rem;
+    inline-size: 0.8rem;
 
     &--bg {
       background-color: var(--cooltipz-bg-color);

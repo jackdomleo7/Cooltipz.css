@@ -14,11 +14,11 @@
 html {
   box-sizing: border-box;
   font-family: sans-serif;
-  height: 100vh;
+  block-size: 100vh;
   overflow: hidden auto;
   scroll-behavior: smooth;
-  scroll-padding-top: 2rem;
-  width: 100vw;
+  scroll-padding-block-start: 2rem;
+  inline-size: 100vw;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -56,17 +56,18 @@ h6 {
 }
 
 img {
-  height: auto;
-  max-width: 100%;
+  block-size: auto;
+  max-inline-size: 100%;
   user-select: none;
 }
 
 hr {
   border: 1px solid transparent;
   border-radius: 50%;
-  border-top-color: #222;
-  margin: 2rem 0;
-  width: 100%;
+  border-block-start-color: #222;
+  margin-block: 2rem;
+  margin-inline: 0;
+  inline-size: 100%;
 }
 
 p {
@@ -75,10 +76,10 @@ p {
 
 ol,
 ul {
-  padding-left: 1.5rem;
+  padding-inline-start: 1.5rem;
 
   @media (width >= 48rem) {
-    padding-left: 2.5rem;
+    padding-inline-start: 2.5rem;
   }
 }
 
@@ -88,7 +89,7 @@ li {
 
 svg {
   fill: currentcolor;
-  height: 100%;
+  block-size: 100%;
   pointer-events: none;
-  width: 100%;
+  inline-size: 100%;
 }

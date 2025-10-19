@@ -7,8 +7,8 @@
   padding: 0 1rem 1rem;
 
   img {
-    height: 4rem;
-    width: 4rem;
+    block-size: 4rem;
+    inline-size: 4rem;
   }
 
   ul {
@@ -17,6 +17,6 @@
     gap: 1.5rem;
     justify-content: space-evenly;
     list-style-type: none;
-    padding-left: 0;
+    padding-inline-start: 0;
   }
 }
