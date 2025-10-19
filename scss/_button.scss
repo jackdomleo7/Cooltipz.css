@@ -1,3 +1,4 @@
+@use "sass:color";
 @use "./variables" as *;
 
 button {
@@ -17,7 +18,7 @@ button {
 
   &:hover,
   &:focus {
-    box-shadow: 1px 1px 0.25rem fade-out($blue, 0.5);
+    box-shadow: 1px 1px 0.25rem color.adjust($blue, $alpha: -0.5);
   }
 }
 
@@ -27,6 +28,6 @@ button.button--alt {
 
   &:hover,
   &:focus {
-    box-shadow: 1px 1px 0.25rem fade-out($orange, 0.5);
+    box-shadow: 1px 1px 0.25rem color.adjust($orange, $alpha: -0.5);
   }
 }
